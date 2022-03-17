@@ -1,0 +1,31 @@
+<div class="hero-slider">
+  <p>Home Hero</p>
+  {% assign counter = 0 %}
+  {% for block in section.blocks %}
+    {% assign counter = counter | plus: 1 %}
+    {{ block.settings.image | img_url: '1024x' }}
+    <p>0{{ counter }} / 0{{ section.blocks.size }}</p>
+  {% endfor %}
+  
+</div>
+{% schema %} 
+{
+  "name":"Home Hero",
+  "tag":"section",
+  "class":"home-hero",
+  "max_blocks":3,
+  "blocks":[
+     {
+        "name":"Slide",
+        "type":"slide",
+        "settings":[
+           {
+              "type":"image_picker",
+              "id":"image",
+              "label":"Image"
+           }
+        ]
+     }
+  ]
+}
+{% endschema %}

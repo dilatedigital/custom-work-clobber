@@ -1,0 +1,69 @@
+
+<style>
+  .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after,
+  .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    display: none;
+  }
+  .swiper-button-prev svg .st0,
+  .swiper-button-next svg .st0{
+    fill: #D5CECE;
+  }
+</style>
+<div class="container mx-auto relative h-120 flex items-center">
+  <div class="max-w-xs xct:max-w-970 mx-auto swiper">
+    <div class="swiper-wrapper items-center">
+      
+        {% for block in section.blocks %}
+          <div class="swiper-slide">
+            <img src="{{ block.settings.image | img_url: 'master' }}" class="mx-auto xct:mx-0 grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all" />
+          </div>
+        {% endfor %}
+      
+    </div>
+    
+  </div>
+  <div class="swiper-button-prev">
+    {% render 'icon-chevron-left' %}
+  </div>
+  <div class="swiper-button-next">
+    {% render 'icon-chevron-right' %}
+  </div>
+</div>
+<script>
+  const swiper = new Swiper('.swiper', {
+    slidesPerView: 3,
+    spaceBetween: 15,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      1170: {
+        slidesPerView: 7,
+        spaceBetween: 50
+      }
+    }
+
+  });
+</script>
+{% schema %} 
+{
+  "name":"Logos",
+  "tag":"section",
+  "class":"logo-slider bg-logos-bg",
+  "blocks":[
+     {
+        "name":"Logo",
+        "type":"logo",
+        "settings":[
+           {
+              "type":"image_picker",
+              "id":"image",
+              "label":"Image"
+           }
+        ]
+     }
+  ]
+}
+{% endschema %}

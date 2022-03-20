@@ -14,6 +14,7 @@ module.exports = {
       },
       height: {
         65: '65px',
+        120: '120px',
       },
 
       screens: {
@@ -21,12 +22,15 @@ module.exports = {
       },
       maxWidth: {
         120: '120px',
+        150: '150px',
         300: '300px',
+        970: '970px'
       },
 
       colors: {
         'wc-black': '#101010',
         'btm-bar': '#d8d8d8',
+        'logos-bg': '#f0f0f0'
       },
     },
   },

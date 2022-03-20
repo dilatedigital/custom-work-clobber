@@ -27,6 +27,20 @@
     src: url('./campton-black-webfont.woff2');
     font-weight: 800;
   }
+  @font-face {
+    font-family: 'Eurostile';
+    src: url('./eurostile.woff2');
+  }
+  @font-face {
+    font-family: 'Eurostile';
+    src: url('./eurostile-bold.woff2');
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: 'Eurostile';
+    src: url('./eurostile-black.woff2');
+    font-weight: 800;
+  }
 }
 
 body {
@@ -36,4 +50,8 @@ body {
 .container {
   max-width: 1170px;
   @apply px-4 xl:px-0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Eurostile';
 }

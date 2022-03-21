@@ -1,6 +1,38 @@
 {
-  "current": "Default",
+  "current": {
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "mobile_menu_title": "Menu",
+          "mobile_menu": "mobile-menu",
+          "menu": "bottom-bar-menu",
+          "top_bar_menu": "top-bar-menu",
+          "logo": "shopify:\/\/shop_images\/Logo-Transparent.png"
+        }
+      },
+      "home-hero": {
+        "type": "home-hero",
+        "settings": {
+        }
+      },
+      "home-logoslider": {
+        "type": "home-logoslider",
+        "settings": {
+        }
+      },
+      "home-category": {
+        "type": "home-category",
+        "settings": {
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  },
   "presets": {
-    "Default": { }
+    "Default": {
+    }
   }
 }

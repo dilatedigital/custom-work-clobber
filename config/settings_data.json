@@ -18,6 +18,59 @@
       },
       "home-logoslider": {
         "type": "home-logoslider",
+        "blocks": {
+          "d586ffa2-1568-4ff4-8065-d2c83f50f44e": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/cat.png"
+            }
+          },
+          "53cdc23a-51a2-4f90-b0d0-0fc31f54cd3a": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/steel-blue.png"
+            }
+          },
+          "13221743-5e70-4f96-898c-e42acb0e0a87": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/king-gee.png"
+            }
+          },
+          "6638ebb6-e99b-4ce3-a08a-f405f1057cd6": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/blundstone.png"
+            }
+          },
+          "dd2839a9-3770-4e4d-9bee-243ef475dd07": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/hard-yakka.png"
+            }
+          },
+          "d10256b2-06b6-42e1-b23c-c5a5fb0f6f3a": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/rossi-boots.png"
+            }
+          },
+          "83198490-6109-4aa4-b804-fe318aa5f47c": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/oliver.png"
+            }
+          }
+        },
+        "block_order": [
+          "d586ffa2-1568-4ff4-8065-d2c83f50f44e",
+          "53cdc23a-51a2-4f90-b0d0-0fc31f54cd3a",
+          "13221743-5e70-4f96-898c-e42acb0e0a87",
+          "6638ebb6-e99b-4ce3-a08a-f405f1057cd6",
+          "dd2839a9-3770-4e4d-9bee-243ef475dd07",
+          "d10256b2-06b6-42e1-b23c-c5a5fb0f6f3a",
+          "83198490-6109-4aa4-b804-fe318aa5f47c"
+        ],
         "settings": {
         }
       },

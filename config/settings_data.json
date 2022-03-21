@@ -76,6 +76,82 @@
       },
       "home-category": {
         "type": "home-category",
+        "blocks": {
+          "82e87138-3490-43e8-b80f-4abef74225dd": {
+            "type": "category_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/polos.png",
+              "category_title": "Shirts",
+              "category_link": "#"
+            }
+          },
+          "87fd2213-ae75-4ca5-a3d0-ef8425c916b6": {
+            "type": "category_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/shirts.png",
+              "category_title": "Polos",
+              "category_link": "#"
+            }
+          },
+          "3c34c7ef-8c81-415b-9c83-5fd2d187bbfe": {
+            "type": "category_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/jackets.png",
+              "category_title": "Jackets",
+              "category_link": "#"
+            }
+          },
+          "4811e18f-cdbd-40ab-a06a-9da735c701ef": {
+            "type": "category_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/pants.png",
+              "category_title": "Pants",
+              "category_link": "#"
+            }
+          },
+          "f313a3bd-aa42-4c1c-bead-a292133bd6bd": {
+            "type": "category_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/shorts.png",
+              "category_title": "Shorts",
+              "category_link": "#"
+            }
+          },
+          "377e70eb-e5b3-4a4a-80f9-590a085a3559": {
+            "type": "category_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/boots.png",
+              "category_title": "Workboots",
+              "category_link": "#"
+            }
+          },
+          "b9935788-4f9d-4749-bf48-982c2b4e1920": {
+            "type": "category_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/hat.png",
+              "category_title": "Safety",
+              "category_link": "#"
+            }
+          },
+          "fed8b2e8-8002-4c5e-b330-255431da6f3a": {
+            "type": "category_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/accessories.png",
+              "category_title": "Accessories",
+              "category_link": "#"
+            }
+          }
+        },
+        "block_order": [
+          "82e87138-3490-43e8-b80f-4abef74225dd",
+          "87fd2213-ae75-4ca5-a3d0-ef8425c916b6",
+          "3c34c7ef-8c81-415b-9c83-5fd2d187bbfe",
+          "4811e18f-cdbd-40ab-a06a-9da735c701ef",
+          "f313a3bd-aa42-4c1c-bead-a292133bd6bd",
+          "377e70eb-e5b3-4a4a-80f9-590a085a3559",
+          "b9935788-4f9d-4749-bf48-982c2b4e1920",
+          "fed8b2e8-8002-4c5e-b330-255431da6f3a"
+        ],
         "settings": {
         }
       }

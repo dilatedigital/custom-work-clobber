@@ -154,6 +154,33 @@
         ],
         "settings": {
         }
+      },
+      "home-cta": {
+        "type": "home-cta",
+        "blocks": {
+          "b8d1c4fe-3633-4012-8ffb-dbc83d89c8df": {
+            "type": "cta_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/clearance.jpg",
+              "button_text": "Click Here",
+              "cta_link": "#"
+            }
+          },
+          "50fa9b1b-67e1-4791-8300-7359f6496484": {
+            "type": "cta_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/new_arrivals.jpg",
+              "button_text": "",
+              "cta_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "b8d1c4fe-3633-4012-8ffb-dbc83d89c8df",
+          "50fa9b1b-67e1-4791-8300-7359f6496484"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [

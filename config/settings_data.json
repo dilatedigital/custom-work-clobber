@@ -1,6 +1,167 @@
 {
-  "current": "Default",
+  "current": {
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "mobile_menu_title": "Menu",
+          "mobile_menu": "mobile-menu",
+          "menu": "bottom-bar-menu",
+          "top_bar_menu": "top-bar-menu",
+          "logo": "shopify:\/\/shop_images\/Logo-Transparent.png"
+        }
+      },
+      "home-hero": {
+        "type": "home-hero",
+        "settings": {
+        }
+      },
+      "home-logoslider": {
+        "type": "home-logoslider",
+        "blocks": {
+          "d586ffa2-1568-4ff4-8065-d2c83f50f44e": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/cat.png"
+            }
+          },
+          "53cdc23a-51a2-4f90-b0d0-0fc31f54cd3a": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/steel-blue.png"
+            }
+          },
+          "13221743-5e70-4f96-898c-e42acb0e0a87": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/king-gee.png"
+            }
+          },
+          "6638ebb6-e99b-4ce3-a08a-f405f1057cd6": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/blundstone.png"
+            }
+          },
+          "dd2839a9-3770-4e4d-9bee-243ef475dd07": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/hard-yakka.png"
+            }
+          },
+          "d10256b2-06b6-42e1-b23c-c5a5fb0f6f3a": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/rossi-boots.png"
+            }
+          },
+          "83198490-6109-4aa4-b804-fe318aa5f47c": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/oliver.png"
+            }
+          }
+        },
+        "block_order": [
+          "d586ffa2-1568-4ff4-8065-d2c83f50f44e",
+          "53cdc23a-51a2-4f90-b0d0-0fc31f54cd3a",
+          "13221743-5e70-4f96-898c-e42acb0e0a87",
+          "6638ebb6-e99b-4ce3-a08a-f405f1057cd6",
+          "dd2839a9-3770-4e4d-9bee-243ef475dd07",
+          "d10256b2-06b6-42e1-b23c-c5a5fb0f6f3a",
+          "83198490-6109-4aa4-b804-fe318aa5f47c"
+        ],
+        "settings": {
+        }
+      },
+      "home-category": {
+        "type": "home-category",
+        "blocks": {
+          "82e87138-3490-43e8-b80f-4abef74225dd": {
+            "type": "category_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/polos.png",
+              "category_title": "Shirts",
+              "category_link": "#"
+            }
+          },
+          "87fd2213-ae75-4ca5-a3d0-ef8425c916b6": {
+            "type": "category_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/shirts.png",
+              "category_title": "Polos",
+              "category_link": "#"
+            }
+          },
+          "3c34c7ef-8c81-415b-9c83-5fd2d187bbfe": {
+            "type": "category_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/jackets.png",
+              "category_title": "Jackets",
+              "category_link": "#"
+            }
+          },
+          "4811e18f-cdbd-40ab-a06a-9da735c701ef": {
+            "type": "category_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/pants.png",
+              "category_title": "Pants",
+              "category_link": "#"
+            }
+          },
+          "f313a3bd-aa42-4c1c-bead-a292133bd6bd": {
+            "type": "category_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/shorts.png",
+              "category_title": "Shorts",
+              "category_link": "#"
+            }
+          },
+          "377e70eb-e5b3-4a4a-80f9-590a085a3559": {
+            "type": "category_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/boots.png",
+              "category_title": "Workboots",
+              "category_link": "#"
+            }
+          },
+          "b9935788-4f9d-4749-bf48-982c2b4e1920": {
+            "type": "category_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/hat.png",
+              "category_title": "Safety",
+              "category_link": "#"
+            }
+          },
+          "fed8b2e8-8002-4c5e-b330-255431da6f3a": {
+            "type": "category_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/accessories.png",
+              "category_title": "Accessories",
+              "category_link": "#"
+            }
+          }
+        },
+        "block_order": [
+          "82e87138-3490-43e8-b80f-4abef74225dd",
+          "87fd2213-ae75-4ca5-a3d0-ef8425c916b6",
+          "3c34c7ef-8c81-415b-9c83-5fd2d187bbfe",
+          "4811e18f-cdbd-40ab-a06a-9da735c701ef",
+          "f313a3bd-aa42-4c1c-bead-a292133bd6bd",
+          "377e70eb-e5b3-4a4a-80f9-590a085a3559",
+          "b9935788-4f9d-4749-bf48-982c2b4e1920",
+          "fed8b2e8-8002-4c5e-b330-255431da6f3a"
+        ],
+        "settings": {
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  },
   "presets": {
-    "Default": { }
+    "Default": {
+    }
   }
 }

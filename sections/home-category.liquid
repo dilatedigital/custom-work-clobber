@@ -1,22 +1,81 @@
-<div>
+
+<style>
+   .category-swiper a {
+      border-color: #bdbdbd;
+   }
+
+   .each-cat:hover h3 {
+      color: #eecc2d;
+   }
+
+   .each-cat {
+      outline-color: #bdbdbd;
+      outline-style: solid;
+      outline-width: 1px;
+      border: 10px solid transparent;
+   }
+
+   .each-cat:hover {
+      border: 10px solid #bdbdbd;
+      outline-color: transparent;
+   }
+</style>
+<div class="category max-w-315 xct:hidden mx-auto overflow-hidden py-50px">
+   <div class="category-swiper">
+      <div class="swiper-wrapper">
+         {% for block in section.blocks %}
+            {% if block.type == 'category_image' %}
+            
+               <a href="{{ block.settings.category_link }}" class="flex items-center justify-center flex-col border p-4 swiper-slide">
+                  <div class="category-image-container">
+                     <img src="{{ block.settings.image | img_url: 'master' }}">
+                  </div>
+                  <h3 class="font-extrabold uppercase text-xl mt-3">{{ block.settings.category_title }} </h3>
+               </a>
+            
+            {% endif %}
+         {% endfor %}
+      </div>
+   </div>
+   <div class="swiper-button-prev prev-cat w-6 xct:hidden">
+      {% render 'icon-chevron-left' %}
+    </div>
+    <div class="swiper-button-next next-cat w-6 xct:hidden">
+      {% render 'icon-chevron-right' %}
+    </div>
+</div>
+<!-- CATEGORY DESKTOP -->
+<div class="desktop-category-section hidden xct:grid container mx-auto py-100px grid-cols-4 gap-30px">
    {% for block in section.blocks %}
       {% if block.type == 'category_image' %}
-      <div class="category">
-         <a href="{{ block.settings.category_link }}">
-         <h3 class="font-black uppercase">{{ block.settings.category_title }} </h3>
-         <img src="{{ block.settings.image | img_url: 'master' }}">
+      
+         <a href="{{ block.settings.category_link }}" class="flex items-center justify-center flex-col p-4 each-cat transition-all">
+            <div class="category-image-container h-64 flex items-center">
+               <img src="{{ block.settings.image | img_url: 'master' }}">
+            </div>
+            <h3 class="font-extrabold uppercase text-xl pb-2 transition-colors">{{ block.settings.category_title }} </h3>
          </a>
-      </div>
+      
       {% endif %}
    {% endfor %}
-  
-
 </div>
+<script>
+   const categorySwiper = new Swiper('.category-swiper', {
+     slidesPerView: 2,
+     spaceBetween: 15,
+     loop: true,
+     navigation: {
+       nextEl: '.swiper-button-next.next-cat',
+       prevEl: '.swiper-button-prev.prev-cat',
+     },
+ 
+   });
+ </script>
 {% schema %} 
 {
   "name":"Categories",
   "tag":"section",
-  "class":"categories",
+  "class":"categories-section relative",
   "blocks":[
      {
         "name":"Category",

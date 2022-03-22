@@ -1,10 +1,13 @@
 {
-  "name": "Template 404",
   "wrapper": "div#404_template.custom-404[custom-attribute=hello]",
   "sections": {
     "template": {
-      "type": "template-404"
+      "type": "template-404",
+      "settings": {
+      }
     }
   },
-  "order": ["template"]
+  "order": [
+    "template"
+  ]
 }

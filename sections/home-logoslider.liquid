@@ -8,6 +8,12 @@
   .swiper-button-next svg .st0{
     fill: #D5CECE;
   }
+
+  .swiper-button-prev svg,
+  .swiper-button-next svg {
+    width: 24px;
+    height: 24px;
+  }
 </style>
 <div class="container mx-auto relative h-120 flex items-center">
   <div class="max-w-xs xct:max-w-970 mx-auto swiper">
@@ -22,10 +28,10 @@
     </div>
     
   </div>
-  <div class="swiper-button-prev">
+  <div class="swiper-button-prev w-6">
     {% render 'icon-chevron-left' %}
   </div>
-  <div class="swiper-button-next">
+  <div class="swiper-button-next w-6">
     {% render 'icon-chevron-right' %}
   </div>
 </div>

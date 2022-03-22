@@ -24,14 +24,24 @@ module.exports = {
         120: '120px',
         150: '150px',
         300: '300px',
-        970: '970px'
+        315: '315px',
+        970: '970px',
+        1170: '1170px'
+      },
+      padding: {
+        '50px': '50px',
+        '100px': '100px'
       },
 
       colors: {
         'wc-black': '#101010',
+        'wc-yellow': '#eecc2d',
         'btm-bar': '#d8d8d8',
         'logos-bg': '#f0f0f0'
       },
+      gap: {
+        '30px': '30px'
+      }
     },
   },
   plugins: [],

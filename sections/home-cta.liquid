@@ -1,0 +1,41 @@
+<div class="taenamo">
+  <div class="tae bg-gray-200">
+    asdf
+  </div>
+  <div class="tae bg-gray-200">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. At cum vero tenetur ad commodi accusantium aliquam perferendis sunt natus ullam error labore nisi ipsam eum modi, ipsum culpa? Mollitia, voluptas?
+    <h1 class="text-7xl font-bold">asdfasdfsdf</h1>
+  </div>
+</div>
+
+{% schema %} 
+{
+  "name":"CTA",
+  "tag":"section",
+  "class":"cta-section relative",
+  "max_blocks": 2,
+  "blocks":[
+     {
+        "name":"CTA",
+        "type":"cta_image",
+        "settings":[
+           {
+              "type":"image_picker",
+              "id":"image",
+              "label":"Image"
+           },
+           {
+            "type":"text",
+            "id":"button_text",
+            "label":"Button Text"
+           },
+           {
+            "type":"url",
+            "id":"cta_link",
+            "label":"CTA Link"
+           }
+        ]
+     }
+  ]
+}
+{% endschema %}

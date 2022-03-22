@@ -170,8 +170,8 @@
             "type": "cta_image",
             "settings": {
               "image": "shopify:\/\/shop_images\/new_arrivals.jpg",
-              "button_text": "",
-              "cta_link": ""
+              "button_text": "Shop Now",
+              "cta_link": "#"
             }
           }
         },

@@ -1,0 +1,33 @@
+<div class="container">
+  {{ section.settings.click_title }}
+</div>
+{% schema %} 
+{
+  "name":"Click & Collect",
+  "tag":"section",
+  "class":"click-collect-section relative",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "click_title",
+      "default": "<h3>Click & Collect <span>Available</span></h3>",
+      "label": "Click & Collect Text"
+    },
+    {
+      "type":"image_picker",
+      "id":"image",
+      "label":"Image"
+    },
+    {
+      "type":"text",
+      "id":"button_text",
+      "label":"Button Text"
+     },
+    {
+      "type":"url",
+      "id":"click_link",
+      "label":"Button Link"
+     }
+  ]
+}
+{% endschema %}

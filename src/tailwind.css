@@ -52,6 +52,18 @@ body {
   @apply px-4 xl:px-0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6,
+.wc-btn {
   font-family: 'Eurostile';
+  @apply font-extrabold;
+}
+
+.wc-btn {
+  width: 115px;
+  height: 37px;
+}
+
+.wc-btn svg {
+  width: 10px;
+  margin-left: 5px;
 }

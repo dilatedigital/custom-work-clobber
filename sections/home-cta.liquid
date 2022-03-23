@@ -1,11 +1,46 @@
-<div class="taenamo">
-  <div class="tae bg-gray-200">
-    asdf
-  </div>
-  <div class="tae bg-gray-200">
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. At cum vero tenetur ad commodi accusantium aliquam perferendis sunt natus ullam error labore nisi ipsam eum modi, ipsum culpa? Mollitia, voluptas?
-    <h1 class="text-7xl font-bold">asdfasdfsdf</h1>
-  </div>
+<style>
+  .cta-section .wc-btn {
+    bottom: 30px;
+    left: 25px;
+  }
+  .cta-section .cta-last .wc-btn {
+    left: auto;
+    right: 50px;
+  }
+
+  .cta-section .wc-btn:hover svg .st0 {
+    fill: #eecc2d;
+  }
+
+  @media screen and (min-width: 1024px) {
+      .cta-section .wc-btn {
+        width: 177px;
+        height: 56px;
+        bottom: 55px;
+        left: 40px;
+      }
+      .cta-section .cta-last .wc-btn {
+        right: 83px;
+      }
+
+      .cta-section .wc-btn svg {
+        width: 14px;
+      }
+    }
+</style>
+<div class="container mx-auto md:flex lg:justify-between pb-35px xct:pb-50px">
+  {% for block in section.blocks %}
+      {% if block.type == 'cta_image' %}
+      
+         <div class="relative block {% cycle '', 'mt-4 md:mt-0 md:ml-4 lg:ml-0 cta-last' %}">
+            <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt }}" loading="lazy">
+            <a href="{{ block.settings.cta_link }}" class="absolute bg-wc-yellow text-wc-black transition hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center wc-btn wc-btn-yellow uppercase text-sm lg:text-xl">
+              {{ block.settings.button_text }} {% render 'icon-chevron-right' %}
+            </a>
+         </div>
+      
+      {% endif %}
+   {% endfor %}
 </div>
 
 {% schema %} 

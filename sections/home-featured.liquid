@@ -1,0 +1,19 @@
+<div class="container mx-auto pt-35px xct:pt-50px">
+  <h2 class="text-xl uppercase xct:text-3xl leading-none border-b-2 border-wc-black pb-2 xct:pb-4 xct:border-b-3">{{ section.settings.featured_title }}</h2>
+</div>
+
+{% schema %} 
+{
+  "name":"Featured Products",
+  "tag":"section",
+  "class":"featured-workwear-section relative",
+  "settings": [
+    {
+      "type": "text",
+      "id": "featured_title",
+      "default": "Featured Workwear Products",
+      "label": "Featured Workwear Section Title"
+    }
+  ]
+}
+{% endschema %}

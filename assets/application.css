@@ -589,6 +589,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 10;
 }
 
+.z-50 {
+  z-index: 50;
+}
+
 .-m-3 {
   margin: -0.75rem;
 }
@@ -635,6 +639,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 0.75rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -669,6 +677,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-65 {
   height: 65px;
+}
+
+.h-28 {
+  height: 7rem;
 }
 
 .h-64 {
@@ -814,9 +826,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-top-width: 1px;
 }
 
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
 .border-btm-bar {
   --tw-border-opacity: 1;
   border-color: rgb(216 216 216 / var(--tw-border-opacity));
+}
+
+.border-wc-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(16 16 16 / var(--tw-border-opacity));
 }
 
 .bg-white {
@@ -824,9 +845,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-gray-200 {
+.bg-wc-yellow {
   --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+  background-color: rgb(238 204 45 / var(--tw-bg-opacity));
 }
 
 .bg-logos-bg {
@@ -921,6 +942,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.5rem;
 }
 
+.pb-35px {
+  padding-bottom: 35px;
+}
+
+.pt-35px {
+  padding-top: 35px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -948,11 +977,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-7xl {
-  font-size: 4.5rem;
-  line-height: 1;
 }
 
 .text-5xl {
@@ -1094,12 +1118,20 @@ body {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6,
+.wc-btn {
   font-family: 'Eurostile';
+  font-weight: 800;
 }
 
-.hover\:border-8:hover {
-  border-width: 8px;
+.wc-btn {
+  width: 115px;
+  height: 37px;
+}
+
+.wc-btn svg {
+  width: 10px;
+  margin-left: 5px;
 }
 
 .hover\:bg-gray-100:hover {
@@ -1110,6 +1142,11 @@ h1, h2, h3, h4, h5, h6 {
 .hover\:bg-gray-50:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-wc-black:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(16 16 16 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-green-800:hover {
@@ -1125,6 +1162,11 @@ h1, h2, h3, h4, h5, h6 {
 .hover\:text-gray-900:hover {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.hover\:text-wc-yellow:hover {
+  --tw-text-opacity: 1;
+  color: rgb(238 204 45 / var(--tw-text-opacity));
 }
 
 .hover\:opacity-100:hover {
@@ -1157,6 +1199,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (min-width: 768px) {
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .md\:ml-4 {
+    margin-left: 1rem;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -1175,6 +1229,15 @@ h1, h2, h3, h4, h5, h6 {
   .lg\:-translate-x-1\/2 {
     --tw-translate-x: -50%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:justify-between {
+    justify-content: space-between;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -1234,5 +1297,30 @@ h1, h2, h3, h4, h5, h6 {
 
   .xct\:justify-between {
     justify-content: space-between;
+  }
+
+  .xct\:border-b-3 {
+    border-bottom-width: 3px;
+  }
+
+  .xct\:pb-50px {
+    padding-bottom: 50px;
+  }
+
+  .xct\:pt-50px {
+    padding-top: 50px;
+  }
+
+  .xct\:pb-5 {
+    padding-bottom: 1.25rem;
+  }
+
+  .xct\:pb-4 {
+    padding-bottom: 1rem;
+  }
+
+  .xct\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }

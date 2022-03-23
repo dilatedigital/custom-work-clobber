@@ -29,6 +29,7 @@ module.exports = {
         1170: '1170px'
       },
       padding: {
+        '35px': '35px',
         '50px': '50px',
         '100px': '100px'
       },
@@ -41,6 +42,9 @@ module.exports = {
       },
       gap: {
         '30px': '30px'
+      },
+      borderWidth: {
+        '3': '3px'
       }
     },
   },

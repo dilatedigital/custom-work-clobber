@@ -19,6 +19,12 @@
       border: 10px solid #bdbdbd;
       outline-color: transparent;
    }
+
+   .mobile-cat-img-container img {
+      max-width: 100px;
+      height: 100px;
+      object-fit: contain;
+   }
 </style>
 <div class="category max-w-315 xct:hidden mx-auto overflow-hidden py-50px">
    <div class="category-swiper">
@@ -27,7 +33,7 @@
             {% if block.type == 'category_image' %}
             
                <a href="{{ block.settings.category_link }}" class="flex items-center justify-center flex-col border p-4 swiper-slide">
-                  <div class="category-image-container">
+                  <div class="category-image-container mobile-cat-img-container flex items-center h-28">
                      <img src="{{ block.settings.image | img_url: 'master' }}">
                   </div>
                   <h3 class="font-extrabold uppercase text-xl mt-3">{{ block.settings.category_title }} </h3>

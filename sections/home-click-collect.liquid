@@ -1,5 +1,93 @@
-<div class="container">
-  {{ section.settings.click_title }}
+<style>
+  .stripe-bg {
+    height: 191px;
+    object-fit: cover;
+  }
+
+  .click-black-container {
+    height: 202px;
+    transform: translateY(-20px);
+  }
+
+  .click-black-container h3 {
+    color: var(--yellow);
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: normal;
+  }
+
+  .click-black-container span {
+    color: #fff;
+    display: block;
+  }
+
+  .click-black-container img {
+    max-width: 201px;
+  }
+
+  .stripe-bg {
+    width: 360px;
+  }
+
+  .click-collect-section {
+    margin-top: 107px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .stripe-bg {
+        width: 742px;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .click-black-container {
+      height: 250px;
+      max-width: 1120px;
+    }
+    .stripe-bg {
+      height: 250px;
+      width: 995px;
+    }
+    .click-black-container img {
+      max-width: 251px;
+    }
+
+    .click-black-container h3 {
+      font-size: 48px;
+    }
+  }
+
+  @media screen and (min-width: 1170px) {
+    .stripe-bg {
+      width: 100%;
+    }
+
+    .click-black-container img {
+      right: 370px;
+    }
+
+    .click-collect-section {
+      margin-top: 170px;
+    }
+  }
+</style>
+<div class="container mx-auto relative">
+  <div class="px-4">
+    <div class="bg-wc-black mx-auto max-w-360 md:max-w-full click-black-container relative z-50 pt-50px pl-7 xct:flex xct:pt-0 xct:items-center xct:justify-between xct:pl-11 xct:pr-14">
+      <div class="relative z-20">
+        {{ section.settings.click_title }}
+      </div>
+      
+      <a href="{{ section.settings.click_link }}" class="text-wc-black transition hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center wc-btn wc-btn-yellow uppercase text-sm lg:text-xl relative z-20 mt-4">
+        {{ section.settings.button_text }} {% render 'icon-chevron-right' %}
+      </a>
+
+      <img src="{{ section.settings.image | img_url: 'master' }}" loading="lazy" alt="{{ section.settings.image.alt }}" class="absolute bottom-0 right-3 z-10">
+    </div>
+  </div>
+  
+  <div class="stripe-container absolute top-0 h-full">
+    <img src="{{ 'click-bg.jpg' | asset_url }}" loading="lazy" class="stripe-bg">
+  </div>
 </div>
 {% schema %} 
 {
@@ -21,6 +109,7 @@
     {
       "type":"text",
       "id":"button_text",
+      "default": "Shop Now",
       "label":"Button Text"
      },
     {

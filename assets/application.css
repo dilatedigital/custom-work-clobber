@@ -585,12 +585,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 0px;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
+.right-3 {
+  right: 0.75rem;
+}
+
 .z-10 {
   z-index: 10;
 }
 
 .z-50 {
   z-index: 50;
+}
+
+.z-20 {
+  z-index: 20;
 }
 
 .-m-3 {
@@ -687,6 +699,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 16rem;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .h-120 {
   height: 120px;
 }
@@ -729,6 +745,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-315 {
   max-width: 315px;
+}
+
+.max-w-360 {
+  max-width: 360px;
 }
 
 .max-w-xs {
@@ -845,6 +865,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-wc-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(16 16 16 / var(--tw-bg-opacity));
+}
+
 .bg-wc-yellow {
   --tw-bg-opacity: 1;
   background-color: rgb(238 204 45 / var(--tw-bg-opacity));
@@ -940,6 +965,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-2 {
   padding-bottom: 0.5rem;
+}
+
+.pt-50px {
+  padding-top: 50px;
+}
+
+.pl-7 {
+  padding-left: 1.75rem;
 }
 
 .pb-35px {
@@ -1101,6 +1134,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+:root {
+  --black: #1e90ff;
+  --yellow: #eecc2d;
+}
+
 body {
   font-family: 'CamptonBook';
 }
@@ -1132,6 +1170,26 @@ h1, h2, h3, h4, h5, h6,
 .wc-btn svg {
   width: 10px;
   margin-left: 5px;
+}
+
+.wc-btn-yellow {
+  --tw-bg-opacity: 1;
+  background-color: rgb(238 204 45 / var(--tw-bg-opacity));
+}
+
+.wc-btn-yellow:hover {
+  fill: var(--yellow);
+}
+
+@media screen and (min-width: 1024px) {
+  .wc-btn {
+    width: 177px;
+    height: 56px;
+  }
+
+  .wc-btn svg {
+    width: 14px;
+  }
 }
 
 .hover\:bg-gray-100:hover {
@@ -1211,6 +1269,10 @@ h1, h2, h3, h4, h5, h6,
     display: flex;
   }
 
+  .md\:max-w-full {
+    max-width: 100%;
+  }
+
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -1255,6 +1317,10 @@ h1, h2, h3, h4, h5, h6,
     margin-left: 2rem;
   }
 
+  .xct\:ml-0 {
+    margin-left: 0px;
+  }
+
   .xct\:block {
     display: block;
   }
@@ -1295,6 +1361,10 @@ h1, h2, h3, h4, h5, h6,
     max-width: 970px;
   }
 
+  .xct\:items-center {
+    align-items: center;
+  }
+
   .xct\:justify-between {
     justify-content: space-between;
   }
@@ -1303,16 +1373,24 @@ h1, h2, h3, h4, h5, h6,
     border-bottom-width: 3px;
   }
 
+  .xct\:pt-0 {
+    padding-top: 0px;
+  }
+
+  .xct\:pl-11 {
+    padding-left: 2.75rem;
+  }
+
+  .xct\:pr-14 {
+    padding-right: 3.5rem;
+  }
+
   .xct\:pb-50px {
     padding-bottom: 50px;
   }
 
   .xct\:pt-50px {
     padding-top: 50px;
-  }
-
-  .xct\:pb-5 {
-    padding-bottom: 1.25rem;
   }
 
   .xct\:pb-4 {

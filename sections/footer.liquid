@@ -1,0 +1,86 @@
+<div class="bg-wc-black">
+  <div class="container mx-auto">
+    test
+  </div>
+</div>
+{% schema %} 
+{
+  "name":"Footer",
+  "tag":"footer",
+  "class":"custom-footer relative",
+  "settings": [
+    {
+      "type":"text",
+      "id":"shop_workwear_title",
+      "label":"Shop Workwear Title",
+      "default": "Shop Workwear"
+    },
+    {
+      "type": "link_list",
+      "id": "shop_workwear_menu",
+      "label": "Shop Workwear Menu"
+    },
+    {
+      "type":"text",
+      "id":"brands_title",
+      "label":"Brands Title",
+      "default": "Brands"
+    },
+    {
+      "type": "link_list",
+      "id": "brands_menu",
+      "label": "Brands Menu"
+    },
+    {
+      "type":"text",
+      "id":"safety_title",
+      "label":"Safety Title",
+      "default": "Safety"
+    },
+    {
+      "type": "link_list",
+      "id": "safety_menu",
+      "label": "Safety Menu"
+    },
+    {
+      "type":"text",
+      "id":"useful_links_title",
+      "label":"Useful Links Title",
+      "default": "Useful Links"
+    },
+    {
+      "type": "link_list",
+      "id": "useful_links_menu",
+      "label": "Useful Links Menu"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_copy",
+      "label": "Show Copyright"
+    },
+    {
+      "type": "url",
+      "id": "privacy_policy_url",
+      "label": "Privacy Policy Link"
+    },
+    {
+      "type": "url",
+      "id": "terms_url",
+      "label": "Terms & Conditions Link"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Payment Method",
+      "type": "payment_method_image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "payment_method",
+          "label": "Payment Method Image"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

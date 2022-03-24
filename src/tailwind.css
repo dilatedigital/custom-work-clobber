@@ -43,6 +43,11 @@
   }
 }
 
+:root {
+  --black: #1e90ff;
+  --yellow: #eecc2d;
+}
+
 body {
   font-family: 'CamptonBook';
 }
@@ -66,4 +71,23 @@ h1, h2, h3, h4, h5, h6,
 .wc-btn svg {
   width: 10px;
   margin-left: 5px;
+}
+
+.wc-btn-yellow {
+  @apply bg-wc-yellow;
+}
+
+.wc-btn-yellow:hover {
+  fill: var(--yellow);
+}
+
+@media screen and (min-width: 1024px) {
+  .wc-btn {
+    width: 177px;
+    height: 56px;
+  }
+
+  .wc-btn svg {
+    width: 14px;
+  }
 }

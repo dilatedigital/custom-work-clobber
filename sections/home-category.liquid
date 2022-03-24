@@ -5,7 +5,7 @@
    }
 
    .each-cat:hover h3 {
-      color: #eecc2d;
+      color: var(--yellow);
    }
 
    .each-cat {
@@ -34,7 +34,7 @@
             
                <a href="{{ block.settings.category_link }}" class="flex items-center justify-center flex-col border p-4 swiper-slide">
                   <div class="category-image-container mobile-cat-img-container flex items-center h-28">
-                     <img src="{{ block.settings.image | img_url: 'master' }}">
+                     <img src="{{ block.settings.image | img_url: 'master' }}" loading="lazy" alt="{{ block.settings.image.alt }}">
                   </div>
                   <h3 class="font-extrabold uppercase text-xl mt-3">{{ block.settings.category_title }} </h3>
                </a>
@@ -57,7 +57,7 @@
       
          <a href="{{ block.settings.category_link }}" class="flex items-center justify-center flex-col p-4 each-cat transition-all">
             <div class="category-image-container h-64 flex items-center">
-               <img src="{{ block.settings.image | img_url: 'master' }}">
+               <img src="{{ block.settings.image | img_url: 'master' }}" loading="lazy" alt="{{ block.settings.image.alt }}">
             </div>
             <h3 class="font-extrabold uppercase text-xl pb-2 transition-colors">{{ block.settings.category_title }} </h3>
          </a>

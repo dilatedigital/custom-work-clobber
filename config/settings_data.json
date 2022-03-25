@@ -181,6 +181,37 @@
         ],
         "settings": {
         }
+      },
+      "home-featured": {
+        "type": "home-featured",
+        "settings": {
+          "featured_title": "Featured Workwear Products"
+        }
+      },
+      "home-click-collect": {
+        "type": "home-click-collect",
+        "settings": {
+          "click_title": "<h3>Click & Collect <span>Available<\/span>\n<\/h3>",
+          "image": "shopify:\/\/shop_images\/click-img.png",
+          "button_text": "Shop Now",
+          "click_link": "#"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "shop_workwear_title": "Shop Workwear",
+          "shop_workwear_menu": "",
+          "brands_title": "Brands",
+          "brands_menu": "",
+          "safety_title": "Safety",
+          "safety_menu": "",
+          "useful_links_title": "Useful Links",
+          "useful_links_menu": "",
+          "show_copy": false,
+          "privacy_policy_url": "",
+          "terms_url": ""
+        }
       }
     },
     "content_for_index": [

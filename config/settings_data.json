@@ -201,16 +201,16 @@
         "type": "footer",
         "settings": {
           "shop_workwear_title": "Shop Workwear",
-          "shop_workwear_menu": "",
+          "shop_workwear_menu": "shop-workwear-menu",
           "brands_title": "Brands",
-          "brands_menu": "",
+          "brands_menu": "brands-menu",
           "safety_title": "Safety",
-          "safety_menu": "",
+          "safety_menu": "safety-menu",
           "useful_links_title": "Useful Links",
-          "useful_links_menu": "",
-          "show_copy": false,
-          "privacy_policy_url": "",
-          "terms_url": ""
+          "useful_links_menu": "useful-links",
+          "show_copy": true,
+          "privacy_policy_url": "#",
+          "terms_url": "#"
         }
       }
     },

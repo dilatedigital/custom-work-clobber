@@ -240,6 +240,52 @@
       },
       "footer": {
         "type": "footer",
+        "blocks": {
+          "dcfb880f-b434-40eb-9acf-4ccaadb393f9": {
+            "type": "payment_method_image",
+            "settings": {
+              "payment_method": "shopify:\/\/shop_images\/visa.png"
+            }
+          },
+          "b59902d9-43f2-40e3-bac1-054c11418e81": {
+            "type": "payment_method_image",
+            "settings": {
+              "payment_method": "shopify:\/\/shop_images\/paypal.png"
+            }
+          },
+          "39f15ebc-9d6e-4d3d-aaad-1f1b46f7a12a": {
+            "type": "payment_method_image",
+            "settings": {
+              "payment_method": "shopify:\/\/shop_images\/master-card.png"
+            }
+          },
+          "751632d6-f363-4e18-bbf0-5d508b083c7f": {
+            "type": "payment_method_image",
+            "settings": {
+              "payment_method": "shopify:\/\/shop_images\/american-express.png"
+            }
+          },
+          "f1cc7874-3baa-432f-8079-dea9e4204f39": {
+            "type": "payment_method_image",
+            "settings": {
+              "payment_method": "shopify:\/\/shop_images\/google-pay.png"
+            }
+          },
+          "37d24c7b-a60c-4a39-a626-15b7d1a2c751": {
+            "type": "payment_method_image",
+            "settings": {
+              "payment_method": "shopify:\/\/shop_images\/apple-pay.png"
+            }
+          }
+        },
+        "block_order": [
+          "dcfb880f-b434-40eb-9acf-4ccaadb393f9",
+          "b59902d9-43f2-40e3-bac1-054c11418e81",
+          "39f15ebc-9d6e-4d3d-aaad-1f1b46f7a12a",
+          "751632d6-f363-4e18-bbf0-5d508b083c7f",
+          "f1cc7874-3baa-432f-8079-dea9e4204f39",
+          "37d24c7b-a60c-4a39-a626-15b7d1a2c751"
+        ],
         "settings": {
           "shop_workwear_title": "Shop Workwear",
           "shop_workwear_menu": "shop-workwear-menu",

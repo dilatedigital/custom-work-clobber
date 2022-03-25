@@ -1,7 +1,4 @@
 <style>
-  .hero-slider {
-    max-width: 1920px;
-  }
   .mobile-hero {
     min-height: 616px;
   }
@@ -10,13 +7,15 @@
     height: 64px;
   }
 
-  .mobile-hero-texts-btn .wc-btn svg {
+  .mobile-hero-texts-btn .wc-btn svg,
+  .hero-slider .wc-btn svg {
     width: 16px;
     fill: #fff;
     margin-left: 10px;
   }
 
-  .mobile-hero-text h1 {
+  .mobile-hero-text h1,
+  .desktop-hero-texts-btn h1 {
     font-size: 50px;
     color: #fff;
     background-color: #101010;
@@ -27,7 +26,8 @@
     box-shadow: -10px 0 0 #101010;
   }
 
-  .mobile-hero-text span {
+  .mobile-hero-text span,
+  .desktop-hero-texts-btn span {
     font-size: 13px;
     color: var(--yellow);
     font-family: 'Eurostile';
@@ -46,6 +46,112 @@
     padding-left: 30px;
   }
 
+  .hero-slider {
+    background-color: var(--yellow);
+    min-height: 625px;
+    max-width: 1920px;
+  }
+
+  .hero-slider .swiper-wrapper img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .container-height,
+  .hero-slider .swiper-wrapper img {
+    height: 625px;
+  }
+
+  .desktop-hero-texts-btn h1 {
+    font-size: 100px;
+    line-height: 90px;
+    padding-right: 20px;
+    box-shadow: -20px 0 0 #101010;
+  }
+
+  .desktop-hero-texts-btn span {
+    font-size: 22px;
+    letter-spacing: 2px;
+    box-shadow: -20px 0 0 #101010;
+  }
+
+  .desktop-hero-texts-btn {
+    padding-top: 100px;
+    padding-left: 20px;
+  }
+
+  .hero-slider .wc-btn:hover {
+    opacity: 0.99;
+  }
+
+  .hero-nav-inner {
+    max-width: 160px;
+  }
+
+  .next-hero,
+  .prev-hero {
+    width: 70px;
+    height: 70px;
+  }
+
+  .next-hero svg,
+  .prev-hero svg{ 
+    width: 28px;
+  }
+
+  .hero-slider .wc-btn {
+    width: 200px;
+    height: 64px;
+  }
+
+  .slide-number {
+    font-weight: 700;
+    top: 115px;
+  }
+  
+  .desktop-right-text .sub,
+  .slide-number {
+    font-family: 'Eurostile';
+  }
+
+  .desktop-right-text .sub {
+    font-weight: 800;
+  }
+
+  .desktop-right-text .sup {
+    font-size: 14px;
+  }
+
+  .desktop-right-text h2 {
+    font-size: 37px;
+  }
+
+  .desktop-right-text:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 44px;
+    height: 4px;
+    background: #101010;
+    top: -23px;
+  }
+
+  .desktop-right-text {
+    bottom: 160px;
+    right: 0;
+  }
+
+  .hero-slider .wc-btn {
+    right: 65px;
+    bottom: 65px;
+  }
+
+  .hero-nav {
+    transform: translateY(-135px);
+    z-index: 3;
+  }
+
+
   @media screen and (min-width: 390px) {
     .mobile-hero-text h1 {
       font-size: 58px;
@@ -59,10 +165,10 @@
       height: 616px;
     }
   }
-  
 </style>
-<div class="mobile-hero relative flex items-center">
-  <img src="{{ section.settings.mobile_hero_image | img_url: 'master'  }}" class="absolute top-0 left-0">
+<!-- MOBILE HERO -->
+<div class="mobile-hero relative flex items-center xct:hidden">
+  <img src="{{ section.settings.mobile_hero_image | img_url: 'master'  }}" class="absolute top-0 left-0" alt="{{ section.settings.mobile_hero_image.alt }}">
   <div class="mobile-hero-texts-btn relative z-10">
     {% if section.settings.mobile_hero_title %}
     <div class="mobile-hero-text uppercase">
@@ -76,16 +182,61 @@
     {% endif %}
   </div>
 </div>
-<div class="hidden hero-slider mx-auto">
-  <p>Home Hero</p>
-  {% assign counter = 0 %}
-  {% for block in section.blocks %}
-    {% assign counter = counter | plus: 1 %}
-    
-    <p>0{{ counter }} / 0{{ section.blocks.size }}</p>
-  {% endfor %}
-  
+<!-- DESKTOP HERO -->
+<div class="hidden xct:block hero-slider mx-auto overflow-hidden relative">
+  <div class="swiper-wrapper">
+    {% assign counter = 0 %}
+      {% for block in section.blocks %}
+        {% assign counter = counter | plus: 1 %}
+        {% if block.type == 'hero_slider' %}
+          <div class="relative swiper-slide">
+            <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt }}" class="absolute top-0 left-0">
+            <div class="container container-height mx-auto relative">
+              <p class="slide-number absolute right-0 transform -rotate-90">0{{ counter }} / 0{{ section.blocks.size }}</p>
+              <div class="desktop-hero-texts-btn uppercase">
+                {% if block.settings.slide_title != blank %}
+                  <div class="desktop-hero-text">
+                    {{ block.settings.slide_title }}
+                  </div>
+                {% endif %}
+              </div>
+              {% if block.settings.slide_right_text != blank %}
+                <div class="desktop-right-text uppercase absolute right-0">
+                  {{ block.settings.slide_right_text }}
+                </div>
+              {% endif %}
+              {% if block.settings.button_title != blank %}
+                <a href="{{ block.settings.slide_button_url }}" class="bg-wc-black text-white transition flex items-center justify-center wc-btn uppercase lg:text-xl absolute">
+                  {{ block.settings.button_title }} {% render 'icon-chevron-right' %}
+                </a>
+              {% endif %}
+            </div>
+          </div>   
+        {% endif %}
+      {% endfor %}
+  </div>
+  <div class="hero-nav container mx-auto relative">
+    <div class="hero-nav-inner z-20 flex justify-between absolute w-full">
+      <div class="prev-hero w-6 border border-wc-black flex items-center justify-center">
+        {% render 'icon-chevron-left' %}
+      </div>
+      <div class="next-hero w-6 border border-wc-black flex items-center justify-center">
+        {% render 'icon-chevron-right' %}
+      </div>
+    </div>
+  </div>
 </div>
+<script>
+  const heroSlider = new Swiper('.hero-slider', {
+     slidesPerView: 1,
+     loop: true,
+     navigation: {
+       nextEl: '.next-hero',
+       prevEl: '.prev-hero',
+     },
+ 
+   });
+</script>
 {% schema %} 
 {
   "name":"Home Hero",

@@ -14,6 +14,10 @@
       "home-hero": {
         "type": "home-hero",
         "settings": {
+          "mobile_hero_title": "<h1>Hi-Vis Workwear\n<span>Standout performance<\/span>\n<\/h1>",
+          "mobile_button_title": "Shop Now",
+          "mobile_button_link": "#",
+          "mobile_hero_image": "shopify:\/\/shop_images\/banner-mobile_1.jpg"
         }
       },
       "home-logoslider": {

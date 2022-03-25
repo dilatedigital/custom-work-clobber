@@ -1,9 +1,14 @@
-<div class="hero-slider">
+<style>
+  .hero-slider {
+    max-width: 1920px;
+  }
+</style>
+<div class="hero-slider mx-auto">
   <p>Home Hero</p>
   {% assign counter = 0 %}
   {% for block in section.blocks %}
     {% assign counter = counter | plus: 1 %}
-    {{ block.settings.image | img_url: '1024x' }}
+    
     <p>0{{ counter }} / 0{{ section.blocks.size }}</p>
   {% endfor %}
   
@@ -14,28 +19,59 @@
   "tag":"section",
   "class":"home-hero",
   "max_blocks":3,
+  "settings":[
+     {
+        "type":"html",
+        "id":"mobile_hero_title",
+        "label":"Mobile"
+     },
+     {
+        "type":"text",
+        "id":"mobile_button_title",
+        "label":"Mobile Hero Button Title"
+     },
+     {
+        "type":"url",
+        "id":"mobile_button_link",
+        "label":"Mobile Hero Button Title"
+     },
+     {
+        "type":"image_picker",
+        "id":"mobile_hero_image",
+        "label":"Mobile Hero Image"
+     }
+  ],
   "blocks":[
      {
-        "name":"Slide",
-        "type":"slide",
+        "name":"Hero Slider",
+        "type":"hero_slider",
         "settings":[
            {
               "type":"image_picker",
               "id":"image",
               "label":"Image"
+           },
+           {
+              "type":"html",
+              "id":"slide_title",
+              "label":"Slide Title"
+           },
+           {
+              "type":"html",
+              "id":"slide_right_text",
+              "label":"Slide Right Texts"
+           },
+           {
+              "type":"text",
+              "id":"button_title",
+              "label":"Slide Button Title"
+           },
+           {
+              "type":"url",
+              "id":"slide_button_url",
+              "label":"Slide Button Link"
            }
         ]
-     },
-     {
-       "name": "Slide Title",
-       "type": "slide_title",
-       "settings": [
-          {
-            "type": "richtext",
-            "id": "slide_title",
-            "label": "Slide Title"
-          }
-       ]
      }
   ]
 }

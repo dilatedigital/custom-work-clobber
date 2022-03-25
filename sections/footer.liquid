@@ -1,6 +1,107 @@
-<div class="bg-wc-black">
-  <div class="container mx-auto">
-    test
+<style>
+  .footer-menu-container div:first-child,
+  .safe-useful-container > div:first-child {
+    min-width: 200px;
+  }
+  .payment-methods img{
+    max-width: 57px;
+  }
+
+  .payment-methods img.amex {
+    max-width: 45px;
+  }
+
+  .footer-menus {
+    font-size: 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .payment-methods img,
+    .payment-methods img.amex {
+      max-width: 100%
+    }
+    .payment-methods {
+      max-width: 525px;
+    }
+  }
+
+  @media screen and (min-width: 1170px) {
+    .footer-menu-container div:first-child {
+      min-width: auto;
+      margin-right: 40px;
+    }
+  }
+</style>
+
+<div class="bg-wc-black pt-11 pb-16 xct:pt-20">
+  <div class="container footer-menus mx-auto md:pb-50px md:border-b md:border-white md:border-opacity-30 md:flex md:flex-wrap">
+    <!-- SHOP WORKWEAR -->
+    <div class="md:mr-9 xct:mr-20">
+      <h5 class="uppercase text-wc-yellow mb-4 xct:mb-10">{{ section.settings.shop_workwear_title }}</h5>
+      <div class="footer-menu-container flex">
+        {% for link in section.settings.shop_workwear_menu.links %}
+            {% assign r = forloop.index0 | modulo: 8  %}
+            {% if r == 0  %}
+                <div class="flex flex-col">
+            {% endif %}
+              <a href="{{ link.url }}" 
+                  class="text-white hover:text-wc-yellow">{{ link.title }}</a>
+            {% if r == 7 or forloop.last %}
+                </div> 
+            {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    <!-- BRANDS -->
+    <div class="mt-9 md:mt-0 xct:mr-20">
+      <h5 class="uppercase text-wc-yellow mb-4 xct:mb-10">{{ section.settings.brands_title }}</h5>
+      <div class="footer-menu-container flex">
+        {% for link in section.settings.brands_menu.links %}
+            {% assign r = forloop.index0 | modulo: 8  %}
+            {% if r == 0  %}
+                <div class="flex flex-col">
+            {% endif %}
+              <a href="{{ link.url }}" 
+                  class="text-white hover:text-wc-yellow">{{ link.title }}</a>
+            {% if r == 7 or forloop.last %}
+                </div> 
+            {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    <!-- SAFETY AND USEFUL LINKS-->
+    <div class="safe-useful-container pb-50px md:pb-0 flex mt-9 border-b border-white border-opacity-30 md:border-0 xct:mt-0">
+      <div class="xct:mr-20">
+        <h5 class="uppercase text-wc-yellow mb-4 xct:mb-10">{{ section.settings.safety_title }}</h5>
+        <div class="footer-menu-container flex flex-col">
+          {% for link in section.settings.safety_menu.links %}
+            <a href="{{ link.url }}" class="text-white hover:text-wc-yellow">{{ link.title }}</a>
+          {% endfor %}
+        </div>
+      </div>
+      <div>
+        <h5 class="uppercase text-wc-yellow mb-4 xct:mb-10">{{ section.settings.useful_links_title }}</h5>
+        <div class="footer-menu-container flex flex-col">
+          {% for link in section.settings.useful_links_menu.links %}
+            <a href="{{ link.url }}" class="text-white hover:text-wc-yellow">{{ link.title }}</a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mx-auto payment-methods flex justify-between py-7 xct:pt-50px">
+    {% for block in section.blocks %}
+      {% if block.type == 'payment_method_image' %}
+      <img src="{{ block.settings.payment_method | img_url: 'master' }}" loading="lazy" alt="{{ block.settings.payment_method.image.alt}}" class="{% cycle 'visa', 'paypal', 'mastercard', 'amex', 'googlepay', 'applepay' %}">
+      {% endif %}
+    {% endfor %}
+  </div>
+  <div class="container mx-auto copyright-container text-center">
+    {% if section.settings.show_copy %}
+      <p class="text-white">Copyright &copy; {{ "now" | date: "%Y" }} {{ shop.name }}. All Rights Reserved. | <a href="{{ section.settings.privacy_policy_url }}" class="hover:text-wc-yellow">Privacy Policy</a> | <a href="{{ section.settings.terms_url }}" class="hover:text-wc-yellow">Terms & Conditions</a></p>
+      <p class="text-white">Website designed & built by <a href="https://www.dilate.com.au/website-design/" target="_blank" class="hover:text-wc-yellow">Dilate Digital</a></p>
+    {% endif %}
+    
   </div>
 </div>
 {% schema %} 

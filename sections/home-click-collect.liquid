@@ -31,6 +31,7 @@
 
   .click-collect-section {
     margin-top: 107px;
+    margin-bottom: 50px;
   }
 
   @media screen and (min-width: 768px) {
@@ -41,11 +42,11 @@
   @media screen and (min-width: 1024px) {
     .click-black-container {
       height: 250px;
-      max-width: 1120px;
+      max-width: 840px;
     }
     .stripe-bg {
       height: 250px;
-      width: 995px;
+      width: 880px;
     }
     .click-black-container img {
       max-width: 251px;
@@ -67,12 +68,19 @@
 
     .click-collect-section {
       margin-top: 170px;
+      margin-bottom: 100px;
+    }
+    .stripe-bg {
+      width: 100%;
+    }
+    .click-black-container {
+      max-width: 1120px;
     }
   }
 </style>
 <div class="container mx-auto relative">
   <div class="px-4">
-    <div class="bg-wc-black mx-auto max-w-360 md:max-w-full click-black-container relative z-50 pt-50px pl-7 xct:flex xct:pt-0 xct:items-center xct:justify-between xct:pl-11 xct:pr-14">
+    <div class="bg-wc-black mx-auto lg:mx-0 xct:mx-auto max-w-360 md:max-w-full click-black-container relative z-50 pt-50px pl-7 xct:flex xct:pt-0 xct:items-center xct:justify-between xct:pl-11 xct:pr-14">
       <div class="relative z-20">
         {{ section.settings.click_title }}
       </div>

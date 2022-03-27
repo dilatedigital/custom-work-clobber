@@ -38,14 +38,20 @@ module.exports = {
       colors: {
         'wc-black': '#101010',
         'wc-yellow': '#eecc2d',
+        'wc-orange': '#f7791d',
         'btm-bar': '#d8d8d8',
-        'logos-bg': '#f0f0f0'
+        'logos-bg': '#f0f0f0',
+        'cart-gray-ac': "#acacac"
       },
       gap: {
         '30px': '30px'
       },
       borderWidth: {
         '3': '3px'
+      },
+      fontFamily: {
+        'euro': ['Eurostile', 'system-ui'],
+        'campton': ['CamptonBook', 'system-ui']
       }
     },
   },

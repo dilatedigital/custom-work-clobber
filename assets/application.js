@@ -25,7 +25,6 @@ function matchHeight(el){
       getDivs[i].style.height = tallest + "px";
   }
 
-  console.log(heights);
 }
 
 matchHeight("each-cat");

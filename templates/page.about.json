@@ -1,0 +1,18 @@
+{
+  "sections": {
+    "template": {
+      "type": "template-about",
+      "settings": {
+      }
+    },
+    "inner-banner": {
+      "type": "inner-banner",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "template",
+    "inner-banner"
+  ]
+}

@@ -9,10 +9,17 @@
       "type": "inner-banner",
       "settings": {
       }
+    },
+    "faq-title": {
+      "type": "faq-title",
+      "settings": {
+
+      }
     }
   },
   "order": [
     "template",
-    "inner-banner"
+    "inner-banner",
+    "faq-title"
   ]
 }

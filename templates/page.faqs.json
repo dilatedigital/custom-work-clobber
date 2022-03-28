@@ -8,7 +8,7 @@
       }
     },
     "template": {
-      "type": "template-page",
+      "type": "template-faqs",
       "settings": {
         "faqs_title": "Frequently Asked Questions"
       }

@@ -11,10 +11,16 @@
         "inner_banner_title": "Faqs & Deliveries",
         "inner_banner_image": "shopify:\/\/shop_images\/faqs-inner-banner.jpg"
       }
+    },
+    "faq-title": {
+      "type": "faq-title",
+      "settings": {
+      }
     }
   },
   "order": [
     "template",
-    "inner-banner"
+    "inner-banner",
+    "faq-title"
   ]
 }

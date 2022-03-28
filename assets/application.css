@@ -1156,6 +1156,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.25rem;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
@@ -1570,6 +1575,10 @@ h1, h2, h3, h4, h5, h6,
 
   .xct\:hidden {
     display: none;
+  }
+
+  .xct\:h-430 {
+    height: 430px;
   }
 
   .xct\:w-full {

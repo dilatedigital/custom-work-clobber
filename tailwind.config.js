@@ -15,6 +15,7 @@ module.exports = {
       height: {
         65: '65px',
         120: '120px',
+        430: '430px'
       },
 
       screens: {

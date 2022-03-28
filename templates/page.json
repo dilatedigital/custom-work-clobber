@@ -4,9 +4,13 @@
       "type": "template-page",
       "settings": {
       }
+    },
+    "inner-banner": {
+      "type": "inner-banner"
     }
   },
   "order": [
-    "template"
+    "template",
+    "inner-banner"
   ]
 }

@@ -1,0 +1,52 @@
+<h3>{{ section.settings.faq_title }}</h3>
+<div class="accordion">
+  {% for block in section.blocks %}
+    {% if block.type == 'faq_block' %}  
+      <div class="question">
+        <h4>{{ block.settings.each_block_title }}</h4>
+      </div>
+      <div class="answer">
+        {{ block.settings.each_block_content }}
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
+{% schema %} 
+{
+  "name":"FAQ Title",
+  "settings": [
+    {
+      "type":"text",
+      "id":"faq_title",
+      "label":"FAQ Title"
+     }
+  ],
+  "blocks": [
+    {
+      "name": "Each FAQ block",
+      "type": "faq_block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "each_block_title",
+          "label": "Each Block Title"
+        },
+        {
+          "type": "richtext",
+          "id": "each_block_content",
+          "label": "Each Block Content"
+        }
+      ]
+    }
+  ],
+  "presets": [
+     {
+       "name": "FAQ"
+     }
+  ],
+  "templates": [
+     "page"
+  ]
+}
+{% endschema %}

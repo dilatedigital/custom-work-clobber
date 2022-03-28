@@ -6,7 +6,9 @@
       }
     },
     "inner-banner": {
-      "type": "inner-banner"
+      "type": "inner-banner",
+      "settings": {
+      }
     }
   },
   "order": [

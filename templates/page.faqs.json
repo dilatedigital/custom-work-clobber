@@ -1,10 +1,5 @@
 {
   "sections": {
-    "template": {
-      "type": "template-page",
-      "settings": {
-      }
-    },
     "inner-banner": {
       "type": "inner-banner",
       "settings": {
@@ -12,15 +7,80 @@
         "inner_banner_image": "shopify:\/\/shop_images\/faqs-inner-banner.jpg"
       }
     },
+    "template": {
+      "type": "template-page",
+      "settings": {
+        "faqs_title": "Frequently Asked Questions"
+      }
+    },
     "faq-title": {
       "type": "faq-title",
+      "blocks": {
+        "80ade25e-b72e-48c1-9fef-cedbaf4591f1": {
+          "type": "faq_block",
+          "settings": {
+            "each_block_title": "How can I get contact with Work Clobber",
+            "each_block_content": "<p>Cras sodales felis arcu, ut efficitur enim molestie et. Aenean tincidunt pretium placerat. Maecenas iaculis turpis eget dignissim tempus. Nam sit amet aliquet turpis. Curabitur a pharetra magna, posuere gravida libero. Etiam tempus fermentum sapien. Vestibulum congue in est ut rhoncus. Aliquam erat volutpat. Proin lectus enim, interdum sit amet ante sit amet, maximus ornare neque. Nunc rutrum fermentum turpis. In pulvinar felis eget nunc venenatis ullamcorper. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean placerat lorem in tristique luctus.<\/p>"
+          }
+        },
+        "1ee08c78-378a-433d-8a29-986bf7c7509d": {
+          "type": "faq_block",
+          "settings": {
+            "each_block_title": "Test 2",
+            "each_block_content": "<p>asdfffff<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "80ade25e-b72e-48c1-9fef-cedbaf4591f1",
+        "1ee08c78-378a-433d-8a29-986bf7c7509d"
+      ],
       "settings": {
+        "faq_title": "General"
+      }
+    },
+    "164845538230536dd2": {
+      "type": "faq-title",
+      "blocks": {
+        "d852aadd-322b-4cc0-8ea7-b35d5a239f92": {
+          "type": "faq_block",
+          "settings": {
+            "each_block_title": "Shipping title 1",
+            "each_block_content": "<p>Test content for shipping title 1<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "d852aadd-322b-4cc0-8ea7-b35d5a239f92"
+      ],
+      "settings": {
+        "faq_title": "Shipping and Delivery"
+      }
+    },
+    "1648455476d5b63fbe": {
+      "type": "faq-title",
+      "blocks": {
+        "9e231f0c-12d8-4dfa-928c-43f7e8a960d5": {
+          "type": "faq_block",
+          "settings": {
+            "each_block_title": "Wew",
+            "each_block_content": "<p>hehhehehehehehehehe<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "9e231f0c-12d8-4dfa-928c-43f7e8a960d5"
+      ],
+      "settings": {
+        "faq_title": "Awesome New FAQ Title"
       }
     }
   },
   "order": [
-    "template",
     "inner-banner",
-    "faq-title"
+    "template",
+    "faq-title",
+    "164845538230536dd2",
+    "1648455476d5b63fbe"
   ]
 }

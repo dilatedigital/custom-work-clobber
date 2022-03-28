@@ -693,16 +693,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 1.25rem;
 }
 
-.ml-2 {
-  margin-left: 0.5rem;
-}
-
 .mt-6 {
   margin-top: 1.5rem;
 }
 
 .mt-16 {
   margin-top: 4rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
 }
 
 .block {
@@ -765,6 +765,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 5rem;
 }
 
+.h-11 {
+  height: 2.75rem;
+}
+
 .h-60 {
   height: 15rem;
 }
@@ -775,10 +779,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-4 {
   height: 1rem;
-}
-
-.h-11 {
-  height: 2.75rem;
 }
 
 .w-screen {
@@ -950,11 +950,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-wc-black {
   --tw-border-opacity: 1;
   border-color: rgb(16 16 16 / var(--tw-border-opacity));
-}
-
-.border-gray-600 {
-  --tw-border-opacity: 1;
-  border-color: rgb(75 85 99 / var(--tw-border-opacity));
 }
 
 .border-opacity-30 {
@@ -1228,11 +1223,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(172 172 172 / var(--tw-text-opacity));
 }
 
-.text-gray-600 {
-  --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity));
-}
-
 .text-wc-orange {
   --tw-text-opacity: 1;
   color: rgb(247 121 29 / var(--tw-text-opacity));
@@ -1459,16 +1449,8 @@ h1, h2, h3, h4, h5, h6,
     display: flex;
   }
 
-  .md\:w-80 {
-    width: 20rem;
-  }
-
   .md\:max-w-full {
     max-width: 100%;
-  }
-
-  .md\:flex-row {
-    flex-direction: row;
   }
 
   .md\:flex-wrap {
@@ -1527,10 +1509,6 @@ h1, h2, h3, h4, h5, h6,
 
   .lg\:justify-between {
     justify-content: space-between;
-  }
-
-  .lg\:whitespace-normal {
-    white-space: normal;
   }
 
   .lg\:text-xl {

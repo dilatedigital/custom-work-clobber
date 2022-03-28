@@ -1,0 +1,22 @@
+<div>
+  {{ section.settings.inner_banner_title }}
+</div>
+{% schema %} 
+{
+  "name":"Inner Banner",
+  "tag":"section",
+  "class":"inner-banner relative",
+  "settings": [
+    {
+      "type": "text",
+      "id": "inner_banner_title",
+      "label": "Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "inner_banner_image",
+      "label": "Inner Banner Image"
+    }
+  ]
+}
+{% endschema %}

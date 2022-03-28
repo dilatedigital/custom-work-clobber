@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "template": {
+      "type": "template-page"
+    },
+    "inner-banner": {
+      "type": "inner-banner"
+    }
+  },
+  "order": ["template", "inner-banner"]
+}

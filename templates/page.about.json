@@ -8,6 +8,8 @@
     "inner-banner": {
       "type": "inner-banner",
       "settings": {
+        "inner_banner_title": "ABOUT US",
+        "inner_banner_image": "shopify:\/\/shop_images\/faqs-inner-banner.jpg"
       }
     },
     "short-summary": {

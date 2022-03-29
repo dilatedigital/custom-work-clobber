@@ -9,10 +9,15 @@
       "type": "inner-banner",
       "settings": {
       }
+    },
+    "short-summary": {
+      "type": "short-summary",
+      "settings": {}
     }
   },
   "order": [
     "template",
-    "inner-banner"
+    "inner-banner",
+    "short-summary"
   ]
 }

@@ -1,0 +1,23 @@
+<div class="container mx-auto pt-50px xct:pt-100px">
+  {{ section.settings.short_summary }}
+</div>
+{% schema %} 
+{
+  "name":"FAQ Title",
+  "settings": [
+    {
+      "type":"textarea",
+      "id":"short_summary",
+      "label":"Short Summary"
+     }
+  ],
+  "presets": [
+     {
+       "name": "About Short Summary"
+     }
+  ],
+  "templates": [
+     "page"
+  ]
+}
+{% endschema %}

@@ -1,16 +1,32 @@
-<h3>{{ section.settings.faq_title }}</h3>
-<div class="accordion">
-  {% for block in section.blocks %}
-    {% if block.type == 'faq_block' %}  
-      <div class="question">
-        <h4>{{ block.settings.each_block_title }}</h4>
-      </div>
-      <div class="answer">
-        {{ block.settings.each_block_content }}
-      </div>
-    {% endif %}
-  {% endfor %}
+<style>
+  .faqs-container {
+    max-width: 970px;
+  }
+  .question svg {
+    fill: var(--yellow);
+    max-width: 10px;
+  }
+</style>
+<div class="container mx-auto pb-50px xct:pb-20 faqs-container">
+  <h3 class="uppercase text-2xl border-b-3 border-wc-black pb-5">{{ section.settings.faq_title }}</h3>
+  <div class="accordion">
+    {% for block in section.blocks %}
+      {% if block.type == 'faq_block' %}
+        <div class="border-b border-gray-400 py-6 accordion-item">
+          <div class="question flex justify-between items-center">
+            <h4 class="font-campton text-lg font-bold">{{ block.settings.each_block_title }}</h4>
+            {% render 'icon-chevron-right' %}
+          </div>
+          <div class="answer pt-5 pl-10 hidden transition">
+            {{ block.settings.each_block_content }}
+          </div>
+        </div>
+        
+      {% endif %}
+    {% endfor %}
+  </div>
 </div>
+
 
 {% schema %} 
 {

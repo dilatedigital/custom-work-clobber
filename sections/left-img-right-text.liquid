@@ -1,0 +1,48 @@
+<style>
+  @media screen and (min-width: 1170px) {
+    .right-text-container {
+      max-width: 440px;
+      padding-top: 45px;
+    }
+
+    .left-image {
+      max-width: 670px;
+    }
+  }
+</style>
+<div class="container mx-auto py-50px xct:py-100px lg:flex lg:items-start xct:justify-between">
+  {% if section.settings.left_image != blank %}
+    <img src="{{ section.settings.left_image | img_url: 'master' }}" alt="{{ section.settings.left_image.alt }}" loading="lazy" class="mb-6 lg:mb-0 left-image">
+  {% endif %}
+  {% if section.settings.right_text != blank %}
+    <div class="text-lg lg:ml-12 xct:ml-0 righ-text-container">
+      {{ section.settings.right_text }}
+    </div>
+  {% endif %}
+  
+</div>
+{% schema %} 
+{
+  "name":"Left Image Right Text",
+  "settings": [
+    {
+      "type":"richtext",
+      "id":"right_text",
+      "label":"Right Text"
+    },
+    {
+      "type": "image_picker",
+      "id": "left_image",
+      "label": "Left Image"
+    }
+  ],
+  "presets": [
+     {
+       "name": "Left Image Right Text"
+     }
+  ],
+  "templates": [
+     "page"
+  ]
+}
+{% endschema %}

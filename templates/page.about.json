@@ -12,14 +12,16 @@
         "inner_banner_image": "shopify:\/\/shop_images\/faqs-inner-banner.jpg"
       }
     },
-    "short-summary": {
+    "164853173711902be5": {
       "type": "short-summary",
-      "settings": {}
+      "settings": {
+        "short_summary": "We are a WA, family-owned business, with over 25 years experience outfitting the trades and labour workforce in industrial and protective clothing, footwear and equipment."
+      }
     }
   },
   "order": [
     "template",
     "inner-banner",
-    "short-summary"
+    "164853173711902be5"
   ]
 }

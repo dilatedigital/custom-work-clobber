@@ -76,8 +76,11 @@
           {% endif %} 
         {% endif %}
         
-        <a href="{{ routes.cart_url }}" class="ml-5 xct:ml-8">
+        <a href="{{ routes.cart_url }}" class="ml-5 xct:ml-8 relative">
           {% render 'icon-cart' %}
+            {% if cart.item_count > 0 %}
+              <span class="flex items-center justify-center text-wc-black text-xs bg-wc-yellow absolute w-5 h-5 rounded-full font-medium -top-2 -left-1">{{ cart.item_count }}</span>
+            {% endif %}
         </a>
         <button x-on:click="mobileMenuOpen = true" type="button" class="bg-white ml-6 inline-flex items-center justify-center focus:outline-none xct:hidden">
           {% render 'icon-menu' %}

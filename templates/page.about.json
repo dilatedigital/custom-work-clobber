@@ -15,11 +15,16 @@
     "short-summary": {
       "type": "short-summary",
       "settings": {}
+    },
+    "left-text-right-img": {
+      "type": "left-text-right-img",
+      "settings": {}
     }
   },
   "order": [
     "template",
     "inner-banner",
-    "short-summary"
+    "short-summary",
+    "left-text-right-img"
   ]
 }

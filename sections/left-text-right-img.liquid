@@ -1,6 +1,14 @@
-<div class="container mx-auto pt-50px xct:pt-100px font-euro text-xl uppercase">
+<style>
+  @media screen and (min-width: 1170px) {
+    .left-text-container {
+      max-width: 440px;
+      padding-top: 45px;
+    }
+  }
+</style>
+<div class="container mx-auto py-50px xct:py-100px lg:flex lg:items-start xct:justify-between">
   {% if section.settings.left_text != blank %}
-    <div>
+    <div class="mb-6 text-lg lg:mb-0 lg:mr-12 xct:mr-0 left-text-container">
       {{ section.settings.left_text }}
     </div>
   {% endif %}

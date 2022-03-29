@@ -1,0 +1,22 @@
+<h2 class="uppercase text-3xl border-b-3 border-wc-black pb-5 xct:pb-7">{{ section.settings.title }}</h2>
+
+{% schema %} 
+{
+  "name":"Title with Underline",
+  "settings": [
+    {
+      "type":"text",
+      "id":"title",
+      "label":"Title"
+    }
+  ],
+  "presets": [
+     {
+       "name": "Title with Underline"
+     }
+  ],
+  "templates": [
+     "page"
+  ]
+}
+{% endschema %}

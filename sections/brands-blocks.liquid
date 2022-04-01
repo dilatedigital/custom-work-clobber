@@ -1,0 +1,47 @@
+<div class="container mx-auto">
+  {% for block in section.blocks %}
+    <a class="each-brand-block flex items-center justify-center" href="{{ block.settings.brand_collection_url }}">
+      <img src="{{ block.settings.logo | img_url: 'master' }}" alt="{{ block.settings.logo.alt }}">
+      <button class="uppercase wc-btn wc-btn-yellow">{{ block.settings.button_text }}</button>
+
+    </a>
+  {% endfor %}
+</div>
+{% schema %}
+{
+  "name":"Brands blocks",
+  "tag":"section",
+  "class":"brands-block",
+  "blocks":[
+     {
+        "name":"Brands Block",
+        "type":"brands_block",
+        "settings":[
+           {
+              "type":"image_picker",
+              "id":"logo",
+              "label":"Brand Logo"
+           },
+           {
+              "type":"text",
+              "id":"button_text",
+              "label":"Button Text"
+           },
+           {
+              "type":"url",
+              "id":"brand_collection_url",
+              "label":"Brand Collection URL"
+           }
+        ]
+     }
+  ],
+  "presets":[
+     {
+        "name":"Brands Blocks"
+     }
+  ],
+  "templates":[
+     "page"
+  ]
+}
+{% endschema %}

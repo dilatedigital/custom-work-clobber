@@ -3,9 +3,19 @@
     "inner-banner": {
       "type": "inner-banner",
       "settings": {
-
+        "inner_banner_title": "Brands",
+        "inner_banner_image": "shopify:\/\/shop_images\/faqs-inner-banner.jpg"
+      }
+    },
+    "1648784093d6002717": {
+      "type": "title-ud",
+      "settings": {
+        "title": "our trusted brands"
       }
     }
   },
-  "order": [ "inner-banner" ]
+  "order": [
+    "inner-banner",
+    "1648784093d6002717"
+  ]
 }

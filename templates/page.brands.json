@@ -1,5 +1,10 @@
 {
   "sections": {
+    "template": {
+      "type": "template-brands",
+      "settings": {
+      }
+    },
     "inner-banner": {
       "type": "inner-banner",
       "settings": {
@@ -114,6 +119,7 @@
     }
   },
   "order": [
+    "template",
     "inner-banner",
     "1648784093d6002717",
     "164878875602084711"

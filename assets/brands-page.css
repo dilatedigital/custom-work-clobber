@@ -1,0 +1,9 @@
+.title-ud {
+  padding-top: 50px;
+}
+
+@media screen and (min-width: 1170px) {
+  .title-ud {
+    padding-top: 100px;
+  }
+}

@@ -1,9 +1,20 @@
+<style>
+  .brands-block .each-brand-block {
+    width: 270px;
+    height: 270px;
+    background-color: #f2f3f5;
+    border: 10px solid #f2f3f5;
+  }
+
+  .brands-block .each-brand-block:hover {
+    border-image: url(/assets/pattern-271.jpg) 10 round;
+  }
+</style>
 <div class="container mx-auto">
   {% for block in section.blocks %}
-    <a class="each-brand-block flex items-center justify-center" href="{{ block.settings.brand_collection_url }}">
+    <a class="each-brand-block flex items-center justify-center relative flex-col transition" href="{{ block.settings.brand_collection_url }}">
       <img src="{{ block.settings.logo | img_url: 'master' }}" alt="{{ block.settings.logo.alt }}">
-      <button class="uppercase wc-btn wc-btn-yellow">{{ block.settings.button_text }}</button>
-
+      <button class="uppercase wc-btn wc-btn-yellow mt-3">{{ block.settings.button_text }}</button>
     </a>
   {% endfor %}
 </div>

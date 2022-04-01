@@ -31,11 +31,20 @@
             "button_text": "View Products",
             "brand_collection_url": "#"
           }
+        },
+        "ec2928c9-4e2e-4f15-bf5e-3e37c06ad0fb": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/blundstone.png",
+            "button_text": "View Products",
+            "brand_collection_url": "#"
+          }
         }
       },
       "block_order": [
         "ac1edc6d-1fb8-437c-9b32-805955312252",
-        "02980a0d-247c-42cc-85ce-655fbba46311"
+        "02980a0d-247c-42cc-85ce-655fbba46311",
+        "ec2928c9-4e2e-4f15-bf5e-3e37c06ad0fb"
       ],
       "settings": {
       }

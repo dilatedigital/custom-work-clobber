@@ -87,6 +87,14 @@
             "button_text": "View Products",
             "brand_collection_url": "#"
           }
+        },
+        "d8093c13-4307-47ea-8a50-a885eb7549dd": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/jonsson.jpg",
+            "button_text": "View Products",
+            "brand_collection_url": "#"
+          }
         }
       },
       "block_order": [
@@ -98,7 +106,8 @@
         "dc6f706f-ebb9-4469-ad68-a86dc195ea5a",
         "996ae862-ab17-4f26-8ff6-adac7db34660",
         "55d8afdd-a33a-43f7-aad3-19ec5ab07b5f",
-        "812fb8f3-4f13-4def-bcf4-dab09b11c6bf"
+        "812fb8f3-4f13-4def-bcf4-dab09b11c6bf",
+        "d8093c13-4307-47ea-8a50-a885eb7549dd"
       ],
       "settings": {
       }

@@ -28,3 +28,4 @@ function matchHeight(el){
 }
 
 matchHeight("each-cat");
+matchHeight('product-details');

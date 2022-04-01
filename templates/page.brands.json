@@ -23,10 +23,19 @@
             "button_text": "View Products",
             "brand_collection_url": "#"
           }
+        },
+        "02980a0d-247c-42cc-85ce-655fbba46311": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/hard-yakka.png",
+            "button_text": "View Products",
+            "brand_collection_url": "#"
+          }
         }
       },
       "block_order": [
-        "ac1edc6d-1fb8-437c-9b32-805955312252"
+        "ac1edc6d-1fb8-437c-9b32-805955312252",
+        "02980a0d-247c-42cc-85ce-655fbba46311"
       ],
       "settings": {
       }

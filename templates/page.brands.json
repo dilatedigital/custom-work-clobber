@@ -20,7 +20,7 @@
           "type": "brands_block",
           "settings": {
             "logo": "shopify:\/\/shop_images\/king-gee-2.png",
-            "button_text": "Gasdf",
+            "button_text": "View Products",
             "brand_collection_url": "#"
           }
         }

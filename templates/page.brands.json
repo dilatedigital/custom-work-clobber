@@ -39,12 +39,21 @@
             "button_text": "View Products",
             "brand_collection_url": "#"
           }
+        },
+        "3e333056-8e84-4f32-92c9-fe57aac80820": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/steel-blue.png",
+            "button_text": "View Products",
+            "brand_collection_url": "#"
+          }
         }
       },
       "block_order": [
         "ac1edc6d-1fb8-437c-9b32-805955312252",
         "02980a0d-247c-42cc-85ce-655fbba46311",
-        "ec2928c9-4e2e-4f15-bf5e-3e37c06ad0fb"
+        "ec2928c9-4e2e-4f15-bf5e-3e37c06ad0fb",
+        "3e333056-8e84-4f32-92c9-fe57aac80820"
       ],
       "settings": {
       }

@@ -12,10 +12,29 @@
       "settings": {
         "title": "our trusted brands"
       }
+    },
+    "164878875602084711": {
+      "type": "brands-blocks",
+      "blocks": {
+        "ac1edc6d-1fb8-437c-9b32-805955312252": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/king-gee-2.png",
+            "button_text": "Gasdf",
+            "brand_collection_url": "#"
+          }
+        }
+      },
+      "block_order": [
+        "ac1edc6d-1fb8-437c-9b32-805955312252"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "inner-banner",
-    "1648784093d6002717"
+    "1648784093d6002717",
+    "164878875602084711"
   ]
 }

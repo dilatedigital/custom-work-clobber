@@ -9,12 +9,21 @@
   .brands-block .each-brand-block:hover {
     border-image: url(/assets/pattern-271.jpg) 10 round;
   }
+
+  .brands-block .wc-btn {
+     width: 169px;
+     height: 44px;
+  }
+
+  .brands-block .each-brand-block:hover .wc-btn {
+     display: block;
+  }
 </style>
-<div class="container mx-auto">
+<div class="container mx-auto grid grid-cols-1 gap-30px justify-items-center pb-50px xct:pb-100px md:grid-cols-2 lg:grid-cols-3 xct:grid-cols-4 xct:justify-items-start">
   {% for block in section.blocks %}
     <a class="each-brand-block flex items-center justify-center relative flex-col transition" href="{{ block.settings.brand_collection_url }}">
       <img src="{{ block.settings.logo | img_url: 'master' }}" alt="{{ block.settings.logo.alt }}">
-      <button class="uppercase wc-btn wc-btn-yellow mt-3">{{ block.settings.button_text }}</button>
+      <button class="uppercase wc-btn wc-btn-yellow mt-8 text-sm hidden">{{ block.settings.button_text }}</button>
     </a>
   {% endfor %}
 </div>

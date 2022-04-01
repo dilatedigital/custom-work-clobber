@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "inner-banner": {
+      "type": "inner-banner",
+      "settings": {
+
+      }
+    }
+  },
+  "order": [ "inner-banner" ]
+}

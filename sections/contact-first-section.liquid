@@ -1,0 +1,32 @@
+<div class="container mx-auto">
+  <div></div>
+  <div>
+    <h3>{{ section.settings.form_title }}</h3>
+  </div>
+</div>
+{% schema %} 
+{
+  "name":"Contact First Section",
+  "tag":"section",
+  "class":"contact-page-first-section",
+  "settings":[
+     {
+        "type":"richtext",
+        "id":"left_content_title",
+        "label":"Left Content Title"
+     },
+     {
+        "type":"text",
+        "id":"form_title",
+        "label":"Form Title",
+        "default": "Enquiry Form"
+     },
+     {
+        "type":"text",
+        "id":"btn_text",
+        "label":"Form Button Text",
+        "default": "Send Message"
+     }
+  ]
+}
+{% endschema %}

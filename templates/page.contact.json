@@ -1,0 +1,8 @@
+{
+  "sections": {
+    "contact-first-section": {
+      "type": "contact-first-section"
+    }
+  },
+  "order": ["contact-first-section"]
+}

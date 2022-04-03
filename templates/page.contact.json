@@ -8,7 +8,7 @@
     "contact-first-section": {
       "type": "contact-first-section",
       "settings": {
-        "left_content_title": "<p>&lt;h2&gt;&lt;span&gt;Have a question?&lt;\/span&gt;send your query to our knowledgeable and friendly staff.&lt;\/h2&gt;<\/p><p>If you have any questions, please feel free to contact us, we will answer your request as fast as possible.<\/p>",
+        "left_content_title": "<p>If you have any questions, please feel free to contact us, we will answer your request as fast as possible.<\/p>",
         "form_title": "Enquiry Form",
         "btn_text": "Send Message"
       }

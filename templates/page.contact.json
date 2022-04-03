@@ -1,8 +1,12 @@
 {
+  "template": {
+    "type": "template-contact",
+    "settings": {}
+  },
   "sections": {
     "contact-first-section": {
       "type": "contact-first-section"
     }
   },
-  "order": ["contact-first-section"]
+  "order": ["template", "contact-first-section"]
 }

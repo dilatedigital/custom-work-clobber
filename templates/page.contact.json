@@ -1,9 +1,9 @@
 {
-  "template": {
-    "type": "template-contact",
-    "settings": {}
-  },
   "sections": {
+    "template": {
+      "type": "template-contact",
+      "settings": {}
+    },
     "contact-first-section": {
       "type": "contact-first-section"
     }

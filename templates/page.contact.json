@@ -2,11 +2,20 @@
   "sections": {
     "template": {
       "type": "template-contact",
-      "settings": {}
+      "settings": {
+      }
     },
     "contact-first-section": {
-      "type": "contact-first-section"
+      "type": "contact-first-section",
+      "settings": {
+        "left_content_title": "<p>If you have any questions, please feel free to contact us, we will answer your request as fast as possible.<\/p>",
+        "form_title": "Enquiry Form",
+        "btn_text": "Send Message"
+      }
     }
   },
-  "order": ["template", "contact-first-section"]
+  "order": [
+    "template",
+    "contact-first-section"
+  ]
 }

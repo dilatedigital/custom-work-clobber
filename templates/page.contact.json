@@ -24,7 +24,33 @@
     },
     "contact-locations": {
       "type": "contact-locations",
-      "settings": {}
+      "blocks": {
+        "693a2dc8-dabe-43aa-acf4-fcfe2d556950": {
+          "type": "store_detail",
+          "settings": {
+            "location_name": "Morely",
+            "address_line_1": "150 Russell Street",
+            "address_line_2": "Morley WA 6062",
+            "country": "Australia",
+            "email": "info@morely.clobber.com",
+            "phone": "(08) 9370 3780",
+            "directions_link": "https:\/\/goo.gl\/maps\/wyNPVab3b46tdQMy5",
+            "oh_monday": "8:30am - 5:15pm",
+            "oh_tuesday": "8:30am - 5:25pm",
+            "oh_wed": "8:30am - 5:30pm",
+            "oh_thurs": "8:30am - 5:25pm",
+            "oh_friday": "8:30am - 5:25pm",
+            "oh_sat": "9:00am - 2:00pm",
+            "oh_sun": "Closed"
+          }
+        }
+      },
+      "block_order": [
+        "693a2dc8-dabe-43aa-acf4-fcfe2d556950"
+      ],
+      "settings": {
+        "store_locations_title": "See all our store locations"
+      }
     }
   },
   "order": [

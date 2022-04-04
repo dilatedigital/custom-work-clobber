@@ -1,0 +1,97 @@
+<!--MAP-->
+<!-- STORE LOCATIONS -->
+<div class="container mx-auto">
+  {% for block in section.blocks %}
+    {% if block.type == 'store_detail' %}
+      {{ block.settings.location_name }}
+      {{ block.settings.address_line_1 }}
+    {% endif %}
+  {% endfor %}
+</div>
+{% schema %}
+{
+  "name": "Store Details",
+  "tag": "section",
+  "class": "store-details",
+  "blocks": [
+    {
+      "name": "Store Detail",
+      "type": "store_detail",
+      "settings": [
+        {
+          "type": "text",
+          "id": "location_name",
+          "label": "Location Name"
+        },
+        {
+          "type": "text",
+          "id": "address_line_1",
+          "label": "Address Line 1"
+        },
+        {
+          "type": "text",
+          "id": "address_line_2",
+          "label": "Address Line 2"
+        },
+        {
+          "type": "text",
+          "id": "country",
+          "label": "Country",
+          "default": "Australia"
+        },
+        {
+          "type": "text",
+          "id": "email",
+          "label": "Email"
+        },
+        {
+          "type": "text",
+          "id": "phone",
+          "label": "Phone"
+        },
+        {
+          "type": "url",
+          "id": "directions_link",
+          "label": "Directions Link"
+        },
+        {
+          "type": "text",
+          "id": "oh_monday",
+          "label": "Monday Opening Hours"
+        },
+        {
+          "type": "text",
+          "id": "oh_tuesday",
+          "label": "Tuesda Opening Hours"
+        },
+        {
+          "type": "text",
+          "id": "oh_wed",
+          "label": "Wednesday Opening Hours"
+        },
+        {
+          "type": "text",
+          "id": "oh_thurs",
+          "label": "Thursday Opening Hours"
+        },
+        {
+          "type": "text",
+          "id": "oh_friday",
+          "label": "Friday Opening Hours"
+        },
+        {
+          "type": "text",
+          "id": "oh_sat",
+          "label": "Saturday Opening Hours"
+        },
+        {
+          "type": "text",
+          "id": "oh_sun",
+          "label": "Sunday Opening Hours",
+          "default": "Closed"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

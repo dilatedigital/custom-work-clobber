@@ -1,13 +1,97 @@
-<div class="container mx-auto">
-  <div>
+<style>
+    .left-content h2 {
+        font-size: 24px;
+    }
+
+    .left-content h2 span {
+        display: block;
+    }
+
+    .left-content-btm-txt,
+    .left-content h2 {
+        text-transform: uppercase;
+    }
+
+    .left-content-btm-txt a,
+    .left-content h2 span,
+    .form-control label span {
+        color: var(--yellow)
+    }
+
+    .left-content-btm-txt {
+        font-size: 20px;
+        padding-top: 30px;
+    }
+
+    .left-content-btm-txt a {
+        text-decoration: underline;
+    }
+
+    .left-content--p {
+        color: #838383;
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+
+    .form-control label {
+        font-weight: 700;
+    }
+
+    .form-control input,
+    .form-control textarea {
+        border: 2px solid #dadada;
+        padding: 11px 20px;
+        width: 100%;
+    }
+
+    .form-control div {
+        margin-top: 10px;
+    }
+
+    .form-control textarea {
+        height: 215px;
+    }
+
+    .form-control button svg {
+        max-width: 12px;
+        margin-left: 10px;
+    }
+
+    .form-control button {
+        height: 55px;
+    }
+
+    .form-control button:hover svg .st0 {
+        fill: #fff;
+    }
+
+    @media screen and (min-width: 1024px) {
+        .left-content {
+            max-width: 330px;
+            margin-right: 130px;
+        }
+    }
+
+    @media screen and (min-width: 1170px) {
+        .left-content h2 {
+            font-size: 30px;
+        }
+    }
+</style>
+<div class="container mx-auto py-50px xct:py-100px lg:flex">
+  <div class="left-content">
     {{ section.settings.left_content_title }}
+    <div class="left-content--p text-lg border-b border-gray-300">
+        {{ section.settings.left_content_paragraph }}
+    </div>
+    <div class="left-content-btm-txt font-euro font-extrabold">
+        {{ section.settings.left_bottom_content }}
+    </div>
   </div>
-  <div>
-    {{ section.settings.taenamo }}
-  </div>
-  <div>
-    <h3>{{ section.settings.form_title }}</h3>
-    <div>
+  
+  <div class="contact-page-form-container mt-12 lg:mt-0 w-full">
+    <h3 class="text-3xl uppercase pb-6 border-b-3 border-wc-black">{{ section.settings.form_title }}</h3>
+    <div class="mt-5">
        {% form 'contact' %}
             {% if form.errors %}
                 <div class="border p-5">
@@ -33,31 +117,39 @@
                 </div>
             {% endif %}
 
-            <div class="max-w-6xl mx-auto justify-center flex-1 items-center px-4">
-                <div class="flex px-1 mb-3">
-                    <div class="px-3 md:w-1/2">
-                        <label class="uppercase text-xs text-gray-500 font-medium" for="contact_name">Name</label>
-                        <input class="border py-3 px-4 mb-3 text-gray-700 w-full" type="text" name="contact[name]" id="contact_name">
+            <div class="wc-custom-form">
+                <div class="form-control name-control lg:flex lg:justify-between">
+                    <div class="flex flex-col xct:w-full xct:mr-5">
+                        <label for="contact_first_name">First name<span>*</span></label>
+                        <input type="text" required name="contact[first_name]" id="contact_first_name" placeholder="Enter your first name">
                     </div>
-                    <div class="px-3 md:w-1/2">
-                        <label class="uppercase text-xs text-gray-500 font-medium" for="contact_email">Email address</label>
-                        <input class="border py-3 px-4 mb-3 text-gray-700 w-full" type="email" name="contact[email]" id="contact_email">
-                    </div>
-                </div>
-
-                <div class="flex px-1 mb-3">
-                    <div class="w-full px-3">
-                        <label class="uppercase text-xs text-gray-500 font-medium" for="contact_message">Message</label>
-                        <textarea class="border py-3 px-4 mb-3 text-gray-700 w-full" name="contact[body]" id="contact_message"></textarea>
+                    <div class="flex flex-col xct:w-full">
+                        <label for="contact_last_name">Last name<span>*</span></label>
+                        <input type="text" required name="contact[last_name]" id="contact_last_name" placeholder="Enter your last name">
                     </div>
                 </div>
-
-                <div class="flex px-1 mb-3">
-                    <div class="w-full px-3">
-                        <input type="submit" class="w-full cursor-pointer px-4 py-2 border text-base font-medium bg-gray-900 text-white hover:bg-gray-700" value="{{ section.settings.btn_text }}">
+                <div class="form-control email-control lg:flex lg:justify-between">
+                    <div class="flex flex-col xct:w-full xct:mr-5">
+                        <label for="contact_email">Email<span>*</span></label>
+                        <input type="email" required name="contact[email]" id="contact_email" placeholder="sample@email.com">
+                    </div>
+                    <div class="flex flex-col xct:w-full">
+                        <label for="contact_phone">Phone<span>*</span></label>
+                        <input type="text" required name="contact[phone]" id="contact_phone" placeholder="04 4444 4444">
                     </div>
                 </div>
-            </div>        
+                <div class="form-control message-control">
+                    <div class="flex flex-col">
+                        <label for="contact_message">Message<span>*</span></label>
+                        <textarea name="contact[body]" id="contact_message" placeholder="Enter your message here..." class="resize-none"></textarea>
+                    </div>
+                </div>
+                <div class="form-control submit-control xct:mt-11">
+                    <div>
+                        <button type="submit" value="Submit" class="flex items-center justify-center bg-wc-yellow w-full uppercase font-euro font-extrabold transition hover:bg-wc-black hover:text-white">{{ section.settings.btn_text }} {% render 'icon-chevron-right' %}</button>
+                    </div>
+                </div>
+            </div>      
         {% endform %}
       </div>
   </div>

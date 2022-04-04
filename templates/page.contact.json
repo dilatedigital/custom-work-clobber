@@ -15,7 +15,7 @@
     "contact-first-section": {
       "type": "contact-first-section",
       "settings": {
-        "left_content_title": "<h2><span>Have a question?<\/span><\/h2> Send Your Query To Our Knowledgeable And Friendly Staff.",
+        "left_content_title": "<h2>\n<span>Have a question?<\/span> Send Your Query To Our Knowledgeable And Friendly Staff.<\/h2>",
         "left_content_paragraph": "<p>If you have any questions, please feel free to contact us, we will answer your request as fast as possible.<\/p>",
         "left_bottom_content": "<p>You can also check our faq page by clicking <a href=\"\/pages\/faqs-deliveries\" title=\"FAQs & Deliveries\">here<\/a><\/p>",
         "form_title": "Enquiry Form",

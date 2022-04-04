@@ -1,5 +1,12 @@
 {
   "sections": {
+    "1649039603465f5f6d": {
+      "type": "inner-banner",
+      "settings": {
+        "inner_banner_title": "Contact us",
+        "inner_banner_image": "shopify:\/\/shop_images\/faqs-inner-banner.jpg"
+      }
+    },
     "template": {
       "type": "template-contact",
       "settings": {
@@ -17,6 +24,7 @@
     }
   },
   "order": [
+    "1649039603465f5f6d",
     "template",
     "contact-first-section"
   ]

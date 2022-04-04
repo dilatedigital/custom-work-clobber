@@ -43,10 +43,30 @@
             "oh_sat": "9:00am - 2:00pm",
             "oh_sun": "Closed"
           }
+        },
+        "a0f84251-56d4-4fc0-aae4-a21c40f5233e": {
+          "type": "store_detail",
+          "settings": {
+            "location_name": "Balcatta",
+            "address_line_1": "Cnr Wanneroo & Balcatta Rd",
+            "address_line_2": "Balcatta WA 6021",
+            "country": "Australia",
+            "email": "info@balcatta.clobber.com",
+            "phone": "(08) 9345 2004",
+            "directions_link": "https:\/\/goo.gl\/maps\/z6VuUvppueoznNJ7A",
+            "oh_monday": "8:30am - 5:15pm",
+            "oh_tuesday": "8:30am - 5:15pm",
+            "oh_wed": "8:30am - 5:15pm",
+            "oh_thurs": "8:30am - 5:15pm",
+            "oh_friday": "8:30am - 5:25pm",
+            "oh_sat": "8:30am - 5:15pm",
+            "oh_sun": "Closed"
+          }
         }
       },
       "block_order": [
-        "693a2dc8-dabe-43aa-acf4-fcfe2d556950"
+        "693a2dc8-dabe-43aa-acf4-fcfe2d556950",
+        "a0f84251-56d4-4fc0-aae4-a21c40f5233e"
       ],
       "settings": {
         "store_locations_title": "See all our store locations"

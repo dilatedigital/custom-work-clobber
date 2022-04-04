@@ -8,7 +8,8 @@
     "contact-first-section": {
       "type": "contact-first-section",
       "settings": {
-        "left_content_title": "<p>If you have any questions, please feel free to contact us, we will answer your request as fast as possible.<\/p>",
+        "left_content_title": "<p>&lt;h2&gt;&lt;span&gt;Have a question?&lt;\/span&gt;&lt;\/h2&gt;<br\/>If you have any questions, please feel free to contact us, we will answer your request as fast as possible.<\/p>",
+        "taenamo": "",
         "form_title": "Enquiry Form",
         "btn_text": "Send Message"
       }

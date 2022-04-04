@@ -138,6 +138,25 @@
             "oh_sat": "9:00am - 2:00pm",
             "oh_sun": "Closed"
           }
+        },
+        "8c772e70-a6a4-4d20-be0f-5b51235d9697": {
+          "type": "store_detail",
+          "settings": {
+            "location_name": "Kelmscott",
+            "address_line_1": "2\/2874 Albany Highway",
+            "address_line_2": "Kelmscott 6111",
+            "country": "Australia",
+            "email": "info@kelmscott.clobber.com",
+            "phone": "(08) 9495 4777",
+            "directions_link": "https:\/\/goo.gl\/maps\/cGsjHnnK9DU6Suj87",
+            "oh_monday": "8:30am - 5:15pm",
+            "oh_tuesday": "8:30am - 5:15pm",
+            "oh_wed": "8:30am - 5:15pm",
+            "oh_thurs": "8:30am - 5:15pm",
+            "oh_friday": "8:30am - 5:15pm",
+            "oh_sat": "9:00am - 2:00pm",
+            "oh_sun": "Closed"
+          }
         }
       },
       "block_order": [
@@ -146,7 +165,8 @@
         "57dc4160-46d8-4084-8110-f1a9cf91b35f",
         "ab20ed57-c820-4168-a794-d21fb5d25d01",
         "6087dc15-610c-4aba-b9ed-3982e1fd7fe7",
-        "eb6020bf-ae0e-45dd-b8a6-0c5c5214785c"
+        "eb6020bf-ae0e-45dd-b8a6-0c5c5214785c",
+        "8c772e70-a6a4-4d20-be0f-5b51235d9697"
       ],
       "settings": {
         "store_locations_title": "See all our store locations"

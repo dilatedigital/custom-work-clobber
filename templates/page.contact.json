@@ -157,6 +157,25 @@
             "oh_sat": "9:00am - 2:00pm",
             "oh_sun": "Closed"
           }
+        },
+        "284d52de-35e5-4b45-8799-444a069de5c9": {
+          "type": "store_detail",
+          "settings": {
+            "location_name": "Joondalup",
+            "address_line_1": "9\/162 Winton Drive",
+            "address_line_2": "Joondalup WA 6027",
+            "country": "Australia",
+            "email": "info@joondalup.clobber.com",
+            "phone": "(08) 9300 9900",
+            "directions_link": "https:\/\/goo.gl\/maps\/5gMZXpEkg61R11kV7",
+            "oh_monday": "8:30am - 5:15pm",
+            "oh_tuesday": "8:30am - 5:15pm",
+            "oh_wed": "8:30am - 5:15pm",
+            "oh_thurs": "8:30am - 5:15pm",
+            "oh_friday": "8:30am - 5:15pm",
+            "oh_sat": "9:00am - 2:00pm",
+            "oh_sun": "Closed"
+          }
         }
       },
       "block_order": [
@@ -166,7 +185,8 @@
         "ab20ed57-c820-4168-a794-d21fb5d25d01",
         "6087dc15-610c-4aba-b9ed-3982e1fd7fe7",
         "eb6020bf-ae0e-45dd-b8a6-0c5c5214785c",
-        "8c772e70-a6a4-4d20-be0f-5b51235d9697"
+        "8c772e70-a6a4-4d20-be0f-5b51235d9697",
+        "284d52de-35e5-4b45-8799-444a069de5c9"
       ],
       "settings": {
         "store_locations_title": "See all our store locations"

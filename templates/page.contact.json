@@ -119,6 +119,25 @@
             "oh_sat": "9:00am - 2:00pm",
             "oh_sun": "Closed"
           }
+        },
+        "eb6020bf-ae0e-45dd-b8a6-0c5c5214785c": {
+          "type": "store_detail",
+          "settings": {
+            "location_name": "Midland",
+            "address_line_1": "4\/156 Great Eastern Highway",
+            "address_line_2": "Midland WA 6056",
+            "country": "Australia",
+            "email": "info@midland.clobber.com",
+            "phone": "(08) 9250 2733",
+            "directions_link": "",
+            "oh_monday": "8:30am - 5:15pm",
+            "oh_tuesday": "8:30am - 5:15pm",
+            "oh_wed": "8:30am - 5:15pm",
+            "oh_thurs": "8:30am - 5:15pm",
+            "oh_friday": "8:30am - 5:15pm",
+            "oh_sat": "9:00am - 2:00pm",
+            "oh_sun": "Closed"
+          }
         }
       },
       "block_order": [
@@ -126,7 +145,8 @@
         "a0f84251-56d4-4fc0-aae4-a21c40f5233e",
         "57dc4160-46d8-4084-8110-f1a9cf91b35f",
         "ab20ed57-c820-4168-a794-d21fb5d25d01",
-        "6087dc15-610c-4aba-b9ed-3982e1fd7fe7"
+        "6087dc15-610c-4aba-b9ed-3982e1fd7fe7",
+        "eb6020bf-ae0e-45dd-b8a6-0c5c5214785c"
       ],
       "settings": {
         "store_locations_title": "See all our store locations"

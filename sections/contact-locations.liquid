@@ -1,13 +1,45 @@
+<style>
+  .each-store-name svg {
+    max-width: 19px;
+  }
+
+  .each-store-name svg .st0 {
+    fill: var(--yellow)
+  }
+
+  .each-store-details,
+  .each-store-contact a {
+    color: #838383;
+  }
+</style>
 <!--MAP-->
 <!-- STORE LOCATIONS -->
 <div class="container mx-auto">
   <h3 class="text-3xl uppercase pb-6 border-b-3 border-wc-black">{{ section.settings.store_locations_title }}</h3>
+  <div class="store-locations-container py-50px xct:pb-100px grid grid-cols-1 gap-y-8 md:grid-cols-2 lg:grid-cols-3 xct:grid-cols-4 xct:gap-y-16">
   {% for block in section.blocks %}
     {% if block.type == 'store_detail' %}
-      {{ block.settings.location_name }}
-      {{ block.settings.address_line_1 }}
+      <div class="each-store-location">
+        <div class="each-store-name flex">
+          {% render 'icon-location-yellow' %}
+          <h4 class="text-xl uppercase ml-3">{{ block.settings.location_name }}</h4>
+        </div>
+        <div class="each-store-details pl-30px">
+          {{ block.settings.address_line_1 }} <br />
+          {{ block.settings.address_line_2 }} <br />
+          {{ block.settings.country }}
+        </div>
+        <div class="each-store-contact pl-30px mt-4">
+          <a href="mailto:{{ block.settings.email }}" class="block"><span class="font-bold text-wc-black">E: </span>{{ block.settings.email }}</a>
+          <a href="tel:{{ block.settings.phone }}" class="block"><span class="font-bold text-wc-black">P: </span>{{ block.settings.phone }}</a>
+        </div>
+        <div class="each-store-direction pl-30px mt-6">
+          <a href="{{ block.settings.directions_link }}" target="_blank" class="font-bold underline">Get Directions</a>
+        </div>
+      </div>
     {% endif %}
   {% endfor %}
+  </div>
 </div>
 {% schema %}
 {
@@ -71,7 +103,7 @@
         {
           "type": "text",
           "id": "oh_tuesday",
-          "label": "Tuesda Opening Hours"
+          "label": "Tuesday Opening Hours"
         },
         {
           "type": "text",

@@ -199,6 +199,10 @@ function initMap() {
     scaledSize: new google.maps.Size(26, 33)
   }; 
 
+  var activeIcon = {
+    url: "/assets/pin-location-44.svg",
+  }
+
   var marker = new google.maps.Marker({
     map: map,
     animation: google.maps.Animation.DROP,
@@ -209,7 +213,7 @@ function initMap() {
     marker = new google.maps.Marker({
         position: new google.maps.LatLng(locations[i][1], locations[i][2]),
         map: map,
-        icon : icon
+        icon: locations[i][0].toLowerCase() === 'balcatta' ? activeIcon : icon
     });
 
     google.maps.event.addListener(marker, 'click', (function (marker, i) {
@@ -220,11 +224,24 @@ function initMap() {
               markers[j].setIcon("/assets/pin-location-26.svg");
             }
             marker.setIcon("/assets/pin-location-44.svg");
-            console.log(locations[i][0].toLowerCase())
+            var activeBlock = locations[i][0].toLowerCase();
+            var storeContainers = document.getElementsByClassName('map-store-container');
+            console.log(activeBlock);
+            [].forEach.call(storeContainers, function(el) {
+              if(el.classList.contains(activeBlock)) {
+                el.classList.remove("hidden");
+                el.classList.add("lg:block");
+              } else {
+                el.classList.add("hidden");
+                el.classList.remove("lg:block")
+              }
+            });
         }
     })(marker, i));
     markers.push(marker)
   }
+
+
 
   google.maps.event.addListener( map,'click', function () {
       

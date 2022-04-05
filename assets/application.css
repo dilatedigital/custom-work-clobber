@@ -1740,6 +1740,10 @@ h1, h2, h3, h4, h5, h6,
 }
 
 @media (min-width: 1024px) {
+  .lg\:absolute {
+    position: absolute;
+  }
+
   .lg\:left-1\/2 {
     left: 50%;
   }
@@ -1769,6 +1773,10 @@ h1, h2, h3, h4, h5, h6,
     margin-right: 3rem;
   }
 
+  .lg\:block {
+    display: block;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -1796,6 +1804,10 @@ h1, h2, h3, h4, h5, h6,
 
   .lg\:justify-between {
     justify-content: space-between;
+  }
+
+  .lg\:p-8 {
+    padding: 2rem;
   }
 
   .lg\:text-xl {

@@ -40,11 +40,16 @@
   }
 
   .each-sched .day {
-    width: 100px;
+    width: 90px;
   }
 
   #custom-map {
     height: 350px;
+  }
+
+  .map-store-container {
+    right: 90px;
+    top: 80px;
   }
 
   @media screen and (min-width: 768px) {
@@ -53,9 +58,13 @@
     }
   }
 
-  @media screen and (min-width: 1068px) {
+  @media screen and (min-width: 1024px) {
     #custom-map {
       height: 680px;
+    }
+
+    .each-sched .ellipsis {
+      max-width: 65px;
     }
   }
 </style>
@@ -64,15 +73,21 @@
   <div id="custom-map"></div>
   {% for block in section.blocks %}
     {% if block.type == 'store_detail' %}
-      <div class="bg-wc-black map-store-container p-4 md:mx-auto hidden {{ block.settings.location_name | downcase | strip | escape }}">
+      {% assign active = 'hidden' %}
+      {% if block.settings.location_name == 'Balcatta' %}
+        {% assign active = 'lg:block' %}
+      {% endif %}
+      <div class="bg-wc-black map-store-container p-4 w-full lg:p-8 mt-8 lg:mt-0 md:mx-auto lg:absolute {{ active }} {{ block.settings.location_name | downcase | strip | replace: "'", '' }}">
         <h3 class="uppercase text-wc-yellow pb-4 border-b text-center">{{ block.settings.location_name }}</h3>
         <div class="map-store-details p-4 border-b">
           <div class="map-address flex items-start">
             {% render 'icon-location-yellow' %}
             <div class="ml-6">
               <p class="text-white font-bold">Address</p>
-              {{ block.settings.address_line_1 }} <br />
-              {{ block.settings.address_line_2 }}
+              <div class="text-sm">
+                {{ block.settings.address_line_1 }} <br />
+                {{ block.settings.address_line_2 }}
+              </div>
             </div>
           </div>
           <div class="map-email flex items-start mt-4">
@@ -92,7 +107,7 @@
         </div>
         <div class="map-opening-hours pt-5">
           <p class="font-bold text-white text-center mb-4">Opening Hours</p>
-          <div class="contact-map-sched">
+          <div class="contact-map-sched text-sm">
             <div class="each-sched flex">
               <div class="day text-white">Monday</div>
               <div class="ellipsis truncate mx-3">......................</div>

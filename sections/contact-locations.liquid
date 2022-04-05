@@ -1,20 +1,141 @@
 <style>
-  .each-store-name svg {
+  .each-store-name svg,
+  .map-address svg {
     max-width: 19px;
   }
 
-  .each-store-name svg .st0 {
+  .map-email svg,
+  .map-phone svg {
+    max-width: 20px
+  }
+
+  .each-store-name svg .st0,
+  .map-address svg .st0,
+  .map-email svg .st0,
+  .map-phone svg .st0 {
     fill: var(--yellow)
   }
 
   .each-store-details,
-  .each-store-contact a {
+  .each-store-contact a,
+  .map-address,
+  .map-email a,
+  .map-phone a,
+  .hours,
+  .each-sched .ellipsis {
     color: #838383;
+  }
+
+  .map-store-container h3 {
+    font-size: 40px;
+  }
+
+  .map-store-details,
+  .map-store-container h3 {
+    border-color: #282828;
+  }
+  .each-sched .ellipsis {
+    max-width: 100px;
+    letter-spacing: 1px;
+  }
+
+  .each-sched .day {
+    width: 100px;
+  }
+
+  #custom-map {
+    height: 350px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .map-store-container {
+      max-width: 390px;
+    }
+  }
+
+  @media screen and (min-width: 1068px) {
+    #custom-map {
+      height: 680px;
+    }
   }
 </style>
 <!--MAP-->
+<div class="contact-map relative container mx-auto">
+  <div id="custom-map"></div>
+  {% for block in section.blocks %}
+    {% if block.type == 'store_detail' %}
+      <div class="bg-wc-black map-store-container p-4 md:mx-auto hidden {{ block.settings.location_name | downcase | strip | escape }}">
+        <h3 class="uppercase text-wc-yellow pb-4 border-b text-center">{{ block.settings.location_name }}</h3>
+        <div class="map-store-details p-4 border-b">
+          <div class="map-address flex items-start">
+            {% render 'icon-location-yellow' %}
+            <div class="ml-6">
+              <p class="text-white font-bold">Address</p>
+              {{ block.settings.address_line_1 }} <br />
+              {{ block.settings.address_line_2 }}
+            </div>
+          </div>
+          <div class="map-email flex items-start mt-4">
+            {% render 'icon-email' %}
+            <div class="ml-6">
+              <p class="text-white font-bold">Email</p>
+              <a href="mailto:{{ block.settings.email }}">{{ block.settings.email }}</a>
+            </div>
+          </div>
+          <div class="map-phone flex items-start mt-4">
+            {% render 'icon-phone' %}
+            <div class="ml-6">
+              <p class="text-white font-bold">Phone</p>
+              <a href="tel:{{ block.settings.phone }}">{{ block.settings.phone }}</a>
+            </div>
+          </div>
+        </div>
+        <div class="map-opening-hours pt-5">
+          <p class="font-bold text-white text-center mb-4">Opening Hours</p>
+          <div class="contact-map-sched">
+            <div class="each-sched flex">
+              <div class="day text-white">Monday</div>
+              <div class="ellipsis truncate mx-3">......................</div>
+              <div class="hours">{{ block.settings.oh_monday }}</div>
+            </div>
+            <div class="each-sched flex">
+              <div class="day text-white">Tuesday</div>
+              <div class="ellipsis truncate mx-3">......................</div>
+              <div class="hours">{{ block.settings.oh_tuesday }}</div>
+            </div>
+            <div class="each-sched flex">
+              <div class="day text-white">Wednesday</div>
+              <div class="ellipsis truncate mx-3">......................</div>
+              <div class="hours">{{ block.settings.oh_wed }}</div>
+            </div>
+            <div class="each-sched flex">
+              <div class="day text-white">Thursday</div>
+              <div class="ellipsis truncate mx-3">......................</div>
+              <div class="hours">{{ block.settings.oh_thurs }}</div>
+            </div>
+            <div class="each-sched flex">
+              <div class="day text-white">Friday</div>
+              <div class="ellipsis truncate mx-3">......................</div>
+              <div class="hours">{{ block.settings.oh_friday }}</div>
+            </div>
+            <div class="each-sched flex">
+              <div class="day text-white">Saturday</div>
+              <div class="ellipsis truncate mx-3">......................</div>
+              <div class="hours">{{ block.settings.oh_sat }}</div>
+            </div>
+            <div class="each-sched flex">
+              <div class="day text-white">Sunday</div>
+              <div class="ellipsis truncate mx-3">......................</div>
+              <div class="hours">{{ block.settings.oh_sun }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
 <!-- STORE LOCATIONS -->
-<div class="container mx-auto">
+<div class="container mx-auto pt-50px xct:pt-100px">
   <h3 class="text-3xl uppercase pb-6 border-b-3 border-wc-black">{{ section.settings.store_locations_title }}</h3>
   <div class="store-locations-container py-50px xct:pb-100px grid grid-cols-1 gap-y-8 md:grid-cols-2 lg:grid-cols-3 xct:grid-cols-4 xct:gap-y-16">
   {% for block in section.blocks %}

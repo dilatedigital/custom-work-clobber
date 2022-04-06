@@ -6,15 +6,31 @@
     border: 10px solid transparent;
   }
   .products-grid a:hover .product-image-container {
-    border: 10px solid #bdbdbd;
+    border-image: url(/assets/pattern-271.jpg) 10 round;
     outline-color: transparent;
   }
+
+  .products-grid a
 
   .product-code {
     color: #acacac;
   }
   .product-compare-price span {
     color: #bdbdbd;
+  }
+
+  #sort-by {
+    border-color: #bdbdbd;
+  }
+
+  .sidebar-filter {
+    max-width: 225px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .sidebar-filter {
+      margin-right: 75px;
+    }
   }
   @media screen and (min-width: 1170px) {
     .products-grid {
@@ -27,39 +43,87 @@
   }
 </style>
 {% render 'stripe-pattern' %}
-{% render 'collection-filters' %}
-<div class="container mx-auto">
+
+<div class="container mx-auto xct:flex xct:justify-between py-50px lg:py-100px">
   {% paginate collection.products by 12 %}
-  <h1>{{ collection.title }}</h1>
-  <div class="products-grid xct:grid xct:grid-cols-3 xct:gap-x-30px xct:gap-y-12">
-    {% for product in collection.products %}
-    <a href="{{ product.url }}" class="transition-all flex flex-col">
-      <div class="product-image-container h-64 flex items-center p-4 justify-center">
-        {% if product.featured_image %}
-          <img src="{{ product.featured_image | img_url: 'master'}}" alt="{{ product.featured_image.alt }}" loading="lazy">
-          {% else %}
-            {{ 'product-1' | placeholder_svg_tag: 'h-64' }}
-        {% endif %}
+    <div class="sidebar-filter">
+      {% for product_type in collection.all_types %}
+        {{ product_type | link_to_type }}
+      {% endfor %}
+      {% render 'filters' %}
+    </div>
+    <div>
+      <div class="mt-11 lg:mt-0 flex flex-col md:flex-row justify-between items-center">
+        <h1 class="uppercase text-3xl">{{ collection.title }}</h1>
+        <div class="flex items-center">
+          <p class="uppercase font-euro font-extrabold mr-4">Sort by</p>
+          {% assign sort_by = collection.sort_by | default: collection.default_sort_by %}
+          <div class="collection__sort flex justify-end" 
+            x-data="{
+              loading: false,
+              sort: '{{ sort_by }}',
+              sortCollection(){
+                this.loading = true;
+                fetch('/collections/{{ collection.handle }}?sort_by=' + this.sort)
+                  .then(response => response.text())
+                  .then(data => {
+                    let html_div = document.createElement('div');
+                    html_div.innerHTML = data;
+      
+                    let html_dom = html_div.querySelector('.products-grid').innerHTML;
+                    document.querySelector('.products-grid').innerHTML = html_dom;
+                    // update url without refreshing the page 
+                    history.replaceState(null, null, '?sort_by=' + this.sort);
+                  })
+                  .catch(error => console.error('Error:', error))
+                  .finally(() => this.loading = false);
+              }
+            }">
+            
+            {% render 'loader' %}
+      
+            <select id="sort-by" x-model="sort" @change="sortCollection()" class="py-3 px-4 my-3 border border-black">
+              {% for option in collection.sort_options %}
+                <option value="{{ option.value }}" {% if option.value == sort_by %}selected="selected"{% endif %}>
+                  {{ option.name }}
+                </option>
+              {% endfor %}
+            </select>
+            
+          </div>
+        </div>
       </div>
-      <div class="product-details mt-5 flex flex-col">
-        <span class="uppercase text-wc-yellow font-euro font-extrabold text-xs">{{ product.vendor }}</span>
-        <p class="uppercase font-euro font-extrabold leading-none my-2">{{ product.title }}</p>
-        
-        {% if product.selected_or_first_available_variant.sku != blank %}
-          <p class="product-code text-xs mb-2"><span class="font-medium">Product Code: </span>{{ product.selected_or_first_available_variant.sku }}</p>
-        {% endif %}
-        <div class="product-compare-price flex items-center mt-auto">
-          <p class="text-wc-orange font-euro font-bold text-xl">{{ product.price | money }}</p>
-          {% if product.compare_at_price %}
-            <span class="font-euro font-bold line-through ml-4">{{ product.compare_at_price | money }}</span>
-          {% endif %}
-        </div> 
+      
+      <div class="products-grid py-50px lg:pb-100px grid grid-cols-1 gap-y-10 place-content-center lg:grid-cols-2 xct:grid-cols-3 lg:gap-x-30px lg:gap-y-12">
+        {% for product in collection.products %}
+        <a href="{{ product.url }}" class="transition-all flex flex-col">
+          <div class="product-image-container h-64 flex items-center p-4 justify-center">
+            {% if product.featured_image %}
+              <img src="{{ product.featured_image | img_url: 'master'}}" alt="{{ product.featured_image.alt }}" loading="lazy">
+              {% else %}
+                {{ 'product-1' | placeholder_svg_tag: 'h-64' }}
+            {% endif %}
+          </div>
+          <div class="product-details mt-5 flex flex-col">
+            <span class="uppercase text-wc-yellow font-euro font-extrabold text-xs">{{ product.vendor }}</span>
+            <p class="uppercase font-euro font-extrabold leading-none my-2">{{ product.title }}</p>
+            
+            {% if product.selected_or_first_available_variant.sku != blank %}
+              <p class="product-code text-xs mb-2"><span class="font-medium">Product Code: </span>{{ product.selected_or_first_available_variant.sku }}</p>
+            {% endif %}
+            <div class="product-compare-price flex items-center mt-auto">
+              <p class="text-wc-orange font-euro font-bold text-xl">{{ product.price | money }}</p>
+              {% if product.compare_at_price %}
+                <span class="font-euro font-bold line-through ml-4">{{ product.compare_at_price | money }}</span>
+              {% endif %}
+            </div> 
+          </div>
+        </a>  
+        {% else %}
+          <p>There are no products inside of this collection.</p>
+        {% endfor %}
       </div>
-    </a>  
-    {% else %}
-      <p>There are no products inside of this collection.</p>
-    {% endfor %}
-  </div>
+    </div>
     {% render 'pagination', pagination: paginate %}
   {% endpaginate %}
 </div>

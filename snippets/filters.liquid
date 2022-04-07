@@ -114,7 +114,7 @@
         </div>
       </details>
       <!-- DESKTOP FILTER -->
-      <div class="filter-group">
+      <div class="hidden xct:block filter-group">
         <summary class="filter-group-summary flex items-center justify-between">
           <div>
             {% assign filter_name = '' %}
@@ -142,7 +142,7 @@
   
           {%- case filter.type -%}
             {%- when 'boolean' or 'list' -%}
-              <ul class="filter-group-display__list mt-7 xct:mt-7">
+              <ul class="filter-group-display__list mt-7">
                 {%- for filter_value in filter.values -%}
                   <li class="filter-group-display__list-item">
                     <label class="text-lg" for="Filter-{{ filter.param_name }}-{{ forloop.index }}">

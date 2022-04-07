@@ -55,6 +55,9 @@ module.exports = {
       fontFamily: {
         'euro': ['Eurostile', 'system-ui'],
         'campton': ['CamptonBook', 'system-ui']
+      },
+      fontSize: {
+        '40px': '40px'
       }
     },
   },

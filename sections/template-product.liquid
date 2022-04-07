@@ -1,0 +1,226 @@
+<link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+{% assign selected_variant = product.selected_or_first_available_variant %}
+
+<style>
+  .gallery-top.swiper-container {
+    max-width: 500px;
+    border-image: url(/assets/pattern-271.jpg) 10 repeat round;
+    border-width: 10px;
+    height: 350px;
+  }
+
+  .gallery-top .swiper-slide {
+    padding: 30px;
+  }
+
+  .gallery-bottom .swiper-slide {
+    width: 105px !important;
+    height: 105px;
+    border: 1px solid #c6c6c6;
+    padding: 10px
+  }
+
+  .gallery-bottom .swiper-slide:hover {
+    cursor: pointer
+  }
+
+  .gallery-bottom {
+    max-width: 500px
+  }
+
+  @media screen and (min-width: 1024px) {
+    .gallery-top.swiper-container {
+      border-image: url(/assets/pattern-product.jpg) 10 round;
+    }
+
+    .gallery-top.swiper-container {
+      height: 500px;
+      width: 500px;
+    }
+
+    .product--information {
+      max-width: 600px;
+    }
+
+    .gallery-bottom .swiper-slide {
+      padding: 25px;
+    }
+  }
+</style>
+{% render 'stripe-pattern' %}
+<div class="container mx-auto">
+  {% render 'breadcrumbs' %}
+  <div class="lg:flex justify-between">
+    <div class="product--medias">
+      
+      <div class="swiper-container gallery-top overflow-hidden">
+        <div class="swiper-wrapper">
+          {% for media in product.media %}
+            {% render 'product-media', media: media %}
+          {% endfor %}
+        </div>
+      </div>
+      
+      <div class="swiper-container gallery-bottom mt-5 overflow-hidden">
+        <div class="swiper-wrapper">
+          {% for media in product.media %}
+            {% render 'product-media', media: media %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="product--information mt-8 w-full">
+      {% form 'product', product, id: 'product-form', novalidate: 'novalidate' %}
+        <input type="hidden" name="id" value="{{ selected_variant.id }}">
+        <div class="product-page-details border-b border-cart-gray-ac pb-2 lg:pb-5">
+          <span class="uppercase text-wc-yellow font-euro font-extrabold text-base lg:text-xl block">{{ product.vendor }}</span>
+          <h1 class="uppercase font-euro font-extrabold leading-none my-2 text-3xl lg:text-40px">{{ product.title }}</h1>
+          {% if selected_variant.sku != blank %}
+            <p class="product-code text-xs mb-2 text-cart-gray-ac">Product Code: {{ selected_variant.sku }}</p>
+          {% endif %}
+          <div class="product-compare-price flex items-center mt-0 lg:mt-4" id="price-{{ section.id }}">
+            <p class="text-wc-orange font-euro font-bold text-2xl">{{ selected_variant.price | money }}</p>
+            {% if selected_variant.compare_at_price %}
+              <span class="font-euro font-bold line-through ml-4 text-cart-gray-ac">{{ selected_variant.compare_at_price | money }}</span>
+            {% endif %}
+          </div> 
+        </div>
+        <div class="product-variants-btn">
+          {% unless product.has_only_default_variant %}
+            <variant-selector data-url="{{ product.url}}" data-section="{{ section.id }}">
+                {% for option in product.options_with_values %}
+                    <label for="Option-{{ section.id }}-{{ forloop.index0 }}">{{ option.name }}</label>
+
+                    <div class="my-2">
+                        <select 
+                            name="options[{{ option.name | escape }}]" 
+                            id="Option-{{ section.id }}-{{ forloop.index0 }}" 
+                            class="w-full border py-3 px-3"
+                        >
+                            {% for value in option.values %}
+                                <option 
+                                    value="{{ value | escape }}"
+                                    {% if option.selected_value == value %}
+                                        selected="selected"
+                                    {% endif %}
+                                >
+                                    {{ value }}
+                                </option>
+                            {% endfor %}
+                        </select>
+                    </div>
+
+                    <script type="application/json">
+                        {{ product.variants | json }}
+                    </script>
+
+                {% endfor %}
+            </variant-selector>
+          {% endunless %}
+
+          <div class="my-3">
+            <label for="Quantity-{{ section.id }}">Quantity</label>
+            <div class="my-2">
+              <input type="number" name="quantity" id="Quantity-{{ section.id }}" value="1" min="1" class="border">
+            </div>
+          </div>
+
+          <div class="my-3">
+            <button type="submit" name="add"
+              {% if selected_variant == false %}
+                disabled
+              {% endif %}
+            >
+              {% if selected_variant == false %}
+                  Sold out
+                {% else %}
+                  Add to cart
+              {% endif %}
+            </button>
+          </div>
+        </div>
+      {% endform %}
+    </div>
+  </div>
+  <div class="product-description">
+    <h4 class="uppercase text-xl">Description</h4>
+    {{ product.description }}
+  </div>
+</div>
+<script>
+  class VariantSelector extends HTMLElement {
+      constructor() {
+          super();
+          this.addEventListener("change", this.onVariantChange);
+      }
+      onVariantChange() {
+          this.getSelectedOptions();
+          this.getSelectedVariant();
+          if(this.currentVariant) {
+              this.updateURL();
+              this.updateFormID();
+              this.updatePrice();
+          }
+      }
+      getSelectedOptions() {
+          this.options = Array.from(this.querySelectorAll('select'), (select) => select.value);
+          console.log(this.options);
+      }
+      getVariantJSON() {
+          this.variantData = this.variantData || JSON.parse(this.querySelector('[type="application/json"]').textContent);
+          return this.variantData;
+      }
+      getSelectedVariant() {
+          this.currentVariant = this.getVariantJSON().find(
+              (variant) => {
+                  const findings = !variant.options.map(
+                      (option, index) => {
+                          return this.options[index] === option;
+                      }
+                  ).includes(false);
+                  if(findings) return variant;
+              }
+          );
+          console.log(this.currentVariant);
+      }
+      updateURL() {
+          if(!this.currentVariant) return;
+          window.history.replaceState({}, '', `${this.dataset.url}?variant=${this.currentVariant.id}`);
+      }
+      updateFormID() {
+          const form_input = document.querySelector("#product-form").querySelector('input[name="id"]');
+          form_input.value = this.currentVariant.id;
+      }
+      updatePrice() {
+          fetch(`${this.dataset.url}?variant=${this.currentVariant.id}&section_id=${this.dataset.section}`)
+          .then((response) => response.text())
+          .then((responseText) => {
+              const id = `price-${this.dataset.section}`;
+              const html = new DOMParser().parseFromString(responseText, 'text/html');
+              const oldPrice = document.getElementById(id);
+              const newPrice = html.getElementById(id);
+              if(oldPrice && newPrice) oldPrice.innerHTML = newPrice.innerHTML;
+          });
+      }
+  }
+  customElements.define("variant-selector", VariantSelector);
+</script>
+<script>
+   const galleryThumbs = new Swiper('.gallery-bottom', {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      watchSlidesProgress: true,
+     
+    });
+    const galleryTop = new Swiper('.gallery-top', {
+     
+			thumbs: {
+        swiper: galleryThumbs,
+      },
+   });
+</script>

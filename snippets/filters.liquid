@@ -136,7 +136,7 @@
             <span class="filter-group-display__header-selected hidden">{{ filter.active_values.size }} selected</span>
   
             {%- if filter.active_values.size > 0 -%}
-              <a href="{{ filter.url_to_remove }}" class="filter-group-display__header-reset">Reset</a>
+              <a href="{{ filter.url_to_remove }}" class="filter-group-display__header-reset hidden">Reset</a>
             {%- endif -%}
           </div>
   
@@ -159,7 +159,7 @@
                 {%- endfor -%}
               </ul>
   
-              <div class="filter-group-display__submit">
+              <div class="filter-group-display__submit hidden">
                 <input type="submit" value="Apply" class="bg-wc-yellow uppercase font-euro wc-btn hover:cursor-pointer mt-4">
               </div>
             {%- when 'price_range' -%}

@@ -33,9 +33,41 @@
     max-width: 500px
   }
 
+  .product-qty__wrapper .btn-minus svg,
+  .product-qty__wrapper .btn-plus svg {
+    width: 12px;
+  }
+
+  .product-qty__wrapper button {
+    width: 44px;
+    height: 44px;
+    background: #f0f0f0;
+  }
+
+  .product-qty__wrapper input {
+    width: 76px;
+    height: 43px;
+    border: 1px solid #c6c6c6;
+    margin: 0 7px;
+  }
+
+  .cart-btn svg {
+    margin-right: 20px;
+    max-width: 22px;
+  }
+
+  .cart-btn {
+    width: 262px;
+    height: 56px;
+  }
+
+  .cart-btn:hover svg {
+    fill: var(--yellow)
+  }
+
   @media screen and (min-width: 1024px) {
     .gallery-top.swiper-container {
-      border-image: url(/assets/pattern-product.jpg) 10 round;
+      border-image: url("{{ 'pattern-product.jpg' | asset_url }}") 10 round;
     }
 
     .gallery-top.swiper-container {
@@ -74,7 +106,29 @@
         </div>
       </div>
     </div>
-    <div class="product--information mt-8 w-full">
+    <div class="product--information mt-8 w-full"
+      x-data="{ 
+        qty: 1,
+        addToCart(){
+          let formData = new FormData($refs.product_form);
+          fetch('/cart/add.js', {
+              method: 'POST',
+              body: formData
+            })
+            .then(response => {
+              return response.json();
+            })
+            .then(response => {
+              this.$dispatch('cart-updated');
+              this.$dispatch('toggle-cart');
+            })
+            .catch((error) => {
+              console.error('Error:', error);
+            });
+        }
+      }"
+      @quantity-changed.window="qty = $event.detail.quantity"
+    >
       {% form 'product', product, id: 'product-form', novalidate: 'novalidate' %}
         <input type="hidden" name="id" value="{{ selected_variant.id }}">
         <div class="product-page-details border-b border-cart-gray-ac pb-2 lg:pb-5">
@@ -125,13 +179,35 @@
 
           <div class="my-3">
             <label for="Quantity-{{ section.id }}">Quantity</label>
-            <div class="my-2">
-              <input type="number" name="quantity" id="Quantity-{{ section.id }}" value="1" min="1" class="border">
+            <div 
+              class="my-2 product-qty__wrapper flex"
+              x-data="{ 
+                qty: 1,
+                minus(value) {
+                  this.qty = parseInt(this.qty);
+                  (this.qty == 1) ? this.qty = 1 : this.qty -= value;
+                },
+                plus(value) {
+                  this.qty = parseInt(this.qty);
+                  this.qty += value;
+                }
+              }"
+              x-init="$watch('qty', value =>  $dispatch('quantity-changed', { quantity: value }))"
+            >
+              <button type="button" class="btn-minus flex items-center justify-center cursor-pointer hover:bg-wc-black transition hover:fill-white" @click="minus(1)">
+                <span class="sr-only">Minus</span>
+                {% render 'icon-minus' %}
+              </button>
+              <input type="number" x-model="qty" name="quantity" id="Quantity-{{ section.id }}" value="1" min="1" class="text-center">
+              <button type="button" class="btn-plus flex items-center justify-center cursor-pointer hover:bg-wc-black transition hover:fill-white" @click="plus(1)">
+                <span class="sr-only">Plus</span>
+                {% render 'icon-plus' %}
+              </button>
             </div>
           </div>
 
           <div class="my-3">
-            <button type="submit" name="add"
+            <button type="submit" name="add" class="cart-btn uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center"
               {% if selected_variant == false %}
                 disabled
               {% endif %}
@@ -139,7 +215,7 @@
               {% if selected_variant == false %}
                   Sold out
                 {% else %}
-                  Add to cart
+                  {% render 'icon-cart-btn' %} Add to cart
               {% endif %}
             </button>
           </div>

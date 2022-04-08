@@ -195,12 +195,12 @@ function initMap() {
   });
 
   var icon = {
-    url: "/assets/pin-location-26.svg",
+    url: "{{ 'pin-location-26.svg' | asset_url }}",
     scaledSize: new google.maps.Size(26, 33)
   }; 
 
   var activeIcon = {
-    url: "/assets/pin-location-44.svg",
+    url: "{{ 'pin-location-44.svg' | asset_url }}",
   }
 
   var marker = new google.maps.Marker({
@@ -221,9 +221,9 @@ function initMap() {
             // infowindow.setContent(locations[i][0]);
             // infowindow.open(map, marker);  
             for (var j = 0; j < markers.length; j++) {
-              markers[j].setIcon("/assets/pin-location-26.svg");
+              markers[j].setIcon("{{ 'pin-location-26.svg' | asset_url }}");
             }
-            marker.setIcon("/assets/pin-location-44.svg");
+            marker.setIcon("{{ 'pin-location-44.svg' | asset_url }}");
             var activeBlock = locations[i][0].toLowerCase();
             var storeContainers = document.getElementsByClassName('map-store-container');
             console.log(activeBlock);
@@ -247,7 +247,7 @@ function initMap() {
       
     //Change the marker icon
 
-    console.log(icon)
+    //console.log(icon)
   });
 }
 

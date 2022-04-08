@@ -6,7 +6,8 @@
     border: 10px solid transparent;
   }
   .products-grid a:hover .product-image-container {
-    border-image: url(/assets/pattern-271.jpg) 10 round;
+    
+    border-image: url("{{ 'pattern-271.jpg' | asset_url }}") 10 round;
     outline-color: transparent;
   }
 

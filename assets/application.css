@@ -688,6 +688,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0.25rem;
 }
 
+.my-7 {
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
 .mt-8 {
   margin-top: 2rem;
 }
@@ -954,6 +959,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-xs {
   max-width: 20rem;
+}
+
+.max-w-lg {
+  max-width: 32rem;
 }
 
 .flex-1 {
@@ -1405,6 +1414,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 2.5rem;
 }
 
+.pl-3 {
+  padding-left: 0.75rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1588,6 +1601,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .ring-1 {
@@ -1974,6 +1992,11 @@ h1, h2, h3, h4, h5, h6,
 
   .lg\:text-40px {
     font-size: 40px;
+  }
+
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 

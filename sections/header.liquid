@@ -1,4 +1,24 @@
-<div class="relative bg-white" x-data="{ mobileMenuOpen: false }">
+<style>
+  .search-container {
+    line-height: 0;
+  }
+
+  .search-form-container {
+    top: -10px;
+    left: -160px;
+  }
+
+  .search-form-container button {
+    right: 20px;
+    top: 9px;
+  }
+
+  .search-container input[type=search] {
+    height: 35px;
+    width: 185px;
+  }
+</style>
+<div class="relative bg-white" x-data="{ mobileMenuOpen: false, searchBarOpen: false }">
   <div class="mx-auto container pt-6 py-4">
     <div
       class="flex items-center xct:justify-between"
@@ -61,9 +81,20 @@
 
        <!-- CART BUTTON / ACCOUNT LINKS IF ENABLED -->
       <div class="flex items-center xct:max-w-120 xct:w-full">
-        <button type="button" class="hidden xct:inline-flex items-center justify-center focus:outline-none">
-          {% render 'icon-search' %}
-        </button>
+        <div class="relative search-container">
+          <button x-on:click="searchBarOpen = true" type="button" class="hidden xct:inline-flex items-center justify-center focus:outline-none">
+            {% render 'icon-search' %}
+          </button>
+          <div x-show="searchBarOpen" x-trap="searchBarOpen" class="absolute search-form-container" @click.away="searchBarOpen = false">
+            <form action="{{  routes.search_url }}" method="GET" class="border relative">
+              <input type="search" name="q" class="outline-none pl-3">
+              <button type="submit" class="hidden absolute xct:inline-flex items-center justify-center focus:outline-none">
+                {% render 'icon-search' %}
+              </button>
+            </form>
+          </div>
+        </div>
+        
         {% if shop.customer_accounts_enabled %}
           {% if customer %}
             <a href="{{ routes.account_url }}" class="ml-5 xct:ml-8">

@@ -1,21 +1,41 @@
 <!-- /templates/customers/register.liquid -->
+{{ 'login-signup.css' | asset_url | stylesheet_tag }}
+{% render 'stripe-pattern' %}
+<div class="container mx-auto pb-50px xct:pb-100px sign-up"
+  x-data="{ agreed: false }"
+  >
+  {% form 'create_customer' %}
 
-{% form 'create_customer' %}
+    {{ form.errors | default_errors }}
 
-{{ form.errors | default_errors }}
+    <div class="form-control flex flex-col">
+      <label class="font-bold" for="first_name">First Name</label>
+      <input type="text" value="" name="customer[first_name]" id="first_name" size="30" required placeholder="Enter first name" />
+    </div>
 
-<label for="first_name">First Name</label>
-<input type="text" value="" name="customer[first_name]" size="30" />
+    <div class="form-control flex flex-col mt-3">
+      <label class="font-bold" for="last_name">Last Name</label>
+      <input type="text" value="" name="customer[last_name]" id="last_name" size="30" required placeholder="Enter second name" />
+    </div>
 
-<label for="last_name">Last Name</label>
-<input type="text" value="" name="customer[last_name]" size="30" />
+    <div class="form-control flex flex-col mt-3">
+      <label class="font-bold" for="email">Email Address</label>
+      <input type="email" value="" name="customer[email]" id="email" size="30" required placeholder="Enter email address" />
+    </div>
 
-<label for="email">Email Address</label>
-<input type="email" value="" name="customer[email]" size="30" />
+    <div class="form-control flex flex-col mt-3">
+      <label class="font-bold" for="password">Password</label>
+      <input type="password" value="" name="customer[password]" id="password" size="30" required placeholder="Enter password" />
+    </div>
 
-<label for="password">Password</label>
-<input type="password" value="" name="customer[password]" size="30" />
+    <div class="form-control form-checkbox mt-3 mb-6">
+      <input type="checkbox" id="checkbox" x-model="agreed">
+      <label for="checkbox">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+    </div>
 
-<input type="submit" value="Create" />
+    <div class="form-control form-submit-container">
+      <button type="submit" class="flex items-center justify-center bg-wc-yellow text-wc-black uppercase font-euro font-extrabold w-full hover:bg-wc-black hover:text-white transition lg:text-xl" :class="{ 'grayscale': !agreed }" x-bind:disabled="!agreed">Create Account {% render 'icon-chevron-right' %}</button>
+    </div>
 
-{% endform %}
+  {% endform %}
+</div>

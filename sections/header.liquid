@@ -17,12 +17,75 @@
     height: 35px;
     width: 185px;
   }
+
+  .modal-wrapper {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    z-index: 999;
+    transition: height 0s ease-out 1s;
+  }
+
+  .modal-wrapper.active {
+    height: 100%;
+    transition: height 0s ease-in 0s;
+  }
+
+  .modal-wrapper .backdrop {
+      visibility: hidden;
+      opacity: 0;
+      transition: all .6s ease-in-out;
+  }
+
+  .backdrop-shaded {
+      background: rgba(0,0,0,.9);
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
+  }
+
+  .backdrop {
+    position: fixed;
+    z-index: 998;
+  }
+
+  .modal-wrapper.active .backdrop {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .modal-panel {
+    position: relative;
+    z-index: 999;
+    overflow: auto;
+    opacity: 0;
+    transform: scale(.8);
+    transition: all .3s ease-in-out;
+    max-width: 530px;
+  }
+
+  .modal-panel.active {
+    opacity: 1;
+    transform: none;
+  }
+
+  .tab-wrapper label {
+    border-bottom: 3px solid transparent
+  }
+
+  .tab-wrapper label.active {
+    border-bottom: 3px solid #000
+  }
 </style>
-<div class="relative bg-white" x-data="{ mobileMenuOpen: false, searchBarOpen: false }">
+{{ 'login-signup.css' | asset_url | stylesheet_tag }}
+<div class="relative bg-white" x-data="{ mobileMenuOpen: false, searchBarOpen: false, modal: false }">
   <div class="mx-auto container pt-6 py-4">
-    <div
-      class="flex items-center xct:justify-between"
-    >
+    <div class="flex items-center xct:justify-between">
       <!-- TOPBAR MENU -->
       <nav class="hidden xct:flex xct:max-w-300 xct:w-full xct:justify-between xct:mr-44">
         {% for link in section.settings.top_bar_menu.links %} 
@@ -63,7 +126,6 @@
       </nav>
       <!-- STORE NAME / STORE LOGO -->
       <div class="flex mr-auto">
-        
         {% if section.settings.logo != blank %}
           {% assign logo = section.settings.logo | img_url: 'master' %}
           <a href="/">
@@ -75,8 +137,6 @@
             {{ shop.name }}
           </h1>
         {% endif %}
-       
-        
       </div>
 
        <!-- CART BUTTON / ACCOUNT LINKS IF ENABLED -->
@@ -101,9 +161,9 @@
               {% render 'icon-account' %}
             </a>
             {% else %}
-            <a href="{{ routes.account_login_url }}" class="ml-5 xct:ml-8">
+            <button type="button" class="ml-5 xct:ml-8 inline-flex items-center justify-center focus:outline-none" @click="modal = !modal" :aria-expanded="modal ? 'true' : 'false'">
               {% render 'icon-account' %}
-            </a>
+            </button>
           {% endif %} 
         {% endif %}
         
@@ -120,52 +180,52 @@
 
     </div>
 
-      <!-- MOBILE MENU CONTAINER -->
-      <div x-show="mobileMenuOpen" class="absolute z-50 top-0 inset-x-0 p-2 transform origin-top-left xct:hidden">
-        <div class="shadow-lg rounded-lg ring-1 ring-black ring-opacity-5 bg-white w-full">
-          <div class="p-5 divide-y-2 divide-gray-50">
-            <!-- MOBILE MENU HEADER TITLE AND CLOSE BUTTON -->
-            <div class="flex items-center justify-between pb-3">
-              <div>
-                <h1 class="text-lg text-gray-500">{{ section.settings.mobile_menu_title }}</h1>
-              </div>
-              <div class="-mr-2">
-                <button x-on:click="mobileMenuOpen = false" type="button" class="bg-white rounded-md p-2 text-gray-500">
-                  {% render 'icon-close' %}
-                </button>
-              </div>
+    <!-- MOBILE MENU CONTAINER -->
+    <div x-show="mobileMenuOpen" class="absolute z-50 top-0 inset-x-0 p-2 transform origin-top-left xct:hidden">
+      <div class="shadow-lg rounded-lg ring-1 ring-black ring-opacity-5 bg-white w-full">
+        <div class="p-5 divide-y-2 divide-gray-50">
+          <!-- MOBILE MENU HEADER TITLE AND CLOSE BUTTON -->
+          <div class="flex items-center justify-between pb-3">
+            <div>
+              <h1 class="text-lg text-gray-500">{{ section.settings.mobile_menu_title }}</h1>
             </div>
-            <!-- NAVIGATION LINKS FOR MOBILE -->
-            <div class="pt-3">
-              <nav class="grid gap-y-7">
-                {% for link in section.settings.mobile_menu.links %}
-                  {% if link.links != blank %}
-                    {% assign mobile_link_handle = link.handle | replace: '-', '_' %}
-                    <div class="relative" x-data="{ {{ mobile_link_handle }}: false }">
-                      <button x-on:click="{{ mobile_link_handle }} = !{{ mobile_link_handle }}" class="text-base text-gray-500 hover:text-gray-900 flex items-center justify-between w-full">
-                        <div>{{ link.title }}</div>
-                        {% render 'icon-dropdown' %}
-                      </button>
-                      <div x-show={{ mobile_link_handle }} class="grid gap-y-7 py-3">
-                        {% for childlink in link.links %}
-                          <a 
-                            href="{{ childlink.url }}" 
-                            class="-m-3 p-3 mt-2 flex items-center rounded-md text-gray-500 hover:text-gray-900 hover:bg-gray-50">
-                              <span class="ml-3">{{ childlink.title }}</span>
-                          </a>
-                        {% endfor %}
-                      </div>
+            <div class="-mr-2">
+              <button x-on:click="mobileMenuOpen = false" type="button" class="bg-white rounded-md p-2 text-gray-500">
+                {% render 'icon-close' %}
+              </button>
+            </div>
+          </div>
+          <!-- NAVIGATION LINKS FOR MOBILE -->
+          <div class="pt-3">
+            <nav class="grid gap-y-7">
+              {% for link in section.settings.mobile_menu.links %}
+                {% if link.links != blank %}
+                  {% assign mobile_link_handle = link.handle | replace: '-', '_' %}
+                  <div class="relative" x-data="{ {{ mobile_link_handle }}: false }">
+                    <button x-on:click="{{ mobile_link_handle }} = !{{ mobile_link_handle }}" class="text-base text-gray-500 hover:text-gray-900 flex items-center justify-between w-full">
+                      <div>{{ link.title }}</div>
+                      {% render 'icon-dropdown' %}
+                    </button>
+                    <div x-show={{ mobile_link_handle }} class="grid gap-y-7 py-3">
+                      {% for childlink in link.links %}
+                        <a 
+                          href="{{ childlink.url }}" 
+                          class="-m-3 p-3 mt-2 flex items-center rounded-md text-gray-500 hover:text-gray-900 hover:bg-gray-50">
+                            <span class="ml-3">{{ childlink.title }}</span>
+                        </a>
+                      {% endfor %}
                     </div>
-                    {% else %}
-                    <a href="{{ link.url }}">{{ link.title }}</a>
-                  {% endif %}
-                {% endfor %}
-              </nav>  
-            </div>
+                  </div>
+                  {% else %}
+                  <a href="{{ link.url }}">{{ link.title }}</a>
+                {% endif %}
+              {% endfor %}
+            </nav>  
           </div>
         </div>
       </div>
     </div>
+    
   </div>
   <div class="hidden xct:block relative header-bottom-bar border-t border-btm-bar">
     <div class="mx-auto container">
@@ -208,9 +268,91 @@
       </nav>
     </div>
   </div>
+
+  <!-- MODAL -->
+  <div class="modal-wrapper p-4" :class="{ 'active': modal }">
+    <div class="backdrop backdrop-shaded top-0 left-0 bottom-0 right-0" @click="modal = false"></div>
+    <div class="modal-panel w-full bg-white relative py-50px px-4" :class="{ 'active': modal }" id="modal" x-init="$watch('modal', toggleOverflow)">
+      <button type="button" @click="modal = false" class="absolute top-4 right-5">{% render 'icon-close' %}</button>
+      <div class="tab-wrapper"  x-data="{ activeTab:  0, agreed: false }">
+        <div class="flex justify-around">
+          <label
+            @click="activeTab = 0"
+            class="tab-control uppercase font-euro font-extrabold text-xl"
+            :class="{ 'active': activeTab === 0 }"
+          >login</label>
+          <label
+            @click="activeTab = 1"
+            class="tab-control uppercase font-euro font-extrabold text-xl"
+            :class="{ 'active': activeTab === 1 }"
+          >signup</label>
+        </div>
+        <div class="tab-panel" :class="{ 'active': activeTab === 0 }" x-show.transition.in.opacity.duration.600="activeTab === 0">
+          {% form 'customer_login' %}
+            {{ form.errors | default_errors }}
+            <div class="form-control flex flex-col">
+              <label class="font-bold" for="customer_email">Email Address</label>
+              <input type="email" name="customer[email]" id="customer_email" size="30" required placeholder="Enter first name" />
+            </div>
+            <div class="form-control flex flex-col mt-3 mb-6">
+              <label class="font-bold" for="password">Password</label>
+              <input type="password" value="" name="customer[password]" id="password" size="30" required placeholder="Enter password" />
+            </div>
+            <div class="form-control form-submit-container">
+              <button type="submit" class="flex items-center justify-center bg-wc-yellow text-wc-black uppercase font-euro font-extrabold w-full hover:bg-wc-black hover:text-white transition lg:text-xl">Sign in {% render 'icon-chevron-right' %}</button>
+            </div>
+          {% endform %}
+        </div>
+        <div class="tab-panel" :class="{ 'active': activeTab === 1 }" x-show.transition.in.opacity.duration.600="activeTab === 1">
+          {% form 'create_customer' %}
+
+            {{ form.errors | default_errors }}
+
+            <div class="form-control flex flex-col">
+              <label class="font-bold" for="first_name">First Name</label>
+              <input type="text" value="" name="customer[first_name]" id="first_name" size="30" required placeholder="Enter first name" />
+            </div>
+
+            <div class="form-control flex flex-col mt-3">
+              <label class="font-bold" for="last_name">Last Name</label>
+              <input type="text" value="" name="customer[last_name]" id="last_name" size="30" required placeholder="Enter second name" />
+            </div>
+
+            <div class="form-control flex flex-col mt-3">
+              <label class="font-bold" for="email">Email Address</label>
+              <input type="email" value="" name="customer[email]" id="email" size="30" required placeholder="Enter email address" />
+            </div>
+
+            <div class="form-control flex flex-col mt-3">
+              <label class="font-bold" for="password">Password</label>
+              <input type="password" value="" name="customer[password]" id="password" size="30" required placeholder="Enter password" />
+            </div>
+
+            <div class="form-control form-checkbox mt-3 mb-6">
+              <input type="checkbox" id="checkbox" x-model="agreed">
+              <label for="checkbox">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+            </div>
+
+            <div class="form-control form-submit-container">
+              <button type="submit" class="flex items-center justify-center bg-wc-yellow text-wc-black uppercase font-euro font-extrabold w-full hover:bg-wc-black hover:text-white transition lg:text-xl" :class="{ 'grayscale': !agreed }" x-bind:disabled="!agreed">Create Account {% render 'icon-chevron-right' %}</button>
+            </div>
+
+          {% endform %}
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
-
+<script>
+  window.toggleOverflow = function(modal) {
+    if(modal) {
+      bodyScrollLock.disableBodyScroll(document.getElementById('modal')) 
+    } else {
+      bodyScrollLock.enableBodyScroll(document.getElementById('modal'))
+    } 
+  }
+</script>
 {% schema %} 
 { 
   "name": "Header", 

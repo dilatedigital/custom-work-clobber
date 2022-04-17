@@ -3,6 +3,7 @@
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="{{ 'accordion.js' | asset_url }}" defer></script>
 
 {% assign selected_variant = product.selected_or_first_available_variant %}
 
@@ -63,6 +64,14 @@
 
   .cart-btn:hover svg {
     fill: var(--yellow)
+  }
+
+  .faqs-container {
+    max-width: 970px;
+  }
+  .question svg {
+    fill: var(--yellow);
+    max-width: 10px;
   }
 
   @media screen and (min-width: 1024px) {
@@ -144,7 +153,7 @@
             {% endif %}
           </div> 
         </div>
-        <div class="product-variants-btn">
+        <div class="product-variants-btn pt-4 lg:pt-5">
           {% unless product.has_only_default_variant %}
             <variant-selector data-url="{{ product.url}}" data-section="{{ section.id }}">
                 {% for option in product.options_with_values %}
@@ -223,9 +232,39 @@
       {% endform %}
     </div>
   </div>
-  <div class="product-description">
-    <h4 class="uppercase text-xl">Description</h4>
-    {{ product.description }}
+  <div class="product-other-details py-50px xct:py-100px">
+    {% if product.description != blank %}
+      <div class="product-description border-b border-gray-400 pb-8 lg:pb-50px">
+        <h4 class="uppercase text-xl mb-4 lg:mb-8">Description</h4>
+        {{ product.description }}
+      </div>
+    {% endif %}
+    <div class="accordion">
+      <!-- MATERIALS -->
+      {% if product.metafields.my_fields.materials != blank %}
+        <div class="border-b border-gray-400 py-6 accordion-item">
+          <div class="question flex justify-between items-center">
+            <h4 class="uppercase text-xl">Materials</h4>
+            {% render 'icon-chevron-right' %}
+          </div>
+          <div class="answer pt-5 pl-10 hidden transition">
+            {{ product.metafields.my_fields.materials.value }}
+          </div>
+        </div>
+      {% endif %}
+      <!-- SHIPPING AND RETURNS -->
+      {% if product.metafields.my_fields.shipping_returns != blank %}
+        <div class="border-b border-gray-400 py-6 accordion-item">
+          <div class="question flex justify-between items-center">
+            <h4 class="uppercase text-xl">Shipping & Returns</h4>
+            {% render 'icon-chevron-right' %}
+          </div>
+          <div class="answer pt-5 pl-10 hidden transition">
+            {{ product.metafields.my_fields.shipping_returns.value }}
+          </div>
+        </div>
+      {% endif %}
+    </div>   
   </div>
 </div>
 <script>
@@ -262,7 +301,7 @@
                   if(findings) return variant;
               }
           );
-          console.log(this.currentVariant);
+          //console.log(this.currentVariant);
       }
       updateURL() {
           if(!this.currentVariant) return;

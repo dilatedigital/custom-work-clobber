@@ -1,5 +1,34 @@
+<style>
+  .products-grid .product-image-container {
+    outline-color: #bdbdbd;
+    outline-style: solid;
+    outline-width: 1px;
+    border: 10px solid transparent;
+  }
+  .products-grid a:hover .product-image-container {
+    border-image: url("{{ 'pattern-271.jpg' | asset_url }}") 10 round;
+    outline-color: transparent;
+  }
+  .product-code {
+    color: #acacac;
+  }
+  .product-compare-price span {
+    color: #bdbdbd;
+  }
+
+  .featured-btn {
+    background-color: #f0f0f0;
+    height: 50px;
+  }
+</style>
 <div class="container mx-auto pt-35px xct:pt-50px">
   <h2 class="text-xl uppercase xct:text-3xl leading-none border-b-2 border-wc-black pb-2 xct:pb-4 xct:border-b-3">{{ section.settings.featured_title }}</h2>
+  <div class="products-grid py-50px lg:pb-100px grid grid-cols-1 gap-y-10 place-content-center lg:grid-cols-2 xct:grid-cols-4 lg:gap-x-30px lg:gap-y-12">
+    {% for product in collections.featured.products %}
+      {% render 'product-card', product: product %}
+    {% endfor %}
+  </div>
+  <a href="{{ section.settings.collections_link }}" class="font-euro uppercase font-extrabold flex items-center justify-center featured-btn transition hover:bg-wc-yellow">See all products</a>
 </div>
 
 {% schema %} 
@@ -13,6 +42,11 @@
       "id": "featured_title",
       "default": "Featured Workwear Products",
       "label": "Featured Workwear Section Title"
+    },
+    {
+      "type": "url",
+      "id": "collections_link",
+      "label": "See All Products Link"
     }
   ]
 }

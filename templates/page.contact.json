@@ -104,11 +104,11 @@
         "6087dc15-610c-4aba-b9ed-3982e1fd7fe7": {
           "type": "store_detail",
           "settings": {
-            "location_name": "canningvale",
+            "location_name": "Canningvale",
             "address_line_1": "Cnr South St & Bannister Rd",
             "address_line_2": "Canningvale WA 6155",
             "country": "Australia",
-            "email": "info@canning.clobber.com",
+            "email": "canningvale@workclobber.com.au",
             "phone": "(08) 9256 3077",
             "directions_link": "https:\/\/goo.gl\/maps\/kEAWtq7BEUHeLgUNA",
             "oh_monday": "8:30am - 5:15pm",

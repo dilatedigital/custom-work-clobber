@@ -36,12 +36,20 @@
             "each_block_title": "Is the colour I see on the website the actual colour of the product?",
             "each_block_content": "<p>The images on the website are stock images from the supplier, the colour might be slightly different in-store.<\/p>"
           }
+        },
+        "038cc2de-3c94-4cdd-9285-7506d50d41e8": {
+          "type": "faq_block",
+          "settings": {
+            "each_block_title": "Where can I find Work Clobber stores?",
+            "each_block_content": "<p>You can use our <a href=\"\/pages\/contact\" title=\"Contact\">store locator<\/a> to find your closest store.<\/p>"
+          }
         }
       },
       "block_order": [
         "80ade25e-b72e-48c1-9fef-cedbaf4591f1",
         "1ee08c78-378a-433d-8a29-986bf7c7509d",
-        "6cd0d359-d1c4-49c6-b1a4-6be2396fbbab"
+        "6cd0d359-d1c4-49c6-b1a4-6be2396fbbab",
+        "038cc2de-3c94-4cdd-9285-7506d50d41e8"
       ],
       "settings": {
         "faq_title": "General"

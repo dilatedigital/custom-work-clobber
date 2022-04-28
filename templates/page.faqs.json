@@ -79,8 +79,8 @@
         "9e231f0c-12d8-4dfa-928c-43f7e8a960d5": {
           "type": "faq_block",
           "settings": {
-            "each_block_title": "Wew",
-            "each_block_content": "<p>hehhehehehehehehehe<\/p>"
+            "each_block_title": "What if I have a faulty product?",
+            "each_block_content": "<p>If you have a faulty product please <a href=\"\/pages\/contact\" title=\"Contact\">contact us<\/a> through the website or your local store and we will assist you.<\/p>"
           }
         }
       },
@@ -88,7 +88,7 @@
         "9e231f0c-12d8-4dfa-928c-43f7e8a960d5"
       ],
       "settings": {
-        "faq_title": "Awesome New FAQ Title"
+        "faq_title": "Returns"
       }
     }
   },

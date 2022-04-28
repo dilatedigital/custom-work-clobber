@@ -64,10 +64,18 @@
             "each_block_title": "What countries do you deliver to?",
             "each_block_content": "<p>We deliver Australia wide, if you would like international postage please <a href=\"\/pages\/contact\" title=\"Contact\">contact us<\/a> for a quote.<\/p>"
           }
+        },
+        "f19a702e-d505-41b8-a8ae-441cae708795": {
+          "type": "faq_block",
+          "settings": {
+            "each_block_title": "How much does shipping cost?",
+            "each_block_content": ""
+          }
         }
       },
       "block_order": [
-        "d852aadd-322b-4cc0-8ea7-b35d5a239f92"
+        "d852aadd-322b-4cc0-8ea7-b35d5a239f92",
+        "f19a702e-d505-41b8-a8ae-441cae708795"
       ],
       "settings": {
         "faq_title": "Shipping and Delivery"

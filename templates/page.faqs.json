@@ -26,8 +26,8 @@
         "1ee08c78-378a-433d-8a29-986bf7c7509d": {
           "type": "faq_block",
           "settings": {
-            "each_block_title": "Test 2",
-            "each_block_content": "<p>asdfffff<\/p>"
+            "each_block_title": "Are the website prices the same as the stores?",
+            "each_block_content": "<p>Yes! You get the same great price online and in-store.<\/p>"
           }
         }
       },

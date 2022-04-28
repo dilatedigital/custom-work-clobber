@@ -89,14 +89,80 @@
             "each_block_title": "Can I return my purchase in a retail store?",
             "each_block_content": ""
           }
+        },
+        "7d040abd-d87c-47c9-b263-2060956e4980": {
+          "type": "faq_block",
+          "settings": {
+            "each_block_title": "What are my options when I return an item bought from workclobber.com.au?",
+            "each_block_content": ""
+          }
+        },
+        "5b0fc004-48de-4ce3-b491-1d55bd7563a1": {
+          "type": "faq_block",
+          "settings": {
+            "each_block_title": "How long will it take to get a refund?",
+            "each_block_content": ""
+          }
+        },
+        "2f08b11b-4dca-4f6d-9f74-6c108f3b09ec": {
+          "type": "faq_block",
+          "settings": {
+            "each_block_title": "What will happen if I return an item purchased with my gift card?",
+            "each_block_content": ""
+          }
+        },
+        "7eb024e9-3260-4278-8a6c-86e7fddd9855": {
+          "type": "faq_block",
+          "settings": {
+            "each_block_title": "Who gets refunded if I return a gift?",
+            "each_block_content": ""
+          }
         }
       },
       "block_order": [
         "9e231f0c-12d8-4dfa-928c-43f7e8a960d5",
-        "83516601-b43c-4fcb-b347-d0ea643fe83e"
+        "83516601-b43c-4fcb-b347-d0ea643fe83e",
+        "7d040abd-d87c-47c9-b263-2060956e4980",
+        "5b0fc004-48de-4ce3-b491-1d55bd7563a1",
+        "2f08b11b-4dca-4f6d-9f74-6c108f3b09ec",
+        "7eb024e9-3260-4278-8a6c-86e7fddd9855"
       ],
       "settings": {
         "faq_title": "Returns"
+      }
+    },
+    "1651116005bd9e7a94": {
+      "type": "faq-title",
+      "blocks": {
+        "c363d344-e494-4395-aca7-e20e9f4c5260": {
+          "type": "faq_block",
+          "settings": {
+            "each_block_title": "What are my payment options?",
+            "each_block_content": ""
+          }
+        },
+        "a28b8122-783f-495c-90e5-3d23e8b8c9b9": {
+          "type": "faq_block",
+          "settings": {
+            "each_block_title": "How secure is my credit card and personal information?",
+            "each_block_content": ""
+          }
+        },
+        "8e24bc94-bd40-4a12-ac3d-150a08e29834": {
+          "type": "faq_block",
+          "settings": {
+            "each_block_title": "Do prices include GST?",
+            "each_block_content": "<p>Yes.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "c363d344-e494-4395-aca7-e20e9f4c5260",
+        "a28b8122-783f-495c-90e5-3d23e8b8c9b9",
+        "8e24bc94-bd40-4a12-ac3d-150a08e29834"
+      ],
+      "settings": {
+        "faq_title": "Payment"
       }
     }
   },
@@ -105,6 +171,7 @@
     "template",
     "faq-title",
     "164845538230536dd2",
-    "1648455476d5b63fbe"
+    "1648455476d5b63fbe",
+    "1651116005bd9e7a94"
   ]
 }

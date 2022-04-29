@@ -123,7 +123,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/polos.png",
               "category_title": "Shirts",
-              "category_link": "#"
+              "category_link": "shopify:\/\/collections\/shirts"
             }
           },
           "87fd2213-ae75-4ca5-a3d0-ef8425c916b6": {
@@ -226,7 +226,8 @@
       "home-featured": {
         "type": "home-featured",
         "settings": {
-          "featured_title": "Featured Workwear Products"
+          "featured_title": "Featured Workwear Products",
+          "collections_link": ""
         }
       },
       "home-click-collect": {

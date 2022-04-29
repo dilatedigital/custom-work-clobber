@@ -236,7 +236,7 @@
           "click_title": "<h3>Click & Collect <span>Available<\/span>\n<\/h3>",
           "image": "shopify:\/\/shop_images\/click-img.png",
           "button_text": "Shop Now",
-          "click_link": "#"
+          "click_link": "shopify:\/\/collections"
         }
       },
       "footer": {

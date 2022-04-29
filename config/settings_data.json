@@ -139,7 +139,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/jackets.png",
               "category_title": "Jackets",
-              "category_link": "#"
+              "category_link": "shopify:\/\/collections\/jackets"
             }
           },
           "4811e18f-cdbd-40ab-a06a-9da735c701ef": {
@@ -147,7 +147,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/pants.png",
               "category_title": "Pants",
-              "category_link": "#"
+              "category_link": "shopify:\/\/collections\/pants"
             }
           },
           "f313a3bd-aa42-4c1c-bead-a292133bd6bd": {
@@ -155,7 +155,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/shorts.png",
               "category_title": "Shorts",
-              "category_link": "#"
+              "category_link": "shopify:\/\/collections\/shorts"
             }
           },
           "377e70eb-e5b3-4a4a-80f9-590a085a3559": {
@@ -163,7 +163,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/boots.png",
               "category_title": "Workboots",
-              "category_link": "#"
+              "category_link": "shopify:\/\/collections\/workboots"
             }
           },
           "b9935788-4f9d-4749-bf48-982c2b4e1920": {
@@ -171,7 +171,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/hat.png",
               "category_title": "Safety",
-              "category_link": "#"
+              "category_link": "shopify:\/\/collections\/safety"
             }
           },
           "fed8b2e8-8002-4c5e-b330-255431da6f3a": {
@@ -179,7 +179,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/accessories.png",
               "category_title": "Accessories",
-              "category_link": "#"
+              "category_link": "shopify:\/\/collections\/accessories"
             }
           }
         },

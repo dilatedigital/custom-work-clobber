@@ -123,7 +123,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/polos.png",
               "category_title": "Shirts",
-              "category_link": "#"
+              "category_link": "shopify:\/\/collections\/shirts"
             }
           },
           "87fd2213-ae75-4ca5-a3d0-ef8425c916b6": {
@@ -131,7 +131,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/shirts.png",
               "category_title": "Polos",
-              "category_link": "#"
+              "category_link": "shopify:\/\/collections\/polos"
             }
           },
           "3c34c7ef-8c81-415b-9c83-5fd2d187bbfe": {
@@ -139,7 +139,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/jackets.png",
               "category_title": "Jackets",
-              "category_link": "#"
+              "category_link": "shopify:\/\/collections\/jackets"
             }
           },
           "4811e18f-cdbd-40ab-a06a-9da735c701ef": {
@@ -147,7 +147,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/pants.png",
               "category_title": "Pants",
-              "category_link": "#"
+              "category_link": "shopify:\/\/collections\/pants"
             }
           },
           "f313a3bd-aa42-4c1c-bead-a292133bd6bd": {
@@ -155,7 +155,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/shorts.png",
               "category_title": "Shorts",
-              "category_link": "#"
+              "category_link": "shopify:\/\/collections\/shorts"
             }
           },
           "377e70eb-e5b3-4a4a-80f9-590a085a3559": {
@@ -163,7 +163,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/boots.png",
               "category_title": "Workboots",
-              "category_link": "#"
+              "category_link": "shopify:\/\/collections\/workboots"
             }
           },
           "b9935788-4f9d-4749-bf48-982c2b4e1920": {
@@ -171,7 +171,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/hat.png",
               "category_title": "Safety",
-              "category_link": "#"
+              "category_link": "shopify:\/\/collections\/safety"
             }
           },
           "fed8b2e8-8002-4c5e-b330-255431da6f3a": {
@@ -179,7 +179,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/accessories.png",
               "category_title": "Accessories",
-              "category_link": "#"
+              "category_link": "shopify:\/\/collections\/accessories"
             }
           }
         },
@@ -226,7 +226,8 @@
       "home-featured": {
         "type": "home-featured",
         "settings": {
-          "featured_title": "Featured Workwear Products"
+          "featured_title": "Featured Workwear Products",
+          "collections_link": ""
         }
       },
       "home-click-collect": {
@@ -235,7 +236,7 @@
           "click_title": "<h3>Click & Collect <span>Available<\/span>\n<\/h3>",
           "image": "shopify:\/\/shop_images\/click-img.png",
           "button_text": "Shop Now",
-          "click_link": "#"
+          "click_link": "shopify:\/\/collections"
         }
       },
       "footer": {

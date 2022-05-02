@@ -19,21 +19,37 @@
         "80ade25e-b72e-48c1-9fef-cedbaf4591f1": {
           "type": "faq_block",
           "settings": {
-            "each_block_title": "How can I get contact with Work Clobber",
-            "each_block_content": "<p>Cras sodales felis arcu, ut efficitur enim molestie et. Aenean tincidunt pretium placerat. Maecenas iaculis turpis eget dignissim tempus. Nam sit amet aliquet turpis. Curabitur a pharetra magna, posuere gravida libero. Etiam tempus fermentum sapien. Vestibulum congue in est ut rhoncus. Aliquam erat volutpat. Proin lectus enim, interdum sit amet ante sit amet, maximus ornare neque. Nunc rutrum fermentum turpis. In pulvinar felis eget nunc venenatis ullamcorper. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean placerat lorem in tristique luctus.<\/p>"
+            "each_block_title": "How can I get contact with Work Clobber?",
+            "each_block_content": "<p>You can contact us through the <a href=\"\/pages\/contact\" title=\"Contact\">contact us<\/a> page or by calling your nearest store.<\/p>"
           }
         },
         "1ee08c78-378a-433d-8a29-986bf7c7509d": {
           "type": "faq_block",
           "settings": {
-            "each_block_title": "Test 2",
-            "each_block_content": "<p>asdfffff<\/p>"
+            "each_block_title": "Are the website prices the same as the stores?",
+            "each_block_content": "<p>Yes! You get the same great price online and in-store.<\/p>"
+          }
+        },
+        "6cd0d359-d1c4-49c6-b1a4-6be2396fbbab": {
+          "type": "faq_block",
+          "settings": {
+            "each_block_title": "Is the colour I see on the website the actual colour of the product?",
+            "each_block_content": "<p>The images on the website are stock images from the supplier, the colour might be slightly different in-store.<\/p>"
+          }
+        },
+        "038cc2de-3c94-4cdd-9285-7506d50d41e8": {
+          "type": "faq_block",
+          "settings": {
+            "each_block_title": "Where can I find Work Clobber stores?",
+            "each_block_content": "<p>You can use our <a href=\"\/pages\/contact\" title=\"Contact\">store locator<\/a> to find your closest store.<\/p>"
           }
         }
       },
       "block_order": [
         "80ade25e-b72e-48c1-9fef-cedbaf4591f1",
-        "1ee08c78-378a-433d-8a29-986bf7c7509d"
+        "1ee08c78-378a-433d-8a29-986bf7c7509d",
+        "6cd0d359-d1c4-49c6-b1a4-6be2396fbbab",
+        "038cc2de-3c94-4cdd-9285-7506d50d41e8"
       ],
       "settings": {
         "faq_title": "General"
@@ -45,13 +61,21 @@
         "d852aadd-322b-4cc0-8ea7-b35d5a239f92": {
           "type": "faq_block",
           "settings": {
-            "each_block_title": "Shipping title 1",
-            "each_block_content": "<p>Test content for shipping title 1<\/p>"
+            "each_block_title": "What countries do you deliver to?",
+            "each_block_content": "<p>We deliver Australia wide, if you would like international postage please <a href=\"\/pages\/contact\" title=\"Contact\">contact us<\/a> for a quote.<\/p>"
+          }
+        },
+        "f19a702e-d505-41b8-a8ae-441cae708795": {
+          "type": "faq_block",
+          "settings": {
+            "each_block_title": "How much does shipping cost?",
+            "each_block_content": ""
           }
         }
       },
       "block_order": [
-        "d852aadd-322b-4cc0-8ea7-b35d5a239f92"
+        "d852aadd-322b-4cc0-8ea7-b35d5a239f92",
+        "f19a702e-d505-41b8-a8ae-441cae708795"
       ],
       "settings": {
         "faq_title": "Shipping and Delivery"
@@ -63,16 +87,90 @@
         "9e231f0c-12d8-4dfa-928c-43f7e8a960d5": {
           "type": "faq_block",
           "settings": {
-            "each_block_title": "Wew",
-            "each_block_content": "<p>hehhehehehehehehehe<\/p>"
+            "each_block_title": "What if I have a faulty product?",
+            "each_block_content": "<p>If you have a faulty product please <a href=\"\/pages\/contact\" title=\"Contact\">contact us<\/a> through the website or your local store and we will assist you.<\/p>"
+          }
+        },
+        "83516601-b43c-4fcb-b347-d0ea643fe83e": {
+          "type": "faq_block",
+          "settings": {
+            "each_block_title": "Can I return my purchase in a retail store?",
+            "each_block_content": ""
+          }
+        },
+        "7d040abd-d87c-47c9-b263-2060956e4980": {
+          "type": "faq_block",
+          "settings": {
+            "each_block_title": "What are my options when I return an item bought from workclobber.com.au?",
+            "each_block_content": ""
+          }
+        },
+        "5b0fc004-48de-4ce3-b491-1d55bd7563a1": {
+          "type": "faq_block",
+          "settings": {
+            "each_block_title": "How long will it take to get a refund?",
+            "each_block_content": ""
+          }
+        },
+        "2f08b11b-4dca-4f6d-9f74-6c108f3b09ec": {
+          "type": "faq_block",
+          "settings": {
+            "each_block_title": "What will happen if I return an item purchased with my gift card?",
+            "each_block_content": ""
+          }
+        },
+        "7eb024e9-3260-4278-8a6c-86e7fddd9855": {
+          "type": "faq_block",
+          "settings": {
+            "each_block_title": "Who gets refunded if I return a gift?",
+            "each_block_content": ""
           }
         }
       },
       "block_order": [
-        "9e231f0c-12d8-4dfa-928c-43f7e8a960d5"
+        "9e231f0c-12d8-4dfa-928c-43f7e8a960d5",
+        "83516601-b43c-4fcb-b347-d0ea643fe83e",
+        "7d040abd-d87c-47c9-b263-2060956e4980",
+        "5b0fc004-48de-4ce3-b491-1d55bd7563a1",
+        "2f08b11b-4dca-4f6d-9f74-6c108f3b09ec",
+        "7eb024e9-3260-4278-8a6c-86e7fddd9855"
       ],
       "settings": {
-        "faq_title": "Awesome New FAQ Title"
+        "faq_title": "Returns"
+      }
+    },
+    "1651116005bd9e7a94": {
+      "type": "faq-title",
+      "blocks": {
+        "c363d344-e494-4395-aca7-e20e9f4c5260": {
+          "type": "faq_block",
+          "settings": {
+            "each_block_title": "What are my payment options?",
+            "each_block_content": ""
+          }
+        },
+        "a28b8122-783f-495c-90e5-3d23e8b8c9b9": {
+          "type": "faq_block",
+          "settings": {
+            "each_block_title": "How secure is my credit card and personal information?",
+            "each_block_content": ""
+          }
+        },
+        "8e24bc94-bd40-4a12-ac3d-150a08e29834": {
+          "type": "faq_block",
+          "settings": {
+            "each_block_title": "Do prices include GST?",
+            "each_block_content": "<p>Yes.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "c363d344-e494-4395-aca7-e20e9f4c5260",
+        "a28b8122-783f-495c-90e5-3d23e8b8c9b9",
+        "8e24bc94-bd40-4a12-ac3d-150a08e29834"
+      ],
+      "settings": {
+        "faq_title": "Payment"
       }
     }
   },
@@ -81,6 +179,7 @@
     "template",
     "faq-title",
     "164845538230536dd2",
-    "1648455476d5b63fbe"
+    "1648455476d5b63fbe",
+    "1651116005bd9e7a94"
   ]
 }

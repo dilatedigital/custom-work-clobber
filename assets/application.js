@@ -27,5 +27,24 @@ function matchHeight(el){
 
 }
 
+let Clobber = {
+  updateQuantity(line, qty) {
+    fetch('/cart/change.js', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ quantity: qty, line: line })
+    }).then(response => response.json())
+    .then(data => {
+      //fire js event on window
+      window.dispatchEvent(new Event('cart-updated'))
+    })
+    .catch((error) => {
+      console.log('Error:', error)
+    })
+  }
+}
+
+window.Clobber = Clobber;
+
 matchHeight("each-cat");
 matchHeight('product-details');

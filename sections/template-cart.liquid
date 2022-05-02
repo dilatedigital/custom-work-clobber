@@ -79,99 +79,20 @@
 </style>
 {% render 'stripe-pattern' %}
 {% if cart.item_count > 0 %}
-<div class="container mx-auto py-8 xct:py-20">
-  <div>
-    <form action="{{ routes.cart_url}}" method="POST" novalidate class="xct:flex justify-between xct:items-start">
-      <!-- LINE ITEMS -->
-      <div class="cart-title-table overflow-auto xct:overflow-hidden xct:w-full">
-        <h1 class="text-3xl uppercase mb-10">Items in my cart</h1>
-        <table class="table-auto my-4 w-full">
-            <thead class="font-euro uppercase font-extrabold border-b-3 border-wc-black">
-              <th class="py-3 text-left">Product</th>
-              <th class="py-3 text-left">Price</th>
-              <th class="py-3 text-left">Qty</th>
-              <th class="py-3 text-left">Total</th>
-              <th class="py-3 text-center">Remove</th>
-            </thead>
-            <tbody>
-              {% for item in cart.items %}
-                <tr class="table-row border-b border-btm-bar font-euro">
-                  <td class="py-4 xct:py-7">
-                    <div class="flex cart-image-td w-full">
-                      <a href="{{ item.url }}">
-                        {% if item.image %}
-                          <img src="{{ item.image | img_url: 'small' }}" alt="{{ item.title | escape }}" class="border object-contain mr-5">
-                          {% else %}
-                            {{ 'product-1' | placeholder_svg_tag: 'w-20 h-20 object-cover border' }}
-                        {% endif %}
-                      </a>
-                      <div class="item-details flex flex-col">
-                        {% if item.vendor != blank %}
-                          <span class="uppercase font-extrabold text-sm text-cart-gray-ac">
-                            {{ item.vendor }}
-                          </span>
-                        {% endif %}
-                        <a href="{{ item.url }}" class="my-1 font-extrabold text-base uppercase">{{ item.product.title }}</a>
-                        {% if item.variant.sku != blank %}
-                          <span class="font-campton text-xs text-cart-gray-ac">{{ item.variant.sku }}</span>
-                        {% endif %}
-                        <span class="text-sm text-gray-500 my-1">{{ item.variant.title }}</span>
-                      </div>
-                    </div>
-                  </td>
-                  
-                  <td class="py-4 xct:py-7 font-bold td-price">
-                    {{ item.price | money }}
-                  </td>
-                  <td class="py-4 xct:py-7 td-qty">
-                    <input type="number" name="updates[]" value="{{ item.quantity }}" min="1" id="updates_{{ forloop.index }}" class="w-20 border p-2 font-medium font-campton">
-                  </td>
-                  <td class="py-4 xct:py-7 font-bold text-wc-orange td-total-price">
-                    {{ item.line_price | money }}
-                  </td>
-                  <td class="py-4 xct:py-7 text-center">
-                    <a href="{{ routes.cart_change_url }}?line={{ forloop.index }}&quantity=0" class="text-gray-500 flex justify-center">
-                      {% render 'icon-close' %}
-                    </a>
-                  </td>
-                </tr>
-              {% endfor %}
-            </tbody>
-        </table>
-        <div class="flex justify-between cont-update">
-          {% render 'continue-shopping' %}
-          <button type="submit" name="update" class="font-medium uppercase">
-            Update cart
-          </button>
-        </div>
-        
-      </div>
-      <!-- CART SUMMARY -->
-      <div class="cart-summary p-6 mt-6 xct:mt-0">
-        <div class="w-full">
-          <h3 class="uppercase pb-2">Summary</h3>
-          <div class="cart-summary--subtotal flex justify-between items-center py-5">
-            <h4 class="font-campton font-normal text-sm">Subtotal ({{ cart.item_count }} {{ cart.item_count | pluralize: 'item', 'items' }})</h4>
-            <p class="font-bold font-euro">{{ cart.total_price | money }}</p>
-          </div>
-          <div class="cart-summary-total py-5 flex justify-between border-b-3 border-wc-black">
-            <div>
-              <p class="font-medium">Total Amount:</p>
-              <span class="text-sm">(All Tax Included)</span>
-            </div>
-            <p class="font-bold text-wc-orange font-euro text-xl mt-16">{{ cart.total_price | money }}</p>
-          </div>
-          <div class="my-4">
-            <button type="submit" name="checkout" class="wc-btn-yellow uppercase w-full h-11 flex items-center justify-center font-euro font-extrabold transition hover:bg-wc-black hover:text-wc-yellow">
-              Proceed to payment
-            </button>
-          </div>
-          <div class="my-2 flex justify-center">
-            {% render 'continue-shopping' %}
-          </div>
-        </div>
-      </div>    
-    </form>
+<div class="container mx-auto py-8 xct:py-20"
+  x-data="{
+    updateCart() {
+      fetch('/?view=cart')
+      .then(response => response.text())
+      .then(cartData => {
+        $refs.cart_content.innerHTML = cartData;
+      })
+    }
+  }"
+  @cart-updated.window="updateCart"
+  >
+  <div x-ref="cart_content">
+    {% render 'cart-form' %}
   </div>
 </div>
 {% else %}

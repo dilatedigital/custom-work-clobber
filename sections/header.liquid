@@ -81,13 +81,45 @@
   .tab-wrapper label.active {
     border-bottom: 3px solid #000
   }
+
+  @media screen and (min-width: 1170px) {
+    .logo-container {
+      position: relative;
+      bottom: -50px;
+      z-index: 50;
+      background: white;
+      padding: 20px;
+    }
+
+    .logo-container img {
+      width: 370px;
+    }
+
+    .top-menu-icons {
+      max-height: 70px;
+    }
+
+    .header-bottom-bar {
+      padding-bottom: 25px;
+    }
+    .top-menu-container {
+      margin-right: 90px;
+    }
+    .bottom-bar-div {
+      width: 380px;
+    }
+
+    .bottom-bar-div:last-child {
+      width: 355px;
+    }
+  }
 </style>
 {{ 'login-signup.css' | asset_url | stylesheet_tag }}
 <div class="relative bg-white" x-data="{ mobileMenuOpen: false, searchBarOpen: false, modal: false }">
   <div class="mx-auto container pt-6 py-4">
-    <div class="flex items-center xct:justify-between">
+    <div class="flex top-menu-icons items-center xct:justify-between">
       <!-- TOPBAR MENU -->
-      <nav class="hidden xct:flex xct:max-w-300 xct:w-full xct:justify-between xct:mr-44">
+      <nav class="hidden xct:flex xct:max-w-300 xct:w-full xct:justify-between xct:mr-44 top-menu-container">
         {% for link in section.settings.top_bar_menu.links %} 
           {% if link.links != blank %}
             {% assign link_handle = link.handle | replace: '-', '_' %}
@@ -125,7 +157,7 @@
         {% endfor %}
       </nav>
       <!-- STORE NAME / STORE LOGO -->
-      <div class="flex mr-auto">
+      <div class="flex mr-auto logo-container">
         {% if section.settings.logo != blank %}
           {% assign logo = section.settings.logo | img_url: 'master' %}
           <a href="/">
@@ -227,10 +259,17 @@
     </div>
     
   </div>
+
+  {% render 'stripe-pattern' %}
+  <!-- BOTTOM BAR -->
   <div class="hidden xct:block relative header-bottom-bar border-t border-btm-bar">
     <div class="mx-auto container">
       <nav class="flex justify-between items-center h-65">
         {% for link in section.settings.menu.links %} 
+        {% assign r = forloop.index0 | modulo: 3  %}
+          {% if r == 0 %}
+            <div class="bottom-bar-div h-65 items-center flex justify-between">
+          {% endif %}
           {% if link.links != blank %}
             {% assign link_handle = link.handle | replace: '-', '_' %}
             <div class="relative" x-data="{ {{ link_handle }}: false }">
@@ -263,7 +302,9 @@
             {% else %}
             <a class="text-sm text-wc-black leading-none font-bold hover:text-gray-700 uppercase" href="{{ link.url }}"> {{ link.title }} </a>
           {% endif %}
-          
+          {% if r == 2 or forloop.last %}
+            </div>
+          {% endif %}
         {% endfor %}
       </nav>
     </div>

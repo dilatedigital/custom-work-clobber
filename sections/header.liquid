@@ -86,7 +86,6 @@
     .logo-container {
       position: relative;
       bottom: -50px;
-      z-index: 50;
       background: white;
       padding: 20px;
     }
@@ -157,7 +156,7 @@
         {% endfor %}
       </nav>
       <!-- STORE NAME / STORE LOGO -->
-      <div class="flex mr-auto logo-container">
+      <div class="flex mr-auto logo-container z-10">
         {% if section.settings.logo != blank %}
           {% assign logo = section.settings.logo | img_url: 'master' %}
           <a href="/">

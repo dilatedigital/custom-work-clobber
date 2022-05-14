@@ -268,56 +268,28 @@
   </div>
 </div>
 
-<style>
-  .product-card {
-    box-sizing: border-box;
-    float: left;
-    min-height: 1em;
-    padding-left: 2em;
-    vertical-align: top;
-    width: 25%;
-  }
+<ul class="product-tags">
+  {% for tag in product.tags %}
+  <li><a href="/collections/all/{{ tag | handleize }}">{{ tag }}</a></li>
+  {% endfor %}
+</ul>
 
-  .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    white-space: nowrap;
-  }
-</style>
-
+{% for product in collections.all.products %}   
+  {% if product.tags contains "Lace Up" %} 
+    {% render 'product-card', product: product %}  
+  {% endif %}
+{% endfor %}
+<!-- 
 {%- assign counter = 0 -%}
 {%- assign break_at = section.settings.number_of_products | plus: 0 -%}
 {%- assign current_product = product -%}
-
+{{ current_product.handle }}
 {%- capture related_items -%}
   {%- for product in collections.all.products -%}
     {%- unless product.handle == current_product.handle -%}
 
-      {%- if product.tags contains section.settings.related_tag -%}
-        <a href="{{ product.url | within: collection }}" class="product-card">
-          <img src="{{ product.featured_image.src | img_url: '1024x' }}" alt="">
-          {{ product.title }}
-          <p>
-            <span aria-hidden="true">—</span>
-            {%- if product.price_varies -%}
-              <span class="visuallyhidden">Starting at</span>
-              {{ product.price_min | money_without_trailing_zeros }}
-              <span aria-hidden="true">+</span>
-            {%- else -%}
-              {{ product.price | money_without_trailing_zeros }}
-            {%- endif -%}
-          </p>
-          <p>
-            <span class="visuallyhidden">by</span>
-            {{ product.vendor }}
-          </p>
-        </a>
+      {%- if product.tags contains 'Safety' -%}
+        {% render 'product-card', product: product %}
 
         {%- assign counter = counter | plus: 1 -%}
 
@@ -330,7 +302,6 @@
     {%- endunless -%}
   {%- endfor -%}
 {%- endcapture -%}
-
 {%- assign related_items = related_items | trim -%}
 {%- unless related_items == blank -%}
   <aside>
@@ -340,9 +311,9 @@
 
     {{ related_items }}
   </aside>
-{%- endunless -%}
+{%- endunless -%}-->
 
-{% schema %}
+{% schema %} 
 {
   "name": "Recommended products",
   "settings": [

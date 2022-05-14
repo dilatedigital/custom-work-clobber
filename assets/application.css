@@ -640,10 +640,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0.75rem;
 }
 
-.isolate {
-  isolation: isolate;
-}
-
 .z-10 {
   z-index: 10;
 }

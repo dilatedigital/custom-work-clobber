@@ -26,7 +26,7 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/king-gee-2.png",
             "button_text": "View Products",
-            "brand_collection_url": "#"
+            "brand_collection_url": "shopify:\/\/collections\/king-gee"
           }
         },
         "02980a0d-247c-42cc-85ce-655fbba46311": {

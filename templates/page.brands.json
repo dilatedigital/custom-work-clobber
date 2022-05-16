@@ -42,7 +42,7 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/blundstone.png",
             "button_text": "View Products",
-            "brand_collection_url": "#"
+            "brand_collection_url": "shopify:\/\/collections\/blundstone"
           }
         },
         "3e333056-8e84-4f32-92c9-fe57aac80820": {
@@ -50,7 +50,7 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/steel-blue.png",
             "button_text": "View Products",
-            "brand_collection_url": "#"
+            "brand_collection_url": "shopify:\/\/collections\/steel-blue"
           }
         },
         "ac1da130-d075-4109-a536-fa16c9ca0665": {
@@ -66,7 +66,7 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/cat.png",
             "button_text": "View Products",
-            "brand_collection_url": "#"
+            "brand_collection_url": "shopify:\/\/collections\/cat"
           }
         },
         "996ae862-ab17-4f26-8ff6-adac7db34660": {
@@ -82,7 +82,7 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/oliver.png",
             "button_text": "View Products",
-            "brand_collection_url": "#"
+            "brand_collection_url": "shopify:\/\/collections\/oliver"
           }
         },
         "812fb8f3-4f13-4def-bcf4-dab09b11c6bf": {
@@ -90,7 +90,7 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/bisley.jpg",
             "button_text": "View Products",
-            "brand_collection_url": "#"
+            "brand_collection_url": "shopify:\/\/collections\/bisley"
           }
         },
         "d8093c13-4307-47ea-8a50-a885eb7549dd": {

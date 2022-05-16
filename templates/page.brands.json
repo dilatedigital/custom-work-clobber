@@ -34,7 +34,7 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/hard-yakka.png",
             "button_text": "View Products",
-            "brand_collection_url": "#"
+            "brand_collection_url": "shopify:\/\/collections\/hard-yakka"
           }
         },
         "ec2928c9-4e2e-4f15-bf5e-3e37c06ad0fb": {

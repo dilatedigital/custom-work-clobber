@@ -268,17 +268,23 @@
   </div>
 </div>
 
-<ul class="product-tags">
+<!-- <ul class="product-tags">
   {% for tag in product.tags %}
   <li><a href="/collections/all/{{ tag | handleize }}">{{ tag }}</a></li>
   {% endfor %}
-</ul>
+</ul> -->
+
+{% assign related = product.tags | first  %}
+
+{{ related }}
 
 {% for product in collections.all.products %}   
-  {% if product.tags contains "Lace Up" %} 
-    {% render 'product-card', product: product %}  
+  {% if product.tags contains related %} 
+    <h2>{{ product.title }}</h2>  
   {% endif %}
 {% endfor %}
+
+
 <!-- 
 {%- assign counter = 0 -%}
 {%- assign break_at = section.settings.number_of_products | plus: 0 -%}

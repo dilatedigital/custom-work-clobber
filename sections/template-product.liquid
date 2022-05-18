@@ -74,6 +74,23 @@
     max-width: 10px;
   }
 
+  .products-grid .product-image-container {
+    outline-color: #bdbdbd;
+    outline-style: solid;
+    outline-width: 1px;
+    border: 10px solid transparent;
+  }
+  .products-grid a:hover .product-image-container {
+    border-image: url("{{ 'pattern-271.jpg' | asset_url }}") 10 round;
+    outline-color: transparent;
+  }
+  .product-code {
+    color: #acacac;
+  }
+  .product-compare-price span {
+    color: #bdbdbd;
+  }
+
   @media screen and (min-width: 1024px) {
     .gallery-top.swiper-container {
       border-image: url("{{ 'pattern-product.jpg' | asset_url }}") 10 round;
@@ -276,13 +293,38 @@
 
 {% assign related = product.tags | first  %}
 
-{{ related }}
+{% assign myCounter = 0  %}
 
-{% for product in collections.all.products %}   
-  {% if product.tags contains related %} 
-    <h2>{{ product.title }}</h2>  
-  {% endif %}
-{% endfor %}
+{% capture related_items %}
+<div class="container mx-auto">
+  <div class="products-grid pb-50px lg:pb-100px grid grid-cols-1 gap-y-10 place-content-center lg:grid-cols-2 xct:grid-cols-4 lg:gap-x-30px lg:gap-y-12">
+    {% for collection in  product.collections %}
+      {% for product1 in collection.products %}
+        {% for tag in product1.tags %}
+        {% unless myCounter >= 4 %}
+          {% if tag == related %}
+            {% if product1.id  != product.id %}
+            {% render 'product-card', product: product1 %}
+            {% assign myCounter = myCounter | plus: 1 %}
+            {% endif %}
+          {% endif %}
+          {% endunless %}
+        {% endfor %}
+      {% endfor %}
+    {% endfor %}
+  </div>
+</div>
+{% endcapture %}
+
+{% unless related_items == blank %}
+
+  <div class="container mx-auto">
+    <h2 class="uppercase text-3xl border-b-3 border-wc-black pb-5 mb-8">{{ section.settings.heading }}</h2>
+  </div>
+  {{ related_items }}
+
+{% endunless %}
+
 
 
 <!-- 
@@ -321,39 +363,13 @@
 
 {% schema %} 
 {
-  "name": "Recommended products",
+  "name": "Related products",
   "settings": [
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Recommended products"
-    },
-    {
-      "type": "text",
-      "id": "related_tag",
-      "label": "Tag",
-      "info" : "The tag determines which products show as related products."
-    },
-    {
-      "type": "select",
-      "id": "number_of_products",
-      "label": "Number of products to show",
-      "default": "4",
-      "options": [
-        {
-          "value": "4",
-          "label": "4"
-        },
-        {
-          "value": "8",
-          "label": "8"
-        },
-        {
-          "value": "12",
-          "label": "12"
-        }
-      ]
+      "default": "Related products"
     }
   ]
 }

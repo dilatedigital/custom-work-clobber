@@ -212,7 +212,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/new_arrivals.jpg",
               "button_text": "Shop Now",
-              "cta_link": "#"
+              "cta_link": "shopify:\/\/collections\/steel-blue"
             }
           }
         },

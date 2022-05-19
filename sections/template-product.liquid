@@ -172,63 +172,67 @@
         </div>
         <div class="product-variants-btn pt-4 lg:pt-5">
           {% unless product.has_only_default_variant %}
-            <variant-selector data-url="{{ product.url}}" data-section="{{ section.id }}">
-                {% for option in product.options_with_values %}
-                    <label for="Option-{{ section.id }}-{{ forloop.index0 }}">{{ option.name }}</label>
+            <div>
+              <variant-selector data-url="{{ product.url}}" data-section="{{ section.id }}" class="md:flex">
+                  {% for option in product.options_with_values %}
+                      <div class="variant-selector-container flex items-center mr-4">
+                        <label for="Option-{{ section.id }}-{{ forloop.index0 }}" class="mr-2">{{ option.name }}</label>
 
-                    <div class="my-2">
-                        <select 
-                            name="options[{{ option.name | escape }}]" 
-                            id="Option-{{ section.id }}-{{ forloop.index0 }}" 
-                            class="w-full border py-3 px-3"
-                        >
-                            {% for value in option.values %}
-                                <option 
-                                    value="{{ value | escape }}"
-                                    {% if option.selected_value == value %}
-                                        selected="selected"
-                                    {% endif %}
-                                >
-                                    {{ value }}
-                                </option>
-                            {% endfor %}
-                        </select>
-                    </div>
+                        <div class="my-2">
+                            <select 
+                                name="options[{{ option.name | escape }}]" 
+                                id="Option-{{ section.id }}-{{ forloop.index0 }}" 
+                                class="w-full border py-3 px-3"
+                            >
+                                {% for value in option.values %}
+                                    <option 
+                                        value="{{ value | escape }}"
+                                        {% if option.selected_value == value %}
+                                            selected="selected"
+                                        {% endif %}
+                                    >
+                                        {{ value }}
+                                    </option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                      </div>
 
-                    <script type="application/json">
-                        {{ product.variants | json }}
-                    </script>
+                      <script type="application/json">
+                          {{ product.variants | json }}
+                      </script>
 
-                {% endfor %}
-            </variant-selector>
-          {% endunless %}
+                  {% endfor %}
+              </variant-selector>
+            {% endunless %}
 
-          <div class="my-3">
-            <label for="Quantity-{{ section.id }}">Quantity</label>
-            <div 
-              class="my-2 product-qty__wrapper flex"
-              x-data="{ 
-                qty: 1,
-                minus(value) {
-                  this.qty = parseInt(this.qty);
-                  (this.qty == 1) ? this.qty = 1 : this.qty -= value;
-                },
-                plus(value) {
-                  this.qty = parseInt(this.qty);
-                  this.qty += value;
-                }
-              }"
-              x-init="$watch('qty', value =>  $dispatch('quantity-changed', { quantity: value }))"
-            >
-              <button type="button" class="btn-minus flex items-center justify-center cursor-pointer hover:bg-wc-black transition hover:fill-white" @click="minus(1)">
-                <span class="sr-only">Minus</span>
-                {% render 'icon-minus' %}
-              </button>
-              <input type="number" x-model="qty" name="quantity" id="Quantity-{{ section.id }}" value="1" min="1" class="text-center">
-              <button type="button" class="btn-plus flex items-center justify-center cursor-pointer hover:bg-wc-black transition hover:fill-white" @click="plus(1)">
-                <span class="sr-only">Plus</span>
-                {% render 'icon-plus' %}
-              </button>
+            <div class="my-3">
+              <label for="Quantity-{{ section.id }}">Quantity</label>
+              <div 
+                class="my-2 product-qty__wrapper flex"
+                x-data="{ 
+                  qty: 1,
+                  minus(value) {
+                    this.qty = parseInt(this.qty);
+                    (this.qty == 1) ? this.qty = 1 : this.qty -= value;
+                  },
+                  plus(value) {
+                    this.qty = parseInt(this.qty);
+                    this.qty += value;
+                  }
+                }"
+                x-init="$watch('qty', value =>  $dispatch('quantity-changed', { quantity: value }))"
+              >
+                <button type="button" class="btn-minus flex items-center justify-center cursor-pointer hover:bg-wc-black transition hover:fill-white" @click="minus(1)">
+                  <span class="sr-only">Minus</span>
+                  {% render 'icon-minus' %}
+                </button>
+                <input type="number" x-model="qty" name="quantity" id="Quantity-{{ section.id }}" value="1" min="1" class="text-center">
+                <button type="button" class="btn-plus flex items-center justify-center cursor-pointer hover:bg-wc-black transition hover:fill-white" @click="plus(1)">
+                  <span class="sr-only">Plus</span>
+                  {% render 'icon-plus' %}
+                </button>
+              </div>
             </div>
           </div>
 

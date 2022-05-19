@@ -13,7 +13,7 @@
     {% for block in section.blocks %}
       {% if block.type == 'faq_block' %}
         <div class="border-b border-gray-400 py-6 accordion-item">
-          <div class="question flex justify-between items-center">
+          <div class="question flex justify-between items-center hover:cursor-pointer">
             <h4 class="font-campton text-lg font-bold">{{ block.settings.each_block_title }}</h4>
             {% render 'icon-chevron-right' %}
           </div>

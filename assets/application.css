@@ -1761,6 +1761,10 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
+.last\:ml-4:last-child {
+  margin-left: 1rem;
+}
+
 .hover\:cursor-pointer:hover {
   cursor: pointer;
 }

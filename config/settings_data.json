@@ -227,7 +227,7 @@
         "type": "home-featured",
         "settings": {
           "featured_title": "Featured Workwear Products",
-          "collections_link": ""
+          "collections_link": "shopify:\/\/collections\/all"
         }
       },
       "home-click-collect": {

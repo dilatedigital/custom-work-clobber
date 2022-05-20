@@ -801,6 +801,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 0px;
 }
 
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -819,10 +823,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-7 {
   margin-top: 1.75rem;
-}
-
-.mr-2 {
-  margin-right: 0.5rem;
 }
 
 .ml-2 {
@@ -977,6 +977,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 32rem;
 }
 
+.max-w-150 {
+  max-width: 150px;
+}
+
+.max-w-300 {
+  max-width: 300px;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -1065,6 +1073,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-items: center;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
 .justify-end {
   justify-content: flex-end;
 }
@@ -1127,6 +1139,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .truncate {
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.whitespace-nowrap {
   white-space: nowrap;
 }
 
@@ -1761,8 +1777,12 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
-.last\:ml-4:last-child {
-  margin-left: 1rem;
+.last\:mt-0:last-child {
+  margin-top: 0px;
+}
+
+.last\:mb-0:last-child {
+  margin-bottom: 0px;
 }
 
 .hover\:cursor-pointer:hover {

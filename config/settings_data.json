@@ -212,7 +212,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/new_arrivals.jpg",
               "button_text": "Shop Now",
-              "cta_link": "#"
+              "cta_link": "shopify:\/\/collections\/steel-blue"
             }
           }
         },
@@ -227,7 +227,7 @@
         "type": "home-featured",
         "settings": {
           "featured_title": "Featured Workwear Products",
-          "collections_link": ""
+          "collections_link": "shopify:\/\/collections\/all"
         }
       },
       "home-click-collect": {

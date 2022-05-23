@@ -19,7 +19,7 @@
                     {% if item.image %}
                       <img src="{{ item.image | img_url: 'small' }}" alt="{{ item.title | escape }}" class="border object-contain mr-5">
                       {% else %}
-                        {{ 'product-1' | placeholder_svg_tag: 'w-20 h-20 object-cover border' }}
+                        {{ 'product-1' | placeholder_svg_tag: 'w-20 h-20 object-cover border mr-5' }}
                     {% endif %}
                   </a>
                   <div class="item-details flex flex-col">
@@ -32,7 +32,10 @@
                     {% if item.variant.sku != blank %}
                       <span class="font-campton text-xs text-cart-gray-ac">{{ item.variant.sku }}</span>
                     {% endif %}
-                    <span class="text-sm text-gray-500 my-1">{{ item.variant.title }}</span>
+                    
+                    {% if item.variant.title != 'Default Title' %}
+                      <span class="text-sm text-gray-500 my-1">{{ item.variant.title }}</span>
+                    {% endif %}
                   </div>
                 </div>
               </td>

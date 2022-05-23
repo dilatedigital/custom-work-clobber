@@ -961,6 +961,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 28rem;
 }
 
+.max-w-300 {
+  max-width: 300px;
+}
+
 .max-w-315 {
   max-width: 315px;
 }
@@ -975,14 +979,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-lg {
   max-width: 32rem;
-}
-
-.max-w-150 {
-  max-width: 150px;
-}
-
-.max-w-300 {
-  max-width: 300px;
 }
 
 .flex-1 {
@@ -1071,10 +1067,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .items-center {
   align-items: center;
-}
-
-.justify-start {
-  justify-content: flex-start;
 }
 
 .justify-end {
@@ -1601,6 +1593,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
+.text-\[\#b0b0b0\] {
+  --tw-text-opacity: 1;
+  color: rgb(176 176 176 / var(--tw-text-opacity));
+}
+
 .underline {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -1775,10 +1772,6 @@ h1, h2, h3, h4, h5, h6,
   .wc-btn svg {
     width: 14px;
   }
-}
-
-.last\:mt-0:last-child {
-  margin-top: 0px;
 }
 
 .last\:mb-0:last-child {
@@ -2127,6 +2120,10 @@ h1, h2, h3, h4, h5, h6,
 
   .xct\:mt-12 {
     margin-top: 3rem;
+  }
+
+  .xct\:mr-4 {
+    margin-right: 1rem;
   }
 
   .xct\:block {

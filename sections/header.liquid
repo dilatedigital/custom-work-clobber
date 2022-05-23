@@ -82,6 +82,14 @@
     border-bottom: 3px solid #000
   }
 
+  .btn-w-dropdown .submenu {
+    display: none
+  }
+
+  .btn-w-dropdown:hover .submenu {
+    display: block
+  }
+
   @media screen and (min-width: 1170px) {
     .logo-container {
       position: relative;
@@ -277,7 +285,7 @@
           {% endif %}
           {% if link.links != blank %}
             {% assign link_handle = link.handle | replace: '-', '_' %}
-            <div class="relative" x-data="{ {{ link_handle }}: false, timeout: null }" x-on:mouseenter="{{link_handle}} = true; clearTimeout(timeout)" x-on:mouseleave="timeout = setTimeout(() => {{ link_handle }} = false, 100)">
+            <div class="relative btn-w-dropdown" x-data="{ {{ link_handle }}: false, timeout: null }" x-on:mouseenter="{{link_handle}} = true; clearTimeout(timeout)" x-on:mouseleave="timeout = setTimeout(() => {{ link_handle }} = false, 100)">
               <button class="inline-flex items-center text-sm text-wc-black font-bold hover:text-gray-700 leading-none uppercase">
                 {{ link.title }}
                 {% render 'icon-dropdown' %}
@@ -290,7 +298,8 @@
                 x-transition:leave-start="opacity-100 translate-y-0"
                 x-transition:leave-end="opacity-0 translate-y-3"
                 x-show="{{link_handle}}" x-on:mouseleave="{{link_handle}} = false"
-                class="absolute z-50 px-2 transform w-screen max-w-300 sm:px-0">
+                class="absolute z-50 px-2 transform w-screen max-w-300 sm:px-0 submenu"
+                :class="{'block': {{link_handle}}}">
                 <div class="shadow-lg border ring-black ring-opacity-5 overflow-hidden rounded-lg">
                   <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                     {% for childlink in link.links %}

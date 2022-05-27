@@ -4,20 +4,50 @@
   }"
   @filter-updated.window="$nextTick(() => {
     const queryString = new URLSearchParams(new FormData($refs.filter_form)).toString()
+
+    const queryStringF = window.location.search; 
+    const urlParams = new URLSearchParams(queryString); 
+
+    const urlParamsF = new URLSearchParams(queryStringF);
+
     
     loading = true;
-    fetch('/collections/{{ collection.handle }}?' + queryString)
+
+    if (urlParamsF.has('sort_by') ) {
+      const sorted = urlParamsF.get('sort_by');
+      console.log('?sort_by=' + sorted + '&' + queryString.toString());
+
+      fetch('/collections/{{ collection.handle }}?sort_by=' + sorted + '&' + queryString)
       .then(response => response.text())
       .then(data => {
         let html_div = document.createElement('div');
         html_div.innerHTML = data;
         let html_dom = html_div.querySelector('.products-grid').innerHTML;
         document.querySelector('.products-grid').innerHTML = html_dom;
+
         // update url without refreshing the page 
-        history.replaceState(null, null, '?' + queryString);
+        history.replaceState(null, null, '?sort_by=' + sorted + '&' + queryString);
+        
       })
       .catch(error => console.error('Error:', error))
       .finally(() => loading = false);
+    } else {
+      fetch('/collections/{{ collection.handle }}?' + queryString)
+      .then(response => response.text())
+      .then(data => {
+        let html_div = document.createElement('div');
+        html_div.innerHTML = data;
+        let html_dom = html_div.querySelector('.products-grid').innerHTML;
+        document.querySelector('.products-grid').innerHTML = html_dom;
+
+        // update url without refreshing the page 
+        history.replaceState(null, null, '?' + queryString);
+       
+      })
+      .catch(error => console.error('Error:', error))
+      .finally(() => loading = false);
+    }
+    
     
   })"
   >

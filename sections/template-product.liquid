@@ -123,9 +123,13 @@
       
       <div class="swiper-container gallery-top overflow-hidden">
         <div class="swiper-wrapper">
-          {% for media in product.media %}
-            {% render 'product-media', media: media %}
-          {% endfor %}
+          {% if product.media != blank %}
+            {% for media in product.media %}
+              {% render 'product-media', media: media %}
+            {% endfor %}
+            {% else %}
+            {{ 'product-1' | placeholder_svg_tag: 'h-full flex items-center justify-center w-full' }}
+          {% endif %}
         </div>
       </div>
       

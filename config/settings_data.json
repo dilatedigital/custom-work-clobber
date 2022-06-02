@@ -18,10 +18,10 @@
             "type": "hero_slider",
             "settings": {
               "image": "shopify:\/\/shop_images\/banner-desktop-final.jpg",
-              "slide_title": "<h1>Hi-Vis <br>Workwear\n<\/h1>\n<span>Standout performance<\/span>",
-              "slide_right_text": "<span class=\"sup\">For Tradies by Tradies<\/span>\n<h2>WA Exclusive<\/h2>\n<span class=\"sub\">Work Wear Supplier<\/span>",
+              "slide_title": "<h1>For Tradies <br>By Tradies\n<\/h1>\n<span>Standout performance<\/span>",
+              "slide_right_text": "<span class=\"sup\">Hi Vis Workwear<\/span>\n<h2>WA Exclusive<\/h2>\n<span class=\"sub\">Work Wear Supplier<\/span>",
               "button_title": "Shop Now",
-              "slide_button_url": "#"
+              "slide_button_url": "shopify:\/\/collections"
             }
           },
           "6dffdcbe-16a7-46bf-beba-6ba59adb1fd0": {

@@ -26,6 +26,7 @@
           },
           "6dffdcbe-16a7-46bf-beba-6ba59adb1fd0": {
             "type": "hero_slider",
+            "disabled": true,
             "settings": {
               "image": "shopify:\/\/shop_images\/banner-desktop_1.jpg",
               "slide_title": "<h1>Hi-Vis 2<\/h1>\n<br>\n<span>Standout performance<\/span>",
@@ -36,6 +37,7 @@
           },
           "fd5b5181-0e92-4f38-8c2c-ca2a65f7da2e": {
             "type": "hero_slider",
+            "disabled": true,
             "settings": {
               "image": "shopify:\/\/shop_images\/banner-desktop_1.jpg",
               "slide_title": "<h1>Slide 3<\/h1>\n<br>\n<span>Slide 3 subtitle<\/span>",

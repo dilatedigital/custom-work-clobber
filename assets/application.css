@@ -925,6 +925,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 20rem;
 }
 
+.h-\[47px\] {
+  height: 47px;
+}
+
 .w-full {
   width: 100%;
 }
@@ -979,6 +983,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-lg {
   max-width: 32rem;
+}
+
+.max-w-150 {
+  max-width: 150px;
 }
 
 .flex-1 {
@@ -1915,6 +1923,10 @@ h1, h2, h3, h4, h5, h6,
 
   .md\:flex-wrap {
     flex-wrap: wrap;
+  }
+
+  .md\:items-center {
+    align-items: center;
   }
 
   .md\:border-0 {

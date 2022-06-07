@@ -182,7 +182,7 @@
         <div class="product-variants-btn pt-4 lg:pt-5">
           {% unless product.has_only_default_variant %}
             <div>
-              <variant-selector data-url="{{ product.url}}" data-section="{{ section.id }}" class="md:flex">
+              <variant-selector data-url="{{ product.url}}" data-section="{{ section.id }}" class="md:flex md:items-center">
                   {% for option in product.options_with_values %}
                       <div class="variant-selector-container flex items-center mr-4">
                         <label for="Option-{{ section.id }}-{{ forloop.index0 }}" class="mr-2">{{ option.name }}</label>
@@ -212,8 +212,12 @@
                       </script>
 
                   {% endfor %}
+                  <a href="/pages/size-guide/" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center max-w-150 h-[47px] w-full">Size Guide</a>
+
               </variant-selector>
+
             {% endunless %}
+
 
             <div class="my-3">
               <label for="Quantity-{{ section.id }}">Quantity</label>

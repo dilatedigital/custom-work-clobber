@@ -1,17 +1,16 @@
 {
   "sections": {
-    "template": {
-      "type": "template-size-guide",
-      "disabled": true,
-      "settings": {
-        "size_guide_title": "Size Guide"
-      }
-    },
     "inner-banner": {
       "type": "inner-banner",
       "settings": {
         "inner_banner_title": "Size Guide",
         "inner_banner_image": "shopify:\/\/shop_images\/faqs-inner-banner.jpg"
+      }
+    },
+    "template": {
+      "type": "template-size-guide",
+      "settings": {
+        "size_guide_title": "Size Guide"
       }
     },
     "faq-title": {
@@ -34,8 +33,8 @@
     }
   },
   "order": [
-    "template",
     "inner-banner",
+    "template",
     "faq-title"
   ]
 }

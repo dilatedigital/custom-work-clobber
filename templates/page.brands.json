@@ -71,6 +71,7 @@
         },
         "996ae862-ab17-4f26-8ff6-adac7db34660": {
           "type": "brands_block",
+          "disabled": true,
           "settings": {
             "logo": "shopify:\/\/shop_images\/rossi-boots.png",
             "button_text": "View Products",
@@ -95,6 +96,7 @@
         },
         "d8093c13-4307-47ea-8a50-a885eb7549dd": {
           "type": "brands_block",
+          "disabled": true,
           "settings": {
             "logo": "shopify:\/\/shop_images\/jonsson.jpg",
             "button_text": "View Products",
@@ -103,6 +105,7 @@
         },
         "ee7e7ef0-7745-4dd1-9836-b180c14c1a5b": {
           "type": "brands_block",
+          "disabled": true,
           "settings": {
             "logo": "shopify:\/\/shop_images\/huski.jpg",
             "button_text": "View Products",

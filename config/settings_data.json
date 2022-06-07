@@ -94,6 +94,7 @@
           },
           "d10256b2-06b6-42e1-b23c-c5a5fb0f6f3a": {
             "type": "logo",
+            "disabled": true,
             "settings": {
               "image": "shopify:\/\/shop_images\/rossi-boots.png"
             }

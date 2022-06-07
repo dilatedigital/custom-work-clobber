@@ -205,9 +205,9 @@
           "b8d1c4fe-3633-4012-8ffb-dbc83d89c8df": {
             "type": "cta_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/clearance.jpg",
-              "button_text": "Click Here",
-              "cta_link": "#"
+              "image": "shopify:\/\/shop_images\/embroidery.jpg",
+              "button_text": "More Info",
+              "cta_link": "shopify:\/\/pages\/faqs-deliveries"
             }
           },
           "50fa9b1b-67e1-4791-8300-7359f6496484": {

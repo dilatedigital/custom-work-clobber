@@ -53,29 +53,12 @@
             "brand_collection_url": "shopify:\/\/collections\/steel-blue"
           }
         },
-        "ac1da130-d075-4109-a536-fa16c9ca0665": {
-          "type": "brands_block",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/fxd.jpg",
-            "button_text": "View Products",
-            "brand_collection_url": "#"
-          }
-        },
         "dc6f706f-ebb9-4469-ad68-a86dc195ea5a": {
           "type": "brands_block",
           "settings": {
             "logo": "shopify:\/\/shop_images\/cat.png",
             "button_text": "View Products",
             "brand_collection_url": "shopify:\/\/collections\/cat"
-          }
-        },
-        "996ae862-ab17-4f26-8ff6-adac7db34660": {
-          "type": "brands_block",
-          "disabled": true,
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/rossi-boots.png",
-            "button_text": "View Products",
-            "brand_collection_url": "#"
           }
         },
         "55d8afdd-a33a-43f7-aad3-19ec5ab07b5f": {
@@ -94,22 +77,36 @@
             "brand_collection_url": "shopify:\/\/collections\/bisley"
           }
         },
-        "d8093c13-4307-47ea-8a50-a885eb7549dd": {
+        "c0a295f7-50ea-404b-a232-af60dbd8fb70": {
           "type": "brands_block",
-          "disabled": true,
           "settings": {
-            "logo": "shopify:\/\/shop_images\/jonsson.jpg",
+            "logo": "shopify:\/\/shop_images\/eyres-logo-300x183-removebg-preview.png",
             "button_text": "View Products",
             "brand_collection_url": "#"
           }
         },
-        "ee7e7ef0-7745-4dd1-9836-b180c14c1a5b": {
+        "2cc246b0-a1c0-426f-9b8c-3ecf757e6dc0": {
           "type": "brands_block",
-          "disabled": true,
           "settings": {
-            "logo": "shopify:\/\/shop_images\/huski.jpg",
+            "logo": "shopify:\/\/shop_images\/Gloweave-logo_54b6acfa-07de-4ee7-b0fd-7cc70d39fbe1.jpg",
             "button_text": "View Products",
-            "brand_collection_url": "#"
+            "brand_collection_url": ""
+          }
+        },
+        "3710c10a-dc7a-435e-8da6-e73ed5e62dc8": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/headwear_professionals_logo-removebg-preview.png",
+            "button_text": "View Products",
+            "brand_collection_url": ""
+          }
+        },
+        "c21fac1e-95c4-4aed-82ff-2c47f2182c41": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/JB_s_wear_Logo_300dpi_30bd3d7f-e32a-4efc-97c9-f8b65862be49.jpg",
+            "button_text": "View Products",
+            "brand_collection_url": "shopify:\/\/collections\/jbs"
           }
         }
       },
@@ -118,13 +115,13 @@
         "02980a0d-247c-42cc-85ce-655fbba46311",
         "ec2928c9-4e2e-4f15-bf5e-3e37c06ad0fb",
         "3e333056-8e84-4f32-92c9-fe57aac80820",
-        "ac1da130-d075-4109-a536-fa16c9ca0665",
         "dc6f706f-ebb9-4469-ad68-a86dc195ea5a",
-        "996ae862-ab17-4f26-8ff6-adac7db34660",
         "55d8afdd-a33a-43f7-aad3-19ec5ab07b5f",
         "812fb8f3-4f13-4def-bcf4-dab09b11c6bf",
-        "d8093c13-4307-47ea-8a50-a885eb7549dd",
-        "ee7e7ef0-7745-4dd1-9836-b180c14c1a5b"
+        "c0a295f7-50ea-404b-a232-af60dbd8fb70",
+        "2cc246b0-a1c0-426f-9b8c-3ecf757e6dc0",
+        "3710c10a-dc7a-435e-8da6-e73ed5e62dc8",
+        "c21fac1e-95c4-4aed-82ff-2c47f2182c41"
       ],
       "settings": {
       }

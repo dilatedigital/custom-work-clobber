@@ -104,6 +104,72 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/oliver.png"
             }
+          },
+          "1b94b0f2-c05a-470a-ac40-189f117224e6": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/eyres-logo-300x183.png"
+            }
+          },
+          "00664762-2ac0-4d47-8a46-ed2fbadf5486": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Gloweave-logo.jpg"
+            }
+          },
+          "7c2bd139-fa0b-4979-ae91-882d1d6cf47c": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/JB_s_wear_Logo_300dpi.jpg"
+            }
+          },
+          "e551e3d9-c22a-4da3-aac6-32b8a1452d68": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Logo.jpg"
+            }
+          },
+          "a3424e14-a054-4158-83af-c9a5d3516e0f": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Mongrels-logo.jpg"
+            }
+          },
+          "d19c9f9c-09b6-4482-a404-11c2fc4f66b2": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/ProChoice-Website-Logo2.jpg"
+            }
+          },
+          "102c42a8-62fb-449f-9ec7-de7e590a1b59": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/riders-by-lee-185x185-logo.png"
+            }
+          },
+          "cc338361-5d33-4a67-9c29-7568b2b99ed7": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Stubbies-Logo.jpg"
+            }
+          },
+          "014178ae-00fc-47c5-ac40-feaf0a3f8c71": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/VisionSafe_Logo.png"
+            }
+          },
+          "26e0e47a-de95-42de-9135-9e8937d5ade3": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Volley_Logo2.jpg"
+            }
+          },
+          "eae76fd8-0b75-49f2-af8b-f1a7eea1c82b": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Workit_Workwear.png"
+            }
           }
         },
         "block_order": [
@@ -113,7 +179,18 @@
           "6638ebb6-e99b-4ce3-a08a-f405f1057cd6",
           "dd2839a9-3770-4e4d-9bee-243ef475dd07",
           "d10256b2-06b6-42e1-b23c-c5a5fb0f6f3a",
-          "83198490-6109-4aa4-b804-fe318aa5f47c"
+          "83198490-6109-4aa4-b804-fe318aa5f47c",
+          "1b94b0f2-c05a-470a-ac40-189f117224e6",
+          "00664762-2ac0-4d47-8a46-ed2fbadf5486",
+          "7c2bd139-fa0b-4979-ae91-882d1d6cf47c",
+          "e551e3d9-c22a-4da3-aac6-32b8a1452d68",
+          "a3424e14-a054-4158-83af-c9a5d3516e0f",
+          "d19c9f9c-09b6-4482-a404-11c2fc4f66b2",
+          "102c42a8-62fb-449f-9ec7-de7e590a1b59",
+          "cc338361-5d33-4a67-9c29-7568b2b99ed7",
+          "014178ae-00fc-47c5-ac40-feaf0a3f8c71",
+          "26e0e47a-de95-42de-9135-9e8937d5ade3",
+          "eae76fd8-0b75-49f2-af8b-f1a7eea1c82b"
         ],
         "settings": {
         }

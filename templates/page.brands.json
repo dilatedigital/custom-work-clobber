@@ -108,6 +108,30 @@
             "button_text": "View Products",
             "brand_collection_url": "shopify:\/\/collections\/jbs"
           }
+        },
+        "0e456cdf-0951-4383-a51e-fe9f8c70417d": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Logo_c055bb45-220f-4e7a-9d41-63bf824dba6b.jpg",
+            "button_text": "View Products",
+            "brand_collection_url": ""
+          }
+        },
+        "193364b9-efa1-42d2-8a96-24af14673b5e": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Mongrels-logo-removebg-preview.png",
+            "button_text": "View Products",
+            "brand_collection_url": "shopify:\/\/collections\/mongrel"
+          }
+        },
+        "282cde2b-617d-441d-a9bb-09c7055b2d76": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/ProChoice-Website-Logo2-removebg-preview.png",
+            "button_text": "View Products",
+            "brand_collection_url": ""
+          }
         }
       },
       "block_order": [
@@ -121,7 +145,10 @@
         "c0a295f7-50ea-404b-a232-af60dbd8fb70",
         "2cc246b0-a1c0-426f-9b8c-3ecf757e6dc0",
         "3710c10a-dc7a-435e-8da6-e73ed5e62dc8",
-        "c21fac1e-95c4-4aed-82ff-2c47f2182c41"
+        "c21fac1e-95c4-4aed-82ff-2c47f2182c41",
+        "0e456cdf-0951-4383-a51e-fe9f8c70417d",
+        "193364b9-efa1-42d2-8a96-24af14673b5e",
+        "282cde2b-617d-441d-a9bb-09c7055b2d76"
       ],
       "settings": {
       }

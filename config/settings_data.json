@@ -62,135 +62,148 @@
       "home-logoslider": {
         "type": "home-logoslider",
         "blocks": {
-          "d586ffa2-1568-4ff4-8065-d2c83f50f44e": {
+          "18491504-09ed-4ef5-b93e-db3b57354f99": {
             "type": "logo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/cat.png"
+              "image": "shopify:\/\/shop_images\/bisley.jpg"
             }
           },
-          "53cdc23a-51a2-4f90-b0d0-0fc31f54cd3a": {
+          "8bd6e18c-921b-4ff7-baaf-a3257765102e": {
             "type": "logo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/steel-blue.png"
+              "image": "shopify:\/\/shop_images\/Biz-Collection-Logo-23-removebg-preview.png"
             }
           },
-          "13221743-5e70-4f96-898c-e42acb0e0a87": {
-            "type": "logo",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/king-gee.png"
-            }
-          },
-          "6638ebb6-e99b-4ce3-a08a-f405f1057cd6": {
+          "686d47ac-2de3-4fd6-ac8d-42bf1a58c5ab": {
             "type": "logo",
             "settings": {
               "image": "shopify:\/\/shop_images\/blundstone.png"
             }
           },
-          "dd2839a9-3770-4e4d-9bee-243ef475dd07": {
+          "c62201ac-d469-4d29-9f9e-c7cfe73934e7": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/cat.png"
+            }
+          },
+          "1c3702a1-3155-43d0-8e2a-91eae8139cbb": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Volley_Logo2_86f2cf13-8a12-40e5-8110-126c2f28d9d3.jpg"
+            }
+          },
+          "ddfd336c-722e-4529-b76f-74315d402139": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/eyres-logo-300x183-removebg-preview.png"
+            }
+          },
+          "8707d743-be9e-4eef-9b0f-03647967ef35": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Gloweave-logo_54b6acfa-07de-4ee7-b0fd-7cc70d39fbe1.jpg"
+            }
+          },
+          "20d3f4f7-1c7a-42a9-a263-197da1a792a8": {
             "type": "logo",
             "settings": {
               "image": "shopify:\/\/shop_images\/hard-yakka.png"
             }
           },
-          "d10256b2-06b6-42e1-b23c-c5a5fb0f6f3a": {
+          "2667f84a-5ded-486c-a9f0-55964bf1afef": {
             "type": "logo",
-            "disabled": true,
             "settings": {
-              "image": "shopify:\/\/shop_images\/rossi-boots.png"
+              "image": "shopify:\/\/shop_images\/headwear_professionals_logo-removebg-preview.png"
             }
           },
-          "83198490-6109-4aa4-b804-fe318aa5f47c": {
+          "91b6eafd-2779-42ac-9cb6-a8a2208844b2": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/JB_s_wear_Logo_300dpi_30bd3d7f-e32a-4efc-97c9-f8b65862be49.jpg"
+            }
+          },
+          "73b9a6dd-d334-4665-ad5e-be54c49658dc": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/king-gee.png"
+            }
+          },
+          "38021eea-bb47-42b7-8291-322b50ba8ed9": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Mongrels-logo-removebg-preview.png"
+            }
+          },
+          "44fbed7e-080e-4f14-ae59-d118f7c49308": {
             "type": "logo",
             "settings": {
               "image": "shopify:\/\/shop_images\/oliver.png"
             }
           },
-          "1b94b0f2-c05a-470a-ac40-189f117224e6": {
+          "9bab7297-90f0-4211-99b4-2992bbcbe2a2": {
             "type": "logo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/eyres-logo-300x183.png"
+              "image": "shopify:\/\/shop_images\/ProChoice-Website-Logo2-removebg-preview.png"
             }
           },
-          "00664762-2ac0-4d47-8a46-ed2fbadf5486": {
+          "e0eb046a-d380-4424-9884-f57b5a17355e": {
             "type": "logo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Gloweave-logo.jpg"
+              "image": "shopify:\/\/shop_images\/riders-by-lee-185x185-logo-removebg-preview.png"
             }
           },
-          "7c2bd139-fa0b-4979-ae91-882d1d6cf47c": {
+          "93c2c1b3-1f3e-41ff-b18a-f1b8b13fc2a1": {
             "type": "logo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/JB_s_wear_Logo_300dpi.jpg"
+              "image": "shopify:\/\/shop_images\/Logo_c055bb45-220f-4e7a-9d41-63bf824dba6b.jpg"
             }
           },
-          "e551e3d9-c22a-4da3-aac6-32b8a1452d68": {
+          "2050e530-6828-43e3-a7f3-d7175303b4fe": {
             "type": "logo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Logo.jpg"
+              "image": "shopify:\/\/shop_images\/steel-blue.png"
             }
           },
-          "a3424e14-a054-4158-83af-c9a5d3516e0f": {
+          "a40c4431-5c26-4cf5-9044-7a7783b9c0b9": {
             "type": "logo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Mongrels-logo.jpg"
+              "image": "shopify:\/\/shop_images\/Stubbies-Logo_7e3ffcf0-0317-4969-b887-9b781f455628.jpg"
             }
           },
-          "d19c9f9c-09b6-4482-a404-11c2fc4f66b2": {
+          "dc5a2240-4b73-40e3-ab16-be53963816c2": {
             "type": "logo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/ProChoice-Website-Logo2.jpg"
+              "image": "shopify:\/\/shop_images\/VisionSafe_Logo-removebg-preview.png"
             }
           },
-          "102c42a8-62fb-449f-9ec7-de7e590a1b59": {
+          "d4f32148-58a0-4734-a8d3-9d4e1705ed6c": {
             "type": "logo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/riders-by-lee-185x185-logo.png"
-            }
-          },
-          "cc338361-5d33-4a67-9c29-7568b2b99ed7": {
-            "type": "logo",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Stubbies-Logo.jpg"
-            }
-          },
-          "014178ae-00fc-47c5-ac40-feaf0a3f8c71": {
-            "type": "logo",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/VisionSafe_Logo.png"
-            }
-          },
-          "26e0e47a-de95-42de-9135-9e8937d5ade3": {
-            "type": "logo",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Volley_Logo2.jpg"
-            }
-          },
-          "eae76fd8-0b75-49f2-af8b-f1a7eea1c82b": {
-            "type": "logo",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Workit_Workwear.png"
+              "image": "shopify:\/\/shop_images\/Workit_Workwear_65aee7f6-3f30-46ca-92f8-f48e3a35fcda.png"
             }
           }
         },
         "block_order": [
-          "d586ffa2-1568-4ff4-8065-d2c83f50f44e",
-          "53cdc23a-51a2-4f90-b0d0-0fc31f54cd3a",
-          "13221743-5e70-4f96-898c-e42acb0e0a87",
-          "6638ebb6-e99b-4ce3-a08a-f405f1057cd6",
-          "dd2839a9-3770-4e4d-9bee-243ef475dd07",
-          "d10256b2-06b6-42e1-b23c-c5a5fb0f6f3a",
-          "83198490-6109-4aa4-b804-fe318aa5f47c",
-          "1b94b0f2-c05a-470a-ac40-189f117224e6",
-          "00664762-2ac0-4d47-8a46-ed2fbadf5486",
-          "7c2bd139-fa0b-4979-ae91-882d1d6cf47c",
-          "e551e3d9-c22a-4da3-aac6-32b8a1452d68",
-          "a3424e14-a054-4158-83af-c9a5d3516e0f",
-          "d19c9f9c-09b6-4482-a404-11c2fc4f66b2",
-          "102c42a8-62fb-449f-9ec7-de7e590a1b59",
-          "cc338361-5d33-4a67-9c29-7568b2b99ed7",
-          "014178ae-00fc-47c5-ac40-feaf0a3f8c71",
-          "26e0e47a-de95-42de-9135-9e8937d5ade3",
-          "eae76fd8-0b75-49f2-af8b-f1a7eea1c82b"
+          "18491504-09ed-4ef5-b93e-db3b57354f99",
+          "8bd6e18c-921b-4ff7-baaf-a3257765102e",
+          "686d47ac-2de3-4fd6-ac8d-42bf1a58c5ab",
+          "c62201ac-d469-4d29-9f9e-c7cfe73934e7",
+          "1c3702a1-3155-43d0-8e2a-91eae8139cbb",
+          "ddfd336c-722e-4529-b76f-74315d402139",
+          "8707d743-be9e-4eef-9b0f-03647967ef35",
+          "20d3f4f7-1c7a-42a9-a263-197da1a792a8",
+          "2667f84a-5ded-486c-a9f0-55964bf1afef",
+          "91b6eafd-2779-42ac-9cb6-a8a2208844b2",
+          "73b9a6dd-d334-4665-ad5e-be54c49658dc",
+          "38021eea-bb47-42b7-8291-322b50ba8ed9",
+          "44fbed7e-080e-4f14-ae59-d118f7c49308",
+          "9bab7297-90f0-4211-99b4-2992bbcbe2a2",
+          "e0eb046a-d380-4424-9884-f57b5a17355e",
+          "93c2c1b3-1f3e-41ff-b18a-f1b8b13fc2a1",
+          "2050e530-6828-43e3-a7f3-d7175303b4fe",
+          "a40c4431-5c26-4cf5-9044-7a7783b9c0b9",
+          "dc5a2240-4b73-40e3-ab16-be53963816c2",
+          "d4f32148-58a0-4734-a8d3-9d4e1705ed6c"
         ],
         "settings": {
         }

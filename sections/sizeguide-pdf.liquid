@@ -1,0 +1,68 @@
+<style>
+  .faqs-container {
+    max-width: 970px;
+  }
+  .question svg {
+    fill: var(--yellow);
+    max-width: 10px;
+  }
+</style>
+<div class="container mx-auto pb-50px xct:pb-20 faqs-container">
+  <h3 class="uppercase text-2xl border-b-3 border-wc-black pb-5">{{ section.settings.sizeguide_title }}</h3>
+  <div class="accordion">
+    {% for block in section.blocks %}
+      {% if block.type == 'faq_block' %}
+        <div class="border-b border-gray-400 py-6 accordion-item">
+          <div class="question flex justify-between items-center hover:cursor-pointer">
+            <h4 class="font-campton text-lg font-bold">{{ block.settings.each_block_title }}</h4>
+            {% render 'icon-chevron-right' %}
+          </div>
+          <div class="answer pt-5 pl-10 hidden transition">
+            {{ block.settings.each_block_content }}
+          </div>
+        </div>
+        
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+
+{% schema %} 
+{
+  "name":"Size Guide Title",
+  "settings": [
+    {
+      "type":"text",
+      "id":"sizeguide_title",
+      "label":"Size Guide Title"
+     }
+  ],
+  "blocks": [
+    {
+      "name": "Each Guide block",
+      "type": "guide_block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "each_block_title",
+          "label": "Each Block Title"
+        },
+        {
+          "type": "url",
+          "id": "each_block_content",
+          "label": "File URL"
+        }
+      ]
+    }
+  ],
+  "presets": [
+     {
+       "name": "FAQ"
+     }
+  ],
+  "templates": [
+     "page"
+  ]
+}
+{% endschema %}

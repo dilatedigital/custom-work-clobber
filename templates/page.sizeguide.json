@@ -12,29 +12,10 @@
       "settings": {
         "size_guide_title": "Size Guide"
       }
-    },
-    "faq-title": {
-      "type": "faq-title",
-      "blocks": {
-        "0f816b5b-d945-4253-9178-0d91c7890c1d": {
-          "type": "faq_block",
-          "settings": {
-            "each_block_title": "Size 1",
-            "each_block_content": "<p>Test size<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "0f816b5b-d945-4253-9178-0d91c7890c1d"
-      ],
-      "settings": {
-        "faq_title": ""
-      }
     }
   },
   "order": [
     "inner-banner",
-    "template",
-    "faq-title"
+    "template"
   ]
 }

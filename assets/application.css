@@ -905,6 +905,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 15rem;
 }
 
+.h-\[47px\] {
+  height: 47px;
+}
+
 .h-11 {
   height: 2.75rem;
 }
@@ -923,10 +927,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-80 {
   height: 20rem;
-}
-
-.h-\[47px\] {
-  height: 47px;
 }
 
 .w-full {
@@ -981,12 +981,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 20rem;
 }
 
-.max-w-lg {
-  max-width: 32rem;
-}
-
 .max-w-150 {
   max-width: 150px;
+}
+
+.max-w-lg {
+  max-width: 32rem;
 }
 
 .flex-1 {

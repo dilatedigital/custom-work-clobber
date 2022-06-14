@@ -14,7 +14,30 @@
       }
     },
     "sizeguide-pdf": {
-      "type": "sizeguide-pdf"
+      "type": "sizeguide-pdf",
+      "blocks": {
+        "6376a5d9-9357-406b-a324-8abe23900c72": {
+          "type": "guide_block",
+          "settings": {
+            "each_block_title": "Test Category",
+            "each_block_content": ""
+          }
+        },
+        "8ea1661b-8431-49ea-b845-7e715ba0857e": {
+          "type": "guide_block",
+          "settings": {
+            "each_block_title": "test",
+            "each_block_content": "https:\/\/docs.google.com\/spreadsheets\/d\/1LvPX3W2QZyNalnpLLJt80V3ivvMp4Jxj\/edit#gid=844066020"
+          }
+        }
+      },
+      "block_order": [
+        "6376a5d9-9357-406b-a324-8abe23900c72",
+        "8ea1661b-8431-49ea-b845-7e715ba0857e"
+      ],
+      "settings": {
+        "sizeguide_title": "Title"
+      }
     }
   },
   "order": [

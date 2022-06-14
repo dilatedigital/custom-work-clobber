@@ -12,10 +12,14 @@
       "settings": {
         "size_guide_title": "Size Guide"
       }
+    },
+    "sizeguide-pdf": {
+      "type": "sizeguide-pdf"
     }
   },
   "order": [
     "inner-banner",
-    "template"
+    "template",
+    "sizeguide-pdf"
   ]
 }

@@ -11,7 +11,7 @@
   <h3 class="uppercase text-2xl border-b-3 border-wc-black pb-5">{{ section.settings.sizeguide_title }}</h3>
   <div class="accordion">
     {% for block in section.blocks %}
-      {% if block.type == 'faq_block' %}
+      {% if block.type == 'guide_block' %}
         <div class="border-b border-gray-400 py-6 accordion-item">
           <div class="question flex justify-between items-center hover:cursor-pointer">
             <h4 class="font-campton text-lg font-bold">{{ block.settings.each_block_title }}</h4>

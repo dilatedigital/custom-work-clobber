@@ -21,20 +21,20 @@
     "164878875602084711": {
       "type": "brands-blocks",
       "blocks": {
-        "ac1edc6d-1fb8-437c-9b32-805955312252": {
+        "812fb8f3-4f13-4def-bcf4-dab09b11c6bf": {
           "type": "brands_block",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/king-gee-2.png",
+            "logo": "shopify:\/\/shop_images\/bisley.jpg",
             "button_text": "View Products",
-            "brand_collection_url": "shopify:\/\/collections\/king-gee"
+            "brand_collection_url": "shopify:\/\/collections\/bisley"
           }
         },
-        "02980a0d-247c-42cc-85ce-655fbba46311": {
+        "68d2c6bf-b09d-4f16-ab76-7ebf76d09a52": {
           "type": "brands_block",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/hard-yakka.png",
+            "logo": "shopify:\/\/shop_images\/Biz-Collection-Logo-23-removebg-preview.png",
             "button_text": "View Products",
-            "brand_collection_url": "shopify:\/\/collections\/hard-yakka"
+            "brand_collection_url": "#"
           }
         },
         "ec2928c9-4e2e-4f15-bf5e-3e37c06ad0fb": {
@@ -45,22 +45,6 @@
             "brand_collection_url": "shopify:\/\/collections\/blundstone"
           }
         },
-        "3e333056-8e84-4f32-92c9-fe57aac80820": {
-          "type": "brands_block",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/steel-blue.png",
-            "button_text": "View Products",
-            "brand_collection_url": "shopify:\/\/collections\/steel-blue"
-          }
-        },
-        "ac1da130-d075-4109-a536-fa16c9ca0665": {
-          "type": "brands_block",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/fxd.jpg",
-            "button_text": "View Products",
-            "brand_collection_url": "#"
-          }
-        },
         "dc6f706f-ebb9-4469-ad68-a86dc195ea5a": {
           "type": "brands_block",
           "settings": {
@@ -69,13 +53,68 @@
             "brand_collection_url": "shopify:\/\/collections\/cat"
           }
         },
-        "996ae862-ab17-4f26-8ff6-adac7db34660": {
+        "f0b66611-04fc-4fa3-8c3a-04fcdb480e7e": {
           "type": "brands_block",
-          "disabled": true,
           "settings": {
-            "logo": "shopify:\/\/shop_images\/rossi-boots.png",
+            "logo": "shopify:\/\/shop_images\/Volley_Logo2_86f2cf13-8a12-40e5-8110-126c2f28d9d3.jpg",
+            "button_text": "View Products",
+            "brand_collection_url": "shopify:\/\/collections\/dunlop-valleys"
+          }
+        },
+        "c0a295f7-50ea-404b-a232-af60dbd8fb70": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/eyres-logo-300x183-removebg-preview.png",
             "button_text": "View Products",
             "brand_collection_url": "#"
+          }
+        },
+        "2cc246b0-a1c0-426f-9b8c-3ecf757e6dc0": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Gloweave-logo_54b6acfa-07de-4ee7-b0fd-7cc70d39fbe1.jpg",
+            "button_text": "View Products",
+            "brand_collection_url": ""
+          }
+        },
+        "02980a0d-247c-42cc-85ce-655fbba46311": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/hard-yakka.png",
+            "button_text": "View Products",
+            "brand_collection_url": "shopify:\/\/collections\/hard-yakka"
+          }
+        },
+        "3710c10a-dc7a-435e-8da6-e73ed5e62dc8": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/headwear_professionals_logo-removebg-preview.png",
+            "button_text": "View Products",
+            "brand_collection_url": ""
+          }
+        },
+        "c21fac1e-95c4-4aed-82ff-2c47f2182c41": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/JB_s_wear_Logo_300dpi_30bd3d7f-e32a-4efc-97c9-f8b65862be49.jpg",
+            "button_text": "View Products",
+            "brand_collection_url": "shopify:\/\/collections\/jbs"
+          }
+        },
+        "ac1edc6d-1fb8-437c-9b32-805955312252": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/king-gee-2.png",
+            "button_text": "View Products",
+            "brand_collection_url": "shopify:\/\/collections\/king-gee"
+          }
+        },
+        "193364b9-efa1-42d2-8a96-24af14673b5e": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Mongrels-logo-removebg-preview.png",
+            "button_text": "View Products",
+            "brand_collection_url": "shopify:\/\/collections\/mongrel"
           }
         },
         "55d8afdd-a33a-43f7-aad3-19ec5ab07b5f": {
@@ -86,45 +125,84 @@
             "brand_collection_url": "shopify:\/\/collections\/oliver"
           }
         },
-        "812fb8f3-4f13-4def-bcf4-dab09b11c6bf": {
+        "282cde2b-617d-441d-a9bb-09c7055b2d76": {
           "type": "brands_block",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/bisley.jpg",
+            "logo": "shopify:\/\/shop_images\/ProChoice-Website-Logo2-removebg-preview.png",
             "button_text": "View Products",
-            "brand_collection_url": "shopify:\/\/collections\/bisley"
+            "brand_collection_url": ""
           }
         },
-        "d8093c13-4307-47ea-8a50-a885eb7549dd": {
+        "0e456cdf-0951-4383-a51e-fe9f8c70417d": {
           "type": "brands_block",
-          "disabled": true,
           "settings": {
-            "logo": "shopify:\/\/shop_images\/jonsson.jpg",
+            "logo": "shopify:\/\/shop_images\/Logo_c055bb45-220f-4e7a-9d41-63bf824dba6b.jpg",
             "button_text": "View Products",
-            "brand_collection_url": "#"
+            "brand_collection_url": ""
           }
         },
-        "ee7e7ef0-7745-4dd1-9836-b180c14c1a5b": {
+        "c1f00762-e917-4e02-a0ee-ba63ffafaf81": {
           "type": "brands_block",
-          "disabled": true,
           "settings": {
-            "logo": "shopify:\/\/shop_images\/huski.jpg",
+            "logo": "shopify:\/\/shop_images\/riders-by-lee-185x185-logo-removebg-preview.png",
             "button_text": "View Products",
-            "brand_collection_url": "#"
+            "brand_collection_url": ""
+          }
+        },
+        "3e333056-8e84-4f32-92c9-fe57aac80820": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/steel-blue.png",
+            "button_text": "View Products",
+            "brand_collection_url": "shopify:\/\/collections\/steel-blue"
+          }
+        },
+        "ec0039fb-4bde-4857-b121-84b1bdaf86f6": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Stubbies-Logo_7e3ffcf0-0317-4969-b887-9b781f455628.jpg",
+            "button_text": "View Products",
+            "brand_collection_url": ""
+          }
+        },
+        "7fc35c59-e2d5-4103-85ef-02a2a5726022": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/VisionSafe_Logo-removebg-preview.png",
+            "button_text": "View Products",
+            "brand_collection_url": ""
+          }
+        },
+        "869842f2-f414-428d-8533-dcd3b46220e4": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Workit_Workwear_65aee7f6-3f30-46ca-92f8-f48e3a35fcda.png",
+            "button_text": "View Products",
+            "brand_collection_url": "shopify:\/\/collections\/workit"
           }
         }
       },
       "block_order": [
-        "ac1edc6d-1fb8-437c-9b32-805955312252",
-        "02980a0d-247c-42cc-85ce-655fbba46311",
-        "ec2928c9-4e2e-4f15-bf5e-3e37c06ad0fb",
-        "3e333056-8e84-4f32-92c9-fe57aac80820",
-        "ac1da130-d075-4109-a536-fa16c9ca0665",
-        "dc6f706f-ebb9-4469-ad68-a86dc195ea5a",
-        "996ae862-ab17-4f26-8ff6-adac7db34660",
-        "55d8afdd-a33a-43f7-aad3-19ec5ab07b5f",
         "812fb8f3-4f13-4def-bcf4-dab09b11c6bf",
-        "d8093c13-4307-47ea-8a50-a885eb7549dd",
-        "ee7e7ef0-7745-4dd1-9836-b180c14c1a5b"
+        "68d2c6bf-b09d-4f16-ab76-7ebf76d09a52",
+        "ec2928c9-4e2e-4f15-bf5e-3e37c06ad0fb",
+        "dc6f706f-ebb9-4469-ad68-a86dc195ea5a",
+        "f0b66611-04fc-4fa3-8c3a-04fcdb480e7e",
+        "c0a295f7-50ea-404b-a232-af60dbd8fb70",
+        "2cc246b0-a1c0-426f-9b8c-3ecf757e6dc0",
+        "02980a0d-247c-42cc-85ce-655fbba46311",
+        "3710c10a-dc7a-435e-8da6-e73ed5e62dc8",
+        "c21fac1e-95c4-4aed-82ff-2c47f2182c41",
+        "ac1edc6d-1fb8-437c-9b32-805955312252",
+        "193364b9-efa1-42d2-8a96-24af14673b5e",
+        "55d8afdd-a33a-43f7-aad3-19ec5ab07b5f",
+        "282cde2b-617d-441d-a9bb-09c7055b2d76",
+        "0e456cdf-0951-4383-a51e-fe9f8c70417d",
+        "c1f00762-e917-4e02-a0ee-ba63ffafaf81",
+        "3e333056-8e84-4f32-92c9-fe57aac80820",
+        "ec0039fb-4bde-4857-b121-84b1bdaf86f6",
+        "7fc35c59-e2d5-4103-85ef-02a2a5726022",
+        "869842f2-f414-428d-8533-dcd3b46220e4"
       ],
       "settings": {
       }

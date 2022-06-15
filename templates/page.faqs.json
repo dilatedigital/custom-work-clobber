@@ -152,7 +152,7 @@
           "type": "faq_block",
           "settings": {
             "each_block_title": "Do prices include GST?",
-            "each_block_content": "<p>Yes.<\/p>"
+            "each_block_content": "<p>Yes<\/p>"
           }
         }
       },

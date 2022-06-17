@@ -9,7 +9,7 @@
 </style>
 <div class="container mx-auto pb-50px xct:pb-20 faqs-container">
   <h3 class="uppercase text-2xl border-b-3 border-wc-black pb-5">{{ section.settings.sizeguide_title }}</h3>
-  <div class="accordion">
+  <div class="accordion-sizeguide">
     {% for block in section.blocks %}
       {% if block.type == 'guide_block' %}
         <div class="border-b border-gray-400 py-6 accordion-item">
@@ -18,7 +18,7 @@
             {% render 'icon-chevron-right' %}
           </div>
           <div class="answer pt-5 pl-10 hidden transition">
-            <a src="{{ block.settings.each_block_content }}" target="_blank">{{ block.settings.each_block_content }}</a>
+            {{ block.settings.each_block_content }}
           </div>
         </div>
         
@@ -46,12 +46,12 @@
         {
           "type": "text",
           "id": "each_block_title",
-          "label": "Each Block Title"
+          "label": "Table Title"
         },
         {
-          "type": "url",
+          "type": "html",
           "id": "each_block_content",
-          "label": "File URL"
+          "label": "Table"
         }
       ]
     }

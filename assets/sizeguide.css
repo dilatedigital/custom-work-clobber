@@ -1,0 +1,41 @@
+.sizeguide table thead {
+  background-color: #101010;
+  color: #fff
+}
+
+.sizeguide table {
+  width: 100%;
+  text-align: center;
+}
+
+.sizeguide table thead tr td:first-child {
+  padding: 10px 15px;
+}
+
+.sizeguide table tbody tr td:first-child {
+  text-align: left;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.sizeguide table tbody td {
+  padding: 10px 6px;
+}
+
+.sizeguide {
+  overflow-x: scroll;
+}
+
+.sizeguide table tbody tr {
+  border-bottom: 1px solid #ddd
+}
+
+.sizeguide table tbody tr:hover {
+  background-color: #f3f3f3
+}
+
+@media screen and (min-width: 1024px) {
+  .sizeguide {
+    overflow: hidden;
+  }
+}

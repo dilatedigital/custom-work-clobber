@@ -15,27 +15,28 @@
     "164853173711902be5": {
       "type": "short-summary",
       "settings": {
-        "short_summary": "We are a WA, family-owned business, with over 25 years experience outfitting the trades and labour workforce in industrial and protective clothing, footwear and equipment. Our nine stores across the Perth metropolitan area supply a range of the best quality Australian brands in workwear in WA."
+        "short_summary": "Work Clobber is the longest established workwear specialist in WA. We are a local, family-owned business with over 25 years of experience outfitting the trades and labour workforce in industrial and protective clothing, footwear and equipment. Our eight stores across the metropolitan area and online website supply a range of the best quality workwear brands."
       }
     },
     "16485347629347c035": {
       "type": "left-text-right-img",
       "settings": {
-        "left_text": "<p>At Work Clobber, we pride ourselves on our high quality service and knowledge of the workwear industry. In fact, our understanding of the labour and trade industries goes all the way to the top. <br\/><br\/>Our management team started out as tradies so we speak your language. We have used our knowledge to establish a business which provides efficient service through approachable staff, easy to access stores and creating an accounting and delivery system to benefit our customers. Work Clobber values personalised service and providing the right fit for the right person.<\/p>",
+        "left_text": "<p>Work Clobber is the longest established workwear specialist in WA. We are a local, family-owned business with over 25 years of experience outfitting the trades and labour workforce in industrial and protective clothing, footwear and equipment. Our eight stores across the metropolitan area and online website supply a range of the best quality workwear brands.<br\/><br\/>Our management team started out as tradies so we speak your language. We have used our knowledge to establish a business which provides efficient service through approachable staff, easy to access stores and creating an accounting and delivery system to benefit our customers. Work Clobber values personalised service and providing the right fit for the right person.<\/p>",
+        "right_image": "shopify:\/\/shop_images\/Work_Clobber_Shop.jpg"
+      }
+    },
+    "16554368235fac32fd": {
+      "type": "left-text-right-img",
+      "settings": {
+        "left_text": "<p>Our management team started out as tradies so we speak your language. We have used our knowledge to establish a business which provides efficient service through approachable staff, easy to access stores and creating an accounting and delivery system to benefit our customers. Work Clobber values personalised service and providing the right fit for the right person.<\/p>",
         "right_image": "shopify:\/\/shop_images\/About_Work_Clobber.jpg"
       }
     },
-    "16485423261d1c0ff2": {
-      "type": "title-ud",
-      "settings": {
-        "title": "our history"
-      }
-    },
-    "16485441883ad9b864": {
+    "1655436976ddb50fad": {
       "type": "left-img-right-text",
       "settings": {
-        "right_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet massa vitae tortor condimentum lacinia quis vel. Et molestie ac feugiat sed lectus. Amet consectetur adipiscing elit ut. Aliquam purus sit amet luctus venenatis lectus magna fringilla urna. Sem fringilla ut morbi tincidunt augue. Velit scelerisque in dictum non consectetur a erat nam at. Cursus in hac habitasse platea. Faucibus a pellentesque sit amet porttitor eget dolor morbi non. Turpis massa sed elementum tempus egestas sed sed risus pretium. Commodo elit at imperdiet dui accumsan sit. Euismod elementum nisi quis eleifend. Gravida rutrum quisque non tellus. Dictum sit amet justo donec enim diam vulputate ut. Quam vulputate dignissim suspendisse in est. Cursus vitae congue mauris rhoncus.<\/p>",
-        "left_image": "shopify:\/\/shop_images\/Work_Clobber_Shop.jpg"
+        "right_text": "<p>Our management team started out as tradies so we speak your language. We have used our knowledge to establish a business which provides efficient service through approachable staff, easy to access stores and creating an accounting and delivery system to benefit our customers. Work Clobber values personalised service and providing the right fit for the right person.<\/p>",
+        "left_image": "shopify:\/\/shop_images\/About_Work_Clobber.jpg"
       }
     }
   },
@@ -44,7 +45,7 @@
     "inner-banner",
     "164853173711902be5",
     "16485347629347c035",
-    "16485423261d1c0ff2",
-    "16485441883ad9b864"
+    "16554368235fac32fd",
+    "1655436976ddb50fad"
   ]
 }

@@ -24,12 +24,20 @@
         "left_text": "<p>At Work Clobber, we pride ourselves on our high quality service and knowledge of the workwear industry. In fact, our understanding of the labour and trade industries goes all the way to the top. <br\/><br\/>Our management team started out as tradies so we speak your language. We have used our knowledge to establish a business which provides efficient service through approachable staff, easy to access stores and creating an accounting and delivery system to benefit our customers. Work Clobber values personalised service and providing the right fit for the right person.<\/p>",
         "right_image": "shopify:\/\/shop_images\/Work_Clobber_Shop.jpg"
       }
+    },
+    "16554368235fac32fd": {
+      "type": "left-text-right-img",
+      "settings": {
+        "left_text": "<p>Our management team started out as tradies so we speak your language. We have used our knowledge to establish a business which provides efficient service through approachable staff, easy to access stores and creating an accounting and delivery system to benefit our customers. Work Clobber values personalised service and providing the right fit for the right person.<\/p>",
+        "right_image": "shopify:\/\/shop_images\/About_Work_Clobber.jpg"
+      }
     }
   },
   "order": [
     "template",
     "inner-banner",
     "164853173711902be5",
-    "16485347629347c035"
+    "16485347629347c035",
+    "16554368235fac32fd"
   ]
 }

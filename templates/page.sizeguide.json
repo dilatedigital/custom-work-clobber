@@ -52,6 +52,13 @@
             "size_guide_brand_title": "Oliver men",
             "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"21\">\n          <h3>OLIVER MEN<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>AU\/UK<\/td>\n      <td>3<\/td>\n      <td>4<\/td>\n      <td>4.5<\/td>\n      <td>5<\/td>\n      <td>5.5<\/td>\n      <td>6<\/td>\n      <td>6.5<\/td>\n      <td>7<\/td>\n      <td>7.5<\/td>\n      <td>8<\/td>\n      <td>8.5<\/td>\n      <td>9<\/td>\n      <td>9.5<\/td>\n      <td>10<\/td>\n      <td>10.5<\/td>\n      <td>11<\/td>\n      <td>12<\/td>\n      <td>13<\/td>\n      <td>14<\/td>\n      <td>15<\/td>\n    <\/tr>\n    <tr>\n      <td>US<\/td>\n      <td>4<\/td>\n      <td>5<\/td>\n      <td>5.5<\/td>\n      <td>6<\/td>\n      <td>6.5<\/td>\n      <td>7<\/td>\n      <td>7.5<\/td>\n      <td>8<\/td>\n      <td>8.5<\/td>\n      <td>9<\/td>\n      <td>9.5<\/td>\n      <td>10<\/td>\n      <td>10.5<\/td>\n      <td>11<\/td>\n      <td>11.5<\/td>\n      <td>12<\/td>\n      <td>13<\/td>\n      <td>14<\/td>\n      <td>15<\/td>\n      <td>16<\/td>\n    <\/tr>\n    <tr>\n      <td>EURO<\/td>\n      <td>35<\/td>\n      <td>36<\/td>\n      <td>37<\/td>\n      <td>38<\/td>\n      <td><\/td>\n      <td>39<\/td>\n      <td>40<\/td>\n      <td>41<\/td>\n      <td><\/td>\n      <td>42<\/td>\n      <td><\/td>\n      <td>43<\/td>\n      <td><\/td>\n      <td>44<\/td>\n      <td>45<\/td>\n      <td>46<\/td>\n      <td>47<\/td>\n      <td>48<\/td>\n      <td>49<\/td>\n      <td>50<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
           }
+        },
+        "288c2e48-a28b-4b6a-9ed1-ff70eab578c9": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "Mongrel Men",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"15\">\n          <h3>MONGREL MEN<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>AU\/UK<\/td>\n      <td>2<\/td>\n      <td>3<\/td>\n      <td>4<\/td>\n      <td>5<\/td>\n      <td>6<\/td>\n      <td>7<\/td>\n      <td>8<\/td>\n      <td>9<\/td>\n      <td>10<\/td>\n      <td>11<\/td>\n      <td>12<\/td>\n      <td>13<\/td>\n      <td>14<\/td>\n    <\/tr>\n    <tr>\n      <td>US<\/td>\n      <td>3<\/td>\n      <td>4<\/td>\n      <td>5<\/td>\n      <td>6<\/td>\n      <td>7<\/td>\n      <td>8<\/td>\n      <td>9<\/td>\n      <td>10<\/td>\n      <td>11<\/td>\n      <td>12<\/td>\n      <td>13<\/td>\n      <td>14<\/td>\n      <td>15<\/td>\n    <\/tr>\n    <tr>\n      <td>EURO<\/td>\n      <td>34<\/td>\n      <td>36<\/td>\n      <td>37<\/td>\n      <td>38<\/td>\n      <td>39<\/td>\n      <td>41<\/td>\n      <td>42<\/td>\n      <td>43<\/td>\n      <td>45<\/td>\n      <td>46<\/td>\n      <td>47<\/td>\n      <td>48<\/td>\n      <td>49<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
+          }
         }
       },
       "block_order": [
@@ -59,7 +66,8 @@
         "8ea1661b-8431-49ea-b845-7e715ba0857e",
         "07480dcc-fffd-4ee2-9185-47fabed90661",
         "4d26d066-a480-4a62-8904-65df59beb5a0",
-        "b475f884-fcd8-4307-a3c3-71164a59b2ce"
+        "b475f884-fcd8-4307-a3c3-71164a59b2ce",
+        "288c2e48-a28b-4b6a-9ed1-ff70eab578c9"
       ],
       "settings": {
         "group_title": "men boots"

@@ -38,12 +38,20 @@
             "size_guide_brand_title": "",
             "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"24\">\n          <h3>Steel Blue Men<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>AU\/UK<\/td>\n      <td>3<\/td>\n      <td>3.5<\/td>\n      <td>4<\/td>\n      <td>4.5<\/td>\n      <td>5<\/td>\n      <td>5.5<\/td>\n      <td>6<\/td>\n      <td>6.5<\/td>\n      <td>7<\/td>\n      <td>7.5<\/td>\n      <td>8<\/td>\n      <td>8.5<\/td>\n      <td>9<\/td>\n      <td>9.5<\/td>\n      <td>10<\/td>\n      <td>10.5<\/td>\n      <td>11<\/td>\n      <td>11.5<\/td>\n      <td>12<\/td>\n      <td>12.5<\/td>\n      <td>13<\/td>\n      <td>13.5<\/td>\n      <td>14<\/td>\n    <\/tr>\n    <tr>\n      <td>US<\/td>\n      <td>4<\/td>\n      <td>4.5<\/td>\n      <td>5<\/td>\n      <td>5.5<\/td>\n      <td>6<\/td>\n      <td>6.5<\/td>\n      <td>7<\/td>\n      <td>7.5<\/td>\n      <td>8<\/td>\n      <td>8.5<\/td>\n      <td>9<\/td>\n      <td>9.5<\/td>\n      <td>10<\/td>\n      <td>10.5<\/td>\n      <td>11<\/td>\n      <td>11.5<\/td>\n      <td>12<\/td>\n      <td>12.5<\/td>\n      <td>13<\/td>\n      <td>13.5<\/td>\n      <td>14<\/td>\n      <td>14.5<\/td>\n      <td>15<\/td>\n    <\/tr>\n    <tr>\n      <td>EURO<\/td>\n      <td>36<\/td>\n      <td>36.5<\/td>\n      <td>37<\/td>\n      <td>37.5<\/td>\n      <td>38<\/td>\n      <td>39<\/td>\n      <td>40<\/td>\n      <td>40.5<\/td>\n      <td>41<\/td>\n      <td>41.5<\/td>\n      <td>42<\/td>\n      <td>42.5<\/td>\n      <td>43<\/td>\n      <td>44<\/td>\n      <td>45<\/td>\n      <td>45.5<\/td>\n      <td>46<\/td>\n      <td>46.5<\/td>\n      <td>47<\/td>\n      <td>47.5<\/td>\n      <td>48<\/td>\n      <td>48.5<\/td>\n      <td>49<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
           }
+        },
+        "4d26d066-a480-4a62-8904-65df59beb5a0": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "Blundstone men",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"21\">\n          <h3>BLUNDSTONE MEN<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>AU\/UK<\/td>\n      <td>2<\/td>\n      <td>3<\/td>\n      <td>3.5<\/td>\n      <td>4<\/td>\n      <td>4.5<\/td>\n      <td>5<\/td>\n      <td>5.5<\/td>\n      <td>6<\/td>\n      <td>6.5<\/td>\n      <td>7<\/td>\n      <td>7.5<\/td>\n      <td>8<\/td>\n      <td>8.5<\/td>\n      <td>9<\/td>\n      <td>9.5<\/td>\n      <td>10<\/td>\n      <td>10.5<\/td>\n      <td>11<\/td>\n      <td>12<\/td>\n      <td>13<\/td>\n    <\/tr>\n    <tr>\n      <td>US<\/td>\n      <td>3<\/td>\n      <td>4<\/td>\n      <td>4.5<\/td>\n      <td>5<\/td>\n      <td>5.5<\/td>\n      <td>6<\/td>\n      <td>6.5<\/td>\n      <td>7<\/td>\n      <td>7.5<\/td>\n      <td>8<\/td>\n      <td>8.5<\/td>\n      <td>9<\/td>\n      <td>9.5<\/td>\n      <td>10<\/td>\n      <td>10.5<\/td>\n      <td>11<\/td>\n      <td>11.5<\/td>\n      <td>12<\/td>\n      <td>13<\/td>\n      <td>14<\/td>\n    <\/tr>\n    <tr>\n      <td>EURO<\/td>\n      <td>34.5<\/td>\n      <td>35.5<\/td>\n      <td>36<\/td>\n      <td>37<\/td>\n      <td>37.5<\/td>\n      <td>38<\/td>\n      <td>38.5<\/td>\n      <td>39<\/td>\n      <td>40<\/td>\n      <td>41<\/td>\n      <td>41.5<\/td>\n      <td>42<\/td>\n      <td>42.5<\/td>\n      <td>43<\/td>\n      <td>43.5<\/td>\n      <td>44<\/td>\n      <td>45<\/td>\n      <td>46<\/td>\n      <td>47<\/td>\n      <td>48<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
+          }
         }
       },
       "block_order": [
         "6376a5d9-9357-406b-a324-8abe23900c72",
         "8ea1661b-8431-49ea-b845-7e715ba0857e",
-        "07480dcc-fffd-4ee2-9185-47fabed90661"
+        "07480dcc-fffd-4ee2-9185-47fabed90661",
+        "4d26d066-a480-4a62-8904-65df59beb5a0"
       ],
       "settings": {
         "group_title": "men boots"

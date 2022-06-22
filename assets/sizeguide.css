@@ -34,6 +34,10 @@
   background-color: #f3f3f3
 }
 
+.sizeguide table h3 {
+  text-transform: uppercase
+}
+
 @media screen and (min-width: 1024px) {
   .sizeguide {
     overflow: hidden;

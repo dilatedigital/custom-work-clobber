@@ -29,14 +29,6 @@
             "brand_collection_url": "shopify:\/\/collections\/bisley"
           }
         },
-        "68d2c6bf-b09d-4f16-ab76-7ebf76d09a52": {
-          "type": "brands_block",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Biz-Collection-Logo-23-removebg-preview.png",
-            "button_text": "View Products",
-            "brand_collection_url": "#"
-          }
-        },
         "ec2928c9-4e2e-4f15-bf5e-3e37c06ad0fb": {
           "type": "brands_block",
           "settings": {
@@ -66,7 +58,7 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/eyres-logo-300x183-removebg-preview.png",
             "button_text": "View Products",
-            "brand_collection_url": "#"
+            "brand_collection_url": "shopify:\/\/collections\/eyres"
           }
         },
         "2cc246b0-a1c0-426f-9b8c-3ecf757e6dc0": {
@@ -74,7 +66,7 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/Gloweave-logo_54b6acfa-07de-4ee7-b0fd-7cc70d39fbe1.jpg",
             "button_text": "View Products",
-            "brand_collection_url": ""
+            "brand_collection_url": "shopify:\/\/collections\/gloweave"
           }
         },
         "02980a0d-247c-42cc-85ce-655fbba46311": {
@@ -90,7 +82,7 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/headwear_professionals_logo-removebg-preview.png",
             "button_text": "View Products",
-            "brand_collection_url": ""
+            "brand_collection_url": "shopify:\/\/collections\/headwear-professionals"
           }
         },
         "c21fac1e-95c4-4aed-82ff-2c47f2182c41": {
@@ -130,7 +122,7 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/ProChoice-Website-Logo2-removebg-preview.png",
             "button_text": "View Products",
-            "brand_collection_url": ""
+            "brand_collection_url": "shopify:\/\/collections\/pro-choice"
           }
         },
         "0e456cdf-0951-4383-a51e-fe9f8c70417d": {
@@ -138,7 +130,7 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/Logo_c055bb45-220f-4e7a-9d41-63bf824dba6b.jpg",
             "button_text": "View Products",
-            "brand_collection_url": ""
+            "brand_collection_url": "shopify:\/\/collections\/rugged-xtremes"
           }
         },
         "c1f00762-e917-4e02-a0ee-ba63ffafaf81": {
@@ -146,7 +138,7 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/riders-by-lee-185x185-logo-removebg-preview.png",
             "button_text": "View Products",
-            "brand_collection_url": ""
+            "brand_collection_url": "shopify:\/\/collections\/riders-by-lee"
           }
         },
         "3e333056-8e84-4f32-92c9-fe57aac80820": {
@@ -162,7 +154,7 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/Stubbies-Logo_7e3ffcf0-0317-4969-b887-9b781f455628.jpg",
             "button_text": "View Products",
-            "brand_collection_url": ""
+            "brand_collection_url": "shopify:\/\/collections\/stubbies"
           }
         },
         "7fc35c59-e2d5-4103-85ef-02a2a5726022": {
@@ -170,7 +162,7 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/VisionSafe_Logo-removebg-preview.png",
             "button_text": "View Products",
-            "brand_collection_url": ""
+            "brand_collection_url": "shopify:\/\/collections\/vision-safe"
           }
         },
         "869842f2-f414-428d-8533-dcd3b46220e4": {
@@ -184,7 +176,6 @@
       },
       "block_order": [
         "812fb8f3-4f13-4def-bcf4-dab09b11c6bf",
-        "68d2c6bf-b09d-4f16-ab76-7ebf76d09a52",
         "ec2928c9-4e2e-4f15-bf5e-3e37c06ad0fb",
         "dc6f706f-ebb9-4469-ad68-a86dc195ea5a",
         "f0b66611-04fc-4fa3-8c3a-04fcdb480e7e",

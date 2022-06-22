@@ -80,11 +80,30 @@
       "settings": {
         "group_title": "men boots"
       }
+    },
+    "1655883766cca87141": {
+      "type": "sizeguide-pdf",
+      "blocks": {
+        "2a09bb7d-3d4e-4b56-9a90-534ed2156d94": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "STEEL BLUE WOMEN",
+            "each_block_content": ""
+          }
+        }
+      },
+      "block_order": [
+        "2a09bb7d-3d4e-4b56-9a90-534ed2156d94"
+      ],
+      "settings": {
+        "group_title": "WOMEN BOOTS"
+      }
     }
   },
   "order": [
     "inner-banner",
     "template",
-    "sizeguide-pdf"
+    "sizeguide-pdf",
+    "1655883766cca87141"
   ]
 }

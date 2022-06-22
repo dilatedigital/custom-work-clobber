@@ -8,6 +8,7 @@
   }
 </style>
 <div class="container mx-auto pb-50px xct:pb-20 faqs-container">
+  <h3 class="uppercase text-2xl border-b-3 border-wc-black pb-5">{{ section.settings.group_title }}</h3>
   <div class="sizeguide">
     {% for block in section.blocks %}
       {% if block.type == 'guide_block' %}
@@ -29,6 +30,13 @@
 {% schema %} 
 {
   "name":"Size Guide Title",
+  "settings": [
+    {
+      "type":"text",
+      "id":"group_title",
+      "label":"Group Title"
+     }
+  ],
   "blocks": [
     {
       "name": "Table Size Guide",
@@ -49,7 +57,7 @@
   ],
   "presets": [
      {
-       "name": "FAQ"
+       "name": "Size Guide"
      }
   ],
   "templates": [

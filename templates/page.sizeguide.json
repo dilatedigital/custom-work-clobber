@@ -179,13 +179,21 @@
             "size_guide_brand_title": "Hard Yakka Shirts",
             "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"15\">\n          <h3>HARD YAKKA SHIRTS<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>SIZE (CM)<\/td>\n      <td>XS<\/td>\n      <td>S<\/td>\n      <td>M<\/td>\n      <td>L<\/td>\n      <td>XL<\/td>\n      <td>2XL<\/td>\n      <td>3XL<\/td>\n      <td>4XL<\/td>\n      <td>5XL<\/td>\n      <td>6XL<\/td> \n    <\/tr>\n    <tr>\n      <td>CHEST<\/td>\n      <td>87<\/td>\n      <td>92<\/td>\n      <td>97<\/td>\n      <td>102<\/td>\n      <td>110<\/td>\n      <td>118<\/td>\n      <td>126<\/td>\n      <td>134<\/td>\n      <td>142<\/td>\n      <td>150<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
           }
+        },
+        "42a3d175-b185-415f-89dc-706f43e3ec17": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "GLOWEAVE 5045 FIT",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"15\">\n          <h3>GLOWEAVE 5045 FIT<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>COLLAR<\/td>\n      <td>S<\/td>\n      <td>M<\/td>\n      <td>L<\/td>\n      <td>XL<\/td>\n      <td>2XL<\/td>\n      <td>3XL<\/td>\n      <td>4XL<\/td>\n      <td>5XL<\/td>\n      <td>6XL<\/td> \n    <\/tr>\n    <tr>\n      <td>CHEST<\/td>\n      <td>104<\/td>\n      <td>112<\/td>\n      <td>120<\/td>\n      <td>128<\/td>\n      <td>138<\/td>\n      <td>148<\/td>\n      <td>156<\/td>\n      <td>160<\/td>\n      <td>164<\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST<\/td>\n      <td>100<\/td>\n      <td>108<\/td>\n      <td>116<\/td>\n      <td>124<\/td>\n      <td>136<\/td>\n      <td>148<\/td>\n      <td>156<\/td>\n      <td>160<\/td>\n      <td>164<\/td>\n    <\/tr>\n    <tr>\n      <td>SLEEVE FROM CENTRE BACK<\/td>\n      <td>89<\/td>\n      <td>90<\/td>\n      <td>91<\/td>\n      <td>92<\/td>\n      <td>93<\/td>\n      <td>94<\/td>\n      <td>94.5<\/td>\n      <td>95<\/td>\n      <td>95.5<\/td>\n    <\/tr>\n    <tr>\n      <td>SLEEVE FROM SHOULDER<\/td>\n      <td>66<\/td>\n      <td>66<\/td>\n      <td>66<\/td>\n      <td>66<\/td>\n      <td>66<\/td>\n      <td>66<\/td>\n      <td>66.5<\/td>\n      <td>67<\/td>\n      <td>67<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
+          }
         }
       },
       "block_order": [
         "22975121-caab-4753-8ff0-5aa501897753",
         "228551e4-fd1e-4eca-9cff-f02135165142",
         "b5c99c35-7556-4e8a-96ca-8065f553150b",
-        "49f4fabd-1ad9-4886-ba45-e72930d8f047"
+        "49f4fabd-1ad9-4886-ba45-e72930d8f047",
+        "42a3d175-b185-415f-89dc-706f43e3ec17"
       ],
       "settings": {
         "group_title": "Mens Shirts"

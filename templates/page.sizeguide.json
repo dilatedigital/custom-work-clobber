@@ -172,12 +172,20 @@
             "size_guide_brand_title": "King Gee Shirts",
             "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"15\">\n          <h3>KING GEE SHIRTS<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>SIZE (CM)<\/td>\n      <td>XS<\/td>\n      <td>S<\/td>\n      <td>M<\/td>\n      <td>L<\/td>\n      <td>XL<\/td>\n      <td>2XL<\/td>\n      <td>3XL<\/td>\n      <td>4XL<\/td>\n      <td>5XL<\/td>\n      <td>6XL<\/td> \n    <\/tr>\n    <tr>\n      <td>CHEST<\/td>\n      <td>87<\/td>\n      <td>92<\/td>\n      <td>97<\/td>\n      <td>102<\/td>\n      <td>110<\/td>\n      <td>118<\/td>\n      <td>126<\/td>\n      <td>134<\/td>\n      <td>142<\/td>\n      <td>150<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
           }
+        },
+        "49f4fabd-1ad9-4886-ba45-e72930d8f047": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "Hard Yakka Shirts",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"15\">\n          <h3>HARD YAKKA SHIRTS<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>SIZE (CM)<\/td>\n      <td>XS<\/td>\n      <td>S<\/td>\n      <td>M<\/td>\n      <td>L<\/td>\n      <td>XL<\/td>\n      <td>2XL<\/td>\n      <td>3XL<\/td>\n      <td>4XL<\/td>\n      <td>5XL<\/td>\n      <td>6XL<\/td> \n    <\/tr>\n    <tr>\n      <td>CHEST<\/td>\n      <td>87<\/td>\n      <td>92<\/td>\n      <td>97<\/td>\n      <td>102<\/td>\n      <td>110<\/td>\n      <td>118<\/td>\n      <td>126<\/td>\n      <td>134<\/td>\n      <td>142<\/td>\n      <td>150<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
+          }
         }
       },
       "block_order": [
         "22975121-caab-4753-8ff0-5aa501897753",
         "228551e4-fd1e-4eca-9cff-f02135165142",
-        "b5c99c35-7556-4e8a-96ca-8065f553150b"
+        "b5c99c35-7556-4e8a-96ca-8065f553150b",
+        "49f4fabd-1ad9-4886-ba45-e72930d8f047"
       ],
       "settings": {
         "group_title": "Mens Shirts"

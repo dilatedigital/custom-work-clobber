@@ -114,12 +114,19 @@
       "settings": {
         "group_title": "WOMEN BOOTS"
       }
+    },
+    "1655949950c55de33b": {
+      "type": "sizeguide-pdf",
+      "settings": {
+        "group_title": "Ladies sizing"
+      }
     }
   },
   "order": [
     "inner-banner",
     "template",
     "sizeguide-pdf",
-    "1655883766cca87141"
+    "1655883766cca87141",
+    "1655949950c55de33b"
   ]
 }

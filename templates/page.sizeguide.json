@@ -97,11 +97,19 @@
             "size_guide_brand_title": "Blundstone Women",
             "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"15\">\n          <h3>BLUNDSTONE WOMEN<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>AU\/UK<\/td>\n      <td>5<\/td>\n      <td>6<\/td>\n      <td>6.5<\/td>\n      <td>7<\/td>\n      <td>7.5<\/td>\n      <td>8<\/td>\n      <td>8.5<\/td>\n      <td>9<\/td>\n      <td>9.5<\/td>\n      <td>10<\/td>\n      <td>11<\/td>\n    <\/tr>\n    <tr>\n      <td>MM<\/td>\n      <td>212<\/td>\n      <td>220<\/td>\n      <td>220<\/td>\n      <td>228<\/td>\n      <td>228<\/td>\n      <td>237<\/td>\n      <td>237<\/td>\n      <td>246<\/td>\n      <td>246<\/td>\n      <td>254<\/td>\n      <td>262<\/td>\n    <\/tr>\n    <tr>\n      <td>EURO<\/td>\n      <td>34.5<\/td>\n      <td>36<\/td>\n      <td>36.5<\/td>\n      <td>37<\/td>\n      <td>37.5<\/td>\n      <td>38<\/td>\n      <td>38.5<\/td>\n      <td>39<\/td>\n      <td>39.5<\/td>\n      <td>40<\/td>\n      <td>41<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
           }
+        },
+        "41f91b4f-6b17-4e90-954d-d2e0b2b8dbc3": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "Oliver Women",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"15\">\n          <h3>OLIVER WOMEN<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>AU\/UK<\/td>\n      <td>5<\/td>\n      <td>6<\/td>\n      <td>6.5<\/td>\n      <td>7<\/td>\n      <td>7.5<\/td>\n      <td>8<\/td>\n      <td>8.5<\/td>\n      <td>9<\/td>\n      <td>9.5<\/td>\n      <td>10<\/td> \n    <\/tr>\n    <tr>\n      <td>MM<\/td>\n      <td>212<\/td>\n      <td>220<\/td>\n      <td>220<\/td>\n      <td>228<\/td>\n      <td>228<\/td>\n      <td>237<\/td>\n      <td>237<\/td>\n      <td>246<\/td>\n      <td>246<\/td>\n      <td>254<\/td>\n    <\/tr>\n    <tr>\n      <td>EURO<\/td>\n      <td>35<\/td>\n      <td>36<\/td>\n      <td>37<\/td>\n      <td>38<\/td>\n      <td><\/td>\n      <td>39<\/td>\n      <td>40<\/td>\n      <td>41<\/td>\n      <td><\/td>\n      <td>42<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
+          }
         }
       },
       "block_order": [
         "2a09bb7d-3d4e-4b56-9a90-534ed2156d94",
-        "65a8a782-ec58-447b-8544-853ad544c77d"
+        "65a8a782-ec58-447b-8544-853ad544c77d",
+        "41f91b4f-6b17-4e90-954d-d2e0b2b8dbc3"
       ],
       "settings": {
         "group_title": "WOMEN BOOTS"

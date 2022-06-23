@@ -156,7 +156,7 @@
           "type": "guide_block",
           "settings": {
             "size_guide_brand_title": "BISLEY MEN'S SHIRTS",
-            "each_block_content": ""
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"15\">\n          <h3>BISLEY MEN'S SHIRTS<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>SIZE<\/td>\n      <td>XS<\/td>\n      <td>S<\/td>\n      <td>M<\/td>\n      <td>L<\/td>\n      <td>XL<\/td>\n      <td>2XL<\/td>\n      <td>3XL<\/td>\n      <td>4XL<\/td>\n      <td>5XL<\/td>\n      <td>6XL<\/td> \n    <\/tr>\n    <tr>\n      <td>NECK SIZE (CM)<\/td>\n      <td>36<\/td>\n      <td>37\/38<\/td>\n      <td>39\/40<\/td>\n      <td>41\/42<\/td>\n      <td>43\/44<\/td>\n      <td>46<\/td>\n      <td>48<\/td>\n      <td>50<\/td>\n      <td>52<\/td>\n      <td>54<\/td>\n    <\/tr>\n    <tr>\n      <td>CHEST SIZE (CM)<\/td>\n      <td>81<\/td>\n      <td>89<\/td>\n      <td>97<\/td>\n      <td>105<\/td>\n      <td>113<\/td>\n      <td>121<\/td>\n      <td>129<\/td>\n      <td>137<\/td>\n      <td>145<\/td>\n      <td>153<\/td>\n    <\/tr>\n    <tr>\n      <td>CHEST SIZE (INCHES)<\/td>\n      <td>32<\/td>\n      <td>35<\/td>\n      <td>38<\/td>\n      <td>41<\/td>\n      <td>44.5<\/td>\n      <td>47.5<\/td>\n      <td>50.5<\/td>\n      <td>54<\/td>\n      <td>57<\/td>\n      <td>60<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
           }
         }
       },

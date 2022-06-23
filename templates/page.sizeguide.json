@@ -198,6 +198,12 @@
       "settings": {
         "group_title": "Mens Shirts"
       }
+    },
+    "165595855040ffc9ae": {
+      "type": "sizeguide-pdf",
+      "settings": {
+        "group_title": "Mens pants"
+      }
     }
   },
   "order": [
@@ -206,6 +212,7 @@
     "sizeguide-pdf",
     "1655883766cca87141",
     "1655949950c55de33b",
-    "1655955720f94c1993"
+    "1655955720f94c1993",
+    "165595855040ffc9ae"
   ]
 }

@@ -332,6 +332,12 @@
       "settings": {
         "group_title": "JACKETS"
       }
+    },
+    "1655966689614598aa": {
+      "type": "sizeguide-pdf",
+      "settings": {
+        "group_title": "COVERALL"
+      }
     }
   },
   "order": [
@@ -343,6 +349,7 @@
     "1655955720f94c1993",
     "165595855040ffc9ae",
     "165596563117f84df0",
-    "165596668724c5aa96"
+    "165596668724c5aa96",
+    "1655966689614598aa"
   ]
 }

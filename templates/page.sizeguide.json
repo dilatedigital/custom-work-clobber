@@ -148,6 +148,24 @@
       "settings": {
         "group_title": "Ladies sizing"
       }
+    },
+    "1655955720f94c1993": {
+      "type": "sizeguide-pdf",
+      "blocks": {
+        "22975121-caab-4753-8ff0-5aa501897753": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "BISLEY MEN'S SHIRTS",
+            "each_block_content": ""
+          }
+        }
+      },
+      "block_order": [
+        "22975121-caab-4753-8ff0-5aa501897753"
+      ],
+      "settings": {
+        "group_title": "Mens Shirts"
+      }
     }
   },
   "order": [
@@ -155,6 +173,7 @@
     "template",
     "sizeguide-pdf",
     "1655883766cca87141",
-    "1655949950c55de33b"
+    "1655949950c55de33b",
+    "1655955720f94c1993"
   ]
 }

@@ -212,14 +212,22 @@
         "f65076ed-7bcb-4ad7-8c9a-7b37817af9e8": {
           "type": "guide_block",
           "settings": {
-            "size_guide_brand_title": "",
+            "size_guide_brand_title": "JB's WEAR PANTS",
             "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"15\">\n          <h3>JB'S WEAR PANTS<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>SIZE REGULAR<\/td>\n      <td>72<\/td>\n      <td>77<\/td>\n      <td>82<\/td>\n      <td>87<\/td>\n      <td>92<\/td>\n      <td>97<\/td>\n      <td>102<\/td>\n      <td>107<\/td>\n      <td>112<\/td>\n      <td><\/td> \n      <td><\/td>\n      <td><\/td>\n      <td><\/td> \n    <\/tr>\n    <tr>\n      <td>INNER LEG<\/td>\n      <td>72<\/td>\n      <td>75<\/td>\n      <td>78<\/td>\n      <td>80<\/td>\n      <td>83<\/td>\n      <td>84<\/td>\n      <td>85<\/td>\n      <td>86.5<\/td>\n      <td>88<\/td>\n      <td><\/td> \n      <td><\/td>\n      <td><\/td>\n      <td><\/td> \n    <\/tr>\n    <tr>\n      <td>SIZE STOUT<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td>87<\/td>\n      <td>92<\/td>\n      <td>97<\/td>\n      <td>102<\/td>\n      <td>107<\/td>\n      <td>112<\/td>\n      <td>117<\/td> \n      <td>122<\/td>\n      <td>127<\/td>\n      <td>132<\/td> \n    <\/tr>\n    <tr>\n      <td>INNER LEG<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td>71<\/td>\n      <td>73<\/td>\n      <td>75<\/td>\n      <td>78<\/td>\n      <td>80<\/td>\n      <td>81<\/td>\n      <td>81.5<\/td> \n      <td>82<\/td>\n      <td>82.5<\/td>\n      <td>83<\/td>\n    <\/tr>\n    \n  <\/tbody>\n<\/table>"
+          }
+        },
+        "50e0bce8-041f-460c-a0b7-aebddbda8b36": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "JB'S WEAR WET WEATHER PANTS",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"15\">\n          <h3>JB'S WEAR WET WEATHER PANTS<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>SIZE (CM)<\/td>\n      <td>XS<\/td>\n      <td>S<\/td>\n      <td>M<\/td>\n      <td>L<\/td>\n      <td>XL<\/td>\n      <td>2XL<\/td>\n      <td>3XL<\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST<\/td>\n      <td>77<\/td>\n      <td>84<\/td>\n      <td>89<\/td>\n      <td>80<\/td>\n      <td>94<\/td>\n      <td>99<\/td>\n      <td>104<\/td>\n      <td>109<\/td>\n    <\/tr>\n    <tr>\n      <td>IN-LEG<\/td>\n      <td>72<\/td>\n      <td>74<\/td>\n      <td>76<\/td>\n      <td>78<\/td>\n      <td>80<\/td>\n      <td>82<\/td>\n      <td>84<\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST STRETCH<\/td>\n      <td>124<\/td>\n      <td>131<\/td>\n      <td>137<\/td>\n      <td>143<\/td>\n      <td>150<\/td>\n      <td>156<\/td>\n      <td>162<\/td>\n    <\/tr>\n    \n  <\/tbody>\n<\/table>"
           }
         }
       },
       "block_order": [
         "344f168e-720d-4f0e-8675-14aa5e45421c",
-        "f65076ed-7bcb-4ad7-8c9a-7b37817af9e8"
+        "f65076ed-7bcb-4ad7-8c9a-7b37817af9e8",
+        "50e0bce8-041f-460c-a0b7-aebddbda8b36"
       ],
       "settings": {
         "group_title": "Mens pants"

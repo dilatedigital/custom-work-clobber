@@ -131,11 +131,19 @@
             "size_guide_brand_title": "King Gee Ladies",
             "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"15\">\n          <h3>KING GEE LADIES<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>SIZE (CM)<\/td>\n      <td>6<\/td>\n      <td>8<\/td>\n      <td>10<\/td>\n      <td>12<\/td>\n      <td>14<\/td>\n      <td>16<\/td>\n      <td>18<\/td>\n      <td>20<\/td>\n      <td>22<\/td>\n      <td>24<\/td> \n    <\/tr>\n    <tr>\n      <td>BUST<\/td>\n      <td>80<\/td>\n      <td>85<\/td>\n      <td>90<\/td>\n      <td>96<\/td>\n      <td>102<\/td>\n      <td>108<\/td>\n      <td>116<\/td>\n      <td>124<\/td>\n      <td>130<\/td>\n      <td>136<\/td>\n    <\/tr>\n    <tr>\n      <td>NATURAL WAIST<\/td>\n      <td>62<\/td>\n      <td>67<\/td>\n      <td>72<\/td>\n      <td>77<\/td>\n      <td>82<\/td>\n      <td>87<\/td>\n      <td>95<\/td>\n      <td>103<\/td>\n      <td>108<\/td>\n      <td>113<\/td>\n    <\/tr>\n    <tr>\n      <td>HIP SIZE<\/td>\n      <td>88<\/td>\n      <td>93<\/td>\n      <td>98<\/td>\n      <td>103<\/td>\n      <td>108<\/td>\n      <td>113<\/td>\n      <td>121<\/td>\n      <td>129<\/td>\n      <td>134<\/td>\n      <td>139<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
           }
+        },
+        "5fea7d3d-07bc-455f-b02b-f013ff205ca8": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "Hard Yakka Ladies",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"15\">\n          <h3>HARD YAKKA LADIES<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>SIZE (CM)<\/td>\n      <td>6<\/td>\n      <td>8<\/td>\n      <td>10<\/td>\n      <td>12<\/td>\n      <td>14<\/td>\n      <td>16<\/td>\n      <td>18<\/td>\n      <td>20<\/td>\n      <td>22<\/td>\n      <td>24<\/td> \n    <\/tr>\n    <tr>\n      <td>BUST<\/td>\n      <td>80<\/td>\n      <td>85<\/td>\n      <td>90<\/td>\n      <td>96<\/td>\n      <td>102<\/td>\n      <td>108<\/td>\n      <td>116<\/td>\n      <td>124<\/td>\n      <td>130<\/td>\n      <td>136<\/td>\n    <\/tr>\n    <tr>\n      <td>NATURAL WAIST<\/td>\n      <td>62<\/td>\n      <td>67<\/td>\n      <td>72<\/td>\n      <td>77<\/td>\n      <td>82<\/td>\n      <td>87<\/td>\n      <td>95<\/td>\n      <td>103<\/td>\n      <td>108<\/td>\n      <td>113<\/td>\n    <\/tr>\n    <tr>\n      <td>HIP SIZE<\/td>\n      <td>88<\/td>\n      <td>93<\/td>\n      <td>98<\/td>\n      <td>103<\/td>\n      <td>108<\/td>\n      <td>113<\/td>\n      <td>121<\/td>\n      <td>129<\/td>\n      <td>134<\/td>\n      <td>139<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
+          }
         }
       },
       "block_order": [
         "c6e9549e-5e38-4abf-8eaf-1a63586c2575",
-        "8e8a230f-594f-4072-9545-6c490743af33"
+        "8e8a230f-594f-4072-9545-6c490743af33",
+        "5fea7d3d-07bc-455f-b02b-f013ff205ca8"
       ],
       "settings": {
         "group_title": "Ladies sizing"

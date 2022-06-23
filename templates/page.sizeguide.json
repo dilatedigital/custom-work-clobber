@@ -259,6 +259,18 @@
     },
     "165596563117f84df0": {
       "type": "sizeguide-pdf",
+      "blocks": {
+        "25dd2d7c-a753-4bcc-850e-35e1a6e36179": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "BISLEY MEN'S SHORTS",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"14\">\n          <h3>BISLEY MEN'S SHORTS<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>SIZE REGULAR<\/td>\n      <td>72<\/td>\n      <td>77<\/td>\n      <td>82<\/td>\n      <td>87<\/td>\n      <td>92<\/td>\n      <td>97<\/td>\n      <td>102<\/td>\n      <td>107<\/td>\n      <td>112<\/td>\n      <td>117<\/td>\n      <td>122<\/td>\n      <td>127<\/td>\n      <td>132<\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST (CM)<\/td>\n      <td>72<\/td>\n      <td>77<\/td>\n      <td>82<\/td>\n      <td>87<\/td>\n      <td>92<\/td>\n      <td>97<\/td>\n      <td>102<\/td>\n      <td>107<\/td>\n      <td>112<\/td>\n      <td>117<\/td>\n      <td>122<\/td>\n      <td>127<\/td>\n      <td>132<\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST (INCHES)<\/td>\n      <td>28<\/td>\n      <td>30<\/td>\n      <td>32<\/td>\n      <td>34<\/td>\n      <td>36<\/td>\n      <td>38<\/td>\n      <td>40<\/td>\n      <td>42<\/td>\n      <td>44<\/td>\n      <td>46<\/td>\n      <td>48<\/td>\n      <td>50<\/td>\n      <td>52<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
+          }
+        }
+      },
+      "block_order": [
+        "25dd2d7c-a753-4bcc-850e-35e1a6e36179"
+      ],
       "settings": {
         "group_title": "men shorts"
       }

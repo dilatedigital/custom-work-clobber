@@ -280,12 +280,20 @@
             "size_guide_brand_title": "HARD YAKKA SHORTS",
             "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"19\">\n          <h3>HARD YAKKA SHORTS<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>SIZE REGULAR<\/td>\n      <td>67<\/td>\n      <td>72<\/td>\n      <td>77<\/td>\n      <td>82<\/td>\n      <td>87<\/td>\n      <td>92<\/td>\n      <td>97<\/td>\n      <td>102<\/td>\n      <td>107<\/td>\n      <td>112<\/td>\n      <td>117<\/td>\n      <td>122<\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST (CM)<\/td>\n      <td>67<\/td>\n      <td>72<\/td>\n      <td>77<\/td>\n      <td>82<\/td>\n      <td>87<\/td>\n      <td>92<\/td>\n      <td>97<\/td>\n      <td>102<\/td>\n      <td>107<\/td>\n      <td>112<\/td>\n      <td>117<\/td>\n      <td>122<\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST (INCHES)<\/td>\n      <td>26<\/td>\n      <td>28<\/td>\n      <td>30<\/td>\n      <td>32<\/td>\n      <td>34<\/td>\n      <td>36<\/td>\n      <td>38<\/td>\n      <td>40<\/td>\n      <td>42<\/td>\n      <td>44<\/td>\n      <td>46<\/td>\n      <td>48<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
           }
+        },
+        "85afc79c-f113-49ca-888d-1c3978b77e59": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "CAT SHORTS",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"19\">\n          <h3>CAT SHORTS<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td colspan=\"19\" style=\"text-align: center;\">INCHES \/ CM<\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST<\/td>\n      <td>28\/71<\/td>\n      <td>30\/76<\/td>\n      <td>32\/81<\/td>\n      <td>34\/86<\/td>\n      <td>36\/91<\/td>\n      <td>38\/96<\/td>\n      <td>40\/102<\/td>\n    <\/tr>\n    <tr>\n      <td>INSEAM SHORT<\/td>\n      <td>30\/76<\/td>\n      <td>30\/76<\/td>\n      <td>30\/76<\/td>\n      <td>30\/76<\/td>\n      <td>30\/76<\/td>\n      <td>30\/76<\/td>\n      <td>NA<\/td>\n    <\/tr>\n    <tr>\n      <td>INSEAM REGULAR<\/td>\n      <td>32\/81<\/td>\n      <td>32\/81<\/td>\n      <td>32\/81<\/td>\n      <td>32\/81<\/td>\n      <td>32\/81<\/td>\n      <td>32\/81<\/td>\n      <td>32\/81<\/td>\n    <\/tr>\n    <tr>\n      <td>INSEAM LONG<\/td>\n      <td>NA<\/td>\n      <td>34\/86<\/td>\n      <td>34\/86<\/td>\n      <td>34\/86<\/td>\n      <td>34\/86<\/td>\n      <td>34\/86<\/td>\n      <td>34\/86<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
+          }
         }
       },
       "block_order": [
         "25dd2d7c-a753-4bcc-850e-35e1a6e36179",
         "fe0715fe-23a1-4937-9a74-e1ac68affb09",
-        "6f76a0d3-981e-4607-94d5-b0409197e108"
+        "6f76a0d3-981e-4607-94d5-b0409197e108",
+        "85afc79c-f113-49ca-888d-1c3978b77e59"
       ],
       "settings": {
         "group_title": "men shorts"

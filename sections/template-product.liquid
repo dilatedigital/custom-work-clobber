@@ -96,6 +96,14 @@
     padding-left: 20px;
   }
 
+  .swiper-button-next:after, 
+  .swiper-rtl .swiper-button-prev:after,
+  .swiper-button-prev:after, 
+  .swiper-rtl .swiper-button-next:after {
+    font-size: 24px;
+    color: #000
+  }
+
   @media screen and (min-width: 1024px) {
     .gallery-top.swiper-container {
       border-image: url("{{ 'pattern-product.jpg' | asset_url }}") 10 round;
@@ -133,12 +141,18 @@
         </div>
       </div>
       
-      <div class="swiper-container gallery-bottom mt-5 overflow-hidden">
+      <div class="swiper-container gallery-bottom mt-5 overflow-hidden relative">
         <div class="swiper-wrapper">
           {% for media in product.media %}
             {% render 'product-media', media: media %}
           {% endfor %}
         </div>
+        
+        {% if product.media.size >= 5 %}
+          <button class="swiper-button-prev"></button>
+          <button class="swiper-button-next"></button>
+        {% endif %}
+        
       </div>
     </div>
     <div class="product--information mt-8 w-full"
@@ -460,6 +474,10 @@
      
 			thumbs: {
         swiper: galleryThumbs,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       },
    });
 </script>

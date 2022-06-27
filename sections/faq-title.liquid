@@ -7,7 +7,7 @@
     max-width: 10px;
   }
 </style>
-<div class="container mx-auto pb-50px xct:pb-20 faqs-container">
+<div class="container mx-auto pb-50px xct:pb-20 faqs-container" id="{{section.settings.faq_title}}">
   <h3 class="uppercase text-2xl border-b-3 border-wc-black pb-5">{{ section.settings.faq_title }}</h3>
   <div class="accordion">
     {% for block in section.blocks %}

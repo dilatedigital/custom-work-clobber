@@ -18,35 +18,358 @@
       "blocks": {
         "6376a5d9-9357-406b-a324-8abe23900c72": {
           "type": "guide_block",
+          "disabled": true,
           "settings": {
+            "size_guide_brand_title": "",
             "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"15\">\n          <h3>MENS KINGGEE - TROUSERS, SHORTS, OVERALLS<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>Size (cm) regular<\/td>\n      <td>67R<\/td>\n      <td>72R<\/td>\n      <td>77R<\/td>\n      <td>82R<\/td>\n      <td>87R<\/td>\n      <td>92R<\/td>\n      <td>97R<\/td>\n      <td>102R<\/td>\n      <td>107R<\/td>\n      <td>112R<\/td>\n      <td>117R<\/td>\n      <td>122R<\/td>\n      <td>127R<\/td>\n      <td><\/td>\n    <\/tr>\n    <tr>\n      <td>FITS WAIST (CM)<\/td>\n      <td>67<\/td>\n      <td>72<\/td>\n      <td>77<\/td>\n      <td>82<\/td>\n      <td>87<\/td>\n      <td>92<\/td>\n      <td>97<\/td>\n      <td>102<\/td>\n      <td>107<\/td>\n      <td>112<\/td>\n      <td>117<\/td>\n      <td>122<\/td>\n      <td>127<\/td>\n      <td><\/td>\n    <\/tr>\n    <tr>\n      <td>FITS WAIST (INCHES)<\/td>\n      <td>26<\/td>\n      <td>28<\/td>\n      <td>30<\/td>\n      <td>32<\/td>\n      <td>34<\/td>\n      <td>36<\/td>\n      <td>38<\/td>\n      <td>40<\/td>\n      <td>42<\/td>\n      <td>44<\/td>\n      <td>46<\/td>\n      <td>48<\/td>\n      <td>50<\/td>\n      <td><\/td>\n    <\/tr>\n    <tr>\n      <td>IN-LEG (CM) - OVERALLS<\/td>\n      <td>73<\/td>\n      <td>73<\/td>\n      <td>73<\/td>\n      <td>75<\/td>\n      <td>77<\/td>\n      <td>79<\/td>\n      <td>81<\/td>\n      <td>82<\/td>\n      <td>82<\/td>\n      <td>82<\/td>\n      <td>82<\/td>\n      <td>82<\/td>\n      <td>82<\/td>\n      <td><\/td>\n    <\/tr>\n    <tr>\n      <td>FITS CHEST (CM) - OVERALLS<\/td>\n      <td>77<\/td>\n      <td>82<\/td>\n      <td>87<\/td>\n      <td>92<\/td>\n      <td>97<\/td>\n      <td>102<\/td>\n      <td>107<\/td>\n      <td>112<\/td>\n      <td>117<\/td>\n      <td>122<\/td>\n      <td>127<\/td>\n      <td>132<\/td>\n      <td>137<\/td>\n      <td><\/td>\n    <\/tr>\n    <tr>\n      <td>SIZE (CM) STOUT<\/td>\n      <td>87S<\/td>\n      <td>92S<\/td>\n      <td>97S<\/td>\n      <td>102S<\/td>\n      <td>107S<\/td>\n      <td>112S<\/td>\n      <td>117S<\/td>\n      <td>122S<\/td>\n      <td>127S<\/td>\n      <td>132S<\/td>\n      <td>137S<\/td>\n      <td>142S<\/td>\n      <td>147S<\/td>\n      <td>152S<\/td>\n    <\/tr>\n    <tr>\n      <td>FITS WAIST (CM)<\/td>\n      <td>87<\/td>\n      <td>92<\/td>\n      <td>97<\/td>\n      <td>102<\/td>\n      <td>107<\/td>\n      <td>112<\/td>\n      <td>117<\/td>\n      <td>122<\/td>\n      <td>127<\/td>\n      <td>132<\/td>\n      <td>137<\/td>\n      <td>142<\/td>\n      <td>147<\/td>\n      <td>152<\/td>\n    <\/tr>\n    <tr>\n      <td>IN-LEG (CM) - OVERALLS<\/td>\n      <td>72<\/td>\n      <td>74<\/td>\n      <td>76<\/td>\n      <td>78<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n    <\/tr>\n    <tr>\n      <td>FITS CHEST (CM) - OVERALLS<\/td>\n      <td>97<\/td>\n      <td>102<\/td>\n      <td>107<\/td>\n      <td>112<\/td>\n      <td>117<\/td>\n      <td>122<\/td>\n      <td>127<\/td>\n      <td>132<\/td>\n      <td>137<\/td>\n      <td>142<\/td>\n      <td>147<\/td>\n      <td>152<\/td>\n      <td>157<\/td>\n      <td>162<\/td>\n    <\/tr>\n    <tr>\n      <td>SIZE (CM) LONG<\/td>\n      <td>74L<\/td>\n      <td>79L<\/td>\n      <td>84L<\/td>\n      <td>89L<\/td>\n      <td>94L<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n    <\/tr>\n    <tr>\n      <td>FITS WAIST (CM)<\/td>\n      <td>74<\/td>\n      <td>79<\/td>\n      <td>84<\/td>\n      <td>89<\/td>\n      <td>94<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n    <\/tr>\n    <tr>\n      <td>IN-LEG (CM) - OVERALLS<\/td>\n      <td>79<\/td>\n      <td>81<\/td>\n      <td>83<\/td>\n      <td>85<\/td>\n      <td>87<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n    <\/tr>\n    <tr>\n      <td>FITS CHEST (CM) - OVERALLS<\/td>\n      <td>84<\/td>\n      <td>89<\/td>\n      <td>94<\/td>\n      <td>99<\/td>\n      <td>104<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
           }
         },
         "8ea1661b-8431-49ea-b845-7e715ba0857e": {
           "type": "guide_block",
+          "disabled": true,
           "settings": {
+            "size_guide_brand_title": "",
             "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"14\">\n          <h3>BISLEY MEN'S PANTS<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>SIZE REGULAR<\/td>\n      <td>72R<\/td>\n      <td>77R<\/td>\n      <td>82R<\/td>\n      <td>87R<\/td>\n      <td>92R<\/td>\n      <td>97R<\/td>\n      <td>102R<\/td>\n      <td>107R<\/td>\n      <td>112R<\/td>\n      <td>117R<\/td>\n      <td>122R<\/td>\n      <td><\/td>\n      <td><\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST (CM)<\/td>\n      <td>72<\/td>\n      <td>77<\/td>\n      <td>82<\/td>\n      <td>87<\/td>\n      <td>92<\/td>\n      <td>97<\/td>\n      <td>102<\/td>\n      <td>107<\/td>\n      <td>112<\/td>\n      <td>117<\/td>\n      <td>122<\/td>\n      <td><\/td>\n      <td><\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST (INCHES)<\/td>\n      <td>28<\/td>\n      <td>30<\/td>\n      <td>32<\/td>\n      <td>34<\/td>\n      <td>36<\/td>\n      <td>38<\/td>\n      <td>40<\/td>\n      <td>42<\/td>\n      <td>44<\/td>\n      <td>46<\/td>\n      <td>48<\/td>\n      <td><\/td>\n      <td><\/td>\n    <\/tr>\n    <tr>\n      <td>IN-LEG (CM)<\/td>\n      <td>77<\/td>\n      <td>80<\/td>\n      <td>82<\/td>\n      <td>84<\/td>\n      <td>84<\/td>\n      <td>84<\/td>\n      <td>84<\/td>\n      <td>84<\/td>\n      <td>84<\/td>\n      <td>84<\/td>\n      <td>84<\/td>\n      <td><\/td>\n      <td><\/td>\n    <\/tr>\n    <tr>\n      <td>SIZE STOUT<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td>87S<\/td>\n      <td>92S<\/td>\n      <td>97S<\/td>\n      <td>102S<\/td>\n      <td>107S<\/td>\n      <td>112S<\/td>\n      <td>117S<\/td>\n      <td>122S<\/td>\n      <td>127S<\/td>\n      <td>132S<\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST (CM)<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td>87<\/td>\n      <td>92<\/td>\n      <td>97<\/td>\n      <td>102<\/td>\n      <td>107<\/td>\n      <td>112<\/td>\n      <td>117<\/td>\n      <td>122<\/td>\n      <td>127<\/td>\n      <td>132<\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST (INCHES)<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td>34<\/td>\n      <td>36<\/td>\n      <td>38<\/td>\n      <td>40<\/td>\n      <td>42<\/td>\n      <td>44<\/td>\n      <td>46<\/td>\n      <td>48<\/td>\n      <td>50<\/td>\n      <td>52<\/td>\n    <\/tr>\n    <tr>\n      <td>IN-LEG (CM)<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n      <td>82<\/td>\n      <td>82<\/td>\n      <td>82<\/td>\n      <td>82<\/td>\n    <\/tr>\n    <tr>\n      <td>SIZE LONG<\/td>\n      <td><\/td>\n      <td>74L<\/td>\n      <td>79L<\/td>\n      <td>84L<\/td>\n      <td>89L<\/td>\n      <td>94L<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST CM<\/td>\n      <td><\/td>\n      <td>74<\/td>\n      <td>79<\/td>\n      <td>84<\/td>\n      <td>89<\/td>\n      <td>94<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST (INCHES)<\/td>\n      <td><\/td>\n      <td>29<\/td>\n      <td>31<\/td>\n      <td>33<\/td>\n      <td>35<\/td>\n      <td>37<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n    <\/tr>\n    <tr>\n      <td>IN-LEG (CM)<\/td>\n      <td><\/td>\n      <td>84<\/td>\n      <td>86<\/td>\n      <td>88<\/td>\n      <td>88<\/td>\n      <td>88<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
           }
         },
         "07480dcc-fffd-4ee2-9185-47fabed90661": {
           "type": "guide_block",
           "settings": {
+            "size_guide_brand_title": "",
             "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"24\">\n          <h3>Steel Blue Men<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>AU\/UK<\/td>\n      <td>3<\/td>\n      <td>3.5<\/td>\n      <td>4<\/td>\n      <td>4.5<\/td>\n      <td>5<\/td>\n      <td>5.5<\/td>\n      <td>6<\/td>\n      <td>6.5<\/td>\n      <td>7<\/td>\n      <td>7.5<\/td>\n      <td>8<\/td>\n      <td>8.5<\/td>\n      <td>9<\/td>\n      <td>9.5<\/td>\n      <td>10<\/td>\n      <td>10.5<\/td>\n      <td>11<\/td>\n      <td>11.5<\/td>\n      <td>12<\/td>\n      <td>12.5<\/td>\n      <td>13<\/td>\n      <td>13.5<\/td>\n      <td>14<\/td>\n    <\/tr>\n    <tr>\n      <td>US<\/td>\n      <td>4<\/td>\n      <td>4.5<\/td>\n      <td>5<\/td>\n      <td>5.5<\/td>\n      <td>6<\/td>\n      <td>6.5<\/td>\n      <td>7<\/td>\n      <td>7.5<\/td>\n      <td>8<\/td>\n      <td>8.5<\/td>\n      <td>9<\/td>\n      <td>9.5<\/td>\n      <td>10<\/td>\n      <td>10.5<\/td>\n      <td>11<\/td>\n      <td>11.5<\/td>\n      <td>12<\/td>\n      <td>12.5<\/td>\n      <td>13<\/td>\n      <td>13.5<\/td>\n      <td>14<\/td>\n      <td>14.5<\/td>\n      <td>15<\/td>\n    <\/tr>\n    <tr>\n      <td>EURO<\/td>\n      <td>36<\/td>\n      <td>36.5<\/td>\n      <td>37<\/td>\n      <td>37.5<\/td>\n      <td>38<\/td>\n      <td>39<\/td>\n      <td>40<\/td>\n      <td>40.5<\/td>\n      <td>41<\/td>\n      <td>41.5<\/td>\n      <td>42<\/td>\n      <td>42.5<\/td>\n      <td>43<\/td>\n      <td>44<\/td>\n      <td>45<\/td>\n      <td>45.5<\/td>\n      <td>46<\/td>\n      <td>46.5<\/td>\n      <td>47<\/td>\n      <td>47.5<\/td>\n      <td>48<\/td>\n      <td>48.5<\/td>\n      <td>49<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
+          }
+        },
+        "4d26d066-a480-4a62-8904-65df59beb5a0": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "Blundstone men",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"21\">\n          <h3>BLUNDSTONE MEN<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>AU\/UK<\/td>\n      <td>2<\/td>\n      <td>3<\/td>\n      <td>3.5<\/td>\n      <td>4<\/td>\n      <td>4.5<\/td>\n      <td>5<\/td>\n      <td>5.5<\/td>\n      <td>6<\/td>\n      <td>6.5<\/td>\n      <td>7<\/td>\n      <td>7.5<\/td>\n      <td>8<\/td>\n      <td>8.5<\/td>\n      <td>9<\/td>\n      <td>9.5<\/td>\n      <td>10<\/td>\n      <td>10.5<\/td>\n      <td>11<\/td>\n      <td>12<\/td>\n      <td>13<\/td>\n    <\/tr>\n    <tr>\n      <td>US<\/td>\n      <td>3<\/td>\n      <td>4<\/td>\n      <td>4.5<\/td>\n      <td>5<\/td>\n      <td>5.5<\/td>\n      <td>6<\/td>\n      <td>6.5<\/td>\n      <td>7<\/td>\n      <td>7.5<\/td>\n      <td>8<\/td>\n      <td>8.5<\/td>\n      <td>9<\/td>\n      <td>9.5<\/td>\n      <td>10<\/td>\n      <td>10.5<\/td>\n      <td>11<\/td>\n      <td>11.5<\/td>\n      <td>12<\/td>\n      <td>13<\/td>\n      <td>14<\/td>\n    <\/tr>\n    <tr>\n      <td>EURO<\/td>\n      <td>34.5<\/td>\n      <td>35.5<\/td>\n      <td>36<\/td>\n      <td>37<\/td>\n      <td>37.5<\/td>\n      <td>38<\/td>\n      <td>38.5<\/td>\n      <td>39<\/td>\n      <td>40<\/td>\n      <td>41<\/td>\n      <td>41.5<\/td>\n      <td>42<\/td>\n      <td>42.5<\/td>\n      <td>43<\/td>\n      <td>43.5<\/td>\n      <td>44<\/td>\n      <td>45<\/td>\n      <td>46<\/td>\n      <td>47<\/td>\n      <td>48<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
+          }
+        },
+        "b475f884-fcd8-4307-a3c3-71164a59b2ce": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "Oliver men",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"21\">\n          <h3>OLIVER MEN<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>AU\/UK<\/td>\n      <td>3<\/td>\n      <td>4<\/td>\n      <td>4.5<\/td>\n      <td>5<\/td>\n      <td>5.5<\/td>\n      <td>6<\/td>\n      <td>6.5<\/td>\n      <td>7<\/td>\n      <td>7.5<\/td>\n      <td>8<\/td>\n      <td>8.5<\/td>\n      <td>9<\/td>\n      <td>9.5<\/td>\n      <td>10<\/td>\n      <td>10.5<\/td>\n      <td>11<\/td>\n      <td>12<\/td>\n      <td>13<\/td>\n      <td>14<\/td>\n      <td>15<\/td>\n    <\/tr>\n    <tr>\n      <td>US<\/td>\n      <td>4<\/td>\n      <td>5<\/td>\n      <td>5.5<\/td>\n      <td>6<\/td>\n      <td>6.5<\/td>\n      <td>7<\/td>\n      <td>7.5<\/td>\n      <td>8<\/td>\n      <td>8.5<\/td>\n      <td>9<\/td>\n      <td>9.5<\/td>\n      <td>10<\/td>\n      <td>10.5<\/td>\n      <td>11<\/td>\n      <td>11.5<\/td>\n      <td>12<\/td>\n      <td>13<\/td>\n      <td>14<\/td>\n      <td>15<\/td>\n      <td>16<\/td>\n    <\/tr>\n    <tr>\n      <td>EURO<\/td>\n      <td>35<\/td>\n      <td>36<\/td>\n      <td>37<\/td>\n      <td>38<\/td>\n      <td><\/td>\n      <td>39<\/td>\n      <td>40<\/td>\n      <td>41<\/td>\n      <td><\/td>\n      <td>42<\/td>\n      <td><\/td>\n      <td>43<\/td>\n      <td><\/td>\n      <td>44<\/td>\n      <td>45<\/td>\n      <td>46<\/td>\n      <td>47<\/td>\n      <td>48<\/td>\n      <td>49<\/td>\n      <td>50<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
+          }
+        },
+        "288c2e48-a28b-4b6a-9ed1-ff70eab578c9": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "Mongrel Men",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"15\">\n          <h3>MONGREL MEN<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>AU\/UK<\/td>\n      <td>2<\/td>\n      <td>3<\/td>\n      <td>4<\/td>\n      <td>5<\/td>\n      <td>6<\/td>\n      <td>7<\/td>\n      <td>8<\/td>\n      <td>9<\/td>\n      <td>10<\/td>\n      <td>11<\/td>\n      <td>12<\/td>\n      <td>13<\/td>\n      <td>14<\/td>\n    <\/tr>\n    <tr>\n      <td>US<\/td>\n      <td>3<\/td>\n      <td>4<\/td>\n      <td>5<\/td>\n      <td>6<\/td>\n      <td>7<\/td>\n      <td>8<\/td>\n      <td>9<\/td>\n      <td>10<\/td>\n      <td>11<\/td>\n      <td>12<\/td>\n      <td>13<\/td>\n      <td>14<\/td>\n      <td>15<\/td>\n    <\/tr>\n    <tr>\n      <td>EURO<\/td>\n      <td>34<\/td>\n      <td>36<\/td>\n      <td>37<\/td>\n      <td>38<\/td>\n      <td>39<\/td>\n      <td>41<\/td>\n      <td>42<\/td>\n      <td>43<\/td>\n      <td>45<\/td>\n      <td>46<\/td>\n      <td>47<\/td>\n      <td>48<\/td>\n      <td>49<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
+          }
+        },
+        "7155449b-be1d-47ca-af7b-0332f0261cc0": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "CAT MEN",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"16\">\n          <h3>CAT MEN<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>US<\/td>\n      <td>7<\/td>\n      <td>7.5<\/td>\n      <td>8<\/td>\n      <td>8.5<\/td>\n      <td>9<\/td>\n      <td>9.5<\/td>\n      <td>10<\/td>\n      <td>10.5<\/td>\n      <td>11<\/td>\n      <td>11.5<\/td>\n      <td>12<\/td>\n      <td>12.5<\/td>\n      <td>13<\/td>\n      <td>14<\/td>\n      <td>15<\/td>\n    <\/tr>\n    <tr>\n      <td>UK<\/td>\n      <td>6<\/td>\n      <td>6.5<\/td>\n      <td>7<\/td>\n      <td>7.5<\/td>\n      <td>8<\/td>\n      <td>8.5<\/td>\n      <td>9<\/td>\n      <td>9.5<\/td>\n      <td>10<\/td>\n      <td>10.5<\/td>\n      <td>11<\/td>\n      <td>11.5<\/td>\n      <td>12<\/td>\n      <td>13<\/td>\n      <td>14<\/td>\n    <\/tr>\n    <tr>\n      <td>EURO<\/td>\n      <td>40<\/td>\n      <td>40.5<\/td>\n      <td>41<\/td>\n      <td>41.5<\/td>\n      <td>42<\/td>\n      <td>42.5<\/td>\n      <td>43<\/td>\n      <td>43.5<\/td>\n      <td>44<\/td>\n      <td>44.5<\/td>\n      <td>45<\/td>\n      <td>45.5<\/td>\n      <td>46<\/td>\n      <td>47<\/td>\n      <td>48<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
           }
         }
       },
       "block_order": [
         "6376a5d9-9357-406b-a324-8abe23900c72",
         "8ea1661b-8431-49ea-b845-7e715ba0857e",
-        "07480dcc-fffd-4ee2-9185-47fabed90661"
+        "07480dcc-fffd-4ee2-9185-47fabed90661",
+        "4d26d066-a480-4a62-8904-65df59beb5a0",
+        "b475f884-fcd8-4307-a3c3-71164a59b2ce",
+        "288c2e48-a28b-4b6a-9ed1-ff70eab578c9",
+        "7155449b-be1d-47ca-af7b-0332f0261cc0"
       ],
       "settings": {
+        "group_title": "men boots"
+      }
+    },
+    "1655883766cca87141": {
+      "type": "sizeguide-pdf",
+      "blocks": {
+        "2a09bb7d-3d4e-4b56-9a90-534ed2156d94": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "STEEL BLUE WOMEN",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"16\">\n          <h3>STEEL BLUE WOMEN<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>AU<\/td>\n      <td>4<\/td>\n      <td>4.5<\/td>\n      <td>5<\/td>\n      <td>5.5<\/td>\n      <td>6<\/td>\n      <td>6.5<\/td>\n      <td>7<\/td>\n      <td>7.5<\/td>\n      <td>8<\/td>\n      <td>8.5<\/td>\n      <td>9<\/td>\n      <td>9.5<\/td>\n      <td>10<\/td>\n      <td>10.5<\/td>\n      <td>11<\/td>\n    <\/tr>\n    <tr>\n      <td>EURO<\/td>\n      <td>35<\/td>\n      <td>36<\/td>\n      <td>36<\/td>\n      <td>36.5<\/td>\n      <td>37<\/td>\n      <td>37.5<\/td>\n      <td>38<\/td>\n      <td>39<\/td>\n      <td>40<\/td>\n      <td>40.5<\/td>\n      <td>41<\/td>\n      <td>41.5<\/td>\n      <td>42<\/td>\n      <td>42.5<\/td>\n      <td>43<\/td>\n    <\/tr>\n    <tr>\n      <td>US<\/td>\n      <td>5<\/td>\n      <td>5.5<\/td>\n      <td>6<\/td>\n      <td>6.5<\/td>\n      <td>7<\/td>\n      <td>7.5<\/td>\n      <td>8<\/td>\n      <td>8.5<\/td>\n      <td>9<\/td>\n      <td>9.5<\/td>\n      <td>10<\/td>\n      <td>10.5<\/td>\n      <td>11<\/td>\n      <td>11.5<\/td>\n      <td>12<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
+          }
+        },
+        "65a8a782-ec58-447b-8544-853ad544c77d": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "Blundstone Women",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"15\">\n          <h3>BLUNDSTONE WOMEN<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>AU\/UK<\/td>\n      <td>5<\/td>\n      <td>6<\/td>\n      <td>6.5<\/td>\n      <td>7<\/td>\n      <td>7.5<\/td>\n      <td>8<\/td>\n      <td>8.5<\/td>\n      <td>9<\/td>\n      <td>9.5<\/td>\n      <td>10<\/td>\n      <td>11<\/td>\n    <\/tr>\n    <tr>\n      <td>MM<\/td>\n      <td>212<\/td>\n      <td>220<\/td>\n      <td>220<\/td>\n      <td>228<\/td>\n      <td>228<\/td>\n      <td>237<\/td>\n      <td>237<\/td>\n      <td>246<\/td>\n      <td>246<\/td>\n      <td>254<\/td>\n      <td>262<\/td>\n    <\/tr>\n    <tr>\n      <td>EURO<\/td>\n      <td>34.5<\/td>\n      <td>36<\/td>\n      <td>36.5<\/td>\n      <td>37<\/td>\n      <td>37.5<\/td>\n      <td>38<\/td>\n      <td>38.5<\/td>\n      <td>39<\/td>\n      <td>39.5<\/td>\n      <td>40<\/td>\n      <td>41<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
+          }
+        },
+        "41f91b4f-6b17-4e90-954d-d2e0b2b8dbc3": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "Oliver Women",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"15\">\n          <h3>OLIVER WOMEN<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>AU\/UK<\/td>\n      <td>5<\/td>\n      <td>6<\/td>\n      <td>6.5<\/td>\n      <td>7<\/td>\n      <td>7.5<\/td>\n      <td>8<\/td>\n      <td>8.5<\/td>\n      <td>9<\/td>\n      <td>9.5<\/td>\n      <td>10<\/td> \n    <\/tr>\n    <tr>\n      <td>MM<\/td>\n      <td>212<\/td>\n      <td>220<\/td>\n      <td>220<\/td>\n      <td>228<\/td>\n      <td>228<\/td>\n      <td>237<\/td>\n      <td>237<\/td>\n      <td>246<\/td>\n      <td>246<\/td>\n      <td>254<\/td>\n    <\/tr>\n    <tr>\n      <td>EURO<\/td>\n      <td>35<\/td>\n      <td>36<\/td>\n      <td>37<\/td>\n      <td>38<\/td>\n      <td><\/td>\n      <td>39<\/td>\n      <td>40<\/td>\n      <td>41<\/td>\n      <td><\/td>\n      <td>42<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
+          }
+        }
+      },
+      "block_order": [
+        "2a09bb7d-3d4e-4b56-9a90-534ed2156d94",
+        "65a8a782-ec58-447b-8544-853ad544c77d",
+        "41f91b4f-6b17-4e90-954d-d2e0b2b8dbc3"
+      ],
+      "settings": {
+        "group_title": "WOMEN BOOTS"
+      }
+    },
+    "1655949950c55de33b": {
+      "type": "sizeguide-pdf",
+      "blocks": {
+        "c6e9549e-5e38-4abf-8eaf-1a63586c2575": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "Bisley Ladies",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"15\">\n          <h3>BISLEY LADIES<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>SIZE (CM)<\/td>\n      <td>6<\/td>\n      <td>8<\/td>\n      <td>10<\/td>\n      <td>12<\/td>\n      <td>14<\/td>\n      <td>16<\/td>\n      <td>18<\/td>\n      <td>20<\/td>\n      <td>22<\/td>\n      <td>24<\/td> \n    <\/tr>\n    <tr>\n      <td>BUST<\/td>\n      <td>80<\/td>\n      <td>85<\/td>\n      <td>90<\/td>\n      <td>95<\/td>\n      <td>100<\/td>\n      <td>105<\/td>\n      <td>110<\/td>\n      <td>115<\/td>\n      <td>120<\/td>\n      <td>125<\/td>\n    <\/tr>\n    <tr>\n      <td>NATURAL WAIST<\/td>\n      <td>60<\/td>\n      <td>65<\/td>\n      <td>70<\/td>\n      <td>75<\/td>\n      <td>80<\/td>\n      <td>85<\/td>\n      <td>90<\/td>\n      <td>95<\/td>\n      <td>100<\/td>\n      <td>105<\/td>\n    <\/tr>\n    <tr>\n      <td>LOWER WAIST<\/td>\n      <td>67<\/td>\n      <td>72<\/td>\n      <td>77<\/td>\n      <td>82<\/td>\n      <td>87<\/td>\n      <td>92<\/td>\n      <td>97<\/td>\n      <td>102<\/td>\n      <td>107<\/td>\n      <td>112<\/td>\n    <\/tr>\n    <tr>\n      <td>HIP SIZE<\/td>\n      <td>87<\/td>\n      <td>92<\/td>\n      <td>97<\/td>\n      <td>102<\/td>\n      <td>107<\/td>\n      <td>112<\/td>\n      <td>117<\/td>\n      <td>122<\/td>\n      <td>127<\/td>\n      <td>132<\/td>\n    <\/tr>\n    <tr>\n      <td>IN LEG LENGTH<\/td>\n      <td>75<\/td>\n      <td>75<\/td>\n      <td>77<\/td>\n      <td>77<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
+          }
+        },
+        "8e8a230f-594f-4072-9545-6c490743af33": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "King Gee Ladies",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"15\">\n          <h3>KING GEE LADIES<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>SIZE (CM)<\/td>\n      <td>6<\/td>\n      <td>8<\/td>\n      <td>10<\/td>\n      <td>12<\/td>\n      <td>14<\/td>\n      <td>16<\/td>\n      <td>18<\/td>\n      <td>20<\/td>\n      <td>22<\/td>\n      <td>24<\/td> \n    <\/tr>\n    <tr>\n      <td>BUST<\/td>\n      <td>80<\/td>\n      <td>85<\/td>\n      <td>90<\/td>\n      <td>96<\/td>\n      <td>102<\/td>\n      <td>108<\/td>\n      <td>116<\/td>\n      <td>124<\/td>\n      <td>130<\/td>\n      <td>136<\/td>\n    <\/tr>\n    <tr>\n      <td>NATURAL WAIST<\/td>\n      <td>62<\/td>\n      <td>67<\/td>\n      <td>72<\/td>\n      <td>77<\/td>\n      <td>82<\/td>\n      <td>87<\/td>\n      <td>95<\/td>\n      <td>103<\/td>\n      <td>108<\/td>\n      <td>113<\/td>\n    <\/tr>\n    <tr>\n      <td>HIP SIZE<\/td>\n      <td>88<\/td>\n      <td>93<\/td>\n      <td>98<\/td>\n      <td>103<\/td>\n      <td>108<\/td>\n      <td>113<\/td>\n      <td>121<\/td>\n      <td>129<\/td>\n      <td>134<\/td>\n      <td>139<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
+          }
+        },
+        "5fea7d3d-07bc-455f-b02b-f013ff205ca8": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "Hard Yakka Ladies",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"15\">\n          <h3>HARD YAKKA LADIES<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>SIZE (CM)<\/td>\n      <td>6<\/td>\n      <td>8<\/td>\n      <td>10<\/td>\n      <td>12<\/td>\n      <td>14<\/td>\n      <td>16<\/td>\n      <td>18<\/td>\n      <td>20<\/td>\n      <td>22<\/td>\n      <td>24<\/td> \n    <\/tr>\n    <tr>\n      <td>BUST<\/td>\n      <td>80<\/td>\n      <td>85<\/td>\n      <td>90<\/td>\n      <td>96<\/td>\n      <td>102<\/td>\n      <td>108<\/td>\n      <td>116<\/td>\n      <td>124<\/td>\n      <td>130<\/td>\n      <td>136<\/td>\n    <\/tr>\n    <tr>\n      <td>NATURAL WAIST<\/td>\n      <td>62<\/td>\n      <td>67<\/td>\n      <td>72<\/td>\n      <td>77<\/td>\n      <td>82<\/td>\n      <td>87<\/td>\n      <td>95<\/td>\n      <td>103<\/td>\n      <td>108<\/td>\n      <td>113<\/td>\n    <\/tr>\n    <tr>\n      <td>HIP SIZE<\/td>\n      <td>88<\/td>\n      <td>93<\/td>\n      <td>98<\/td>\n      <td>103<\/td>\n      <td>108<\/td>\n      <td>113<\/td>\n      <td>121<\/td>\n      <td>129<\/td>\n      <td>134<\/td>\n      <td>139<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
+          }
+        }
+      },
+      "block_order": [
+        "c6e9549e-5e38-4abf-8eaf-1a63586c2575",
+        "8e8a230f-594f-4072-9545-6c490743af33",
+        "5fea7d3d-07bc-455f-b02b-f013ff205ca8"
+      ],
+      "settings": {
+        "group_title": "Ladies sizing"
+      }
+    },
+    "1655955720f94c1993": {
+      "type": "sizeguide-pdf",
+      "blocks": {
+        "22975121-caab-4753-8ff0-5aa501897753": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "BISLEY MEN'S SHIRTS",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"15\">\n          <h3>BISLEY MEN'S SHIRTS<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>SIZE<\/td>\n      <td>XS<\/td>\n      <td>S<\/td>\n      <td>M<\/td>\n      <td>L<\/td>\n      <td>XL<\/td>\n      <td>2XL<\/td>\n      <td>3XL<\/td>\n      <td>4XL<\/td>\n      <td>5XL<\/td>\n      <td>6XL<\/td> \n    <\/tr>\n    <tr>\n      <td>NECK SIZE (CM)<\/td>\n      <td>36<\/td>\n      <td>37\/38<\/td>\n      <td>39\/40<\/td>\n      <td>41\/42<\/td>\n      <td>43\/44<\/td>\n      <td>46<\/td>\n      <td>48<\/td>\n      <td>50<\/td>\n      <td>52<\/td>\n      <td>54<\/td>\n    <\/tr>\n    <tr>\n      <td>CHEST SIZE (CM)<\/td>\n      <td>81<\/td>\n      <td>89<\/td>\n      <td>97<\/td>\n      <td>105<\/td>\n      <td>113<\/td>\n      <td>121<\/td>\n      <td>129<\/td>\n      <td>137<\/td>\n      <td>145<\/td>\n      <td>153<\/td>\n    <\/tr>\n    <tr>\n      <td>CHEST SIZE (INCHES)<\/td>\n      <td>32<\/td>\n      <td>35<\/td>\n      <td>38<\/td>\n      <td>41<\/td>\n      <td>44.5<\/td>\n      <td>47.5<\/td>\n      <td>50.5<\/td>\n      <td>54<\/td>\n      <td>57<\/td>\n      <td>60<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
+          }
+        },
+        "228551e4-fd1e-4eca-9cff-f02135165142": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "JB's Wear Shirts",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"15\">\n          <h3>JB'S WEAR SHIRTS<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>SIZE (CM)<\/td>\n      <td>XS<\/td>\n      <td>S<\/td>\n      <td>M<\/td>\n      <td>L<\/td>\n      <td>XL<\/td>\n      <td>2XL<\/td>\n      <td>3XL<\/td>\n      <td>4XL<\/td>\n      <td>5XL<\/td>\n      <td>6XL\/7XL<\/td> \n    <\/tr>\n    <tr>\n      <td>CHEST<\/td>\n      <td>51<\/td>\n      <td>53.5<\/td>\n      <td>56<\/td>\n      <td>58.5<\/td>\n      <td>61<\/td>\n      <td>63.5<\/td>\n      <td>66.5<\/td>\n      <td>70<\/td>\n      <td>73.5<\/td>\n      <td>78.5<\/td>\n    <\/tr>\n    <tr>\n      <td>SP LENGTH<\/td>\n      <td>69<\/td>\n      <td>71.5<\/td>\n      <td>74<\/td>\n      <td>76.5<\/td>\n      <td>79<\/td>\n      <td>81<\/td>\n      <td>82<\/td>\n      <td>83<\/td>\n      <td>84<\/td>\n      <td>86<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
+          }
+        },
+        "b5c99c35-7556-4e8a-96ca-8065f553150b": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "King Gee Shirts",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"15\">\n          <h3>KING GEE SHIRTS<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>SIZE (CM)<\/td>\n      <td>XS<\/td>\n      <td>S<\/td>\n      <td>M<\/td>\n      <td>L<\/td>\n      <td>XL<\/td>\n      <td>2XL<\/td>\n      <td>3XL<\/td>\n      <td>4XL<\/td>\n      <td>5XL<\/td>\n      <td>6XL<\/td> \n    <\/tr>\n    <tr>\n      <td>CHEST<\/td>\n      <td>87<\/td>\n      <td>92<\/td>\n      <td>97<\/td>\n      <td>102<\/td>\n      <td>110<\/td>\n      <td>118<\/td>\n      <td>126<\/td>\n      <td>134<\/td>\n      <td>142<\/td>\n      <td>150<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
+          }
+        },
+        "49f4fabd-1ad9-4886-ba45-e72930d8f047": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "Hard Yakka Shirts",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"15\">\n          <h3>HARD YAKKA SHIRTS<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>SIZE (CM)<\/td>\n      <td>XS<\/td>\n      <td>S<\/td>\n      <td>M<\/td>\n      <td>L<\/td>\n      <td>XL<\/td>\n      <td>2XL<\/td>\n      <td>3XL<\/td>\n      <td>4XL<\/td>\n      <td>5XL<\/td>\n      <td>6XL<\/td> \n    <\/tr>\n    <tr>\n      <td>CHEST<\/td>\n      <td>87<\/td>\n      <td>92<\/td>\n      <td>97<\/td>\n      <td>102<\/td>\n      <td>110<\/td>\n      <td>118<\/td>\n      <td>126<\/td>\n      <td>134<\/td>\n      <td>142<\/td>\n      <td>150<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
+          }
+        },
+        "42a3d175-b185-415f-89dc-706f43e3ec17": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "GLOWEAVE 5045 FIT",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"15\">\n          <h3>GLOWEAVE 5045 FIT<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>COLLAR<\/td>\n      <td>S<\/td>\n      <td>M<\/td>\n      <td>L<\/td>\n      <td>XL<\/td>\n      <td>2XL<\/td>\n      <td>3XL<\/td>\n      <td>4XL<\/td>\n      <td>5XL<\/td>\n      <td>6XL<\/td> \n    <\/tr>\n    <tr>\n      <td>CHEST<\/td>\n      <td>104<\/td>\n      <td>112<\/td>\n      <td>120<\/td>\n      <td>128<\/td>\n      <td>138<\/td>\n      <td>148<\/td>\n      <td>156<\/td>\n      <td>160<\/td>\n      <td>164<\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST<\/td>\n      <td>100<\/td>\n      <td>108<\/td>\n      <td>116<\/td>\n      <td>124<\/td>\n      <td>136<\/td>\n      <td>148<\/td>\n      <td>156<\/td>\n      <td>160<\/td>\n      <td>164<\/td>\n    <\/tr>\n    <tr>\n      <td>SLEEVE FROM CENTRE BACK<\/td>\n      <td>89<\/td>\n      <td>90<\/td>\n      <td>91<\/td>\n      <td>92<\/td>\n      <td>93<\/td>\n      <td>94<\/td>\n      <td>94.5<\/td>\n      <td>95<\/td>\n      <td>95.5<\/td>\n    <\/tr>\n    <tr>\n      <td>SLEEVE FROM SHOULDER<\/td>\n      <td>66<\/td>\n      <td>66<\/td>\n      <td>66<\/td>\n      <td>66<\/td>\n      <td>66<\/td>\n      <td>66<\/td>\n      <td>66.5<\/td>\n      <td>67<\/td>\n      <td>67<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
+          }
+        }
+      },
+      "block_order": [
+        "22975121-caab-4753-8ff0-5aa501897753",
+        "228551e4-fd1e-4eca-9cff-f02135165142",
+        "b5c99c35-7556-4e8a-96ca-8065f553150b",
+        "49f4fabd-1ad9-4886-ba45-e72930d8f047",
+        "42a3d175-b185-415f-89dc-706f43e3ec17"
+      ],
+      "settings": {
+        "group_title": "Mens Shirts"
+      }
+    },
+    "165595855040ffc9ae": {
+      "type": "sizeguide-pdf",
+      "blocks": {
+        "344f168e-720d-4f0e-8675-14aa5e45421c": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "BISLEY MEN'S PANTS",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"15\">\n          <h3>BISLEY MEN'S PANTS<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>SIZE REGULAR<\/td>\n      <td>72R<\/td>\n      <td>77R<\/td>\n      <td>82R<\/td>\n      <td>87R<\/td>\n      <td>92R<\/td>\n      <td>97R<\/td>\n      <td>102R<\/td>\n      <td>107R<\/td>\n      <td>112R<\/td>\n      <td>117R<\/td> \n      <td>122R<\/td>\n      <td><\/td>\n      <td><\/td> \n    <\/tr>\n    <tr>\n      <td>WAIST (CM)<\/td>\n      <td>72<\/td>\n      <td>77<\/td>\n      <td>82<\/td>\n      <td>87<\/td>\n      <td>92<\/td>\n      <td>97<\/td>\n      <td>102<\/td>\n      <td>107<\/td>\n      <td>112<\/td>\n      <td>117<\/td> \n      <td>122<\/td>\n      <td><\/td>\n      <td><\/td> \n    <\/tr>\n    <tr>\n      <td>WAIST (INCHES)<\/td>\n      <td>28<\/td>\n      <td>30<\/td>\n      <td>32<\/td>\n      <td>34<\/td>\n      <td>36<\/td>\n      <td>38<\/td>\n      <td>40<\/td>\n      <td>42<\/td>\n      <td>44<\/td>\n      <td>46<\/td> \n      <td>48<\/td>\n      <td><\/td>\n      <td><\/td> \n    <\/tr>\n    <tr>\n      <td>IN-LEG (CM)<\/td>\n      <td>77<\/td>\n      <td>80<\/td>\n      <td>82<\/td>\n      <td>84<\/td>\n      <td>84<\/td>\n      <td>84<\/td>\n      <td>84<\/td>\n      <td>84<\/td>\n      <td>84<\/td>\n      <td>84<\/td> \n      <td>84<\/td>\n      <td><\/td>\n      <td><\/td> \n    <\/tr>\n    <tr>\n      <td>SIZE STOUT<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td>87S<\/td>\n      <td>92S<\/td>\n      <td>97S<\/td>\n      <td>102S<\/td>\n      <td>107S<\/td>\n      <td>112S<\/td>\n      <td>117S<\/td> \n      <td>122S<\/td>\n      <td>127S<\/td>\n      <td>132S<\/td> \n    <\/tr>\n    <tr>\n      <td>WAIST (CM)<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td>87<\/td>\n      <td>92<\/td>\n      <td>97<\/td>\n      <td>102<\/td>\n      <td>107<\/td>\n      <td>112<\/td>\n      <td>117<\/td> \n      <td>122<\/td>\n      <td>127<\/td>\n      <td>132<\/td> \n    <\/tr>\n    <tr>\n      <td>WAIST (INCHES)<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td>34<\/td>\n      <td>36<\/td>\n      <td>38<\/td>\n      <td>40<\/td>\n      <td>42<\/td>\n      <td>44<\/td>\n      <td>46<\/td> \n      <td>48<\/td>\n      <td>50<\/td>\n      <td>52<\/td> \n    <\/tr>\n    <tr>\n      <td>IN-LEG (CM)<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n      <td>82<\/td> \n      <td>82<\/td>\n      <td>82<\/td>\n      <td>82<\/td> \n    <\/tr>\n    <tr>\n      <td>SIZE LONG<\/td>\n      <td><\/td>\n      <td>74L<\/td>\n      <td>79L<\/td>\n      <td>84L<\/td>\n      <td>89L<\/td>\n      <td>94L<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td> \n      <td><\/td>\n      <td><\/td>\n      <td><\/td> \n    <\/tr>\n    <tr>\n      <td>WAIST (CM)<\/td>\n      <td><\/td>\n      <td>74<\/td>\n      <td>79<\/td>\n      <td>84<\/td>\n      <td>89<\/td>\n      <td>94<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td> \n      <td><\/td>\n      <td><\/td>\n      <td><\/td> \n    <\/tr>\n    <tr>\n      <td>WAIST (INCHES)<\/td>\n      <td><\/td>\n      <td>29<\/td>\n      <td>31<\/td>\n      <td>33<\/td>\n      <td>35<\/td>\n      <td>37<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td> \n      <td><\/td>\n      <td><\/td>\n      <td><\/td> \n    <\/tr>\n    <tr>\n      <td>IN-LEG (CM)<\/td>\n      <td><\/td>\n      <td>84<\/td>\n      <td>86<\/td>\n      <td>88<\/td>\n      <td>88<\/td>\n      <td>88<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td> \n      <td><\/td>\n      <td><\/td>\n      <td><\/td> \n    <\/tr>\n  <\/tbody>\n<\/table>"
+          }
+        },
+        "f65076ed-7bcb-4ad7-8c9a-7b37817af9e8": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "JB's WEAR PANTS",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"15\">\n          <h3>JB'S WEAR PANTS<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>SIZE REGULAR<\/td>\n      <td>72<\/td>\n      <td>77<\/td>\n      <td>82<\/td>\n      <td>87<\/td>\n      <td>92<\/td>\n      <td>97<\/td>\n      <td>102<\/td>\n      <td>107<\/td>\n      <td>112<\/td>\n      <td><\/td> \n      <td><\/td>\n      <td><\/td>\n      <td><\/td> \n    <\/tr>\n    <tr>\n      <td>INNER LEG<\/td>\n      <td>72<\/td>\n      <td>75<\/td>\n      <td>78<\/td>\n      <td>80<\/td>\n      <td>83<\/td>\n      <td>84<\/td>\n      <td>85<\/td>\n      <td>86.5<\/td>\n      <td>88<\/td>\n      <td><\/td> \n      <td><\/td>\n      <td><\/td>\n      <td><\/td> \n    <\/tr>\n    <tr>\n      <td>SIZE STOUT<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td>87<\/td>\n      <td>92<\/td>\n      <td>97<\/td>\n      <td>102<\/td>\n      <td>107<\/td>\n      <td>112<\/td>\n      <td>117<\/td> \n      <td>122<\/td>\n      <td>127<\/td>\n      <td>132<\/td> \n    <\/tr>\n    <tr>\n      <td>INNER LEG<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td>71<\/td>\n      <td>73<\/td>\n      <td>75<\/td>\n      <td>78<\/td>\n      <td>80<\/td>\n      <td>81<\/td>\n      <td>81.5<\/td> \n      <td>82<\/td>\n      <td>82.5<\/td>\n      <td>83<\/td>\n    <\/tr>\n    \n  <\/tbody>\n<\/table>"
+          }
+        },
+        "50e0bce8-041f-460c-a0b7-aebddbda8b36": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "JB'S WEAR WET WEATHER PANTS",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"15\">\n          <h3>JB'S WEAR WET WEATHER PANTS<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>SIZE (CM)<\/td>\n      <td>XS<\/td>\n      <td>S<\/td>\n      <td>M<\/td>\n      <td>L<\/td>\n      <td>XL<\/td>\n      <td>2XL<\/td>\n      <td>3XL<\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST<\/td>\n      <td>77<\/td>\n      <td>84<\/td>\n      <td>89<\/td>\n      <td>80<\/td>\n      <td>94<\/td>\n      <td>99<\/td>\n      <td>104<\/td>\n      <td>109<\/td>\n    <\/tr>\n    <tr>\n      <td>IN-LEG<\/td>\n      <td>72<\/td>\n      <td>74<\/td>\n      <td>76<\/td>\n      <td>78<\/td>\n      <td>80<\/td>\n      <td>82<\/td>\n      <td>84<\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST STRETCH<\/td>\n      <td>124<\/td>\n      <td>131<\/td>\n      <td>137<\/td>\n      <td>143<\/td>\n      <td>150<\/td>\n      <td>156<\/td>\n      <td>162<\/td>\n    <\/tr>\n    \n  <\/tbody>\n<\/table>"
+          }
+        },
+        "d16c6cad-3670-4b32-90a7-2d1095cd8bdc": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "KING GEE PANTS",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"19\">\n          <h3>KING GEE PANTS<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>SIZE REGULAR<\/td>\n      <td>67R<\/td>\n      <td>72R<\/td>\n      <td>77R<\/td>\n      <td>82R<\/td>\n      <td>87R<\/td>\n      <td>92R<\/td>\n      <td>97R<\/td>\n      <td>102R<\/td>\n      <td>107R<\/td>\n      <td>112R<\/td>\n      <td>117R<\/td>\n      <td>122R<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n    <\/tr>\n    <tr>\n      <td>SIZE STOUT<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td>87S<\/td>\n      <td>92S<\/td>\n      <td>97S<\/td>\n      <td>102S<\/td>\n      <td>107S<\/td>\n      <td>112S<\/td>\n      <td>117S<\/td>\n      <td>122S<\/td>\n      <td>127S<\/td>\n      <td>132S<\/td>\n      <td>137S<\/td>\n      <td>142S<\/td>\n      <td>147S<\/td>\n      <td>152S<\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST (CM)<\/td>\n      <td>67<\/td>\n      <td>72<\/td>\n      <td>77<\/td>\n      <td>82<\/td>\n      <td>87<\/td>\n      <td>92<\/td>\n      <td>97<\/td>\n      <td>102<\/td>\n      <td>107<\/td>\n      <td>112<\/td>\n      <td>117<\/td>\n      <td>122<\/td>\n      <td>127<\/td>\n      <td>132<\/td>\n      <td>137<\/td>\n      <td>142<\/td>\n      <td>147<\/td>\n      <td>152<\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST (CM)<\/td>\n      <td>26<\/td>\n      <td>28<\/td>\n      <td>30<\/td>\n      <td>32<\/td>\n      <td>34<\/td>\n      <td>36<\/td>\n      <td>38<\/td>\n      <td>40<\/td>\n      <td>42<\/td>\n      <td>44<\/td>\n      <td>46<\/td>\n      <td>48<\/td>\n      <td>50<\/td>\n      <td>52<\/td>\n      <td>54<\/td>\n      <td>56<\/td>\n      <td>58<\/td>\n      <td>60<\/td>\n    <\/tr>\n    <tr>\n      <td>IN-LEG REG<\/td>\n      <td>83<\/td>\n      <td>83<\/td>\n      <td>83<\/td>\n      <td>83<\/td>\n      <td>83<\/td>\n      <td>83<\/td>\n      <td>83<\/td>\n      <td>83<\/td>\n      <td>83<\/td>\n      <td>83<\/td>\n      <td>83<\/td>\n      <td>83<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n    <\/tr>\n    <tr>\n      <td>IN- LEG STOUT<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td>78<\/td>\n      <td>78<\/td>\n      <td>78<\/td>\n      <td>78<\/td>\n      <td>78<\/td>\n      <td>78<\/td>\n      <td>78<\/td>\n      <td>78<\/td>\n      <td>78<\/td>\n      <td>78<\/td>\n      <td>78<\/td>\n      <td>78<\/td>\n      <td>78<\/td>\n      <td>78<\/td>\n    <\/tr>\n    <tr>\n      <td>SIZE LONG<\/td>\n      <td><\/td>\n      <td>74L<\/td>\n      <td>79L<\/td>\n      <td>84L<\/td>\n      <td>89L<\/td>\n      <td>94L<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST (CM)<\/td>\n      <td><\/td>\n      <td>74<\/td>\n      <td>79<\/td>\n      <td>84<\/td>\n      <td>89<\/td>\n      <td>94<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST (INCHES)<\/td>\n      <td><\/td>\n      <td>29<\/td>\n      <td>31<\/td>\n      <td>33<\/td>\n      <td>35<\/td>\n      <td>37<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n    <\/tr>\n    <tr>\n      <td>IN-LEG<\/td>\n      <td><\/td>\n      <td>88<\/td>\n      <td>88<\/td>\n      <td>88<\/td>\n      <td>88<\/td>\n      <td>88<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
+          }
+        },
+        "5e74f419-0c9a-4295-9b8f-fbfb74a831c8": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "HARD YAKKA PANTS",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"19\">\n          <h3>HARD YAKKA PANTS<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>SIZE REGULAR<\/td>\n      <td>67R<\/td>\n      <td>72R<\/td>\n      <td>77R<\/td>\n      <td>82R<\/td>\n      <td>87R<\/td>\n      <td>92R<\/td>\n      <td>97R<\/td>\n      <td>102R<\/td>\n      <td>107R<\/td>\n      <td>112R<\/td>\n      <td>117R<\/td>\n      <td>122R<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n    <\/tr>\n    <tr>\n      <td>SIZE STOUT<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td>87S<\/td>\n      <td>92S<\/td>\n      <td>97S<\/td>\n      <td>102S<\/td>\n      <td>107S<\/td>\n      <td>112S<\/td>\n      <td>117S<\/td>\n      <td>122S<\/td>\n      <td>127S<\/td>\n      <td>132S<\/td>\n      <td>137S<\/td>\n      <td>142S<\/td>\n      <td>147S<\/td>\n      <td>152S<\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST (CM)<\/td>\n      <td>67<\/td>\n      <td>72<\/td>\n      <td>77<\/td>\n      <td>82<\/td>\n      <td>87<\/td>\n      <td>92<\/td>\n      <td>97<\/td>\n      <td>102<\/td>\n      <td>107<\/td>\n      <td>112<\/td>\n      <td>117<\/td>\n      <td>122<\/td>\n      <td>127<\/td>\n      <td>132<\/td>\n      <td>137<\/td>\n      <td>142<\/td>\n      <td>147<\/td>\n      <td>152<\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST (CM)<\/td>\n      <td>26<\/td>\n      <td>28<\/td>\n      <td>30<\/td>\n      <td>32<\/td>\n      <td>34<\/td>\n      <td>36<\/td>\n      <td>38<\/td>\n      <td>40<\/td>\n      <td>42<\/td>\n      <td>44<\/td>\n      <td>46<\/td>\n      <td>48<\/td>\n      <td>50<\/td>\n      <td>52<\/td>\n      <td>54<\/td>\n      <td>56<\/td>\n      <td>58<\/td>\n      <td>60<\/td>\n    <\/tr>\n    <tr>\n      <td>IN-LEG REG<\/td>\n      <td>83<\/td>\n      <td>83<\/td>\n      <td>83<\/td>\n      <td>83<\/td>\n      <td>83<\/td>\n      <td>83<\/td>\n      <td>83<\/td>\n      <td>83<\/td>\n      <td>83<\/td>\n      <td>83<\/td>\n      <td>83<\/td>\n      <td>83<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n    <\/tr>\n    <tr>\n      <td>IN- LEG STOUT<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td>78<\/td>\n      <td>78<\/td>\n      <td>78<\/td>\n      <td>78<\/td>\n      <td>78<\/td>\n      <td>78<\/td>\n      <td>78<\/td>\n      <td>78<\/td>\n      <td>78<\/td>\n      <td>78<\/td>\n      <td>78<\/td>\n      <td>78<\/td>\n      <td>78<\/td>\n      <td>78<\/td>\n    <\/tr>\n    <tr>\n      <td>SIZE LONG<\/td>\n      <td><\/td>\n      <td>74L<\/td>\n      <td>79L<\/td>\n      <td>84L<\/td>\n      <td>89L<\/td>\n      <td>94L<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST (CM)<\/td>\n      <td><\/td>\n      <td>74<\/td>\n      <td>79<\/td>\n      <td>84<\/td>\n      <td>89<\/td>\n      <td>94<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST (INCHES)<\/td>\n      <td><\/td>\n      <td>29<\/td>\n      <td>31<\/td>\n      <td>33<\/td>\n      <td>35<\/td>\n      <td>37<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n    <\/tr>\n    <tr>\n      <td>IN-LEG<\/td>\n      <td><\/td>\n      <td>88<\/td>\n      <td>88<\/td>\n      <td>88<\/td>\n      <td>88<\/td>\n      <td>88<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
+          }
+        },
+        "a67e1c99-d827-4d68-8673-e60221cbfdbf": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "CAT PANTS",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"19\">\n          <h3>CAT PANTS<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td colspan=\"19\" style=\"text-align: center;\">INCHES \/ CM<\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST<\/td>\n      <td>28\/71<\/td>\n      <td>30\/76<\/td>\n      <td>32\/81<\/td>\n      <td>34\/86<\/td>\n      <td>36\/91<\/td>\n      <td>38\/96<\/td>\n      <td>40\/102<\/td>\n    <\/tr>\n    <tr>\n      <td>INSEAM SHORT<\/td>\n      <td>30\/76<\/td>\n      <td>30\/76<\/td>\n      <td>30\/76<\/td>\n      <td>30\/76<\/td>\n      <td>30\/76<\/td>\n      <td>30\/76<\/td>\n      <td>NA<\/td>\n    <\/tr>\n    <tr>\n      <td>INSEAM REGULAR<\/td>\n      <td>32\/81<\/td>\n      <td>32\/81<\/td>\n      <td>32\/81<\/td>\n      <td>32\/81<\/td>\n      <td>32\/81<\/td>\n      <td>32\/81<\/td>\n      <td>32\/81<\/td>\n    <\/tr>\n    <tr>\n      <td>INSEAM LONG<\/td>\n      <td>NA<\/td>\n      <td>34\/86<\/td>\n      <td>34\/86<\/td>\n      <td>34\/86<\/td>\n      <td>34\/86<\/td>\n      <td>34\/86<\/td>\n      <td>34\/86<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
+          }
+        }
+      },
+      "block_order": [
+        "344f168e-720d-4f0e-8675-14aa5e45421c",
+        "f65076ed-7bcb-4ad7-8c9a-7b37817af9e8",
+        "50e0bce8-041f-460c-a0b7-aebddbda8b36",
+        "d16c6cad-3670-4b32-90a7-2d1095cd8bdc",
+        "5e74f419-0c9a-4295-9b8f-fbfb74a831c8",
+        "a67e1c99-d827-4d68-8673-e60221cbfdbf"
+      ],
+      "settings": {
+        "group_title": "Mens pants"
+      }
+    },
+    "165596563117f84df0": {
+      "type": "sizeguide-pdf",
+      "blocks": {
+        "25dd2d7c-a753-4bcc-850e-35e1a6e36179": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "BISLEY MEN'S SHORTS",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"14\">\n          <h3>BISLEY MEN'S SHORTS<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>SIZE REGULAR<\/td>\n      <td>72<\/td>\n      <td>77<\/td>\n      <td>82<\/td>\n      <td>87<\/td>\n      <td>92<\/td>\n      <td>97<\/td>\n      <td>102<\/td>\n      <td>107<\/td>\n      <td>112<\/td>\n      <td>117<\/td>\n      <td>122<\/td>\n      <td>127<\/td>\n      <td>132<\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST (CM)<\/td>\n      <td>72<\/td>\n      <td>77<\/td>\n      <td>82<\/td>\n      <td>87<\/td>\n      <td>92<\/td>\n      <td>97<\/td>\n      <td>102<\/td>\n      <td>107<\/td>\n      <td>112<\/td>\n      <td>117<\/td>\n      <td>122<\/td>\n      <td>127<\/td>\n      <td>132<\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST (INCHES)<\/td>\n      <td>28<\/td>\n      <td>30<\/td>\n      <td>32<\/td>\n      <td>34<\/td>\n      <td>36<\/td>\n      <td>38<\/td>\n      <td>40<\/td>\n      <td>42<\/td>\n      <td>44<\/td>\n      <td>46<\/td>\n      <td>48<\/td>\n      <td>50<\/td>\n      <td>52<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
+          }
+        },
+        "fe0715fe-23a1-4937-9a74-e1ac68affb09": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "King Gee Shorts",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"19\">\n          <h3>KING GEE SHORTS<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>SIZE REGULAR<\/td>\n      <td>67<\/td>\n      <td>72<\/td>\n      <td>77<\/td>\n      <td>82<\/td>\n      <td>87<\/td>\n      <td>92<\/td>\n      <td>97<\/td>\n      <td>102<\/td>\n      <td>107<\/td>\n      <td>112<\/td>\n      <td>117<\/td>\n      <td>122<\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST (CM)<\/td>\n      <td>67<\/td>\n      <td>72<\/td>\n      <td>77<\/td>\n      <td>82<\/td>\n      <td>87<\/td>\n      <td>92<\/td>\n      <td>97<\/td>\n      <td>102<\/td>\n      <td>107<\/td>\n      <td>112<\/td>\n      <td>117<\/td>\n      <td>122<\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST (INCHES)<\/td>\n      <td>26<\/td>\n      <td>28<\/td>\n      <td>30<\/td>\n      <td>32<\/td>\n      <td>34<\/td>\n      <td>36<\/td>\n      <td>38<\/td>\n      <td>40<\/td>\n      <td>42<\/td>\n      <td>44<\/td>\n      <td>46<\/td>\n      <td>48<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
+          }
+        },
+        "6f76a0d3-981e-4607-94d5-b0409197e108": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "HARD YAKKA SHORTS",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"19\">\n          <h3>HARD YAKKA SHORTS<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>SIZE REGULAR<\/td>\n      <td>67<\/td>\n      <td>72<\/td>\n      <td>77<\/td>\n      <td>82<\/td>\n      <td>87<\/td>\n      <td>92<\/td>\n      <td>97<\/td>\n      <td>102<\/td>\n      <td>107<\/td>\n      <td>112<\/td>\n      <td>117<\/td>\n      <td>122<\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST (CM)<\/td>\n      <td>67<\/td>\n      <td>72<\/td>\n      <td>77<\/td>\n      <td>82<\/td>\n      <td>87<\/td>\n      <td>92<\/td>\n      <td>97<\/td>\n      <td>102<\/td>\n      <td>107<\/td>\n      <td>112<\/td>\n      <td>117<\/td>\n      <td>122<\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST (INCHES)<\/td>\n      <td>26<\/td>\n      <td>28<\/td>\n      <td>30<\/td>\n      <td>32<\/td>\n      <td>34<\/td>\n      <td>36<\/td>\n      <td>38<\/td>\n      <td>40<\/td>\n      <td>42<\/td>\n      <td>44<\/td>\n      <td>46<\/td>\n      <td>48<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
+          }
+        },
+        "85afc79c-f113-49ca-888d-1c3978b77e59": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "CAT SHORTS",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"19\">\n          <h3>CAT SHORTS<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td colspan=\"19\" style=\"text-align: center;\">INCHES \/ CM<\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST<\/td>\n      <td>28\/71<\/td>\n      <td>30\/76<\/td>\n      <td>32\/81<\/td>\n      <td>34\/86<\/td>\n      <td>36\/91<\/td>\n      <td>38\/96<\/td>\n      <td>40\/102<\/td>\n    <\/tr>\n    <tr>\n      <td>INSEAM SHORT<\/td>\n      <td>30\/76<\/td>\n      <td>30\/76<\/td>\n      <td>30\/76<\/td>\n      <td>30\/76<\/td>\n      <td>30\/76<\/td>\n      <td>30\/76<\/td>\n      <td>NA<\/td>\n    <\/tr>\n    <tr>\n      <td>INSEAM REGULAR<\/td>\n      <td>32\/81<\/td>\n      <td>32\/81<\/td>\n      <td>32\/81<\/td>\n      <td>32\/81<\/td>\n      <td>32\/81<\/td>\n      <td>32\/81<\/td>\n      <td>32\/81<\/td>\n    <\/tr>\n    <tr>\n      <td>INSEAM LONG<\/td>\n      <td>NA<\/td>\n      <td>34\/86<\/td>\n      <td>34\/86<\/td>\n      <td>34\/86<\/td>\n      <td>34\/86<\/td>\n      <td>34\/86<\/td>\n      <td>34\/86<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
+          }
+        }
+      },
+      "block_order": [
+        "25dd2d7c-a753-4bcc-850e-35e1a6e36179",
+        "fe0715fe-23a1-4937-9a74-e1ac68affb09",
+        "6f76a0d3-981e-4607-94d5-b0409197e108",
+        "85afc79c-f113-49ca-888d-1c3978b77e59"
+      ],
+      "settings": {
+        "group_title": "men shorts"
+      }
+    },
+    "165596668724c5aa96": {
+      "type": "sizeguide-pdf",
+      "blocks": {
+        "f1627c41-d317-4d65-98ba-978253f9435b": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "BISLEY JACKETS",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"11\">\n          <h3>BISLEY JACKETS<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>SIZE<\/td>\n      <td>XS<\/td>\n      <td>S<\/td>\n      <td>M<\/td>\n      <td>L<\/td>\n      <td>XL<\/td>\n      <td>2XL<\/td>\n      <td>3XL<\/td>\n      <td>4XL<\/td>\n      <td>5XL<\/td>\n      <td>6XL<\/td>\n    <\/tr>\n    <tr>\n      <td>CHEST SIZE (CM)<\/td>\n      <td>87<\/td>\n      <td>92<\/td>\n      <td>97<\/td>\n      <td>102<\/td>\n      <td>107<\/td>\n      <td>112<\/td>\n      <td>117<\/td>\n      <td>122<\/td>\n      <td>127<\/td>\n      <td>132<\/td>\n    <\/tr>\n    <tr>\n      <td>CHEST SIZE (INCHES)<\/td>\n      <td>34<\/td>\n      <td>36<\/td>\n      <td>38<\/td>\n      <td>40<\/td>\n      <td>42<\/td>\n      <td>44<\/td>\n      <td>46<\/td>\n      <td>48<\/td>\n      <td>50<\/td>\n      <td>52<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
+          }
+        },
+        "94d38223-c865-4306-9b3f-c03abe7c210c": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "KING GEE JACKETS",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"11\">\n          <h3>KING GEE JACKETS<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>SIZE<\/td>\n      <td>XS<\/td>\n      <td>S<\/td>\n      <td>M<\/td>\n      <td>L<\/td>\n      <td>XL<\/td>\n      <td>2XL<\/td>\n      <td>3XL<\/td>\n      <td>4XL<\/td>\n      <td>5XL<\/td>\n      <td>6XL<\/td>\n    <\/tr>\n    <tr>\n      <td>CHEST<\/td>\n      <td>87<\/td>\n      <td>92<\/td>\n      <td>97<\/td>\n      <td>102<\/td>\n      <td>110<\/td>\n      <td>118<\/td>\n      <td>126<\/td>\n      <td>134<\/td>\n      <td>142<\/td>\n      <td>150<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
+          }
+        },
+        "fea6fab3-1f10-4338-b750-c4ffc4f16497": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "HARD YAKKA JACKETS",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"11\">\n          <h3>HARD YAKKA JACKETS<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>SIZE<\/td>\n      <td>XS<\/td>\n      <td>S<\/td>\n      <td>M<\/td>\n      <td>L<\/td>\n      <td>XL<\/td>\n      <td>2XL<\/td>\n      <td>3XL<\/td>\n      <td>4XL<\/td>\n      <td>5XL<\/td>\n      <td>6XL<\/td>\n    <\/tr>\n    <tr>\n      <td>CHEST<\/td>\n      <td>87<\/td>\n      <td>92<\/td>\n      <td>97<\/td>\n      <td>102<\/td>\n      <td>110<\/td>\n      <td>118<\/td>\n      <td>126<\/td>\n      <td>134<\/td>\n      <td>142<\/td>\n      <td>150<\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
+          }
+        }
+      },
+      "block_order": [
+        "f1627c41-d317-4d65-98ba-978253f9435b",
+        "94d38223-c865-4306-9b3f-c03abe7c210c",
+        "fea6fab3-1f10-4338-b750-c4ffc4f16497"
+      ],
+      "settings": {
+        "group_title": "JACKETS"
+      }
+    },
+    "1655966689614598aa": {
+      "type": "sizeguide-pdf",
+      "blocks": {
+        "5c4a3c9e-cb8f-465c-9e3e-d50433f1dcae": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "HARD YAKKA COVERALL\/OVERALL",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"19\">\n          <h3>HARD YAKKA COVERALL\/OVERALL<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>SIZE REGULAR<\/td>\n      <td>67R<\/td>\n      <td>72R<\/td>\n      <td>77R<\/td>\n      <td>82R<\/td>\n      <td>87R<\/td>\n      <td>92R<\/td>\n      <td>97R<\/td>\n      <td>102R<\/td>\n      <td>107R<\/td>\n      <td>112R<\/td>\n      <td>117R<\/td>\n      <td>122R<\/td>\n      <td>127R<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n    <\/tr>\n    <tr>\n      <td>SIZE STOUT<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td>87S<\/td>\n      <td>92S<\/td>\n      <td>97S<\/td>\n      <td>102S<\/td>\n      <td>107S<\/td>\n      <td>112S<\/td>\n      <td>117S<\/td>\n      <td>122S<\/td>\n      <td>127S<\/td>\n      <td>132S<\/td>\n      <td>137S<\/td>\n      <td>142S<\/td>\n      <td>147S<\/td>\n      <td>152S<\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST (CM)<\/td>\n      <td>67<\/td>\n      <td>72<\/td>\n      <td>77<\/td>\n      <td>82<\/td>\n      <td>87<\/td>\n      <td>92<\/td>\n      <td>97<\/td>\n      <td>102<\/td>\n      <td>107<\/td>\n      <td>112<\/td>\n      <td>117<\/td>\n      <td>122<\/td>\n      <td>127<\/td>\n      <td>132<\/td>\n      <td>137<\/td>\n      <td>142<\/td>\n      <td>147<\/td>\n      <td>152<\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST (INCHES)<\/td>\n      <td>26<\/td>\n      <td>28<\/td>\n      <td>30<\/td>\n      <td>32<\/td>\n      <td>34<\/td>\n      <td>36<\/td>\n      <td>38<\/td>\n      <td>40<\/td>\n      <td>42<\/td>\n      <td>44<\/td>\n      <td>46<\/td>\n      <td>48<\/td>\n      <td>50<\/td>\n      <td>52<\/td>\n      <td>54<\/td>\n      <td>56<\/td>\n      <td>58<\/td>\n      <td>60<\/td>\n    <\/tr>\n    <tr>\n      <td>CHEST (CM)<\/td>\n      <td>77<\/td>\n      <td>82<\/td>\n      <td>87<\/td>\n      <td>92<\/td>\n      <td>97<\/td>\n      <td>102<\/td>\n      <td>107<\/td>\n      <td>112<\/td>\n      <td>117<\/td>\n      <td>122<\/td>\n      <td>127<\/td>\n      <td>132<\/td>\n      <td>137<\/td>\n      <td>142<\/td>\n      <td>147<\/td>\n      <td>152<\/td>\n      <td>157<\/td>\n      <td>167<\/td>\n    <\/tr>\n    <tr>\n      <td>IN-LEG REG<\/td>\n      <td>73<\/td>\n      <td>73<\/td>\n      <td>73<\/td>\n      <td>75<\/td>\n      <td>77<\/td>\n      <td>79<\/td>\n      <td>81<\/td>\n      <td>82<\/td>\n      <td>82<\/td>\n      <td>82<\/td>\n      <td>82<\/td>\n      <td>82<\/td>\n      <td>82<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n    <\/tr>\n    <tr>\n      <td>IN-LEG STOUT<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td>72<\/td>\n      <td>74<\/td>\n      <td>76<\/td>\n      <td>78<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n    <\/tr>\n    <tr>\n      <td>SIZE LONG<\/td>\n      <td><\/td>\n      <td>74L<\/td>\n      <td>79L<\/td>\n      <td>84L<\/td>\n      <td>89L<\/td>\n      <td>94L<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST (CM)<\/td>\n      <td><\/td>\n      <td>74<\/td>\n      <td>79<\/td>\n      <td>84<\/td>\n      <td>89<\/td>\n      <td>94<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST (INCHES)<\/td>\n      <td><\/td>\n      <td>29<\/td>\n      <td>31<\/td>\n      <td>33<\/td>\n      <td>35<\/td>\n      <td>37<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n    <\/tr>\n    <tr>\n      <td>CHEST (CM)<\/td>\n      <td><\/td>\n      <td>89<\/td>\n      <td>94<\/td>\n      <td>99<\/td>\n      <td>104<\/td>\n      <td>109<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n    <\/tr>\n    <tr>\n      <td>IN-LEG LONG<\/td>\n      <td><\/td>\n      <td>84<\/td>\n      <td>89<\/td>\n      <td>94<\/td>\n      <td>99<\/td>\n      <td>104<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
+          }
+        },
+        "fe3da1e1-39f0-4670-8020-b5aceb882f5e": {
+          "type": "guide_block",
+          "settings": {
+            "size_guide_brand_title": "KING GEE COVERALL\/OVERALL",
+            "each_block_content": "<table>\n  <thead>\n      <tr>\n        <td colspan=\"19\">\n          <h3>KING GEE COVERALL\/OVERALL<\/h3>\n        <\/td>\n      <\/tr>\n  <\/thead>\n  <tbody>\n    <tr>\n      <td>SIZE REGULAR<\/td>\n      <td>67R<\/td>\n      <td>72R<\/td>\n      <td>77R<\/td>\n      <td>82R<\/td>\n      <td>87R<\/td>\n      <td>92R<\/td>\n      <td>97R<\/td>\n      <td>102R<\/td>\n      <td>107R<\/td>\n      <td>112R<\/td>\n      <td>117R<\/td>\n      <td>122R<\/td>\n      <td>127R<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n    <\/tr>\n    <tr>\n      <td>SIZE STOUT<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td>87S<\/td>\n      <td>92S<\/td>\n      <td>97S<\/td>\n      <td>102S<\/td>\n      <td>107S<\/td>\n      <td>112S<\/td>\n      <td>117S<\/td>\n      <td>122S<\/td>\n      <td>127S<\/td>\n      <td>132S<\/td>\n      <td>137S<\/td>\n      <td>142S<\/td>\n      <td>147S<\/td>\n      <td>152S<\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST (CM)<\/td>\n      <td>67<\/td>\n      <td>72<\/td>\n      <td>77<\/td>\n      <td>82<\/td>\n      <td>87<\/td>\n      <td>92<\/td>\n      <td>97<\/td>\n      <td>102<\/td>\n      <td>107<\/td>\n      <td>112<\/td>\n      <td>117<\/td>\n      <td>122<\/td>\n      <td>127<\/td>\n      <td>132<\/td>\n      <td>137<\/td>\n      <td>142<\/td>\n      <td>147<\/td>\n      <td>152<\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST (INCHES)<\/td>\n      <td>26<\/td>\n      <td>28<\/td>\n      <td>30<\/td>\n      <td>32<\/td>\n      <td>34<\/td>\n      <td>36<\/td>\n      <td>38<\/td>\n      <td>40<\/td>\n      <td>42<\/td>\n      <td>44<\/td>\n      <td>46<\/td>\n      <td>48<\/td>\n      <td>50<\/td>\n      <td>52<\/td>\n      <td>54<\/td>\n      <td>56<\/td>\n      <td>58<\/td>\n      <td>60<\/td>\n    <\/tr>\n    <tr>\n      <td>CHEST (CM)<\/td>\n      <td>77<\/td>\n      <td>82<\/td>\n      <td>87<\/td>\n      <td>92<\/td>\n      <td>97<\/td>\n      <td>102<\/td>\n      <td>107<\/td>\n      <td>112<\/td>\n      <td>117<\/td>\n      <td>122<\/td>\n      <td>127<\/td>\n      <td>132<\/td>\n      <td>137<\/td>\n      <td>142<\/td>\n      <td>147<\/td>\n      <td>152<\/td>\n      <td>157<\/td>\n      <td>167<\/td>\n    <\/tr>\n    <tr>\n      <td>IN-LEG REG<\/td>\n      <td>73<\/td>\n      <td>73<\/td>\n      <td>73<\/td>\n      <td>75<\/td>\n      <td>77<\/td>\n      <td>79<\/td>\n      <td>81<\/td>\n      <td>82<\/td>\n      <td>82<\/td>\n      <td>82<\/td>\n      <td>82<\/td>\n      <td>82<\/td>\n      <td>82<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n    <\/tr>\n    <tr>\n      <td>IN-LEG STOUT<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td>72<\/td>\n      <td>74<\/td>\n      <td>76<\/td>\n      <td>78<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n      <td>80<\/td>\n    <\/tr>\n    <tr>\n      <td>SIZE LONG<\/td>\n      <td><\/td>\n      <td>74L<\/td>\n      <td>79L<\/td>\n      <td>84L<\/td>\n      <td>89L<\/td>\n      <td>94L<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST (CM)<\/td>\n      <td><\/td>\n      <td>74<\/td>\n      <td>79<\/td>\n      <td>84<\/td>\n      <td>89<\/td>\n      <td>94<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n    <\/tr>\n    <tr>\n      <td>WAIST (INCHES)<\/td>\n      <td><\/td>\n      <td>29<\/td>\n      <td>31<\/td>\n      <td>33<\/td>\n      <td>35<\/td>\n      <td>37<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n    <\/tr>\n    <tr>\n      <td>CHEST (CM)<\/td>\n      <td><\/td>\n      <td>89<\/td>\n      <td>94<\/td>\n      <td>99<\/td>\n      <td>104<\/td>\n      <td>109<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n    <\/tr>\n    <tr>\n      <td>IN-LEG LONG<\/td>\n      <td><\/td>\n      <td>84<\/td>\n      <td>89<\/td>\n      <td>94<\/td>\n      <td>99<\/td>\n      <td>104<\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n      <td><\/td>\n    <\/tr>\n  <\/tbody>\n<\/table>"
+          }
+        }
+      },
+      "block_order": [
+        "5c4a3c9e-cb8f-465c-9e3e-d50433f1dcae",
+        "fe3da1e1-39f0-4670-8020-b5aceb882f5e"
+      ],
+      "settings": {
+        "group_title": "COVERALL"
       }
     }
   },
   "order": [
     "inner-banner",
     "template",
-    "sizeguide-pdf"
+    "sizeguide-pdf",
+    "1655883766cca87141",
+    "1655949950c55de33b",
+    "1655955720f94c1993",
+    "165595855040ffc9ae",
+    "165596563117f84df0",
+    "165596668724c5aa96",
+    "1655966689614598aa"
   ]
 }

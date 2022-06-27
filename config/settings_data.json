@@ -297,7 +297,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/embroidery.jpg",
               "button_text": "More Info",
-              "cta_link": "shopify:\/\/pages\/faqs-deliveries"
+              "cta_link": "\/pages\/faqs-deliveries#Embroidery"
             }
           },
           "50fa9b1b-67e1-4791-8300-7359f6496484": {

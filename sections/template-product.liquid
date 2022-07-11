@@ -360,11 +360,7 @@
         {{ product.description }}
       </div>
     {% endif %}
-    <ul class="product-tags">
-      {% for tag in product.tags %}
-      <li><a href="/collections/all/{{ tag | handleize }}">{{ tag }}</a></li>
-      {% endfor %}
-    </ul>
+  
     <div class="accordion">
       <!-- MATERIALS -->
       {% if product.metafields.my_fields.materials != blank %}

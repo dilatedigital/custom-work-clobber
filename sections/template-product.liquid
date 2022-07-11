@@ -226,7 +226,80 @@
                       </script>
 
                   {% endfor %}
-                  <a href="/pages/size-guide/" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center max-w-150 h-[47px] w-full">Size Guide</a>
+
+                  
+                 
+                  {% assign collection_tags = product.tags | join: '~~~' | downcase | split: '~~~' %}
+                  {% if collection_tags contains 'hard yakka coverall/overall' %}
+                    <a href="/pages/size-guide/#hard-yakka-coverall/overall" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center max-w-150 h-[47px] w-full">Size Guide</a>
+                  {% elsif collection_tags contains 'cat men' %}
+                    <a href="/pages/size-guide/#cat-men" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center max-w-150 h-[47px] w-full">Size Guide</a>
+                  {% elsif collection_tags contains 'steel blue men' %}
+                    <a href="/pages/size-guide/#steel-blue-men" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center max-w-150 h-[47px] w-full">Size Guide</a>
+                  {% elsif collection_tags contains 'blundstone men' %}
+                    <a href="/pages/size-guide/#blundstone-men" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center max-w-150 h-[47px] w-full">Size Guide</a> 
+                  {% elsif collection_tags contains 'oliver men' %}
+                    <a href="/pages/size-guide/#oliver-men" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center max-w-150 h-[47px] w-full">Size Guide</a>
+                  {% elsif collection_tags contains 'mongrel men' %}
+                    <a href="/pages/size-guide/#mogrel-men" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center max-w-150 h-[47px] w-full">Size Guide</a>
+                  {% elsif collection_tags contains 'steel blue women' %}
+                    <a href="/pages/size-guide/#steel-blue-women" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center max-w-150 h-[47px] w-full">Size Guide</a>
+                  {% elsif collection_tags contains 'blundstone women' %}
+                    <a href="/pages/size-guide/#blundstone-women" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center max-w-150 h-[47px] w-full">Size Guide</a>
+                  {% elsif collection_tags contains 'oliver women' %}
+                    <a href="/pages/size-guide/#oliver-women" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center max-w-150 h-[47px] w-full">Size Guide</a>
+                  {% elsif collection_tags contains 'bisley ladies' %}
+                    <a href="/pages/size-guide/#bisley-ladies" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center max-w-150 h-[47px] w-full">Size Guide</a> 
+                  {% elsif collection_tags contains 'king gee ladies' %}
+                    <a href="/pages/size-guide/#king-gee-ladies" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center max-w-150 h-[47px] w-full">Size Guide</a>
+                  {% elsif collection_tags contains 'hard yakka ladies' %}
+                    <a href="/pages/size-guide/#hard-yakka-ladies" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center max-w-150 h-[47px] w-full">Size Guide</a> 
+                  {% elsif collection_tags contains "bisley men's shirts" %}
+                    <a href="/pages/size-guide/#bisley-men's-shirts" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center max-w-150 h-[47px] w-full">Size Guide</a>
+                  {% elsif collection_tags contains "jb's wear shirts" %}
+                    <a href="/pages/size-guide/#jb's-wear-shirts" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center max-w-150 h-[47px] w-full">Size Guide</a>
+                  {% elsif collection_tags contains "king gee shirts" %}
+                    <a href="/pages/size-guide/#king-gee-shirts" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center max-w-150 h-[47px] w-full">Size Guide</a>
+                  {% elsif collection_tags contains "hard yakka shirts" %}
+                    <a href="/pages/size-guide/#hard-yakka-shirts" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center max-w-150 h-[47px] w-full">Size Guide</a>
+                  {% elsif collection_tags contains "gloweave 5045 fit" %}
+                    <a href="/pages/size-guide/#gloweave-5045-fit" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center max-w-150 h-[47px] w-full">Size Guide</a>
+                  {% elsif collection_tags contains "bisley men's pants" %}
+                    <a href="/pages/size-guide/#bisley-men's-pants" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center max-w-150 h-[47px] w-full">Size Guide</a>
+                  {% elsif collection_tags contains "jb's wear pants" %}
+                    <a href="/pages/size-guide/#jb's-wear-pants" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center max-w-150 h-[47px] w-full">Size Guide</a>
+                  {% elsif collection_tags contains "jb's wear wet weather pants" %}
+                    <a href="/pages/size-guide/#jb's-wear-wet-weather-pants" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center max-w-150 h-[47px] w-full">Size Guide</a>
+                  {% elsif collection_tags contains "king gee pants" %}
+                    <a href="/pages/size-guide/#king-gee-pants" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center max-w-150 h-[47px] w-full">Size Guide</a>
+                  {% elsif collection_tags contains "hard yakka pants" %}
+                    <a href="/pages/size-guide/#hard-yakka-pants" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center max-w-150 h-[47px] w-full">Size Guide</a>
+                  {% elsif collection_tags contains "cat pants" %}
+                    <a href="/pages/size-guide/#cat-pants" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center max-w-150 h-[47px] w-full">Size Guide</a>
+                  {% elsif collection_tags contains "bisley men's shorts" %}
+                    <a href="/pages/size-guide/#bisley-men's-shorts" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center max-w-150 h-[47px] w-full">Size Guide</a>
+                  {% elsif collection_tags contains "king gee shorts" %}
+                    <a href="/pages/size-guide/#king-gee-shorts" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center max-w-150 h-[47px] w-full">Size Guide</a>
+                  {% elsif collection_tags contains "hard yakka shorts" %}
+                    <a href="/pages/size-guide/#hard-yakka-shorts" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center max-w-150 h-[47px] w-full">Size Guide</a>
+                  {% elsif collection_tags contains "cat shorts" %}
+                    <a href="/pages/size-guide/#cat-shorts" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center max-w-150 h-[47px] w-full">Size Guide</a>
+                  {% elsif collection_tags contains "bisley jackets" %}
+                    <a href="/pages/size-guide/#bisley-jackets" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center max-w-150 h-[47px] w-full">Size Guide</a>
+                  {% elsif collection_tags contains "king gee jackets" %}
+                    <a href="/pages/size-guide/#king-gee-jackets" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center max-w-150 h-[47px] w-full">Size Guide</a>
+                  {% elsif collection_tags contains "hard yakka jackets" %}
+                    <a href="/pages/size-guide/#hard-yakka-jackets" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center max-w-150 h-[47px] w-full">Size Guide</a>
+                  {% elsif collection_tags contains "hard yakka coverall/overall" %}
+                    <a href="/pages/size-guide/#hard-yakka-coverall/overall" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center max-w-150 h-[47px] w-full">Size Guide</a>
+                  {% elsif collection_tags contains "king gee coverall/overall" %}
+                    <a href="/pages/size-guide/#king-gee-coverall/overall" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center max-w-150 h-[47px] w-full">Size Guide</a>
+                  {% else %}
+                    <a href="/pages/size-guide/" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center max-w-150 h-[47px] w-full">Size Guide</a>
+                  {% endif %}
+                  
+                  
+
 
               </variant-selector>
 
@@ -287,6 +360,11 @@
         {{ product.description }}
       </div>
     {% endif %}
+    <ul class="product-tags">
+      {% for tag in product.tags %}
+      <li><a href="/collections/all/{{ tag | handleize }}">{{ tag }}</a></li>
+      {% endfor %}
+    </ul>
     <div class="accordion">
       <!-- MATERIALS -->
       {% if product.metafields.my_fields.materials != blank %}
@@ -422,7 +500,7 @@
       }
       getSelectedOptions() {
           this.options = Array.from(this.querySelectorAll('select'), (select) => select.value);
-          console.log(this.options);
+          //console.log(this.options);
       }
       getVariantJSON() {
           this.variantData = this.variantData || JSON.parse(this.querySelector('[type="application/json"]').textContent);
@@ -439,7 +517,7 @@
                   if(findings) return variant;
               }
           );
-          //console.log(this.currentVariant);
+          console.log(this.currentVariant);
       }
       updateURL() {
           if(!this.currentVariant) return;

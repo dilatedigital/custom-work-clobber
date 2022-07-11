@@ -16,7 +16,7 @@
           <div class="question flex justify-between items-center hover:cursor-pointer">
             <h4 class="font-campton text-lg font-bold">{{ block.settings.each_block_title }}</h4>
           </div>
-          <div class="answer transition">
+          <div class="answer transition" id="{{ block.settings.size_guide_brand_title | downcase | replace: " ", "-" }}">
             {{ block.settings.each_block_content }}
           </div>
         </div>

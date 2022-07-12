@@ -62,6 +62,12 @@
       "home-logoslider": {
         "type": "home-logoslider",
         "blocks": {
+          "dff161bb-23bd-4d12-986c-b6229b4a8294": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/3M-logo-079FB52BC8-seeklogo.com.png"
+            }
+          },
           "18491504-09ed-4ef5-b93e-db3b57354f99": {
             "type": "logo",
             "settings": {
@@ -196,6 +202,7 @@
           }
         },
         "block_order": [
+          "dff161bb-23bd-4d12-986c-b6229b4a8294",
           "18491504-09ed-4ef5-b93e-db3b57354f99",
           "8bd6e18c-921b-4ff7-baaf-a3257765102e",
           "686d47ac-2de3-4fd6-ac8d-42bf1a58c5ab",

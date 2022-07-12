@@ -45,6 +45,14 @@
             "brand_collection_url": "shopify:\/\/collections\/blundstone"
           }
         },
+        "d3191e55-3ecd-4529-b1af-551a76369dcb": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/logo-alt.png",
+            "button_text": "View Products",
+            "brand_collection_url": "shopify:\/\/collections\/bolle"
+          }
+        },
         "dc6f706f-ebb9-4469-ad68-a86dc195ea5a": {
           "type": "brands_block",
           "settings": {
@@ -194,6 +202,7 @@
         "969827b4-dc0f-4d72-80fe-3bf6575881fa",
         "812fb8f3-4f13-4def-bcf4-dab09b11c6bf",
         "ec2928c9-4e2e-4f15-bf5e-3e37c06ad0fb",
+        "d3191e55-3ecd-4529-b1af-551a76369dcb",
         "dc6f706f-ebb9-4469-ad68-a86dc195ea5a",
         "f0b66611-04fc-4fa3-8c3a-04fcdb480e7e",
         "c0a295f7-50ea-404b-a232-af60dbd8fb70",

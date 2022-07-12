@@ -187,6 +187,12 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/Workit_Workwear_65aee7f6-3f30-46ca-92f8-f48e3a35fcda.png"
             }
+          },
+          "d80dbdde-0e6b-48ad-a50a-b42ef286604f": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/ysf-supply-nation-removebg-preview.png"
+            }
           }
         },
         "block_order": [
@@ -210,7 +216,8 @@
           "2050e530-6828-43e3-a7f3-d7175303b4fe",
           "a40c4431-5c26-4cf5-9044-7a7783b9c0b9",
           "dc5a2240-4b73-40e3-ab16-be53963816c2",
-          "d4f32148-58a0-4734-a8d3-9d4e1705ed6c"
+          "d4f32148-58a0-4734-a8d3-9d4e1705ed6c",
+          "d80dbdde-0e6b-48ad-a50a-b42ef286604f"
         ],
         "settings": {
         }

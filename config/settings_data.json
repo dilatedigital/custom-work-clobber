@@ -80,6 +80,12 @@
               "image": "shopify:\/\/shop_images\/blundstone.png"
             }
           },
+          "e4a7f327-dc35-4ed8-a144-eea7b7e043f4": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/logo-alt.png"
+            }
+          },
           "c62201ac-d469-4d29-9f9e-c7cfe73934e7": {
             "type": "logo",
             "settings": {
@@ -187,6 +193,7 @@
           "18491504-09ed-4ef5-b93e-db3b57354f99",
           "8bd6e18c-921b-4ff7-baaf-a3257765102e",
           "686d47ac-2de3-4fd6-ac8d-42bf1a58c5ab",
+          "e4a7f327-dc35-4ed8-a144-eea7b7e043f4",
           "c62201ac-d469-4d29-9f9e-c7cfe73934e7",
           "1c3702a1-3155-43d0-8e2a-91eae8139cbb",
           "ddfd336c-722e-4529-b76f-74315d402139",

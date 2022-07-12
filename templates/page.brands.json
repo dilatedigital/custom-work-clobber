@@ -21,6 +21,14 @@
     "164878875602084711": {
       "type": "brands-blocks",
       "blocks": {
+        "969827b4-dc0f-4d72-80fe-3bf6575881fa": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/3M-logo-079FB52BC8-seeklogo.com.png",
+            "button_text": "View Products",
+            "brand_collection_url": "shopify:\/\/collections\/3m"
+          }
+        },
         "812fb8f3-4f13-4def-bcf4-dab09b11c6bf": {
           "type": "brands_block",
           "settings": {
@@ -175,6 +183,7 @@
         }
       },
       "block_order": [
+        "969827b4-dc0f-4d72-80fe-3bf6575881fa",
         "812fb8f3-4f13-4def-bcf4-dab09b11c6bf",
         "ec2928c9-4e2e-4f15-bf5e-3e37c06ad0fb",
         "dc6f706f-ebb9-4469-ad68-a86dc195ea5a",

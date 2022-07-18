@@ -104,6 +104,10 @@
     color: #000
   }
 
+  #main-featured .swiper-slide-active img {
+    height: 95%
+  }
+
   @media screen and (min-width: 1024px) {
     .gallery-top.swiper-container {
       border-image: url("{{ 'pattern-product.jpg' | asset_url }}") 10 round;
@@ -129,7 +133,7 @@
   <div class="lg:flex justify-between">
     <div class="product--medias">
       
-      <div class="swiper-container gallery-top overflow-hidden">
+      <div class="swiper-container gallery-top overflow-hidden" id="main-featured">
         <div class="swiper-wrapper">
           {% if product.media != blank %}
             {% for media in product.media %}
@@ -492,6 +496,7 @@
               this.updateURL();
               this.updateFormID();
               this.updatePrice();
+              this.updateImage();
           }
       }
       getSelectedOptions() {
@@ -513,7 +518,12 @@
                   if(findings) return variant;
               }
           );
-          console.log(this.currentVariant);
+          
+      }
+      updateImage() {
+        //console.log(this.currentVariant.featured_image.src);
+        const mainImage = document.getElementById('main-featured').getElementsByClassName('swiper-slide-active')[0].getElementsByTagName('img')[0]
+        mainImage.src = this.currentVariant.featured_image.src
       }
       updateURL() {
           if(!this.currentVariant) return;

@@ -483,11 +483,34 @@
   ]
 }
 {% endschema %}
+
+<script>
+   const galleryThumbs = new Swiper('.gallery-bottom', {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      watchSlidesProgress: true,
+     
+    });
+    const galleryTop = new Swiper('.gallery-top', {
+     
+			thumbs: {
+        swiper: galleryThumbs,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+   });
+</script>
 <script>
   class VariantSelector extends HTMLElement {
       constructor() {
           super();
           this.addEventListener("change", this.onVariantChange);
+          this.getSelectedOptions();
+          this.getSelectedVariant();
+          //console.log(this.currentVariant.featured_image.src);
+          this.updateImage();
       }
       onVariantChange() {
           this.getSelectedOptions();
@@ -546,22 +569,4 @@
       }
   }
   customElements.define("variant-selector", VariantSelector);
-</script>
-<script>
-   const galleryThumbs = new Swiper('.gallery-bottom', {
-      spaceBetween: 10,
-      slidesPerView: 4,
-      watchSlidesProgress: true,
-     
-    });
-    const galleryTop = new Swiper('.gallery-top', {
-     
-			thumbs: {
-        swiper: galleryThumbs,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-   });
 </script>

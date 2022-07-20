@@ -129,8 +129,11 @@
 </style>
 {% render 'stripe-pattern' %}
 <div class="container mx-auto">
-  {% render 'breadcrumbs' %}
-  <div class="lg:flex justify-between">
+  <div class="hidden lg:block">
+    {% render 'breadcrumbs' %}
+  </div>
+  
+  <div class="lg:flex justify-between mt-6 lg:mt-0">
     <div class="product--medias">
       
       <div class="swiper-container gallery-top overflow-hidden" id="main-featured">
@@ -158,6 +161,9 @@
         {% endif %}
         
       </div>
+    </div>
+    <div class="lg:hidden">
+      {% render 'breadcrumbs' %}
     </div>
     <div class="product--information mt-8 w-full"
       x-data="{ 

@@ -188,6 +188,12 @@
               "image": "shopify:\/\/shop_images\/Stubbies-Logo_7e3ffcf0-0317-4969-b887-9b781f455628.jpg"
             }
           },
+          "a495ff8d-1c75-4f32-83b7-55ecc2c85329": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/TruBrands_Logo.png"
+            }
+          },
           "dc5a2240-4b73-40e3-ab16-be53963816c2": {
             "type": "logo",
             "settings": {
@@ -229,6 +235,7 @@
           "93c2c1b3-1f3e-41ff-b18a-f1b8b13fc2a1",
           "2050e530-6828-43e3-a7f3-d7175303b4fe",
           "a40c4431-5c26-4cf5-9044-7a7783b9c0b9",
+          "a495ff8d-1c75-4f32-83b7-55ecc2c85329",
           "dc5a2240-4b73-40e3-ab16-be53963816c2",
           "d4f32148-58a0-4734-a8d3-9d4e1705ed6c",
           "d80dbdde-0e6b-48ad-a50a-b42ef286604f"

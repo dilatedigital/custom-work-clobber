@@ -133,6 +133,14 @@
             "brand_collection_url": "shopify:\/\/collections\/oliver"
           }
         },
+        "aafb9ad9-4420-43d2-84e5-9de97f25e280": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/portwest-logo-oj-removebg-preview.png",
+            "button_text": "View Products",
+            "brand_collection_url": ""
+          }
+        },
         "282cde2b-617d-441d-a9bb-09c7055b2d76": {
           "type": "brands_block",
           "settings": {
@@ -213,6 +221,7 @@
         "ac1edc6d-1fb8-437c-9b32-805955312252",
         "193364b9-efa1-42d2-8a96-24af14673b5e",
         "55d8afdd-a33a-43f7-aad3-19ec5ab07b5f",
+        "aafb9ad9-4420-43d2-84e5-9de97f25e280",
         "282cde2b-617d-441d-a9bb-09c7055b2d76",
         "0e456cdf-0951-4383-a51e-fe9f8c70417d",
         "c1f00762-e917-4e02-a0ee-ba63ffafaf81",

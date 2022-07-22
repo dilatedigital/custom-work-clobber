@@ -173,6 +173,14 @@
             "brand_collection_url": "shopify:\/\/collections\/steel-blue"
           }
         },
+        "8903f3db-6263-4a2a-a894-51f0fac784ed": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/TruBrands_Logo.png",
+            "button_text": "View Products",
+            "brand_collection_url": "shopify:\/\/collections\/trubrands"
+          }
+        },
         "ec0039fb-4bde-4857-b121-84b1bdaf86f6": {
           "type": "brands_block",
           "settings": {
@@ -204,14 +212,6 @@
             "button_text": "View Products",
             "brand_collection_url": "shopify:\/\/collections\/your-safety-factory"
           }
-        },
-        "8903f3db-6263-4a2a-a894-51f0fac784ed": {
-          "type": "brands_block",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/TruBrands_Logo.png",
-            "button_text": "View Products",
-            "brand_collection_url": "shopify:\/\/collections\/trubrands"
-          }
         }
       },
       "block_order": [
@@ -234,11 +234,11 @@
         "0e456cdf-0951-4383-a51e-fe9f8c70417d",
         "c1f00762-e917-4e02-a0ee-ba63ffafaf81",
         "3e333056-8e84-4f32-92c9-fe57aac80820",
+        "8903f3db-6263-4a2a-a894-51f0fac784ed",
         "ec0039fb-4bde-4857-b121-84b1bdaf86f6",
         "7fc35c59-e2d5-4103-85ef-02a2a5726022",
         "869842f2-f414-428d-8533-dcd3b46220e4",
-        "6767d424-a7f6-4181-aa69-4639264ed615",
-        "8903f3db-6263-4a2a-a894-51f0fac784ed"
+        "6767d424-a7f6-4181-aa69-4639264ed615"
       ],
       "settings": {
       }

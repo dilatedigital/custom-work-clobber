@@ -34,7 +34,7 @@
           "type": "faq_block",
           "settings": {
             "each_block_title": "Is the colour I see on the website the actual colour of the product?",
-            "each_block_content": "<p>The images on the website are stock images from the supplier, the colour might be slightly different in-store.<\/p>"
+            "each_block_content": "<p>The images on the website are stock images from the supplier, the colour might be slightly instore due to you screen resolution and settings.<\/p>"
           }
         },
         "038cc2de-3c94-4cdd-9285-7506d50d41e8": {

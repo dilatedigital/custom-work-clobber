@@ -41,7 +41,7 @@
           "type": "faq_block",
           "settings": {
             "each_block_title": "Where can I find Work Clobber stores?",
-            "each_block_content": "<p>You can use our <a href=\"https:\/\/work-clobber-dev.myshopify.com\/pages\/contact#store-locations\" title=\"https:\/\/work-clobber-dev.myshopify.com\/pages\/contact#store-locations\">store locator<\/a> to find your closest store.<\/p>"
+            "each_block_content": "<p>You can use our store locator to find your <a href=\"\/pages\/contact#store-locations\" title=\"\/pages\/contact#store-locations\"><span style=\"text-decoration:underline\">closest store<\/span><\/a>.<\/p>"
           }
         }
       },

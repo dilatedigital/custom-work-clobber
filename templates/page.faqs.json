@@ -109,7 +109,7 @@
           "type": "faq_block",
           "settings": {
             "each_block_title": "How long will it take to get a refund?",
-            "each_block_content": "<p>Once your item has been returned a refund will be issued in the same form as the original payment. <\/p>"
+            "each_block_content": "<p>Once your returned item has been received and checked a refund will be issued within 24 hours in the same form as the original payment.<\/p>"
           }
         },
         "2f08b11b-4dca-4f6d-9f74-6c108f3b09ec": {

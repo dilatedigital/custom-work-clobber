@@ -20,7 +20,7 @@
           "type": "faq_block",
           "settings": {
             "each_block_title": "How can I get contact with Work Clobber?",
-            "each_block_content": "<p>You can contact us through the <a href=\"\/pages\/contact\" title=\"Contact\"><span style=\"text-decoration:underline\">contact us<\/span><\/a> page or by calling your nearest store.<\/p>"
+            "each_block_content": "<p>You can contact us through the <a href=\"\/pages\/contact\" title=\"Contact\"><span style=\"text-decoration:underline\">contact us<\/span><\/a> page or by calling your <a href=\"\/pages\/contact#store-locations\" title=\"\/pages\/contact#store-locations\"><span style=\"text-decoration:underline\">nearest store<\/span><\/a>.<\/p>"
           }
         },
         "1ee08c78-378a-433d-8a29-986bf7c7509d": {

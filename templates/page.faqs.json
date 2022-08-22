@@ -88,7 +88,7 @@
           "type": "faq_block",
           "settings": {
             "each_block_title": "What if I have a faulty product?",
-            "each_block_content": "<p>If you have a faulty product please <a href=\"\/pages\/contact\" title=\"Contact\">contact us<\/a> through the website or your local store and we will assist you.<\/p>"
+            "each_block_content": "<p>If you have a faulty product please <a href=\"\/pages\/contact\" title=\"Contact\"><span style=\"text-decoration:underline\">contact us<\/span><\/a> through the website or your local store and we will assist you.<\/p>"
           }
         },
         "83516601-b43c-4fcb-b347-d0ea643fe83e": {

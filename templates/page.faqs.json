@@ -95,7 +95,7 @@
           "type": "faq_block",
           "settings": {
             "each_block_title": "Can I return my purchase in a retail store?",
-            "each_block_content": "<p>Yes you can, contact us through the <a href=\"\/pages\/contact\" title=\"Contact\"><span style=\"text-decoration:underline\">contact us<\/span><\/a> section of the website and we can organise for you to get an exchange or refund from the <a href=\"\/contact#store-locations\" title=\"\/contact#store-locations\"><span style=\"text-decoration:underline\">store nearest you<\/span><\/a>.<\/p>"
+            "each_block_content": "<p>Yes you can, contact us through the <a href=\"\/pages\/contact\" title=\"Contact\"><span style=\"text-decoration:underline\">contact us<\/span><\/a> section of the website and we can organise for you to get an exchange or refund from the <a href=\"\/pages\/contact#store-locations\" title=\"\/pages\/contact#store-locations\"><span style=\"text-decoration:underline\">store nearest you<\/span><\/a>.<\/p>"
           }
         },
         "7d040abd-d87c-47c9-b263-2060956e4980": {

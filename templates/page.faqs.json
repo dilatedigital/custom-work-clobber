@@ -179,7 +179,7 @@
           "type": "faq_block",
           "settings": {
             "each_block_title": "How much does embroidery cost?",
-            "each_block_content": "<p>The majority of embroidered logos are less than 10,000 stitches. A set up for a logo this size is $66.00 and application to each garment is $6.60, however, prices may differ due to detail and size of logos.   Please <a href=\"\/pages\/contact\" title=\"Contact\">contact us<\/a> for a quote.<\/p>"
+            "each_block_content": "<p>The majority of embroidered logos are less than 10,000 stitches. A set up for a logo this size is $66.00 and application to each garment is $6.60, however, prices may differ due to detail and size of logos.   Please <a href=\"\/pages\/contact\" title=\"Contact\"><span style=\"text-decoration:underline\">contact us<\/span><\/a> for a quote.<\/p>"
           }
         }
       },

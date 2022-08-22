@@ -172,7 +172,7 @@
           "type": "faq_block",
           "settings": {
             "each_block_title": "Do you offer embroidery services?",
-            "each_block_content": "<p>Yes, please <a href=\"\/pages\/contact\" title=\"Contact\">contact us<\/a> to organise any embroidery needs or queries you have. We can organise to have your clothing embroidered before collection or delivery.<\/p>"
+            "each_block_content": "<p>Yes, please <a href=\"\/pages\/contact\" title=\"Contact\"><span style=\"text-decoration:underline\">contact us<\/span><\/a> to organise any embroidery needs or queries you have. We can organise to have your clothing embroidered before collection or delivery.<\/p>"
           }
         },
         "ff829dcb-280c-466a-860f-d1482e7479e2": {

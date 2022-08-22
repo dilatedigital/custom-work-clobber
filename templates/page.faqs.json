@@ -102,7 +102,7 @@
           "type": "faq_block",
           "settings": {
             "each_block_title": "What are my options when I return an item bought from workclobber.com.au?",
-            "each_block_content": "<p>If you are local you can go to any of our 8 stores. If you can’t get to a store you can contact us to organise a return. If it is a change of mind, return postage will be at the buyer's expense, if the item is faulty we will organise a return postage label for you to send the item back.<\/p>"
+            "each_block_content": "<p>If you are local you can go to any of our 8 stores. If you can’t get to a store you can <a href=\"\/pages\/contact\" title=\"Contact\"><span style=\"text-decoration:underline\">contact us<\/span><\/a> to organise a return. If it is a change of mind, return postage will be at the buyer's expense, if the item is faulty we will organise a return postage label for you to send the item back.<\/p>"
           }
         },
         "5b0fc004-48de-4ce3-b491-1d55bd7563a1": {

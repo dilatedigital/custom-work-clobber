@@ -6,12 +6,21 @@
     fill: var(--yellow);
     max-width: 10px;
   }
+
+  .embroidery-anchor {
+    position: absolute;
+    transform: translateY(-50vh);
+  }
 </style>
+{% if section.settings.faq_title == 'Embroidery' %}
+  <span class="embroidery-anchor" id="Embroidery"></span>
+{% endif %}
 <div class="container mx-auto pb-50px xct:pb-20 faqs-container" id="{{section.settings.faq_title}}">
   <h3 class="uppercase text-2xl border-b-3 border-wc-black pb-5">{{ section.settings.faq_title }}</h3>
   <div class="accordion">
     {% for block in section.blocks %}
       {% if block.type == 'faq_block' %}
+        
         <div class="border-b border-gray-400 py-6 accordion-item">
           <div class="question flex justify-between items-center hover:cursor-pointer">
             <h4 class="font-campton text-lg font-bold">{{ block.settings.each_block_title }}</h4>

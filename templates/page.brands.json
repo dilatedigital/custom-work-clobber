@@ -133,6 +133,14 @@
             "brand_collection_url": "shopify:\/\/collections\/oliver"
           }
         },
+        "aafb9ad9-4420-43d2-84e5-9de97f25e280": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/portwest-logo-oj-removebg-preview.png",
+            "button_text": "View Products",
+            "brand_collection_url": ""
+          }
+        },
         "282cde2b-617d-441d-a9bb-09c7055b2d76": {
           "type": "brands_block",
           "settings": {
@@ -163,6 +171,14 @@
             "logo": "shopify:\/\/shop_images\/steel-blue.png",
             "button_text": "View Products",
             "brand_collection_url": "shopify:\/\/collections\/steel-blue"
+          }
+        },
+        "8903f3db-6263-4a2a-a894-51f0fac784ed": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/TruBrands_Logo.png",
+            "button_text": "View Products",
+            "brand_collection_url": "shopify:\/\/collections\/trubrands"
           }
         },
         "ec0039fb-4bde-4857-b121-84b1bdaf86f6": {
@@ -213,10 +229,12 @@
         "ac1edc6d-1fb8-437c-9b32-805955312252",
         "193364b9-efa1-42d2-8a96-24af14673b5e",
         "55d8afdd-a33a-43f7-aad3-19ec5ab07b5f",
+        "aafb9ad9-4420-43d2-84e5-9de97f25e280",
         "282cde2b-617d-441d-a9bb-09c7055b2d76",
         "0e456cdf-0951-4383-a51e-fe9f8c70417d",
         "c1f00762-e917-4e02-a0ee-ba63ffafaf81",
         "3e333056-8e84-4f32-92c9-fe57aac80820",
+        "8903f3db-6263-4a2a-a894-51f0fac784ed",
         "ec0039fb-4bde-4857-b121-84b1bdaf86f6",
         "7fc35c59-e2d5-4103-85ef-02a2a5726022",
         "869842f2-f414-428d-8533-dcd3b46220e4",

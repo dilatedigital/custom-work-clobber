@@ -21,7 +21,7 @@
               "slide_title": "<h1>For Tradies <br>By Tradies\n<\/h1>\n<span>Standout performance<\/span>",
               "slide_right_text": "<span class=\"sup\">Hi Vis Workwear<\/span>\n<h2>WA Exclusive<\/h2>\n<span class=\"sub\">Work Wear Supplier<\/span>",
               "button_title": "Shop Now",
-              "slide_button_url": "shopify:\/\/collections"
+              "slide_button_url": "shopify:\/\/collections\/hi-vis-workwear"
             }
           },
           "6dffdcbe-16a7-46bf-beba-6ba59adb1fd0": {
@@ -152,6 +152,12 @@
               "image": "shopify:\/\/shop_images\/oliver.png"
             }
           },
+          "28061c77-ea13-4b56-aa62-ce255ecd9d9c": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/portwest-logo-oj-removebg-preview.png"
+            }
+          },
           "9bab7297-90f0-4211-99b4-2992bbcbe2a2": {
             "type": "logo",
             "settings": {
@@ -180,6 +186,12 @@
             "type": "logo",
             "settings": {
               "image": "shopify:\/\/shop_images\/Stubbies-Logo_7e3ffcf0-0317-4969-b887-9b781f455628.jpg"
+            }
+          },
+          "a495ff8d-1c75-4f32-83b7-55ecc2c85329": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/TruBrands_Logo.png"
             }
           },
           "dc5a2240-4b73-40e3-ab16-be53963816c2": {
@@ -217,11 +229,13 @@
           "73b9a6dd-d334-4665-ad5e-be54c49658dc",
           "38021eea-bb47-42b7-8291-322b50ba8ed9",
           "44fbed7e-080e-4f14-ae59-d118f7c49308",
+          "28061c77-ea13-4b56-aa62-ce255ecd9d9c",
           "9bab7297-90f0-4211-99b4-2992bbcbe2a2",
           "e0eb046a-d380-4424-9884-f57b5a17355e",
           "93c2c1b3-1f3e-41ff-b18a-f1b8b13fc2a1",
           "2050e530-6828-43e3-a7f3-d7175303b4fe",
           "a40c4431-5c26-4cf5-9044-7a7783b9c0b9",
+          "a495ff8d-1c75-4f32-83b7-55ecc2c85329",
           "dc5a2240-4b73-40e3-ab16-be53963816c2",
           "d4f32148-58a0-4734-a8d3-9d4e1705ed6c",
           "d80dbdde-0e6b-48ad-a50a-b42ef286604f"
@@ -235,7 +249,7 @@
           "82e87138-3490-43e8-b80f-4abef74225dd": {
             "type": "category_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/polos.png",
+              "image": "shopify:\/\/shop_images\/shirts.png",
               "category_title": "Shirts",
               "category_link": "shopify:\/\/collections\/shirts"
             }
@@ -243,7 +257,7 @@
           "87fd2213-ae75-4ca5-a3d0-ef8425c916b6": {
             "type": "category_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/shirts.png",
+              "image": "shopify:\/\/shop_images\/polos.png",
               "category_title": "Polos",
               "category_link": "shopify:\/\/collections\/polos"
             }
@@ -277,7 +291,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/boots.png",
               "category_title": "Footwear",
-              "category_link": "shopify:\/\/collections\/shoes"
+              "category_link": "shopify:\/\/collections\/shoes-boots"
             }
           },
           "b9935788-4f9d-4749-bf48-982c2b4e1920": {

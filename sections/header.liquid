@@ -128,7 +128,10 @@
   }
 </style>
 {{ 'login-signup.css' | asset_url | stylesheet_tag }}
-<div class="relative bg-white" x-data="{ mobileMenuOpen: false, searchBarOpen: false, modal: false }">
+<div class="bg-white transition duration-500 ease-out" x-data="{ mobileMenuOpen: false, searchBarOpen: false, modal: false, atTop: false }"
+:class="{ 'fixed shadow-lg top-0 left-0 w-full z-50': atTop, 'relative': !atTop }"
+@scroll.window="atTop = (window.pageYOffset > 300 ) ? true : false"
+>
   <div class="mx-auto container pt-6 py-4">
     <div class="flex top-menu-icons items-center xct:justify-between">
       <!-- TOPBAR MENU -->

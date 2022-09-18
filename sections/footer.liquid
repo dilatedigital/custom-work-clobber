@@ -63,13 +63,13 @@
       <h5 class="uppercase text-wc-yellow mb-4 xct:mb-10">{{ section.settings.brands_title }}</h5>
       <div class="footer-menu-container flex">
         {% for link in section.settings.brands_menu.links %}
-            {% assign r = forloop.index0 | modulo: 11  %}
+            {% assign r = forloop.index0 | modulo: 12  %}
             {% if r == 0  %}
                 <div class="flex flex-col">
             {% endif %}
               <a href="{{ link.url }}" 
                   class="text-white hover:text-wc-yellow">{{ link.title }}</a>
-            {% if r == 10 or forloop.last %}
+            {% if r == 11 or forloop.last %}
                 </div> 
             {% endif %}
         {% endfor %}

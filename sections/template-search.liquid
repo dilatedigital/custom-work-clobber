@@ -30,14 +30,14 @@
     {% paginate search.results by 10 %}
       {% if search.performed %}
         {% for item in search.results %}
-          {% case item.object_type %}
-            {% when 'product' %}
+          
+            {% if item.object_type == 'product' %}
+            
               {% render 'product-card', product: item %}
-            {% when 'page' %}
-              <a>{{ item.content | highlight: search.terms }}</a>  
-            {% else %}
-     
-          {% endcase %}
+
+            {% elsif item.object_type != 'product' %}
+            <a>{{ item.content | highlight: search.terms }}</a>  
+          {% endif %}
         {% endfor %}
       {% endif %}
       {% render 'pagination', pagination: paginate %}

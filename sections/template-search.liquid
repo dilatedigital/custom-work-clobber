@@ -36,7 +36,7 @@
               {% render 'product-card', product: item %}
 
             {% elsif item.object_type != 'product' %}
-            <a>{{ item.content | highlight: search.terms }}</a>  
+            <a  href="{{ item.url }}">{{ item.content | highlight: search.terms }}</a>  
           {% endif %}
         {% endfor %}
       {% endif %}

@@ -48,17 +48,30 @@
     <div class="sidebar-filter">
       <div class="category-filter pb-6 xct:pb-14">
         <h4 class="uppercase font-extrabold text-lg font-euro border-b pb-4 mb-7 border-wc-black">Shop by categories</h4>
+          {% if collection.handle == 'all' %}
           <a href="/collections/all" class="text-lg block">All</a>
+          {% endif %}
         {% for product_type in collection.all_types %}
           {% if product_type == blank %}
             {% continue %}
           {% endif %}
           {{ product_type | link_to_type: class: 'text-lg block' }}
         {% endfor %}
+
+        <div>
+          
+         <!--{% assign currentCol = collection.handle %}
+     {% for collection in collections %}
+      {% if collection.handle contains currentCol %}
+         {{ collection.title }}
+         // further code 
+      {% endif %}
+    {% endfor %} -->
+        </div>
         
       </div>
       
-      {% render 'filters' %}
+      {% render 'filters', results: collection %}
     </div>
     <div>
       <div class="mt-11 lg:mt-0 flex flex-col md:flex-row justify-between items-center">

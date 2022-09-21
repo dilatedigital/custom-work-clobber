@@ -604,20 +604,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0px;
 }
 
-.-top-2 {
-  top: -0.5rem;
-}
-
-.-left-1 {
-  left: -0.25rem;
-}
-
 .top-0 {
   top: 0px;
 }
 
 .left-0 {
   left: 0px;
+}
+
+.-top-2 {
+  top: -0.5rem;
+}
+
+.-left-1 {
+  left: -0.25rem;
 }
 
 .bottom-0 {
@@ -640,6 +640,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0.75rem;
 }
 
+.z-\[60\] {
+  z-index: 60;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -650,10 +654,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .z-20 {
   z-index: 20;
-}
-
-.z-\[60\] {
-  z-index: 60;
 }
 
 .-m-3 {
@@ -781,6 +781,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1.5rem;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
 .mb-7 {
   margin-bottom: 1.75rem;
 }
@@ -799,10 +807,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-0 {
   margin-top: 0px;
-}
-
-.mr-2 {
-  margin-right: 0.5rem;
 }
 
 .mb-8 {
@@ -905,6 +909,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 15rem;
 }
 
+.h-6 {
+  height: 1.5rem;
+}
+
 .h-\[47px\] {
   height: 47px;
 }
@@ -915,10 +923,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-20 {
   height: 5rem;
-}
-
-.h-6 {
-  height: 1.5rem;
 }
 
 .h-4 {
@@ -979,6 +983,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-xs {
   max-width: 20rem;
+}
+
+.max-w-\[20px\] {
+  max-width: 20px;
 }
 
 .max-w-150 {
@@ -1707,6 +1715,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
 }
 
 .duration-300 {

@@ -48,7 +48,7 @@
     <div class="sidebar-filter">
       <div class="category-filter pb-6 xct:pb-14">
         {% if collection.handle != 'all' %}
-        <a href="/collections/all" class="flex items-center mb-5"><svg xmlns="http://www.w3.org/2000/svg" class="mr-2 max-w-[20px] max-w" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <a href="/collections/all" class="flex items-center mb-5"><svg xmlns="http://www.w3.org/2000/svg" class="mr-2 max-w-[20px] block" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
         </svg>
          Back to Collections</a>
@@ -128,6 +128,54 @@
                     // update url without refreshing the page 
                     
                     history.replaceState(null, null, '?sort_by=' + sortz + '&' + replacedFilteredURL);
+                    
+                  })
+                  .catch(error => console.error('Error:', error))
+                  .finally(() => this.loading = false);
+                } else if (window.location.href.indexOf('types') > -1 && urlParams.has('q')) {
+                  const collectionType = urlParams.get('q')
+                  fetch('/collections/types?q=' + collectionType + '&sort_by=' + sortz)
+                  .then(response => response.text())
+                  .then(data => {
+                    let html_div = document.createElement('div');
+                    html_div.innerHTML = data;
+      
+                    let html_dom = html_div.querySelector('.products-grid').innerHTML;
+                    document.querySelector('.products-grid').innerHTML = html_dom;
+                    // update url without refreshing the page 
+                    
+                    history.replaceState(null, null, 'types?q=' + collectionType + '&sort_by=' + sortz);
+                    
+                  })
+                  .catch(error => console.error('Error:', error))
+                  .finally(() => this.loading = false);
+                } else if (urlParams.has('filter.p.vendor') && window.location.href.indexOf('types') > -1 && urlParams.has('q')) {
+                  const collectionType = urlParams.get('q')
+
+                  vendors = urlParams.getAll('filter.p.vendor');
+
+                  vendors.forEach(function(item, index, array) {
+                    if(index === array.length - 1) {
+                      newFilterURL += 'filter.p.vendor=' + item;
+                    } else {
+                      newFilterURL += 'filter.p.vendor=' + item + '&';
+                    }
+                    
+                  })
+  
+                  replacedFilteredURL = newFilterURL.replaceAll(' ', '+');
+
+                  fetch('/collections/types?q=' + collectionType + '&' + replacedFilteredURL + '&sort_by=' + sortz)
+                  .then(response => response.text())
+                  .then(data => {
+                    let html_div = document.createElement('div');
+                    html_div.innerHTML = data;
+      
+                    let html_dom = html_div.querySelector('.products-grid').innerHTML;
+                    document.querySelector('.products-grid').innerHTML = html_dom;
+                    // update url without refreshing the page 
+                    
+                    history.replaceState(null, null, 'types?q=' + collectionType + '&' + replacedFilteredURL + '?sort_by=' + sortz);
                     
                   })
                   .catch(error => console.error('Error:', error))

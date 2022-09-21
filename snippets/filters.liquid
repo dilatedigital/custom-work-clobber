@@ -13,7 +13,7 @@
     
     loading = true;
 
-    if (urlParamsF.has('sort_by') ) {
+    if (urlParamsF.has('sort_by') && !urlParamsF.has('q')) {
       const sorted = urlParamsF.get('sort_by');
       console.log('?sort_by=' + sorted + '&' + queryString.toString());
 
@@ -27,6 +27,24 @@
 
         // update url without refreshing the page 
         history.replaceState(null, null, '?sort_by=' + sorted + '&' + queryString);
+        
+      })
+      .catch(error => console.error('Error:', error))
+      .finally(() => loading = false);
+    } else if ( window.location.href.indexOf('types') > -1 && urlParamsF.has('q')) {
+      const collectionType = urlParamsF.get('q')
+      console.log(collectionType)
+
+      fetch('/collections/types?q=' + collectionType + '&' + queryString)
+      .then(response => response.text())
+      .then(data => {
+        let html_div = document.createElement('div');
+        html_div.innerHTML = data;
+        let html_dom = html_div.querySelector('.products-grid').innerHTML;
+        document.querySelector('.products-grid').innerHTML = html_dom;
+
+        // update url without refreshing the page 
+        history.replaceState(null, null, 'types?q=' + collectionType + '&' + queryString);
         
       })
       .catch(error => console.error('Error:', error))

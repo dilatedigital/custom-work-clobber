@@ -1,5 +1,6 @@
 <!-- /templates/customers/account.liquid -->
 
+<div class="max-w-1170 mx-auto py-14">
 {% if customer.default_address %}
   <h2>Address</h2>
   <p>{{ customer.default_address.address1 }}</p>
@@ -23,4 +24,5 @@
   {% endif %}
   {{ paginate | default_pagination }}
   {% endpaginate %}
+</div>
 </div>

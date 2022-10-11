@@ -101,7 +101,7 @@
 
                         {{ address | format_address }}
 
-                        <ul class="list--inline list--inline lg:flex lg:justify-center justify-center">
+                        <ul class="list--inline lg:flex lg:justify-center justify-center mt-5">
                             <li>
                                 <button
                                     id="EditFormButton_{{ address.id }}"
@@ -222,5 +222,11 @@
         padding-bottom: 30px;
         margin-bottom: 30px;
         border-bottom: 1px solid #e1e1e1;
+    }
+    #addresses .list--inline{
+        gap: 20px;
+    }
+    #addresses .list--inline button{
+        min-width: 90px;
     }
 </style>

@@ -1,6 +1,9 @@
 <!-- /templates/customers/addresses.liquid -->
 
-<h2>New Address</h2>
+<div class="section-header text-center">
+    <h2>New Address</h2>
+</div>
+
 {% form 'customer_address', customer.new_address %}
 
 {{ form.errors | default_errors }}
@@ -35,5 +38,7 @@
 
 <label for="phone">Phone Number</label>
 <input type="tel" value="" name="address[phone]" />
+
+<input type="submit" class="btn" value="Add a New Address">
 
 {% endform %}

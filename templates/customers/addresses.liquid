@@ -53,11 +53,17 @@
                 </div>
             </div>
 
-            <label for="province">Province</label>
-            <select name="address[province]" /></select>
+            <div class="lg:flex lg:justify-between">
+                <div class="flex flex-col xct:w-full xct:mr-5">
+                    <label for="province">Province</label>
+                    <select name="address[province]" /></select>
+                </div>
+                <div class="flex flex-col xct:w-full mb-5">
+                    <label for="zip">Zip/Post Code</label>
+                    <input type="text" value="" name="address[zip]" />
+                </div>
 
-            <label for="zip">Zip/Post Code</label>
-            <input type="text" value="" name="address[zip]" />
+            </div>
 
             <label for="phone">Phone Number</label>
             <input type="tel" value="" name="address[phone]" />

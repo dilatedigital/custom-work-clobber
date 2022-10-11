@@ -11,11 +11,17 @@
 
     {{ form.errors | default_errors }}
 
-    <label for="first_name">First Name</label>
-    <input type="text" value="" name="address[first_name]" size="30" />
+    <div class="lg:flex lg:justify-between">
+        <div class="flex flex-col xct:w-full xct:mr-5">
+            <label for="first_name">First Name</label>
+            <input type="text" value="" name="address[first_name]" size="30" />
+        </div>
 
-    <label for="last_name">Last Name</label>
-    <input type="text" value="" name="address[last_name]" size="30" />
+        <div class="flex flex-col xct:w-full">
+            <label for="last_name">Last Name</label>
+            <input type="text" value="" name="address[last_name]" size="30" />
+        </div>
+    </div>
 
     <label for="company">Company</label>
     <input type="text" value="" name="address[company]" />

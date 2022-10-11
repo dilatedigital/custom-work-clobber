@@ -7,7 +7,6 @@
 
 <div class="container mx-auto pb-50px xct:pb-100px lg:flex lg:items-start xct:justify-between py-14">
     <div id="customer_orders">
-        <h2>Order History</h2>
         <h2>Orders</h2>
         {% paginate customer.orders by 10 %}
         {% if customer.orders.size != 0 %}

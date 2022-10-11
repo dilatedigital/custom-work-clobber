@@ -22,6 +22,6 @@
     <div>
         <h2>Address</h2>
         {{ customer.default_address | format_address }}
-        <p><a href="{{ routes.account_addresses_url }}" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center p-4 mt-6">Edit Address</a></p>
+        <p><a href="{{ routes.account_addresses_url }}" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center p-4 mt-6">View Addresses ({{ customer.addresses_count }})</a></p>
     </div>
 </div>

@@ -101,11 +101,11 @@
 
                         {{ address | format_address }}
 
-                        <ul class="list--inline">
+                        <ul class="list--inline list--inline lg:flex lg:justify-center justify-center">
                             <li>
                                 <button
                                     id="EditFormButton_{{ address.id }}"
-                                    type="button"
+                                    type="button uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center p-4"
                                     class="btn btn--small address-edit-toggle"
                                     data-form-id="{{ address.id }}"
                                     aria-owns="EditAddress_{{ address.id }}"
@@ -117,7 +117,7 @@
                             <li>
                                 <button
                                     type="button"
-                                    class="btn btn--secondary btn--small address-delete"
+                                    class="btn btn--secondary btn--small address-delete uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center p-4"
                                     data-target="{{ address.url }}"
                                     data-confirm-message="{{ 'customer.addresses.delete_confirm' | t }}"
                                 >
@@ -219,6 +219,8 @@
         margin-right: 10px;
     }
     #addresses .form-control > ul > li{
-        
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #e1e1e1;
     }
 </style>

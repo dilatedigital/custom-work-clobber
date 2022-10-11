@@ -5,51 +5,62 @@
     <p><a href="{{ routes.account_url }}">Return to Account Details</Details></a></p>
 </div>
 
-<div class="container mx-auto py-50px">
+<div class="section-form text-center">
+    <div class="container mx-auto py-50px">
+        <div class="form-control">
+            {% form 'customer_address', customer.new_address %}
 
-    {% form 'customer_address', customer.new_address %}
+            {{ form.errors | default_errors }}
 
-    {{ form.errors | default_errors }}
+            <div class="lg:flex lg:justify-between">
+                <div class="flex flex-col xct:w-full xct:mr-5">
+                    <label for="first_name">First Name</label>
+                    <input type="text" value="" name="address[first_name]" size="30" />
+                </div>
 
-    <div class="lg:flex lg:justify-between">
-        <div class="flex flex-col xct:w-full xct:mr-5">
-            <label for="first_name">First Name</label>
-            <input type="text" value="" name="address[first_name]" size="30" />
+                <div class="flex flex-col xct:w-full">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" value="" name="address[last_name]" size="30" />
+                </div>
+            </div>
+
+            <label for="company">Company</label>
+            <input type="text" value="" name="address[company]" />
+
+            <label for="address1">Address 1</label>
+            <input type="text" value="" name="address[address1]" />
+
+            <label for="address2">Address 2</label>
+            <input type="text" value="" name="address[address2]" />
+
+            <label for="city">City</label>
+            <input type="text" value="" name="address[city]" />
+
+            <!-- See docs for @shopify/theme-addresses to support Country and Province -->
+            <label for="country">Country</label>
+            <select name="address[country]" /></select>
+
+            <label for="province">Province</label>
+            <select name="address[province]" /></select>
+
+            <label for="zip">Zip/Post Code</label>
+            <input type="text" value="" name="address[zip]" />
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" value="" name="address[phone]" />
+
+            <input type="submit" class="btn" value="Add a New Address">
+
+            {% endform %}
         </div>
 
-        <div class="flex flex-col xct:w-full">
-            <label for="last_name">Last Name</label>
-            <input type="text" value="" name="address[last_name]" size="30" />
-        </div>
     </div>
-
-    <label for="company">Company</label>
-    <input type="text" value="" name="address[company]" />
-
-    <label for="address1">Address 1</label>
-    <input type="text" value="" name="address[address1]" />
-
-    <label for="address2">Address 2</label>
-    <input type="text" value="" name="address[address2]" />
-
-    <label for="city">City</label>
-    <input type="text" value="" name="address[city]" />
-
-    <!-- See docs for @shopify/theme-addresses to support Country and Province -->
-    <label for="country">Country</label>
-    <select name="address[country]" /></select>
-
-    <label for="province">Province</label>
-    <select name="address[province]" /></select>
-
-    <label for="zip">Zip/Post Code</label>
-    <input type="text" value="" name="address[zip]" />
-
-    <label for="phone">Phone Number</label>
-    <input type="tel" value="" name="address[phone]" />
-
-    <input type="submit" class="btn" value="Add a New Address">
-
-    {% endform %}
-
 </div>
+<style>
+    .section-form .container{
+
+    }
+    .section-form label{
+        font-weight: 700;
+    }
+</style>

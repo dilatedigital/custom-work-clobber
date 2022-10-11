@@ -5,41 +5,45 @@
     <p><a href="{{ routes.account_url }}">Return to Account Details</Details></a></p>
 </div>
 
-{% form 'customer_address', customer.new_address %}
+<div class="container mx-auto py-50px">
 
-{{ form.errors | default_errors }}
+    {% form 'customer_address', customer.new_address %}
 
-<label for="first_name">First Name</label>
-<input type="text" value="" name="address[first_name]" size="30" />
+    {{ form.errors | default_errors }}
 
-<label for="last_name">Last Name</label>
-<input type="text" value="" name="address[last_name]" size="30" />
+    <label for="first_name">First Name</label>
+    <input type="text" value="" name="address[first_name]" size="30" />
 
-<label for="company">Company</label>
-<input type="text" value="" name="address[company]" />
+    <label for="last_name">Last Name</label>
+    <input type="text" value="" name="address[last_name]" size="30" />
 
-<label for="address1">Address 1</label>
-<input type="text" value="" name="address[address1]" />
+    <label for="company">Company</label>
+    <input type="text" value="" name="address[company]" />
 
-<label for="address2">Address 2</label>
-<input type="text" value="" name="address[address2]" />
+    <label for="address1">Address 1</label>
+    <input type="text" value="" name="address[address1]" />
 
-<label for="city">City</label>
-<input type="text" value="" name="address[city]" />
+    <label for="address2">Address 2</label>
+    <input type="text" value="" name="address[address2]" />
 
-<!-- See docs for @shopify/theme-addresses to support Country and Province -->
-<label for="country">Country</label>
-<select name="address[country]" /></select>
+    <label for="city">City</label>
+    <input type="text" value="" name="address[city]" />
 
-<label for="province">Province</label>
-<select name="address[province]" /></select>
+    <!-- See docs for @shopify/theme-addresses to support Country and Province -->
+    <label for="country">Country</label>
+    <select name="address[country]" /></select>
 
-<label for="zip">Zip/Post Code</label>
-<input type="text" value="" name="address[zip]" />
+    <label for="province">Province</label>
+    <select name="address[province]" /></select>
 
-<label for="phone">Phone Number</label>
-<input type="tel" value="" name="address[phone]" />
+    <label for="zip">Zip/Post Code</label>
+    <input type="text" value="" name="address[zip]" />
 
-<input type="submit" class="btn" value="Add a New Address">
+    <label for="phone">Phone Number</label>
+    <input type="tel" value="" name="address[phone]" />
 
-{% endform %}
+    <input type="submit" class="btn" value="Add a New Address">
+
+    {% endform %}
+
+</div>

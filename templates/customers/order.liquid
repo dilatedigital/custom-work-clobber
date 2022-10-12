@@ -53,3 +53,59 @@
         <p>{{ order.shipping_address.phone }}</p>
     </div>
 </div>
+<style>
+#customer_order{
+    margin-bottom: 60px;
+}
+table{
+    width:100%;
+    border-collapse:collapse;
+    border-spacing:0
+}
+th,td{
+    text-align:left;
+    border:1px solid #bdbdbd;
+    padding:10px 14px
+}
+@media only screen and (max-width: 1169px){
+    .section-header{
+    margin-top: 60px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .responsive-table thead{
+    display:none
+    }
+    .responsive-table th,.responsive-table td{
+    float:left;
+    clear:left;
+    width:100%;
+    text-align:right;
+    padding:27.5px 0;
+    border:0;
+    margin:0
+    }
+    .responsive-table th:before,.responsive-table td:before{
+    content:attr(data-label);
+    float:left;
+    text-align:center;
+    font-size:12px;
+    padding-right:10px;
+    font-weight:400
+    }
+    .responsive-table__row+.responsive-table__row,tfoot>.responsive-table__row:first-child{
+    position:relative;
+    margin-top:10px;
+    padding-top:55px
+    }
+    .responsive-table__row+.responsive-table__row:after,tfoot>.responsive-table__row:first-child:after{
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    left:27.5px;
+    right:27.5px;
+    border-bottom:1px solid #bdbdbd
+    }
+}
+</style>

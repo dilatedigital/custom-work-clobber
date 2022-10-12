@@ -1,27 +1,27 @@
 <!-- /templates/customers/account.liquid -->
 
 <div class="section-header text-center">
-    <h1>My Account</h1>
-    {{ 'Log out' | customer_logout_link | replace: '<a', '<a class="underline"' }}
+  <h1>My Account</h1>
+  {{ 'Log out' | customer_logout_link | replace: '<a', '<a class="underline"' }}
 </div>
 
 <div class="container mx-auto pb-50px xct:pb-100px lg:flex lg:items-start xct:justify-between py-14">
-    <div id="customer_orders">
-        <h2>Orders</h2>
-        {% paginate customer.orders by 10 %}
-        {% if customer.orders.size != 0 %}
-          {% for order in customer.orders %}
-            <!-- order details here -->
-          {% endfor %}
-        {% else %}
-          <p>You haven't placed any orders yet.</p>
-        {% endif %}
-        {{ paginate | default_pagination }}
-        {% endpaginate %}
-    </div>
-    <div>
-        <h2>Address</h2>
-        {{ customer.default_address | format_address }}
-        <p><a href="{{ routes.account_addresses_url }}" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center p-4 mt-6">View Addresses ({{ customer.addresses_count }})</a></p>
-    </div>
+  <div id="customer_orders">
+      <h2>Orders</h2>
+      {% paginate customer.orders by 10 %}
+      {% if customer.orders.size != 0 %}
+        {% for order in customer.orders %}
+          <!-- order details here -->
+        {% endfor %}
+      {% else %}
+        <p>You haven't placed any orders yet.</p>
+      {% endif %}
+      {{ paginate | default_pagination }}
+      {% endpaginate %}
+  </div>
+  <div>
+      <h2>Address</h2>
+      {{ customer.default_address | format_address }}
+      <!--<p><a href="{{ routes.account_addresses_url }}" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center p-4 mt-6">View Addresses ({{ customer.addresses_count }})</a></p>-->
+  </div>
 </div>

@@ -9,7 +9,7 @@
     <div id="customer_order">
         <h2>Order {{ order.name }}</h2>
         {%- assign order_date = order.created_at | time_tag: format: "date_at_time" -%}
-        <p>{{ order.date_html }}</p>
+        <p>{{ order.processedAt }}</p>
     </div>
     <div>
         <h2>Billing Address</h2>

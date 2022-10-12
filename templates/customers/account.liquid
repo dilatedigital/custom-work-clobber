@@ -5,7 +5,7 @@
   {{ 'Log out' | customer_logout_link | replace: '<a', '<a class="underline"' }}
 </div>
 
-<div class="container mx-auto pb-50px xct:pb-100px lg:flex lg:items-start py-14">
+<div class="container mx-auto pb-50px xct:pb-100px lg:flex lg:items-start justify-between py-14">
   <div id="customer_orders">
       <h2>Orders</h2>
       {% paginate customer.orders by 10 %}

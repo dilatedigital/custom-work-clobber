@@ -24,13 +24,13 @@
         {% for order in customer.orders %}
           <!-- order details here -->
           <tr>
-            <th data-label="{{ 'customer.orders.order_number' | t }}" scope="row">
+            <th data-label="Order" scope="row">
               <a href="{{ order.customer_url }}" class="btn btn--secondary btn--small" aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}">{{ order.name }}</a>
             </th>
-            <td data-label="{{ 'customer.orders.date' | t }}">{{ order.created_at | time_tag: format: 'date' }}</td>
-            <td data-label="{{ 'customer.orders.payment_status' | t }}">{{ order.financial_status_label }}</td>
-            <td data-label="{{ 'customer.orders.fulfillment_status' | t }}">{{ order.fulfillment_status_label }}</td>
-            <td data-label="{{ 'customer.orders.total' | t }}">{{ order.total_price | money }}</td>
+            <td data-label="Date">{{ order.created_at | time_tag: format: 'date' }}</td>
+            <td data-label="Payment Status">{{ order.financial_status_label }}</td>
+            <td data-label="Fullfillment Status">{{ order.fulfillment_status_label }}</td>
+            <td data-label="Total">{{ order.total_price | money }}</td>
           </tr>
         {% endfor %}
         </tbody>
@@ -48,6 +48,9 @@
   </div>
 </div>
 <style>
+#customer_orders{
+  margin-bottom: 60px;
+}
 table{
   width:100%;
   border-collapse:collapse;

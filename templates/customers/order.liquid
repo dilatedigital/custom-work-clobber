@@ -42,9 +42,9 @@
         <p>{{ order.billing_address.city }}, {{ order.billing_address.province }}</p>
         <p>{{ order.billing_address.country }} {{ order.billing_address.zip }}</p>
         <p>{{ order.billing_address.phone }}</p>
-
+        <p>&nbsp;</p>
         <h2>Shipping Address</h2>
-        <p><span>Fulfillment Status:</span><span class="status_{{ order.fulfillment_status }}">{{ order.fulfillment_status }}</span></p>
+        <p><span>Fulfillment Status:</span> <span class="status_{{ order.fulfillment_status }}">{{ order.fulfillment_status }}</span></p>
         <p>{{ order.shipping_address.name }}</p>
         <p>{{ order.shipping_address.company }}</p>
         <p>{{ order.shipping_address.street }}</p>

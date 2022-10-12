@@ -1,5 +1,11 @@
 <!-- /templates/customers/order.liquid -->
 
+<div class="section-header text-center">
+    <h1>My Account</h1>
+    <p><a href="{{ routes.account_url }}">Return to Account</a></p>
+</div>
+
+<div class="container mx-auto pb-50px xct:pb-100px lg:flex lg:items-start justify-between py-14">
 <h2>Billing Address</h2>
 <p><span>Payment Status:</span> <span class="status_{{ order.financial_status }}">{{ order.financial_status }}</span></p>
 <p>{{ order.billing_address.name }}</p>
@@ -30,3 +36,4 @@
   </tr>
   {% endfor %}
 </table>
+</div>

@@ -10,6 +10,28 @@
         <h2>Order {{ order.name }}</h2>
         {%- assign order_date = order.created_at | time_tag: format: "date_at_time" -%}
         <p>Placed on {{ order_date }}</p>
+        <table class="responsive-table">
+            <thead>
+              <tr>
+                <th scope="col">Product</th>
+                <th scope="col">SKU</th>
+                <th scope="col">Price</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody>
+            {% for line_item in order.line_items %}
+              <tr>
+                <td data-label="Product">{{ line_item.title | link_to: line_item.product.url }}</td>
+                <td data-label="SKU">{{ line_item.sku }}</td>
+                <td data-label="Price">{{ line_item.original_price | money }}</td>
+                <td data-label="Quantity">{{ line_item.quantity }}</td>
+                <td data-label="Total">{{ line_item.line_price | money }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+        </table>
     </div>
     <div>
         <h2>Billing Address</h2>
@@ -29,18 +51,5 @@
         <p>{{ order.shipping_address.city }}, {{ order.shipping_address.province }}</p>
         <p>{{ order.shipping_address.country }} {{ order.shipping_address.zip }}</p>
         <p>{{ order.shipping_address.phone }}</p>
-
-        <h2>Order Items</h2>
-        <table>
-        {% for line_item in order.line_items %}
-        <tr>
-            <td>{{ line_item.title | link_to: line_item.product.url }}</td>
-            <td>{{ line_item.sku }}</td>
-            <td>{{ line_item.original_price | money }}</td>
-            <td>{{ line_item.quantity }}</td>
-            <td>{{ line_item.line_price | money }}</td>
-        </tr>
-        {% endfor %}
-        </table>
     </div>
 </div>

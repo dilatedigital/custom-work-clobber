@@ -220,8 +220,10 @@
             <div>
               <variant-selector data-url="{{ product.url}}" data-section="{{ section.id }}" class="md:flex md:items-center">
                   {% assign checksize = false %}
-                  {{ checksize }}
                   {% for option in product.options_with_values %}
+                      {% if option.name == 'Size' %}
+                        
+                      {% endif %}
                       <div class="variant-selector-container flex items-center mr-4">
                         <label for="Option-{{ section.id }}-{{ forloop.index0 }}" class="mr-2">{{ option.name }}</label>
 
@@ -250,7 +252,7 @@
                       </script>
 
                   {% endfor %}
-
+                  {{ checksize }}
                   
                  
                   {% assign collection_tags = product.tags | join: '~~~' | downcase | split: '~~~' %}

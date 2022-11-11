@@ -2,6 +2,7 @@
   "sections": {
     "inner-banner": {
       "type": "inner-banner",
+      "disabled": true,
       "settings": {
         "inner_banner_title": "Faqs & Deliveries",
         "inner_banner_image": "shopify:\/\/shop_images\/4_work_clobber-faq-hero.jpg"

@@ -222,7 +222,7 @@
                   {% assign checksize = false %}
                   {% for option in product.options_with_values %}
                       {% if option.name == 'Size' %}
-                        
+                        {% assign checksize = false %}
                       {% endif %}
                       <div class="variant-selector-container flex items-center mr-4">
                         <label for="Option-{{ section.id }}-{{ forloop.index0 }}" class="mr-2">{{ option.name }}</label>

@@ -7,6 +7,7 @@
     },
     "inner-banner": {
       "type": "inner-banner",
+      "disabled": true,
       "settings": {
         "inner_banner_title": "Brands",
         "inner_banner_image": "shopify:\/\/shop_images\/3_work_clobber-brands-hero.jpg"

@@ -219,6 +219,8 @@
           {% unless product.has_only_default_variant %}
             <div>
               <variant-selector data-url="{{ product.url}}" data-section="{{ section.id }}" class="md:flex md:items-center">
+                  {% assign checksize = false %}
+                  {{ checksize }}
                   {% for option in product.options_with_values %}
                       <div class="variant-selector-container flex items-center mr-4">
                         <label for="Option-{{ section.id }}-{{ forloop.index0 }}" class="mr-2">{{ option.name }}</label>

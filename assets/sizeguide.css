@@ -38,9 +38,6 @@
   text-transform: uppercase
 }
 
-.answer {
-  scroll-margin-top: 100px;
-}
 
 @media screen and (min-width: 1024px) {
   .sizeguide {

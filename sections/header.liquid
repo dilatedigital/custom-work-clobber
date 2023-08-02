@@ -297,19 +297,7 @@
     {% render 'stripe-pattern' %}
   </div>
 
-  {% for link in section.settings.menu.links %}
-  Parent link title: {{ link.title }}
-  {% if link.links != blank %}
-    {% for childlink in link.links %}
-      Child link title: {{ childlink.title }}
-      {% if childlink.links != blank %}
-        {% for grandchildlink in childlink.links %}
-          Grandchild link title: {{ grandchildlink.title }}
-        {% endfor %}
-      {% endif %}
-    {% endfor %}
-  {% endif %}
-{% endfor %}
+
   
   <!-- BOTTOM BAR -->
   <div class="hidden xct:block relative header-bottom-bar border-t border-btm-bar">

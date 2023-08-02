@@ -1,5 +1,6 @@
 {
   "current": {
+    "checkout_logo_image": "shopify:\/\/shop_images\/Logo-Transparent.png",
     "sections": {
       "header": {
         "type": "header",

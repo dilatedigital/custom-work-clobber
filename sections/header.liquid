@@ -333,7 +333,11 @@
                           <p class="text-wc-black text-sm font-bold">{{ childlink.title }}</p>
                         </div>
                       </a>
-                    
+                      {% if childlink.links != blank %}
+                        {% for grandchildlink in childlink.links %}
+                          Grandchild link title: {{ grandchildlink.title }}
+                        {% endfor %}
+                      {% endif %}
                     {% endfor %}
                   </div>
                 </div>

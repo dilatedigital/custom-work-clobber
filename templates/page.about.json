@@ -8,7 +8,7 @@
     "inner-banner": {
       "type": "inner-banner",
       "settings": {
-        "inner_banner_title": "Terms & Conditions",
+        "inner_banner_title": "About Us",
         "inner_banner_image": "shopify:\/\/shop_images\/1_work_clobber-aboutus-hero.jpg"
       }
     },

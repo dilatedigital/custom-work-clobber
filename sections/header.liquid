@@ -136,6 +136,10 @@
     .bottom-bar-div:last-child {
       width: 355px;
     }
+
+    .bottom-bar .grandchild {
+      right: -50px;
+    }
   }
 
   @media screen and (min-width: 1170px) and (max-width: 1279px) {
@@ -347,7 +351,7 @@
                           x-show="{{child_link_handle}}" x-on:mouseleave="{{child_link_handle}} = false"
                           class="absolute z-50 px-2 transform w-screen max-w-300 sm:px-0 submenu"
                           :class="{'block': {{child_link_handle}}}">
-                          <div class="shadow-lg border ring-black ring-opacity-5 overflow-hidden -r-50 rounded-lg">
+                          <div class="shadow-lg border ring-black ring-opacity-5 overflow-hidden grandchild rounded-lg">
                             <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                               {% for subchildlink in childlink.links %}
                                 <a class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-100" href={{ subchildlink.url }}>

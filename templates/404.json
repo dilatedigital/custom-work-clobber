@@ -6,7 +6,7 @@
       "settings": {
         "title": "Oops - 404",
         "subtext_title": "The page that you're looking for is not found.",
-        "button_label": "Keep Shopping",
+        "button_label": "Back to Home",
         "button_url": "shopify:\/\/collections"
       }
     }

@@ -42,9 +42,35 @@
       {% endpaginate %}
   </div>
   <div>
-      <h2>Address</h2>
-      {{ customer.default_address | format_address }}
-      <!--<p><a href="{{ routes.account_addresses_url }}" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center p-4 mt-6">View Addresses ({{ customer.addresses_count }})</a></p>-->
+      <!-- add this block where you want the user's info and edit button to appear -->
+    <div class="user-info">
+      <h2>User Information</h2>
+      <p><strong>Name:</strong> {{ customer.first_name }} {{ customer.last_name }}</p>
+      <p><strong>Email:</strong> {{ customer.email }}</p>
+      <button id="edit-info" class="btn btn--secondary btn--small">Edit Info</button>
+    </div>
+    
+    <!-- This is the form for editing user information. It is hidden by default. -->
+    <div id="edit-user-info" style="display: none;">
+      <h2>Edit User Information</h2>
+      <form method="post" action="/account">
+        <label for="FirstName">First Name</label>
+        <input type="text" id="FirstName" name="customer[first_name]" value="{{ customer.first_name }}">
+    
+        <label for="LastName">Last Name</label>
+        <input type="text" id="LastName" name="customer[last_name]" value="{{ customer.last_name }}">
+    
+        <label for="Email">Email</label>
+        <input type="email" id="Email" name="customer[email]" value="{{ customer.email }}">
+    
+        <input type="submit" value="Update">
+      </form>
+    
+      <p>
+        If you want to change your password, 
+        <a href="{{ '/account/password' | within: customer }}">click here</a>.
+      </p>
+    </div>
   </div>
 </div>
 <style>
@@ -103,3 +129,14 @@ th,td{
   }
 }
 </style>
+
+<script>
+  document.getElementById('edit-info').addEventListener('click', function() {
+    var form = document.getElementById('edit-user-info');
+    if (form.style.display === "none") {
+      form.style.display = "block";
+    } else {
+      form.style.display = "none";
+    }
+  });
+</script>

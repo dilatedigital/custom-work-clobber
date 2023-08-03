@@ -325,7 +325,7 @@
               x-show="{{link_handle}}" x-on:mouseleave="{{link_handle}} = false"
               class="absolute z-50 px-2 transform w-screen max-w-300 sm:px-0 submenu"
               :class="{'block': {{link_handle}}}">
-              <div class="shadow-lg border ring-black ring-opacity-5 overflow-hidden rounded-lg">
+              <div class="shadow-lg border ring-black ring-opacity-5 rounded-lg">
                 <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                   {% for childlink in link.links %}
                     {% assign child_link_handle = childlink.handle | replace: '-', '_' %}

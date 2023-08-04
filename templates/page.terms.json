@@ -1,24 +1,20 @@
 {
   "sections": {
-    "template": {
-      "type": "template-terms",
-      "settings": {
-      }
-    },
     "inner-banner": {
       "type": "inner-banner",
       "settings": {
+        "inner_banner_title": "TERMS & CONDITIONS"
       }
     },
-    "faq-title": {
-      "type": "faq-title",
+    "template": {
+      "type": "template-terms",
       "settings": {
+        "terms_title": "Terms & Conditions"
       }
     }
   },
   "order": [
-    "template",
     "inner-banner",
-    "faq-title"
+    "template"
   ]
 }

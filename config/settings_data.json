@@ -9,7 +9,9 @@
           "mobile_menu": "mobile-menu",
           "menu": "bottom-bar-menu",
           "top_bar_menu": "top-bar-menu",
-          "logo": "shopify:\/\/shop_images\/Logo-Transparent.png"
+          "logo": "shopify:\/\/shop_images\/Logo-Transparent.png",
+          "privacy_policy_link": "shopify:\/\/pages\/terms-conditions",
+          "terms_link": "shopify:\/\/pages\/terms-conditions"
         }
       },
       "home-hero": {

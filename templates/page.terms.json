@@ -1,0 +1,24 @@
+{
+  "sections": {
+    "template": {
+      "type": "template-page",
+      "settings": {
+      }
+    },
+    "inner-banner": {
+      "type": "inner-banner",
+      "settings": {
+      }
+    },
+    "faq-title": {
+      "type": "faq-title",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "template",
+    "inner-banner",
+    "faq-title"
+  ]
+}

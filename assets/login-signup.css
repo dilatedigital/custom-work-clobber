@@ -44,3 +44,7 @@
     width: 13px;
   }
 }
+
+#form-reset-password form{
+  margin-top: 10px;
+}

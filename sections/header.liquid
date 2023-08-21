@@ -422,6 +422,7 @@
               <button type="submit" class="flex items-center justify-center bg-wc-yellow text-wc-black uppercase font-euro font-extrabold w-full hover:bg-wc-black hover:text-white transition lg:text-xl">Sign in {% render 'icon-chevron-right' %}</button>
             </div>
           {% endform %}
+          <p><a href="#" class="reset-password">Forgot password?</a></p>
         </div>
         <div class="tab-panel" :class="{ 'active': activeTab === 1 }" x-show.transition.in.opacity.duration.600="activeTab === 1">
           {% form 'create_customer' %}

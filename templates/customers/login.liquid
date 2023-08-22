@@ -47,6 +47,7 @@
     const resetPasswordButton = document.querySelector(".reset-password");
     const resetPasswordForm = document.querySelector(".form-reset-password");
     const resetPasswordLink = document.querySelector(".reset-password-link");
+    const formSuccess = document.querySelector("form-success");
 
     if (window.location.hash === "#recover-password") {
       resetPasswordForm.style.display = "block"; 
@@ -72,6 +73,10 @@
     });
 
     if (window.location.hash === "#recover") {
+      resetPasswordForm.style.display = "block"; 
+    }
+
+    if ( formSuccess ){
       resetPasswordForm.style.display = "block"; 
     }
   });

@@ -34,6 +34,21 @@
   </div>
 </div>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const resetPasswordButton = document.querySelector(".reset-password");
+    const resetPasswordForm = document.querySelector(".form-reset-password");
+  
+    resetPasswordButton.addEventListener("click", function(event) {
+      event.preventDefault();
+      if (resetPasswordForm.style.display === "none") {
+        resetPasswordForm.style.display = "block"; 
+      } else {
+        resetPasswordForm.style.display = "none";
+      }
+    });
+  });
+</script>
 <style>
   .errors {
     text-align: center;

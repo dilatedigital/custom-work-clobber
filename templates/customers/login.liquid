@@ -65,6 +65,10 @@
         resetPasswordForm.style.display = "none";
       }
     });
+
+    if (window.location.hash === "#recover") {
+      resetPasswordForm.style.display = "block"; 
+    }
   });
 </script>
 <style>

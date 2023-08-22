@@ -22,7 +22,7 @@
 
   <div class="form-control mt-3">
     <p><a href="#" class="reset-password underline hover:no-underline">Forgot password?</a></p>
-    <div id="" class="form-reset-password hidden" style="display: none;">
+    <div id="" class="form-reset-password hidden{% if form.posted_successfully? %} active{% endif %}" style="display: none;">
       {% form 'recover_customer_password' %}
         {{ form.errors | default_errors }}
         {% if form.posted_successfully? %}

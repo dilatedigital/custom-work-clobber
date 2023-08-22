@@ -45,9 +45,6 @@
   }
 }
 
-.form-reset-password.active{
-  display: block;
-}
 .form-reset-password form{
   margin-top: 10px;
 }

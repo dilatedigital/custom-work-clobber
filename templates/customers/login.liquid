@@ -44,7 +44,7 @@
     const resetPasswordLink = document.querySelector(".reset-password-link");
 
     if (window.location.hash === "#recover-password") {
-      resetPasswordForm.style.display = "block"; // Show the element
+      resetPasswordForm.style.display = "block"; 
     }
 
     resetPasswordLink.addEventListener("click", function(event) {
@@ -54,6 +54,7 @@
       } else {
         resetPasswordForm.style.display = "none";
       }
+      document.querySelector(".modal-wrapper button").click();
     });
   
     resetPasswordButton.addEventListener("click", function(event) {

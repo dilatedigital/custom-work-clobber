@@ -38,10 +38,20 @@
   document.addEventListener("DOMContentLoaded", function() {
     const resetPasswordButton = document.querySelector(".reset-password");
     const resetPasswordForm = document.querySelector(".form-reset-password");
+    const resetPasswordLink = document.querySelector(".reset-password-link");
 
     if (window.location.hash === "#recover-password") {
       resetPasswordForm.style.display = "block"; // Show the element
     }
+
+    resetPasswordLink.addEventListener("click", function(event) {
+      event.preventDefault();
+      if (resetPasswordForm.style.display === "none") {
+        resetPasswordForm.style.display = "block"; 
+      } else {
+        resetPasswordForm.style.display = "none";
+      }
+    });
   
     resetPasswordButton.addEventListener("click", function(event) {
       event.preventDefault();

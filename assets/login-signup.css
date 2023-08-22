@@ -51,3 +51,10 @@
 .form-reset-password .errors{
   margin-bottom: 10px;
 }
+.form-success{
+  background: #5fc584;
+  max-width: 500px;
+  margin: 10px auto;
+  padding: 10px;
+  color: #fff;
+}

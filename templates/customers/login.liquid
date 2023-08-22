@@ -19,7 +19,7 @@
 
   <div class="form-control mt-3">
     <p><a href="#" class="reset-password underline hover:no-underline">Forgot password?</a></p>
-    <div id="form-reset-password" class="hidden" style="display: none;">
+    <div id="" class="form-reset-password hidden" style="display: none;">
       {% form 'recover_customer_password' %}
         {{ form.errors | default_errors }}
         <div class="form-control flex flex-col">
@@ -35,7 +35,21 @@
 </div>
 
 
-
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const resetPasswordButton = document.querySelector(".reset-password");
+    const resetPasswordForm = document.querySelector(".form-reset-password");
+  
+    resetPasswordButton.addEventListener("click", function(event) {
+      event.preventDefault();
+      if (resetPasswordForm.style.display === "none") {
+        resetPasswordForm.style.display = "block"; 
+      } else {
+        resetPasswordForm.style.display = "none";
+      }
+    });
+  });
+</script>
 <style>
   .errors {
     text-align: center;

@@ -38,6 +38,10 @@
   document.addEventListener("DOMContentLoaded", function() {
     const resetPasswordButton = document.querySelector(".reset-password");
     const resetPasswordForm = document.querySelector(".form-reset-password");
+
+    if (window.location.hash === "#recover-password") {
+      resetPasswordForm.style.display = "block"; // Show the element
+    }
   
     resetPasswordButton.addEventListener("click", function(event) {
       event.preventDefault();

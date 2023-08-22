@@ -427,7 +427,7 @@
             <div id="form-reset-password" class="hidden">
               {% form 'recover_customer_password' %}
                 {{ form.errors | default_errors }}
-                <div class="form-control flex flex-col mb-6">
+                <div class="form-control flex flex-col">
                   <label class="font-bold" for="customer_email">Email Address</label>
                   <input type="email" name="email" size="30" required placeholder="Enter email address" />
                 </div>
@@ -487,6 +487,18 @@
       bodyScrollLock.enableBodyScroll(document.getElementById('modal'))
     } 
   }
+  document.addEventListener("DOMContentLoaded", function() {
+    const resetPasswordButton = document.querySelector(".reset-password");
+    const resetPasswordForm = document.querySelector("#form-reset-password");
+  
+    resetPasswordButton.addEventListener("click", function() {
+      if (resetPasswordForm.style.display === "none") {
+        resetPasswordForm.style.display = "block"; 
+      } else {
+        resetPasswordForm.style.display = "none";
+      }
+    });
+  });
 </script>
 {% schema %} 
 { 

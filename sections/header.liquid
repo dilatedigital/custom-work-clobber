@@ -424,7 +424,7 @@
           {% endform %}
           <div class="form-control mt-3">
             <p><a href="#" class="reset-password underline hover:no-underline">Forgot password?</a></p>
-            <div id="form-reset-password" class="hidden">
+            <div id="form-reset-password" class="hidden" style="display: none;">
               {% form 'recover_customer_password' %}
                 {{ form.errors | default_errors }}
                 <div class="form-control flex flex-col">

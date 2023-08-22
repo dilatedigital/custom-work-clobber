@@ -16,6 +16,22 @@
       <button type="submit" class="flex items-center justify-center bg-wc-yellow text-wc-black uppercase font-euro font-extrabold w-full hover:bg-wc-black hover:text-white transition lg:text-xl">Sign in {% render 'icon-chevron-right' %}</button>
     </div>
   {% endform %}
+
+  <div class="form-control mt-3">
+    <p><a href="#" class="reset-password underline hover:no-underline">Forgot password?</a></p>
+    <div id="form-reset-password" class="hidden" style="display: none;">
+      {% form 'recover_customer_password' %}
+        {{ form.errors | default_errors }}
+        <div class="form-control flex flex-col">
+          <label class="font-bold" for="customer_email">Email Address</label>
+          <input type="email" name="email" size="30" required placeholder="Enter email address" />
+        </div>
+        <div class="form-control form-submit-container mt-3">
+          <button type="submit" class="flex items-center justify-center bg-wc-yellow text-wc-black uppercase font-euro font-extrabold w-full hover:bg-wc-black hover:text-white transition lg:text-xl">Submit {% render 'icon-chevron-right' %}</button>
+        </div>
+      {% endform %}
+    </div>
+  </div>
 </div>
 
 

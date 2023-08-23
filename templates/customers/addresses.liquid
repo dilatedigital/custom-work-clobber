@@ -130,6 +130,12 @@
                     <div id="EditAddress_{{ address.id }}" class="customer_address edit_address" style="display: none;">
                         {% form 'customer_address', address %}
 
+                            {% if form.posted_successfully? %}
+                                <div class="form-success">
+                                    Address successfully updated.
+                                </div>
+                            {% endif %}
+
                             <h2 class="py-50px">Edit Address</h2>
 
                             <div class="lg:flex lg:justify-between">
@@ -216,6 +222,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const editAddressToggles = document.querySelectorAll(".address-edit-toggle");
     const editAddressForm = document.querySelector(".edit_address");
+    const formSuccess = document.querySelector(".form-success");
 
     editAddressToggles.forEach(function(editAddressToggle, index) {
         editAddressToggle.addEventListener("click", function(event) {
@@ -232,6 +239,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const defaultCountry = countrySelect.getAttribute("data-default");
     if (defaultCountry) {
         countrySelect.value = defaultCountry;
+    }
+
+    if ( formSuccess ){
+      editAddressForm.style.display = "block"; 
     }
 });
 </script>

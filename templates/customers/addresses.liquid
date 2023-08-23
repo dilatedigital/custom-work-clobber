@@ -231,11 +231,11 @@ document.addEventListener("DOMContentLoaded", function() {
         });
      });
 
-    const countrySelect = editAddressForm.querySelector("select[name='address[country]']");
+    {% comment %} const countrySelect = editAddressForm.querySelector("select[name='address[country]']");
     const defaultCountry = countrySelect.getAttribute("data-default");
     if (defaultCountry) {
         countrySelect.value = defaultCountry;
-    }
+    } {% endcomment %}
 
     {% comment %} if ( formSuccess ){
       editAddressForm.style.display = "block"; 

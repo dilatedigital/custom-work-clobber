@@ -15,59 +15,53 @@
             <div class="lg:flex lg:justify-between">
                 <div class="flex flex-col xct:w-full xct:mr-5">
                     <label for="first_name">First Name</label>
-                    <input type="text" value="" name="address[first_name]" size="30" class="w-full" required/>
+                    <input type="text" value="{{ form.first_name }}" name="address[first_name]" class="w-full" required/>
                 </div>
 
                 <div class="flex flex-col xct:w-full mb-5">
                     <label for="last_name">Last Name</label>
-                    <input type="text" value="" name="address[last_name]" size="30" class="w-full" required/>
+                    <input type="text" value="{{ form.last_name }}" name="address[last_name]" class="w-full" required/>
                 </div>
             </div>
 
             <div class="flex flex-col mb-5">
                 <label for="company">Company</label>
-                <input type="text" value="" name="address[company]" class="w-full" />
+                <input type="text" value="{{ form.company }}" name="address[company]" class="w-full" />
             </div>
 
             <div class="flex flex-col mb-5">
                 <label for="address1">Address 1</label>
-                <input type="text" value="" name="address[address1]" required/>
+                <input type="text" value="{{ form.address1 }}" name="address[address1]" required/>
             </div>
 
             <div class="flex flex-col mb-5">
                 <label for="address2">Address 2</label>
-                <input type="text" value="" name="address[address2]" />
+                <input type="text" value="{{ form.address2 }}" name="address[address2]" />
             </div>
 
-            <div class="lg:flex lg:justify-between">
-                <div class="flex flex-col xct:w-full xct:mr-5">
-                    <label for="city">City</label>
-                    <input type="text" value="" name="address[city]" required/>
-                </div>
-
-                <div class="flex flex-col xct:w-full mb-5">
-
-                    <!-- See docs for @shopify/theme-addresses to support Country and Province -->
-                    <label for="country">Country</label>
-                    <select name="address[country]" /></select>
-                </div>
+            <div class="flex flex-col mb-5">
+                <label for="city">City</label>
+                <input type="text" value="{{ form.city }}" name="address[city]" required/>
             </div>
 
-            <div class="lg:flex lg:justify-between">
-                <div class="flex flex-col xct:w-full xct:mr-5">
-                    <label for="province">Province</label>
-                    <select name="address[province]" /></select>
-                </div>
-                <div class="flex flex-col xct:w-full mb-5">
-                    <label for="zip">Zip/Post Code</label>
-                    <input type="text" value="" name="address[zip]" required/>
-                </div>
+            <div class="flex flex-col mb-5">
+                <label for="country">Country</label>
+                <select id="address_country_new" name="address[country]" data-default="{{form.country}}"></select>
+            </div>
 
+            <div id="address_province_container_new" class="flex flex-col mb-5" style="display:none">
+                <label for="province">Province</label>
+                <select id="address_province_new" name="address[province]" data-default="{{form.province}}"></select>
+            </div>
+
+            <div class="flex flex-col mb-5">
+                <label for="zip">Zip/Post Code</label>
+                <input type="text" value="{{ form.zip }}" name="address[zip]" required/>
             </div>
 
             <div class="flex flex-col mb-5">
                 <label for="phone">Phone Number</label>
-                <input type="tel" value="" name="address[phone]" required/>
+                <input type="tel" value="{{ form.phone }}" name="address[phone]" required/>
             </div>
 
             <div class="flex mb-5">
@@ -215,7 +209,7 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-
+    new Shopify.CountryProvinceSelector('address_country_new', 'address_province_new', {hideElement: 'address_province_container_new'});
     {% for address in customer.addresses %}
       new Shopify.CountryProvinceSelector('address_country_{{address.id}}', 'address_province_{{address.id}}', {hideElement: 'address_province_container_{{address.id}}'});
     {% endfor %}

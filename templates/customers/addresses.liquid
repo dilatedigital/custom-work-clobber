@@ -211,17 +211,19 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-    const editAddressToggle = document.querySelector(".address-edit-toggle");
+    const editAddressToggles = document.querySelectorAll(".address-edit-toggle");
     const editAddressForm = document.querySelector(".edit_address");
 
-    editAddressToggle.addEventListener("click", function(event) {
-        event.preventDefault();
-         if (editAddressForm.style.display === "none") {
-            editAddressForm.style.display = "block"; 
-        } else {
-            editAddressForm.style.display = "none";
-        }
-    });
+    editAddressToggles.forEach(function(editAddressToggle, index) {
+        editAddressToggle.addEventListener("click", function(event) {
+            event.preventDefault();
+            if (editAddressForm.style.display === "none") {
+                editAddressForm.style.display = "block"; 
+            } else {
+                editAddressForm.style.display = "none";
+            }
+        });
+     });
 });
 </script>
 

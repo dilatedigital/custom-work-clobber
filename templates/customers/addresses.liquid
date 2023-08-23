@@ -221,7 +221,8 @@ document.addEventListener("DOMContentLoaded", function() {
     editAddressToggles.forEach(function(editAddressToggle, index) {
         editAddressToggle.addEventListener("click", function(event) {
             event.preventDefault();
-            const editAddressForm = this.closest(".edit_address");
+            const closestAddress = this.closest(".address");
+            const editAddressForm = closestAddress.querySelector(".edit_address");
              if (editAddressForm.style.display === "none" || editAddressForm.style.display === "") {
                 editAddressForm.style.display = "block"; 
             } else {

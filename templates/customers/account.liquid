@@ -51,7 +51,7 @@
   </div>
 
   <div id="customer_orders">
-      <h2>Orders</h2>
+      <h2 class="text-xl uppercase xct:text-3xl leading-none border-b-2 border-wc-black pb-2 xct:pb-4 xct:border-b-3 mb-6">Orders</h2>
       {% paginate customer.orders by 10 %}
       {% if customer.orders.size != 0 %}
       <table class="responsive-table">

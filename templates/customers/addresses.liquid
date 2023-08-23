@@ -224,6 +224,12 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
      });
+
+    const countrySelect = editAddressForm.querySelector("select[name='address[country]']");
+    const defaultCountry = countrySelect.getAttribute("data-default");
+    if (defaultCountry) {
+        countrySelect.value = defaultCountry;
+    }
 });
 </script>
 

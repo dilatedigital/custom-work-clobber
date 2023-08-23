@@ -14,7 +14,8 @@
       <p><strong>Email:</strong> {{ customer.email }}</p>
       <div class="address note">
         {% if customer.default_address != nil %}
-          <p>{{ customer.default_address.address1 }}
+          <p><strong>Address:</strong>
+          <br />{{ customer.default_address.address1 }}
           {% if customer.default_address.address2 != "" %}
             <br />{{ customer.default_address.address2 }}
           {% endif %}
@@ -23,8 +24,7 @@
           <br />{{ customer.default_address.phone }}</p>
         {% endif %}
       </div>
-      <a href="{{ routes.account_addresses_url }}" class="button uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center h-[47px]">View Address ({{ customer.addresses_count }})</a>
-      <!--<button id="edit-info" class="btn btn--secondary btn--small">Edit Info</button>-->
+      <a href="{{ routes.account_addresses_url }}" class="button uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center h-[47px] mt-5">View Address ({{ customer.addresses_count }})</a>
     </div>
     
     <!-- This is the form for editing user information. It is hidden by default. -->

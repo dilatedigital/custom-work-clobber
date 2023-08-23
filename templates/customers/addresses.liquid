@@ -87,7 +87,7 @@
             {% endcomment %}
             <ul>
             {% for address in customer.addresses %}
-                <li>
+                <li class="address-list">
                     <div class="address text-center">
                     {% if address == customer.default_address %}
                         <h2>Default</h2>
@@ -221,7 +221,7 @@ document.addEventListener("DOMContentLoaded", function() {
     editAddressToggles.forEach(function(editAddressToggle, index) {
         editAddressToggle.addEventListener("click", function(event) {
             event.preventDefault();
-            const closestAddress = this.closest("li");
+            const closestAddress = this.closest(".address-list");
             const editAddressForm = closestAddress.querySelector(".edit_address");
              if (editAddressForm.style.display === "none" || editAddressForm.style.display === "") {
                 editAddressForm.style.display = "block"; 

@@ -23,7 +23,7 @@
           <br />{{ customer.default_address.phone }}</p>
         {% endif %}
       </div>
-      <a href="{{ routes.account_addresses_url }}" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center max-w-150 h-[47px] w-full">View Address ({{ customer.addresses_count }})</a>
+      <a href="{{ routes.account_addresses_url }}" class="button uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center h-[47px]">View Address ({{ customer.addresses_count }})</a>
       <!--<button id="edit-info" class="btn btn--secondary btn--small">Edit Info</button>-->
     </div>
     
@@ -90,6 +90,10 @@
 <style>
 #customer-information{
   flex-basis: 33.333333%;
+}
+#customer-information .button{
+  display: inline-flex;
+  padding: 0 1rem;
 }
 #customer_orders{
   flex-basis: 66.666667%;

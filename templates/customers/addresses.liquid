@@ -127,7 +127,7 @@
                         </ul>
                     </div>
 
-                    <div id="EditAddress_{{ address.id }}" class="customer_address edit_address">
+                    <div id="EditAddress_{{ address.id }}" class="customer_address edit_address" style="display: none;">
                         {% form 'customer_address', address %}
 
                             <h2 class="py-50px">Edit Address</h2>
@@ -193,7 +193,7 @@
 
                             <ul class="list--inline lg:flex lg:justify-center justify-center mt-5">
                                 <li><input type="submit" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center p-4" value="Update Address"></li>
-                                <li><button type="button" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center p-4" data-form-id="{{ form.id }}">Cancel</button></li>
+                                <li><button type="button" class="address-edit-toggle uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center p-4" data-form-id="{{ form.id }}">Cancel</button></li>
                             </ul>
 
                         {% endform %}
@@ -208,6 +208,22 @@
         </div>
     </div>
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const editAddressToggle = document.querySelector(".address-edit-toggle");
+    const editAddressForm = document.querySelector(".edit_address");
+
+    editAddressToggle.addEventListener("click", function(event) {
+        event.preventDefault();
+         if (editAddressForm.style.display === "none") {
+            editAddressForm.style.display = "block"; 
+        } else {
+            editAddressForm.style.display = "none";
+        }
+    });
+});
+</script>
 
 <style>
     .section-form label{

@@ -216,12 +216,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const editAddressToggles = document.querySelectorAll(".address-edit-toggle");
     const editAddressForm = document.querySelectorAll(".edit_address");
-    const formSuccess = document.querySelector(".form-success");
+    //const formSuccess = document.querySelector(".form-success");
 
     editAddressToggles.forEach(function(editAddressToggle, index) {
         editAddressToggle.addEventListener("click", function(event) {
             event.preventDefault();
-            if (editAddressForm.style.display === "none") {
+            const editAddressForm = this.closest(".edit_address");
+             if (editAddressForm.style.display === "none" || editAddressForm.style.display === "") {
                 editAddressForm.style.display = "block"; 
             } else {
                 editAddressForm.style.display = "none";
@@ -235,9 +236,9 @@ document.addEventListener("DOMContentLoaded", function() {
         countrySelect.value = defaultCountry;
     }
 
-    if ( formSuccess ){
+    {% comment %} if ( formSuccess ){
       editAddressForm.style.display = "block"; 
-    }
+    } {% endcomment %}
 });
 </script>
 

@@ -211,6 +211,11 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
+
+    {% for address in customer.addresses %}
+      new Shopify.CountryProvinceSelector('address_country_{{address.id}}', 'address_province_{{address.id}}', {hideElement: 'address_province_container_{{address.id}}'});
+    {% endfor %}
+
     const editAddressToggles = document.querySelectorAll(".address-edit-toggle");
     const editAddressForm = document.querySelector(".edit_address");
 

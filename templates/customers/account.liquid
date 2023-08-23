@@ -9,7 +9,7 @@
   <div id="customer-information">
       <!-- add this block where you want the user's info and edit button to appear -->
     <div class="user-info">
-      <h2>User Information</h2>
+      <h2 class="text-xl uppercase xct:text-3xl leading-none border-b-2 border-wc-black pb-2 xct:pb-4 xct:border-b-3 mb-6">User Information</h2>
       <p><strong>Name:</strong> {{ customer.first_name }} {{ customer.last_name }}</p>
       <p><strong>Email:</strong> {{ customer.email }}</p>
       <div class="address note">
@@ -29,7 +29,7 @@
     
     <!-- This is the form for editing user information. It is hidden by default. -->
     <div id="edit-user-info" style="display: none;">
-      <h2>Edit User Information</h2>
+      <h2 class="text-xl uppercase xct:text-3xl leading-none border-b-2 border-wc-black pb-2 xct:pb-4 xct:border-b-3 mb-6">Edit User Information</h2>
       <form method="post" action="/account">
         <label for="FirstName">First Name</label>
         <input type="text" id="FirstName" name="customer[first_name]" value="{{ customer.first_name }}">

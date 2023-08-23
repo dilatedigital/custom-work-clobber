@@ -229,13 +229,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 editAddressForm.style.display = "none";
             }
         });
-     });
+    });
 
-    {% comment %} const countrySelect = editAddressForm.querySelector("select[name='address[country]']");
-    const defaultCountry = countrySelect.getAttribute("data-default");
-    if (defaultCountry) {
-        countrySelect.value = defaultCountry;
-    } {% endcomment %}
+    const countriesSelect = document.querySelectorAll("select[name='address[country]']");
+    countriesSelect.forEach(function(countrySelect, index) {
+        const defaultCountry = countrySelect.getAttribute("data-default");
+        if (defaultCountry) {
+            countrySelect.value = defaultCountry;
+        }
+    });
 
     {% comment %} if ( formSuccess ){
       editAddressForm.style.display = "block"; 

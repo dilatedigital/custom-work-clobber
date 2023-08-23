@@ -191,8 +191,10 @@
                                 <label for="address_default_address_{{form.id}}">Set as default address</label>
                             </div>
 
-                            <div><input type="submit" class="btn" value="Update Address"></div>
-                            <div><button type="button" class="text-link address-edit-toggle" data-form-id="{{ form.id }}">Cancel</button></div>
+                            <ul class="list--inline lg:flex lg:justify-center justify-center mt-5">
+                                <li><input type="submit" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center p-4" value="Update Address"></li>
+                                <li><button type="button" class="uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center p-4" data-form-id="{{ form.id }}">Cancel</button></li>
+                            </ul>
 
                         {% endform %}
                         <hr>

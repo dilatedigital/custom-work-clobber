@@ -31,11 +31,11 @@
             "type": "hero_slider",
             "disabled": true,
             "settings": {
-              "image": "shopify:\/\/shop_images\/banner-desktop_1.jpg",
-              "slide_title": "<h1>Hi-Vis 2<\/h1>\n<br>\n<span>Standout performance<\/span>",
+              "image": "shopify:\/\/shop_images\/004_1.jpg",
+              "slide_title": "<h1>Hi-Vis 2<\/h1>\n<br>\n<span>Womens Workwear<\/span>",
               "slide_right_text": "",
               "button_title": "Test 2",
-              "slide_button_url": "#"
+              "slide_button_url": "shopify:\/\/collections\/ladies"
             }
           },
           "fd5b5181-0e92-4f38-8c2c-ca2a65f7da2e": {

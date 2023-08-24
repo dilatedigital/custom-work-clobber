@@ -109,14 +109,13 @@
                                 </button>
                             </li>
                             <li>
-                                <button
-                                    type="button"
+                                <span
                                     class="btn btn--secondary btn--small address-delete uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center p-4"
                                     data-target="{{ address.url }}"
-                                    data-confirm-message="{{ 'customer.addresses.delete_confirm' | t }}"
+                                    data-confirm-message="Address deleted"
                                 >
-                                    Delete
-                                </button>
+                                    {{ 'Delete' | delete_customer_address_link: address.id }}
+                                </span>
                             </li>
                         </ul>
                     </div>

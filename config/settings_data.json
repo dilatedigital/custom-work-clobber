@@ -33,7 +33,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/004_1.jpg",
               "slide_title": "<h1>Hi-Vis 2<\/h1>\n<br>\n<span>Womens Workwear<\/span>",
-              "slide_right_text": "",
+              "slide_right_text": "<span class=\"sup\">Hi Vis Workwear<\/span>\n<h2>WA Exclusive<\/h2>\n<span class=\"sub\">Work Wear Supplier<\/span>",
               "button_title": "Test 2",
               "slide_button_url": "shopify:\/\/collections\/ladies"
             }

@@ -40,4 +40,10 @@ function toggleGoBackButton() {
 
 window.addEventListener('load', toggleGoBackButton);
 window.addEventListener('popstate', toggleGoBackButton);
+
+document.addEventListener('click', function(event) {
+  if (event.target.classList.contains('sizeguide-back-link')) {
+    window.history.back();
+  }
+});
 </script>

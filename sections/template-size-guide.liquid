@@ -26,11 +26,17 @@ function hasPreviousPage() {
   return window.history.length > 1;
 }
 
+function isSameDomain(url) {
+  const currentDomain = window.location.origin;
+  const previousDomain = new URL(url).origin;
+  return currentDomain === previousDomain;
+}
+
 function toggleGoBackButton() {
   const goBackButtons = document.querySelectorAll('.sizeguide-back-link');
   
   goBackButtons.forEach(button => {
-    if (hasPreviousPage()) {
+    if (hasPreviousPage() && isSameDomain(document.referrer)) {
       button.style.display = 'block';
     } else {
       button.style.display = 'none';

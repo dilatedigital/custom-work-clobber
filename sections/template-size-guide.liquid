@@ -41,8 +41,7 @@ function toggleGoBackButton() {
 window.addEventListener('load', toggleGoBackButton);
 window.addEventListener('popstate', toggleGoBackButton);
 
-const container = document.querySelector('.container');
-container.addEventListener('click', function(event) {
+document.addEventListener('click', function(event) {
   if (event.target.classList.contains('sizeguide-back-link')) {
     console.log('test');
     window.history.back();

@@ -20,3 +20,24 @@
 
 }
 {% endschema %}
+
+<script>
+function hasPreviousPage() {
+  return window.history.length > 1;
+}
+
+function toggleGoBackButton() {
+  const goBackButtons = document.querySelectorAll('.sizeguide-back-link');
+  
+  goBackButtons.forEach(button => {
+    if (hasPreviousPage()) {
+      button.style.display = 'block';
+    } else {
+      button.style.display = 'none';
+    }
+  });
+}
+
+window.addEventListener('load', toggleGoBackButton);
+window.addEventListener('popstate', toggleGoBackButton);
+</script>

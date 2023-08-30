@@ -21,7 +21,7 @@
             "type": "hero_slider",
             "settings": {
               "image": "shopify:\/\/shop_images\/banner-desktop-final.jpg",
-              "slide_title": "<h1>For Tradies <br>By Tradies\n<\/h1>\n<span>Standout performance<\/span>",
+              "slide_title": "<h1>For Tradies <br>By Tradies\n<\/h1>\n<span class=\"small_text\">Standout performance<\/span>",
               "slide_right_text": "<span class=\"sup\">Hi Vis Workwear<\/span>\n<h2>WA Exclusive<\/h2>\n<span class=\"sub\">Work Wear Supplier<\/span>",
               "button_title": "Shop Now",
               "slide_button_url": "shopify:\/\/collections\/hi-vis-workwear"
@@ -31,7 +31,7 @@
             "type": "hero_slider",
             "settings": {
               "image": "shopify:\/\/shop_images\/004_1.jpg",
-              "slide_title": "<h1>Women's\nWorkwear<\/h1>\n<br>\n<span>Standout performance<\/span>",
+              "slide_title": "<h1>Women's\nWorkwear<\/h1>\n<span class=\"small_text\">Standout performance<\/span>",
               "slide_right_text": "<span class=\"sup\">Hi Vis Workwear<\/span>\n<h2>WA Exclusive<\/h2>\n<span class=\"sub\">Work Wear Supplier<\/span>",
               "button_title": "Shop Ladies Workwear",
               "slide_button_url": "shopify:\/\/collections\/ladies"

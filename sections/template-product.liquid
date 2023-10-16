@@ -363,11 +363,11 @@
 
           <div class="my-3">
             <button type="submit" name="add" class="cart-btn uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center"
-              {% if selected_variant == false and product.available %}
+              {% if selected_variant == false or product.available == false %}
                 disabled
               {% endif %}
             >
-              {% if selected_variant == false and product.available %}
+              {% if selected_variant == false or product.available == false %}
                   Sold out
                 {% else %}
                   {% render 'icon-cart-btn' %} Add to cart

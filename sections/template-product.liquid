@@ -591,12 +591,13 @@
         if({{selected_variant.available}}) {
           document.getElementsByClassName("cart-btn").disabled = true;
           document.getElementsByClassName("cart-btn").innerHTML = "Sold Out";
-          console.log(this.currentVariant)
+          console.log("test")
         } else {
           document.getElementsByClassName("cart-btn").disabled = false;
           document.getElementsByClassName("cart-btn").innerHTML = 'Add to cart';
           console.log("notest")
         }
+          console.log(this.currentVariant)
       }
   }
   customElements.define("variant-selector", VariantSelector);

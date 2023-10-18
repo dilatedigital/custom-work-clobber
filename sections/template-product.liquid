@@ -364,11 +364,11 @@
           <div class="my-3">
         <!-- {{ selected_variant.available }} | {{ variant.available }} | {{ product_variant.available }} | {{ product.available }} -->
             <button type="submit" name="add" class="cart-btn uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center"
-              {% if product_variant.available == false or product.available == false %}
+              {% if selected_variant.available == false %}
                 disabled
               {% endif %}
             >
-              {% if product_variant.available == false or product.available == false  %}
+              {% if selected_variant.available == false %}
                   Sold out
                 {% else %}
                   {% render 'icon-cart-btn' %} Add to cart

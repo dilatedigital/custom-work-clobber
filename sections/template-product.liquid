@@ -594,7 +594,7 @@
           console.log("test")
         } else {
           document.getElementById("addtocart").disabled = false;
-          document.getElementById("addtocart").textContent = 'Add to cart';
+          document.getElementById("addtocart").textContent = {% render 'icon-cart-btn' %} 'Add to cart';
           console.log("notest")
         }
       }

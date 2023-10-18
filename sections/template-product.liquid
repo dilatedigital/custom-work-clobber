@@ -590,11 +590,11 @@
           });
         if(this.currentVariant.available == false) {
           document.getElementsByClassName("cart-btn").disabled = true;
-          document.getElementsByClassName("cart-btn").innerHTML = "Sold Out";
+          document.getElementsByClassName("cart-btn").textContent = "Sold Out";
           console.log("test")
         } else {
           document.getElementsByClassName("cart-btn").disabled = false;
-          document.getElementsByClassName("cart-btn").innerHTML = 'Add to cart';
+          document.getElementsByClassName("cart-btn").textContent = 'Add to cart';
           console.log("notest")
         }
       }

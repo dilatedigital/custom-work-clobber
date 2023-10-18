@@ -588,7 +588,7 @@
               const newPrice = html.getElementById(id);
               if(oldPrice && newPrice) oldPrice.innerHTML = newPrice.innerHTML;
           });
-        if(this.currentVariant.available) {
+        if(this.currentVariant.available == false) {
           document.getElementsByClassName("cart-btn").disabled = true;
           document.getElementsByClassName("cart-btn").innerHTML = "Sold Out";
           console.log("test")
@@ -597,7 +597,6 @@
           document.getElementsByClassName("cart-btn").innerHTML = 'Add to cart';
           console.log("notest")
         }
-          console.log(this.currentVariant)
       }
   }
   customElements.define("variant-selector", VariantSelector);

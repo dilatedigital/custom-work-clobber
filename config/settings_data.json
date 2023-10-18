@@ -21,7 +21,7 @@
             "type": "hero_slider",
             "settings": {
               "image": "shopify:\/\/shop_images\/banner-desktop-final.jpg",
-              "slide_title": "<h1>\n<span>For Tradies<\/span> <br><span>By Tradies<\/span>\n<\/h1>\n<span class=\"small_text\">Standout performance<\/span>",
+              "slide_title": "<div class=\"h1\">\n<span>For Tradies<\/span> <br><span>By Tradies<\/span>\n<\/div>\n<span class=\"small_text\">Standout performance<\/span>",
               "slide_right_text": "<span class=\"sup\">Hi Vis Workwear<\/span>\n<h2>WA Exclusive<\/h2>\n<span class=\"sub\">Work Wear Supplier<\/span>",
               "button_title": "Shop Now",
               "slide_button_url": "shopify:\/\/collections\/hi-vis-workwear"
@@ -31,9 +31,9 @@
             "type": "hero_slider",
             "settings": {
               "image": "shopify:\/\/shop_images\/004_1.jpg",
-              "slide_title": "<h1>\n<span>Women's<\/span><br><span>Workwear<\/span>\n<\/h1>\n<span class=\"small_text\">Standout performance<\/span>",
+              "slide_title": "<div class=\"h1\">\n<span>Women's<\/span><br><span>Workwear<\/span>\n<\/div>\n<span class=\"small_text\">Standout performance<\/span>",
               "slide_right_text": "<span class=\"sup\">Hi Vis Workwear<\/span>\n<h2>WA Exclusive<\/h2>\n<span class=\"sub\">Work Wear Supplier<\/span>",
-              "button_title": "Shop Ladies Workwear",
+              "button_title": "Shop Now",
               "slide_button_url": "shopify:\/\/collections\/ladies"
             }
           },
@@ -41,7 +41,7 @@
             "type": "hero_slider",
             "settings": {
               "image": "shopify:\/\/shop_images\/013.jpg",
-              "slide_title": "<h1><span>Custom orders<\/span><\/h1>\n<br>\n<span class=\"small_text\">Place a custom order<\/span>",
+              "slide_title": "<div class=\"h1\"><span>Custom orders<\/span><\/div>\n<br>\n<span class=\"small_text\">Place a custom order<\/span>",
               "slide_right_text": "<span class=\"sup\">Workwear for you<\/span>\n<h2>WA Exclusive<\/h2>\n<span class=\"sub\">Work Wear Supplier<\/span>",
               "button_title": "Contact Us",
               "slide_button_url": "shopify:\/\/pages\/contact"
@@ -54,7 +54,7 @@
           "fd5b5181-0e92-4f38-8c2c-ca2a65f7da2e"
         ],
         "settings": {
-          "mobile_hero_title": "<h1>Hi-Vis Workwear<\/h1>\n<span>Standout performance<\/span>",
+          "mobile_hero_title": "<div class=\"h1\">Hi-Vis Workwear<\/div>\n<span>Standout performance<\/span>",
           "mobile_button_title": "Shop Now",
           "mobile_button_link": "#",
           "mobile_hero_image": "shopify:\/\/shop_images\/banner-mobile_1.jpg"

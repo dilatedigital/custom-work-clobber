@@ -588,7 +588,7 @@
               const newPrice = html.getElementById(id);
               if(oldPrice && newPrice) oldPrice.innerHTML = newPrice.innerHTML;
           });
-        if({{selected_variant.available}}) {
+        if(this.currentVariant.available) {
           document.getElementsByClassName("cart-btn").disabled = true;
           document.getElementsByClassName("cart-btn").innerHTML = "Sold Out";
           console.log("test")

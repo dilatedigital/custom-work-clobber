@@ -33,6 +33,9 @@
   <body x-data="{ atTop: false }" :class="{ 'sticky-nav': atTop, '': !atTop }"
     @scroll.window="atTop = (window.pageYOffset > 300 ) ? true : false"
   >
+    {% if template.name != "index" %} 
+     <h1 class="hidden">{{ page.title }}</h1>
+    {% endif %}
     {% section 'header' %} 
     <main role="main">
       {{ content_for_layout }}

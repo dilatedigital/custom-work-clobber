@@ -366,13 +366,14 @@
             <button id="addtocart" type="submit" name="add" class="cart-btn uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center"
               {% if selected_variant.available == false %}
                 disabled
-              {% endif %}
-            >
+              {% endif %} >
+              {% render 'icon-cart-btn' %} <span id="addtocarttext">
               {% if selected_variant.available == false %}
-                 {% render 'icon-cart-btn' %} <span> Sold out</span>
-                {% else %}
-                  {% render 'icon-cart-btn' %} <span>Add to cart</span>
+                  Sold out
+              {% else %}
+                  Add to cart
               {% endif %}
+              </span>
             </button>
           </div>
         </div>
@@ -591,11 +592,11 @@
         
         if(this.currentVariant.available == false) {
           document.getElementById("addtocart").disabled = true;
-          document.getElementById("addtocart").getElementsByTagName('span').textContent = "Sold Out";
+          document.getElementById("addtocarttext").textContent = "Sold Out";
           console.log("test")
         } else {
           document.getElementById("addtocart").disabled = false;
-          document.getElementById("addtocart").getElementsByTagName('span').textContent = 'Add to cart';
+          document.getElementById("addtocarttext").textContent = 'Add to cart';
           console.log("notest")
         }
       }

@@ -369,7 +369,7 @@
               {% endif %}
             >
               {% if selected_variant.available == false %}
-                 <span> Sold out</span>
+                 {% render 'icon-cart-btn' %} <span> Sold out</span>
                 {% else %}
                   {% render 'icon-cart-btn' %} <span>Add to cart</span>
               {% endif %}
@@ -567,7 +567,7 @@
       }
       updateImage() {
         //console.log(this.currentVariant.featured_image.src);
-        const mainImage = document.getElementById('main-featured').getElementsByClassName('swiper-slide-active')[0].getElementsByTagName('img')[0]
+        const mainImage = document.getElementById('main-featured').getElementsByClassName('swiper-slide-active')[0].getElementsByTagNam('span')('img')[0]
         mainImage.src = this.currentVariant.featured_image.src
       }
       updateURL() {
@@ -591,11 +591,11 @@
         
         if(this.currentVariant.available == false) {
           document.getElementById("addtocart").disabled = true;
-          document.getElementById("addtocart").innerHTML = "Sold Out";
+          document.getElementById("addtocart").getElementsByTagNam('span').innerHTML = "Sold Out";
           console.log("test")
         } else {
           document.getElementById("addtocart").disabled = false;
-          document.getElementById("addtocart").innerHTML = 'Add to cart';
+          document.getElementById("addtocart").getElementsByTagNam('span').innerHTML = 'Add to cart';
           console.log("notest")
         }
       }

@@ -589,12 +589,12 @@
               if(oldPrice && newPrice) oldPrice.innerHTML = newPrice.innerHTML;
           });
         if(this.currentVariant.available == false) {
-          document.getElementsByClassName("cart-btn").disabled = true;
-          document.getElementsByClassName("cart-btn").textContent = "Sold Out";
+          document.getElementByClassName("cart-btn").disabled = true;
+          document.getElementByClassName("cart-btn").textContent = "Sold Out";
           console.log("test")
         } else {
-          document.getElementsByClassName("cart-btn").disabled = false;
-          document.getElementsByClassName("cart-btn").textContent = 'Add to cart';
+          document.getElementByClassName("cart-btn").disabled = false;
+          document.getElementByClassName("cart-btn").textContent = 'Add to cart';
           console.log("notest")
         }
       }

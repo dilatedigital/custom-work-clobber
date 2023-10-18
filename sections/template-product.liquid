@@ -588,6 +588,13 @@
               const newPrice = html.getElementById(id);
               if(oldPrice && newPrice) oldPrice.innerHTML = newPrice.innerHTML;
           });
+        if(selected_variant.available) {
+          document.getElementsByClassName(".cart-btn").disabled = true;
+          document.getElementsByClassName(".cart-btn").innerHTML = "Sold Out";
+        } else {
+          document.getElementsByClassName(".cart-btn").disabled = false;
+          document.getElementsByClassName(".cart-btn").innerHTML = "{% render 'icon-cart-btn' %} Add to cart";
+        }
       }
   }
   customElements.define("variant-selector", VariantSelector);

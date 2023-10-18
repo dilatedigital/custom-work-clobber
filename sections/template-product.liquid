@@ -363,7 +363,7 @@
 
           <div class="my-3">
         <!-- {{ selected_variant.available }} | {{ variant.available }} | {{ product_variant.available }} | {{ product.available }} -->
-            <button type="submit" name="add" class="cart-btn uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center"
+            <button id="addtocart" type="submit" name="add" class="cart-btn uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center"
               {% if selected_variant.available == false %}
                 disabled
               {% endif %}
@@ -589,12 +589,12 @@
               if(oldPrice && newPrice) oldPrice.innerHTML = newPrice.innerHTML;
           });
         if(this.currentVariant.available == false) {
-          document.getElementByClassName("cart-btn").disabled = true;
-          document.getElementByClassName("cart-btn").textContent = "Sold Out";
+          document.getElementId("addtocart").disabled = true;
+          document.getElementId("addtocart").textContent = "Sold Out";
           console.log("test")
         } else {
-          document.getElementByClassName("cart-btn").disabled = false;
-          document.getElementByClassName("cart-btn").textContent = 'Add to cart';
+          document.getElementId("addtocart").disabled = false;
+          document.getElementId("addtocart").textContent = 'Add to cart';
           console.log("notest")
         }
       }

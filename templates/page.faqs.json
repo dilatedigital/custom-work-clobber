@@ -139,7 +139,7 @@
           "type": "faq_block",
           "settings": {
             "each_block_title": "What are my payment options?",
-            "each_block_content": ""
+            "each_block_content": "<p>We use Shopify payments.<\/p>"
           }
         },
         "a28b8122-783f-495c-90e5-3d23e8b8c9b9": {

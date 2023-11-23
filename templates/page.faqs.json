@@ -146,7 +146,7 @@
           "type": "faq_block",
           "settings": {
             "each_block_title": "How secure is my credit card and personal information?",
-            "each_block_content": ""
+            "each_block_content": "<p>Shopify Payments is one of the most secure payment processors available.<\/p><p>Shopify uses 128-bit SSL encryption technology to protect your customers' information during checkout. They also use Fraud Defender, which helps prevent fraudulent transactions in your store<\/p>"
           }
         },
         "8e24bc94-bd40-4a12-ac3d-150a08e29834": {

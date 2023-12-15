@@ -24,10 +24,15 @@
   .sidebar-filter {
     max-width: 225px;
   }
-
+.cat-drop {
+  display: block;
+}
   @media screen and (min-width: 1024px) {
     .sidebar-filter {
       margin-right: 75px;
+    }
+    .cat-drop {
+      display: none;
     }
   }
   @media screen and (min-width: 1170px) {
@@ -64,6 +69,14 @@
           {% endif %}
           {{ product_type | link_to_type: class: 'text-lg block' }}
         {% endfor %}
+    
+        <select class="py-3 px-4 my-3 border border-black cat-drop">
+          {% for option in collection.sort_options %}
+            <option value="{{ option.value }}" {% if option.value == sort_by %}selected="selected"{% endif %}>
+              {{ option.name }}
+            </option>
+          {% endfor %}
+        </select>
 
         <div>
           

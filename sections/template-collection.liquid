@@ -71,9 +71,12 @@
         {% endfor %}
     
         <select class="py-3 px-4 my-3 border border-black cat-drop">
-          {% for option in collection.sort_options %}
-            <option value="{{ option.value }}" {% if option.value == sort_by %}selected="selected"{% endif %}>
-              {{ option.name }}
+          {% for product_type in collection.all_types %}
+            {% if product_type == blank %}
+              {% continue %}
+            {% endif %}
+            <option value="{{ product_type | url_for_type }}">
+              {{ product_type }}
             </option>
           {% endfor %}
         </select>

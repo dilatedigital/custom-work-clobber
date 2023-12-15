@@ -1890,6 +1890,11 @@ h1, h2, h3, h4, h5, h6,
   outline-offset: 2px;
 }
 
+.gap-x-30px {
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+
 @media (min-width: 640px) {
   .sm\:gap-8 {
     gap: 2rem;

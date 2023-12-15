@@ -56,13 +56,15 @@
 </style>
 <script defer src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script>
-  $(document).ready(function() {
-    $(".cat-drop").change(function(){
-      if ($(this).val()!='') {
-        window.location.href=$(this).val();
-      }
+  (function($) {
+    $(document).ready(function() {
+      $(".cat-drop").change(function(){
+        if ($(this).val()!='') {
+          window.location.href=$(this).val();
+        }
+      });
     });
-  });
+  })(jQuery);
 </script>
 {% render 'stripe-pattern' %}
 

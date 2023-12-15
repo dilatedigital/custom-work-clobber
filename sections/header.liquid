@@ -213,7 +213,7 @@
    
       <div class="flex items-center xct:max-w-120 xct:w-full">
         <div class="relative search-container ml-5 xct:ml-8">
-          <button x-on:click="searchBarOpen = true" type="button" class="hidden xct:inline-flex items-center justify-center focus:outline-none">
+          <button x-on:click="searchBarOpen = true" type="button" class="xct:inline-flex items-center justify-center focus:outline-none">
             {% render 'icon-search' %}
           </button>
           <div x-show="searchBarOpen" x-trap="searchBarOpen" class="absolute search-form-container" @click.away="searchBarOpen = false">

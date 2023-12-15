@@ -166,6 +166,11 @@
       width: 100vw;
     }
   }
+  
+  @media screen and (max-width: 320px) {
+    .search-form-container {
+      top: 85px;
+  }
 </style>
 {{ 'login-signup.css' | asset_url | stylesheet_tag }}
 <div class="bg-white transition duration-500 ease-out header-navigation" x-data="{ mobileMenuOpen: false, searchBarOpen: false, modal: false, atTop: false }"

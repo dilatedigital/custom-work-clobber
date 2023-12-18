@@ -52,8 +52,9 @@
     padding: 2em;
     left: calc(50% - 45%);
     border: 1px solid;
-    bottom: -100%;
+    bottom: 1em;
     opacity: 0;
+    transform: translatey(100vh);
 }
   .cat-popup .close {
     position: absolute;
@@ -67,7 +68,7 @@
 }
   .cat-popup.active {
     opacity: 1;
-    bottom: 1em;
+    transform: translatey(0vh);
 }
   @media screen and (min-width: 1025px) {
     .cat-drop,

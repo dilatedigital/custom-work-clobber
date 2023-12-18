@@ -40,6 +40,20 @@
     background: var(--yellow);
     border-color: var(--yellow);
 }
+.cat-popup {
+    position: fixed;
+    background: white;
+    width: 90%;
+    padding: 2em;
+    left: calc(50% - 45%);
+    border: 1px solid;
+    bottom: -100%;
+    opacity: 0;
+}
+  .cat-popup.active {
+    opacity: 1;
+    bottom: 0;
+}
   @media screen and (min-width: 1025px) {
     /* .cat-drop, */
     .mobile-filter {

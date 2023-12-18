@@ -116,7 +116,7 @@
   })(jQuery);
 </script>
 {% render 'stripe-pattern' %}
-<div class="cat-popup"></div>
+<div class="cat-popup transition"></div>
 <div class="container mx-auto xct:flex xct:justify-between py-50px lg:py-100px">
   {% paginate collection.products by 12 %}
     <div class="sidebar-filter">
@@ -301,7 +301,7 @@
             
           </div>
         </div>
-        <button class="mobile-filter wc-btn transition uppercase">Filters</button>
+        <button class="mobile-filter wc-btn uppercase">Filters</button>
       </div>
       
       <div class="products-grid py-50px lg:pb-100px grid grid-cols-2 gap-y-10 place-content-center lg:grid-cols-2 xct:grid-cols-3 gap-x-30px lg:gap-y-12">

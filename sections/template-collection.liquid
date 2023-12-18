@@ -50,9 +50,7 @@
     bottom: -100%;
     opacity: 0;
 }
-  .cat-popup:after {
-    content: "X";
-    display: block;
+  .cat-popup .close {
     position: absolute;
     top: 0;
     right: 0;
@@ -60,6 +58,7 @@
     font-weight: 700;
     padding: 0.5em 1em;
     z-index: 10;
+    cursor: pointer;
 }
   .cat-popup.active {
     opacity: 1;
@@ -100,10 +99,11 @@
         }
       });
       $(".sidebar-filter").clone().appendTo(".cat-popup");
+      $("<span class='close'>X</span>").appendTo(".cat-popup");
       $(".mobile-filter").on("click", function() {
         $(".cat-popup").toggleClass("active");
       });
-      $(".cat-popup:after").on("click", function() {
+      $(".cat-popup .close").on("click", function() {
         $(".cat-popup").removeClass("active");
       });
     });

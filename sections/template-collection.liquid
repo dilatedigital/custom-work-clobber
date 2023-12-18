@@ -27,14 +27,15 @@
 .cat-drop {
   display: block;
 }
-  .main-cat {
+  .main-cat,
+  .cat-popup {
     display: none;
   }
   @media screen and (min-width: 1025px) {
     .cat-drop {
       display: none;
     }
-  .main-cat  {
+  .main-cat {
     display: block;
   }
   }
@@ -63,7 +64,7 @@
           window.location.href=$(this).val();
         }
       });
-      $(".cat-drop").clone().appendTo(".cat-popup");
+      $(".sidebar-filter").clone().appendTo(".cat-popup");
     });
   })(jQuery);
 </script>

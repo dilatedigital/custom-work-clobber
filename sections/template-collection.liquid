@@ -50,6 +50,16 @@
     bottom: -100%;
     opacity: 0;
 }
+  .cat-popup:after {
+    content: "X";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--yellow);
+    font-weight: 700;
+    padding: 0.5em 1em;
+}
   .cat-popup.active {
     opacity: 1;
     bottom: 1em;
@@ -91,6 +101,9 @@
       $(".sidebar-filter").clone().appendTo(".cat-popup");
       $(".mobile-filter").on("click", function() {
         $(".cat-popup").toggleClass("active");
+      });
+      $(".cat-popup:after").on("click", function() {
+        $(".cat-popup").removeClass("active");
       });
     });
   })(jQuery);

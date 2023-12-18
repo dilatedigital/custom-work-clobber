@@ -63,11 +63,12 @@
           window.location.href=$(this).val();
         }
       });
+      $(".cat-drop").clone().appendTo(".cat-popup");
     });
   })(jQuery);
 </script>
 {% render 'stripe-pattern' %}
-
+<div class="cat-popup"></div>
 <div class="container mx-auto xct:flex xct:justify-between py-50px lg:py-100px">
   {% paginate collection.products by 12 %}
     <div class="sidebar-filter">
@@ -264,4 +265,5 @@
     </div>
     
   {% endpaginate %}
+  
 </div>

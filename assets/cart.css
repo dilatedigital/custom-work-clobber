@@ -51,4 +51,8 @@
     max-width: 100%;
     padding-top: 16px;
   }
+  .cart-title-table  .item-details {
+      max-width: 100%;
+      flex: 1;
+  }
 }

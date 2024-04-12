@@ -13,7 +13,7 @@
         <tbody>
           {% for item in cart.items %}
             <tr class="table-row border-b border-btm-bar font-euro">
-              <td class="py-4 xct:py-7">
+              <td data-label="Product" class="py-4 xct:py-7">
                 <div class="flex cart-image-td w-full">
                   <a href="{{ item.url }}">
                     {% if item.image %}
@@ -40,16 +40,16 @@
                 </div>
               </td>
               
-              <td class="py-4 xct:py-7 font-bold td-price">
+              <td data-label="Price" class="py-4 xct:py-7 font-bold td-price">
                 {{ item.price | money }}
               </td>
-              <td class="py-4 xct:py-7 td-qty">
+              <td data-label="QTY" class="py-4 xct:py-7 td-qty">
                 <input type="number" name="updates[]" value="{{ item.quantity }}" min="1" id="updates_{{ forloop.index }}" class="w-20 border p-2 font-medium font-campton">
               </td>
-              <td class="py-4 xct:py-7 font-bold text-wc-orange td-total-price">
+              <td data-label="Total" class="py-4 xct:py-7 font-bold text-wc-orange td-total-price">
                 {{ item.line_price | money }}
               </td>
-              <td class="py-4 xct:py-7 text-center">
+              <td data-label="Remove" class="py-4 xct:py-7 text-center">
                 <button type="button" 
                   title="remove {{ item.product.title }}"
                   @click="Clobber.updateQuantity({{ forloop.index }}, 0)">

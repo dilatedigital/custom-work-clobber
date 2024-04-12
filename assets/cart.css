@@ -46,4 +46,8 @@
   .cart-title-table table td:last-child {
     border-bottom: 0;
   }
+
+  .cart-title-table .cart-image-td {
+    max-width: 100%;
+  }
 }

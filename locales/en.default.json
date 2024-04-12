@@ -8,7 +8,7 @@
   "shopify": {
     "checkout": {
       "shipping": {
-        "shipping_method_notice": "Work Clobber will be in contact with you to confirm the store for Local Pick-up, and when your order is ready for collection. <strong><u>*Local Pick-Up is not available for at the Mandurah, Busselton and Bunbury stores.<\/u><\/strong>"
+        "shipping_method_notice": "Work Clobber will be in contact with you to confirm the store for Local Pick-up, and when your order is ready for collection. <b>*Local Pick-Up is not available for at the Mandurah, Busselton and Bunbury stores.<\/b>"
       }
     }
   }

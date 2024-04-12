@@ -1,7 +1,7 @@
 @media screen and (max-width: 767px) {
   .cart-title-table table {
     border: 0;
-    width: 100%;
+    width: 100% !important;
   }
 
   .cart-title-table table caption {

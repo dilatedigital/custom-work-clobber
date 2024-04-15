@@ -454,15 +454,6 @@
 
             {{ form.errors | default_errors }}
 
-            {% if form.posted_successfully? %}
-              <script>
-                window.dataLayer = window.dataLayer || [];
-                window.dataLayer.push({
-                   'event': 'Account_Sign_Up'
-                 });
-              </script>
-            {% endif %}
-
             <div class="form-control flex flex-col">
               <label class="font-bold" for="first_name">First Name</label>
               <input type="text" value="" name="customer[first_name]" id="first_name" size="30" required placeholder="Enter first name" />

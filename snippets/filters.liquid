@@ -57,7 +57,7 @@
         html_div.innerHTML = data;
         let html_dom = html_div.querySelector('.products-grid').innerHTML;
         document.querySelector('.products-grid').innerHTML = html_dom;
-  console.log(html_dom);
+  console.log(response);
 
         // update url without refreshing the page 
         history.replaceState(null, null, '/collections/{{ collection.handle }}/?' + queryString);

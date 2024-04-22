@@ -315,8 +315,9 @@
         {% else %}
           <p>There are no products inside of this collection.</p>
         {% endfor %}
+        {% render 'pagination-custom', pagination: paginate %}
       </div>
-      {% render 'pagination-custom', pagination: paginate %}
+      
     </div>
     
   {% endpaginate %}

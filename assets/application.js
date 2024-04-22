@@ -3,6 +3,7 @@ function filterClickLabel(el) {
   var label = el.dataset.id;
   var filterCheckbox = document.getElementById(label);
   filterCheckbox.click();
+  filterCheckbox.checked=true;
 }
 
 function matchHeight(el){

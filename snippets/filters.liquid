@@ -61,6 +61,8 @@
         if( html_dom ) {
           document.querySelector('.products-grid').innerHTML = html_dom;
           document.querySelector('.pagination').innerHTML = dom_pagination;
+        } else {
+            document.querySelector('.products-grid').innerHTML = '<p>There are no products inside of this collection.</p>';
         }
   
         // update url without refreshing the page 

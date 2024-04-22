@@ -57,14 +57,8 @@
         html_div.innerHTML = data;
         let html_dom = html_div.querySelector('.products-grid').innerHTML;
         let dom_pagination = html_div.querySelector('.pagination').innerHTML;
-
-        if( html_dom.includes('no products') ) {
-          document.querySelector('.products-grid').innerHTML = '<p>There are no products inside of this collection.</p>';
-        } else {
-            
-          document.querySelector('.products-grid').innerHTML = html_dom;
-          document.querySelector('.pagination').innerHTML = dom_pagination;
-        }
+        document.querySelector('.products-grid').innerHTML = html_dom;
+        document.querySelector('.pagination').innerHTML = dom_pagination;
   
         // update url without refreshing the page 
         history.replaceState(null, null, '/collections/{{ collection.handle }}/?' + queryString);

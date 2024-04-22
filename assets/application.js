@@ -1,4 +1,8 @@
 // Put your application javascript here
+function filterClickLabel(el) {
+  var label = el[0].id;
+}
+
 function matchHeight(el){
   //Grab divs with the class name 'match-height'
   var getDivs = document.getElementsByClassName(el);
@@ -43,6 +47,7 @@ let Clobber = {
     })
   }
 }
+
 
 window.Clobber = Clobber;
 

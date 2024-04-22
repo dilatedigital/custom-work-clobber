@@ -1,6 +1,6 @@
 <div class="filters" 
   x-data="{
-    loading: false,
+    loading: false
   }"
   @filter-updated.window="$nextTick(() => {
     const queryString = new URLSearchParams(new FormData($refs.filter_form)).toString()

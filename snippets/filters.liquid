@@ -195,7 +195,7 @@
               <ul class="filter-group-display__list mt-7 {{ filter.type }}">
                 {%- for filter_value in filter.values -%}
                   <li class="filter-group-display__list-item flex items-start mb-2 last:mb-0">
-                    <label @click="$dispatch('filter-updated')" class="text-lg leading-none hover:cursor-pointer" for="Filter-{{ filter.param_name }}-{{ forloop.index }}-d"><input type="checkbox"
+                    <label class="text-lg leading-none hover:cursor-pointer" for="Filter-{{ filter.param_name }}-{{ forloop.index }}-d"><input type="checkbox"
                       class="border border-wc-black rounded-none mr-2"
                       @change="$dispatch('filter-updated')"
                       name="{{ filter_value.param_name }}"

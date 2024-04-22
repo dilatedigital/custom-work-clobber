@@ -4,6 +4,7 @@ function filterClickLabel() {
     e.preventDefault();
     let data_id = jQuery(this).data('id');
     jQuery('input#'+data_id).click(); 
+    console.log('clicked!');
   });
 }
 

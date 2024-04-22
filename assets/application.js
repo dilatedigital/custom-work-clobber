@@ -1,7 +1,8 @@
 // Put your application javascript here
 function filterClickLabel(el) {
   var label = el.dataset.id;
-  console.log(label);
+  var filterCheckbox = document.getElementById(label);
+  filterCheckbox.click();
 }
 
 function matchHeight(el){

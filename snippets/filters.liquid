@@ -1,6 +1,15 @@
 <div class="filters" 
   x-data="{
     loading: false,
+    selected_filters: [], 
+    toggle(id) {
+        if (this.selected_filters.includes(id)) {
+            const index = this.selected_filters.indexOf(id);
+            this.selected_filters.splice(index, 1)
+        } else {
+            this.selected_filters.push(id)
+        }
+    }
   }"
   @filter-updated.window="$nextTick(() => {
     const queryString = new URLSearchParams(new FormData($refs.filter_form)).toString()
@@ -205,7 +214,7 @@
                         {% if filter_value.count == 0 and filter_value.active == false -%}disabled{%- endif %}
                     {% endcomment %}
                     >
-                    <label onClick="filterClickLabel(this)" class="text-lg leading-none hover:cursor-pointer" data-id="Filter-{{ filter.param_name }}-{{ forloop.index }}-d">{{ filter_value.label }}</label>
+                    <label @click="toggle(id)" x-model="selected_filters" onClick="filterClickLabel(this)" class="text-lg leading-none hover:cursor-pointer" data-id="Filter-{{ filter.param_name }}-{{ forloop.index }}-d">{{ filter_value.label }}</label>
                     
                   </li>
                 {%- endfor -%}

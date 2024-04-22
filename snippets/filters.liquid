@@ -59,7 +59,7 @@
         document.querySelector('.products-grid').innerHTML = html_dom;
 
         // update url without refreshing the page 
-        history.replaceState(null, null, '?' + queryString);
+        history.replaceState(null, null, '/?' + queryString);
        
       })
       .catch(error => console.error('Error:', error))

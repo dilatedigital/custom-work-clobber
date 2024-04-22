@@ -2,9 +2,7 @@
 function filterClickLabel(el) {
   var label = el.dataset.id;
   var filterCheckbox = document.getElementById(label);
-
   filterCheckbox.checked="true";
-  console.log(filterCheckbox);
 }
 
 function matchHeight(el){

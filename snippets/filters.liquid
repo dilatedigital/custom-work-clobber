@@ -204,7 +204,7 @@
                       {% if filter_value.active -%}checked{%- endif %}
                       {% if filter_value.count == 0 and filter_value.active == false -%}disabled{%- endif %}
                     >
-                    <label @change="$dispatch('filter-updated')" class="text-lg leading-none hover:cursor-pointer" for="Filter-{{ filter.param_name }}-{{ forloop.index }}-d">{{ filter_value.label }}</label>
+                    <label class="text-lg leading-none hover:cursor-pointer" for="Filter-{{ filter.param_name }}-{{ forloop.index }}-d">{{ filter_value.label }}</label>
                     
                   </li>
                 {%- endfor -%}

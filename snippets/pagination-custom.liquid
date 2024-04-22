@@ -18,7 +18,7 @@
         {%- for part in pagination.parts -%}
           {%- if part.is_link -%}
             <li>
-              <a href="/{{ part.url }}">
+              <a href="{{ part.url }}">
                 <span class="visuallyhidden">page</span> {{ part.title }}
               </a>
             </li>
@@ -37,7 +37,7 @@
 
         {%- if pagination.next -%}
           <li>
-            <a href="/{{ pagination.next.url }}">
+            <a href="{{ pagination.next.url }}">
               Next <span class="visuallyhidden">page</span>
               <span aria-hidden="true">&raquo;</span>
             </a>

@@ -3,7 +3,7 @@ function filterClickLabel(el) {
   var label = el.dataset.id;
   var filterCheckbox = document.getElementById(label);
 
-  filterCheckbox.checked="checked";
+  filterCheckbox.checked="true";
   console.log(filterCheckbox);
 }
 

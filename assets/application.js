@@ -1,8 +1,7 @@
 // Put your application javascript here
-function filterClickLabel(el) {
-  var label = el.dataset.id;
-  document.getElementById(label).checked=true;
-  document.getElementById(label).click();
+function filterClickLabel() {
+ 
+  jQuery()
 }
 
 function matchHeight(el){
@@ -53,5 +52,6 @@ let Clobber = {
 
 window.Clobber = Clobber;
 
+filterClickLabel();
 matchHeight("each-cat");
 matchHeight('product-details');

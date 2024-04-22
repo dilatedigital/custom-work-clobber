@@ -1,6 +1,6 @@
 // Put your application javascript here
 function filterClickLabel(e) {
-  console.log(jQuery(e));
+  console.log(jQuery(e).data('id'));
 }
 
 function matchHeight(el){

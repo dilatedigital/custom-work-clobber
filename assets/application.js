@@ -1,22 +1,4 @@
 // Put your application javascript here
-function filterClickLabel() {
-  jQuery('body').find('.label-filter').on('click', function(e){
-    e.preventDefault();
-    let data_id = jQuery(this).data('id');
-    jQuery('input#'+data_id).addClass('click'); 
-    console.log(jQuery('input#'+data_id));
-  });
-
-  jQuery('#checkp').toggle(
-        function () { 
-            jQuery('.check').attr('Checked','Checked'); 
-        },
-        function () { 
-            jQuery('.check').removeAttr('Checked'); 
-        }
-    );
-}
-
 function matchHeight(el){
   //Grab divs with the class name 'match-height'
   var getDivs = document.getElementsByClassName(el);
@@ -65,6 +47,5 @@ let Clobber = {
 
 window.Clobber = Clobber;
 
-filterClickLabel();
 matchHeight("each-cat");
 matchHeight('product-details');

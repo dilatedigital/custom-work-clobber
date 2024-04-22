@@ -61,8 +61,7 @@
         document.querySelector('.products-grid').innerHTML = html_dom;
 
         //append pagination
-        let dom_pagination = html_div.querySelector('.pagination').innerHTML;
-        if( dom_pagination ) {
+        if( html_div.querySelector('.pagination').innerHTML  && typeof html_div.querySelector('.pagination').innerHTML !== null ) {
           document.querySelector('.pagination').innerHTML = dom_pagination;
         }
 

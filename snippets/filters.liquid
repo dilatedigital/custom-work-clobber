@@ -204,7 +204,9 @@
                       value="{{ filter_value.value }}"
                       id="Filter-{{ filter.param_name }}-{{ forloop.index }}-d"
                       {% if filter_value.active -%}checked{%- endif %}
+                     {% comment %}
                       {% if filter_value.count == 0 and filter_value.active == false -%}disabled{%- endif %}
+                  {% endcomment %}
                     >
                     <label class="text-lg leading-none hover:cursor-pointer" for="Filter-{{ filter.param_name }}-{{ forloop.index }}-d">{{ filter_value.label }}</label>
                     

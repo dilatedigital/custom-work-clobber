@@ -26,6 +26,9 @@
     }}
     <!-- Header hook for plugins -->
     {{
+      'custom.css' | asset_url | stylesheet_tag
+    }}
+    {{
       'application.css' | asset_url | stylesheet_tag
     }}
     {{ 

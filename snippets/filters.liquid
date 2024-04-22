@@ -191,7 +191,7 @@
   
           {%- case filter.type -%}
             {%- when 'boolean' or 'list' -%}
-              <ul class="filter-group-display__list mt-7">
+              <ul class="filter-group-display__list mt-7 {{ filter.type }}">
                 {%- for filter_value in filter.values -%}
                   <li class="filter-group-display__list-item flex items-start mb-2 last:mb-0">
                     <input type="checkbox"

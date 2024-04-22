@@ -26,7 +26,7 @@
         document.querySelector('.products-grid').innerHTML = html_dom;
 
         // update url without refreshing the page 
-        //history.replaceState(null, null, '?sort_by=' + sorted + '&' + queryString);
+        history.replaceState(null, null, '?sort_by=' + sorted + '&' + queryString);
         
       })
       .catch(error => console.error('Error:', error))
@@ -44,7 +44,7 @@
         document.querySelector('.products-grid').innerHTML = html_dom;
 
         // update url without refreshing the page 
-        //history.replaceState(null, null, 'types?q=' + collectionType + '&' + queryString);
+        history.replaceState(null, null, 'types?q=' + collectionType + '&' + queryString);
         
       })
       .catch(error => console.error('Error:', error))
@@ -59,7 +59,7 @@
         document.querySelector('.products-grid').innerHTML = html_dom;
 
         // update url without refreshing the page 
-        //history.replaceState(null, null, '?' + queryString);
+        history.replaceState(null, null, '?' + queryString);
        
       })
       .catch(error => console.error('Error:', error))

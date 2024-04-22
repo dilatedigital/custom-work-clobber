@@ -1,6 +1,6 @@
 // Put your application javascript here
 function filterClickLabel(e) {
-  console.log(jQuery(e).data());
+  console.log(jQuery(e).attr('data-id'));
 }
 
 function matchHeight(el){
@@ -51,6 +51,5 @@ let Clobber = {
 
 window.Clobber = Clobber;
 
-filterClickLabel();
 matchHeight("each-cat");
 matchHeight('product-details');

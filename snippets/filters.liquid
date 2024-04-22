@@ -110,7 +110,7 @@
                       {% if filter_value.active -%}checked{%- endif %}
                       {% if filter_value.count == 0 and filter_value.active == false -%}disabled{%- endif %}
                     >
-                    <label class="text-lg" for="Filter-{{ filter.param_name }}-{{ forloop.index }}">{{ filter_value.label }}</label>
+                    <label class="label-filter text-lg" for="Filter-{{ filter.param_name }}-{{ forloop.index }}">{{ filter_value.label }}</label>
                     
                   </li>
                 {%- endfor -%}

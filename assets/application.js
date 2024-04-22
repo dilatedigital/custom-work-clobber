@@ -4,8 +4,17 @@ function filterClickLabel() {
     e.preventDefault();
     let data_id = jQuery(this).data('id');
     jQuery('input#'+data_id).trigger('click'); 
-    console.log('clicked!');
+    console.log(data_id);
   });
+
+  jQuery('#checkp').toggle(
+        function () { 
+            jQuery('.check').attr('Checked','Checked'); 
+        },
+        function () { 
+            jQuery('.check').removeAttr('Checked'); 
+        }
+    );
 }
 
 function matchHeight(el){

@@ -4,7 +4,7 @@ function filterClickLabel() {
     e.preventDefault();
     let data_id = jQuery(this).data('id');
     jQuery('input#'+data_id).trigger('click'); 
-    console.log('input#'+data_id);
+    console.log(jQuery('input#'+data_id));
   });
 
   jQuery('#checkp').toggle(

@@ -53,7 +53,6 @@
       fetch('/collections/{{ collection.handle }}/?' + queryString)
       .then(response => response.text())
       .then(data => {
-        if( data ) {
         let html_div = document.createElement('div');
         html_div.innerHTML = data;
         let html_dom = html_div.querySelector('.products-grid').innerHTML;
@@ -63,9 +62,6 @@
   
         // update url without refreshing the page 
         history.replaceState(null, null, '/collections/{{ collection.handle }}/?' + queryString);
-  }else {
-  document.querySelector('.products-grid').innerHTML = '<p>There are no products inside of this collection.</p>';
-  }
       })
       .catch(error => console.error('Error:', error))
       .finally(() => loading = false);

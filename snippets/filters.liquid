@@ -209,12 +209,13 @@
                       name="{{ filter_value.param_name }}"
                       value="{{ filter_value.value }}"
                       id="Filter-{{ filter.param_name }}-{{ forloop.index }}-d"
+                      x-bind:value="{{ forloop.index }}"
                       {% if filter_value.active -%}checked{%- endif %}
                      {% comment %}
                         {% if filter_value.count == 0 and filter_value.active == false -%}disabled{%- endif %}
                     {% endcomment %}
                     >
-                    <label @click="toggle(id)" x-model="selected_filters" onClick="filterClickLabel(this)" class="text-lg leading-none hover:cursor-pointer" data-id="Filter-{{ filter.param_name }}-{{ forloop.index }}-d">{{ filter_value.label }}</label>
+                    <label @click="toggle({{ forloop.index }})" x-model="selected_filters" onClick="filterClickLabel(this)" class="text-lg leading-none hover:cursor-pointer" data-id="Filter-{{ filter.param_name }}-{{ forloop.index }}-d">{{ filter_value.label }}</label>
                     
                   </li>
                 {%- endfor -%}

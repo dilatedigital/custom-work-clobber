@@ -1,7 +1,10 @@
 // Put your application javascript here
 function filterClickLabel() {
- 
-  jQuery()
+  jQuery('body').find('label-filter').on('click', function(e){
+    e.preventDefault();
+    let data_id = jQuery(this).data('id');
+    jQuery('input#'+data_id).click(); 
+  });
 }
 
 function matchHeight(el){

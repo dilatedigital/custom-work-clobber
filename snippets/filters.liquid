@@ -206,7 +206,7 @@
                         {% if filter_value.count == 0 and filter_value.active == false -%}disabled{%- endif %}
                     {% endcomment %}
                     >
-                    <label  class="label-filter text-lg leading-none hover:cursor-pointer" x-bind:for="Filter-{{ filter.param_name }}-{{ forloop.index }}-d" for="Filter-{{ filter.param_name }}-{{ forloop.index }}-d">{{ filter_value.label }}</label>
+                    <label  class="label-filter text-lg leading-none hover:cursor-pointer" x-bind:value="Filter-{{ filter.param_name }}-{{ forloop.index }}-d" x-bind:for="Filter-{{ filter.param_name }}-{{ forloop.index }}-d" for="Filter-{{ filter.param_name }}-{{ forloop.index }}-d">{{ filter_value.label }}</label>
                     
                   </li>
                 {%- endfor -%}

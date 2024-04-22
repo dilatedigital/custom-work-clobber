@@ -62,7 +62,6 @@
 
         // update url without refreshing the page 
         history.replaceState(null, null, '/collections/{{ collection.handle }}/?' + queryString);
-       console.log(queryString);
       })
       .catch(error => console.error('Error:', error))
       .finally(() => loading = false);

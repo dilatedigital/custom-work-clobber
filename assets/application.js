@@ -3,7 +3,7 @@ function filterClickLabel() {
   jQuery('body').find('.label-filter').on('click', function(e){
     e.preventDefault();
     let data_id = jQuery(this).data('id');
-    jQuery('input#'+data_id).click(); 
+    jQuery('input#'+data_id).trigger('click'); 
     console.log('clicked!');
   });
 }

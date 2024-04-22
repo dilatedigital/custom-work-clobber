@@ -55,10 +55,18 @@
       .then(data => {
         let html_div = document.createElement('div');
         html_div.innerHTML = data;
+
+        //append product grid
         let html_dom = html_div.querySelector('.products-grid').innerHTML;
-        //let dom_pagination = html_div.querySelector('.pagination').innerHTML;
         document.querySelector('.products-grid').innerHTML = html_dom;
-        //document.querySelector('.pagination').innerHTML = dom_pagination;
+
+        //append pagination
+        if( html_div.querySelector('.pagination').innerHTML ) {
+          let dom_pagination = html_div.querySelector('.pagination').innerHTML;
+          document.querySelector('.pagination').innerHTML = dom_pagination;
+        }
+
+        
   
         // update url without refreshing the page 
         history.replaceState(null, null, '/collections/{{ collection.handle }}/?' + queryString);

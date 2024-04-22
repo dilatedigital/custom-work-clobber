@@ -59,8 +59,7 @@
         let dom_pagination = html_div.querySelector('.pagination').innerHTML;
         document.querySelector('.products-grid').innerHTML = html_dom;
         document.querySelector('.pagination').innerHTML = dom_pagination;
-
-      console.log(html_dom);
+  
         // update url without refreshing the page 
         history.replaceState(null, null, '/collections/{{ collection.handle }}/?' + queryString);
       })

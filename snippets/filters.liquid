@@ -206,7 +206,7 @@
                         {% if filter_value.count == 0 and filter_value.active == false -%}disabled{%- endif %}
                     {% endcomment %}
                     >
-                    <div style="visibility:hidden;" x-model="message"></div>
+                    <div style="visibility:hidden;" x-text="checkbox[0]"></div>
                     <label x-on:click="() => { checkbox[0] = ! checkbox[0]; $el.parentNode.querySelector('input').checked = checkbox[0]; }" class="label-filter text-lg leading-none hover:cursor-pointer"  >{{ filter_value.label }}</label>
                     
                   </li>

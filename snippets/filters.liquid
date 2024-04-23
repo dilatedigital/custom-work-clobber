@@ -52,6 +52,7 @@
       .finally(() => loading = false);
     } else {
       if( queryString ) {
+        console.log('one');
         fetch('/collections/{{ collection.handle }}?' + queryString)
         .then(response => response.text())
         .then(data => {
@@ -66,6 +67,7 @@
         .catch(error => console.error('Error:', error))
         .finally(() => loading = false);
       }else {
+        console.log('two');
         fetch('/collections/{{ collection.handle }}')
         .then(response => response.text())
         .then(data => {

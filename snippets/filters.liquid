@@ -208,7 +208,7 @@
                     {% endcomment %}
                     >
                     <div style="visibility:hidden;" x-model="checkbox"></div>
-                    <label @click="checkbox[{{ forloop.index }}] = checked" class="label-filter text-lg leading-none hover:cursor-pointer"  data-id="Filter-{{ filter.param_name }}-{{ forloop.index }}-d" for="Filter-{{ filter.param_name }}-{{ forloop.index }}-d">{{ filter_value.label }}</label>
+                    <label @click="checkbox = checked" class="label-filter text-lg leading-none hover:cursor-pointer"  data-id="Filter-{{ filter.param_name }}-{{ forloop.index }}-d" for="Filter-{{ filter.param_name }}-{{ forloop.index }}-d">{{ filter_value.label }}</label>
                     
                   </li>
                 {%- endfor -%}

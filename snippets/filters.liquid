@@ -207,7 +207,7 @@
                     {% endcomment %}
                     >
                     <div style="visibility:hidden;" x-model="message"></div>
-                    <label x-on:click="message = 'changed'" class="label-filter text-lg leading-none hover:cursor-pointer"  >{{ filter_value.label }}</label>
+                    <label x-on:click="alert('Hello World!')" class="label-filter text-lg leading-none hover:cursor-pointer"  >{{ filter_value.label }}</label>
                     
                   </li>
                 {%- endfor -%}

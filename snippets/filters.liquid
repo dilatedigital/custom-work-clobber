@@ -195,10 +195,11 @@
               <ul class="filter-group-display__list mt-7 {{ filter.type }}" >
                 {%- for filter_value in filter.values -%}
                   <li class="filter-group-display__list-item flex items-start mb-2 last:mb-0 {{ filter_value.active }}">
-                    <label x-on:click="() => { checkbox[{{ forloop.index }}] = ! checkbox[{{ forloop.index }}]; $el.parentNode.querySelector('input').checked = checkbox[{{ forloop.index }}]; },$dispatch('filter-updated')" class="label-filter text-lg leading-none hover:cursor-pointer"  ><input type="checkbox"
+                    <label x-on:click="() => { checkbox[{{ forloop.index }}] = ! checkbox[{{ forloop.index }}]; $el.parentNode.querySelector('input').checked = checkbox[{{ forloop.index }}]; }" class="label-filter text-lg leading-none hover:cursor-pointer"  ><input type="checkbox"
                       class="border border-wc-black rounded-none mr-2"
+                      @change="$dispatch('filter-updated')"
                       name="{{ filter_value.param_name }}"
-                      value="{{ filter_value.value }}"    
+                      value="{{ filter_value.value }}"
                       id="Filter-{{ filter.param_name }}-{{ forloop.index }}-d"
                       {% if filter_value.active -%}checked{%- endif %}
                      {% comment %}

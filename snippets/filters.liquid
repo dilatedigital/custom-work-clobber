@@ -72,6 +72,7 @@
   {% render 'loader' %}
   <form class="filter-form" x-ref="filter_form">
     {%- for filter in collection.filters -%}
+      {% assign main_index = forloop.index %}
       <details class="filter-group xct:hidden">
         <summary class="filter-group-summary flex items-center justify-between">
           <div>
@@ -206,7 +207,7 @@
                         {% if filter_value.count == 0 and filter_value.active == false -%}disabled{%- endif %}
                     {% endcomment %}
                     >
-                    <label x-on:click="() => { checkbox[{{ forloop.index }}] = ! checkbox[{{ forloop.index }}]; $el.parentNode.querySelector('input').checked = checkbox[{{ forloop.index }}]; },$dispatch('filter-updated')" class="label-filter text-lg leading-none hover:cursor-pointer"  >{{ filter_value.label }}</label>
+                    <label x-on:click="() => { checkbox[{{ main_index }}{{ forloop.index }}] = ! checkbox[{{ main_index }}{{ forloop.index }}]; $el.parentNode.querySelector('input').checked = checkbox[{{ main_index }}{{ forloop.index }}]; },$dispatch('filter-updated')" class="label-filter text-lg leading-none hover:cursor-pointer"  >{{ filter_value.label }}</label>
                     
                   </li>
                 {%- endfor -%}

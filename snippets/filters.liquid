@@ -207,7 +207,7 @@
                         {% if filter_value.count == 0 and filter_value.active == false -%}disabled{%- endif %}
                     {% endcomment %}
                     >
-                    <label x-on:click="checkbox[0] = true" class="label-filter text-lg leading-none hover:cursor-pointer"  data-id="Filter-{{ filter.param_name }}-{{ forloop.index }}-d" for="Filter-{{ filter.param_name }}-{{ forloop.index }}-d">{{ filter_value.label }}</label>
+                    <label x-on:click="checkbox[{{ forloop.index }}] = true" class="label-filter text-lg leading-none hover:cursor-pointer"  data-id="Filter-{{ filter.param_name }}-{{ forloop.index }}-d" for="Filter-{{ filter.param_name }}-{{ forloop.index }}-d">{{ filter_value.label }}</label>
                     
                   </li>
                 {%- endfor -%}

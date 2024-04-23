@@ -1,6 +1,7 @@
 <div class="filters" 
   x-data="{
     loading: false,
+    checkbox: []
   }"
   @filter-updated.window="$nextTick(() => {
     const queryString = new URLSearchParams(new FormData($refs.filter_form)).toString()
@@ -206,7 +207,7 @@
                     {% endcomment %}
                     >
                     <div style="visibility:hidden;" x-model="message"></div>
-                    <label x-on:click="message = 'checked'" class="label-filter text-lg leading-none hover:cursor-pointer"  >{{ filter_value.label }}</label>
+                    <label x-on:click="() => { checkbox[0] = ! checkbox[0]; $el.parentNode.querySelector('input').checked = checkbox[0]; }" class="label-filter text-lg leading-none hover:cursor-pointer"  >{{ filter_value.label }}</label>
                     
                   </li>
                 {%- endfor -%}

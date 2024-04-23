@@ -60,7 +60,7 @@
         document.querySelector('.products-grid').innerHTML = html_dom;
   
         // update url without refreshing the page 
-        //history.replaceState(null, null, '/collections/{{ collection.handle }}?' + queryString);
+        history.replaceState(null, null, '/collections/{{ collection.handle }}?' + queryString);
       })
       .catch(error => console.error('Error:', error))
       .finally(() => loading = false);

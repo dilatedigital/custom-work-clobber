@@ -61,7 +61,7 @@
         document.querySelector('.products-grid').innerHTML = html_dom;
   
         // update url without refreshing the page 
-       if( queryString != NULL ){
+       if( queryString != '' ){
         history.replaceState(null, null, '/collections/{{ collection.handle }}/?' + queryString);
       }else {
         history.replaceState(null, null, queryString);

@@ -137,7 +137,7 @@
   
                   <label for="Filter-{{ filter.min_value.param_name }}">From</label>
                 </div>
-                <div class="filter-group-display__price-range-to">
+                <div class="filter-group-display__price-range-to" x-data="{ message = '' }">
                   <span>{{ cart.currency.symbol }}</span>
   
                   <input name="{{ filter.max_value.param_name }}"

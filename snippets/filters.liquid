@@ -200,12 +200,13 @@
                       name="{{ filter_value.param_name }}"
                       value="{{ filter_value.value }}"
                       id="Filter-{{ filter.param_name }}-{{ forloop.index }}-d"
+                      x-model="checkbox"
                       {% if filter_value.active -%}checked{%- endif %}
                      {% comment %}
                         {% if filter_value.count == 0 and filter_value.active == false -%}disabled{%- endif %}
                     {% endcomment %}
                     >
-                    <label @click="filterClickLabel" class="label-filter text-lg leading-none hover:cursor-pointer"  data-id="Filter-{{ filter.param_name }}-{{ forloop.index }}-d" for="Filter-{{ filter.param_name }}-{{ forloop.index }}-d">{{ filter_value.label }}</label>
+                    <label x-on:click="checkbox[0] = true" class="label-filter text-lg leading-none hover:cursor-pointer"  data-id="Filter-{{ filter.param_name }}-{{ forloop.index }}-d" for="Filter-{{ filter.param_name }}-{{ forloop.index }}-d">{{ filter_value.label }}</label>
                     
                   </li>
                 {%- endfor -%}

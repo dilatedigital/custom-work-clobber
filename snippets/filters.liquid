@@ -195,7 +195,7 @@
               <ul class="filter-group-display__list mt-7 {{ filter.type }}" >
                 {%- for filter_value in filter.values -%}
                   <li class="filter-group-display__list-item flex items-start mb-2 last:mb-0 {{ filter_value.active }}">
-                    <label x-on:click="() => { checkbox[{{ forloop.index }}] = ! checkbox[{{ forloop.index }}]; $el.parentNode.querySelector('input').checked = checkbox[{{ forloop.index }}]; }" class="label-filter text-lg leading-none hover:cursor-pointer"  ><input type="checkbox"
+                    <input type="checkbox"
                       class="border border-wc-black rounded-none mr-2"
                       @change="$dispatch('filter-updated')"
                       name="{{ filter_value.param_name }}"
@@ -206,7 +206,7 @@
                         {% if filter_value.count == 0 and filter_value.active == false -%}disabled{%- endif %}
                     {% endcomment %}
                     >
-                    {{ filter_value.label }}</label>
+                    <label x-on:click="() => { checkbox[{{ forloop.index }}] = ! checkbox[{{ forloop.index }}]; $el.parentNode.querySelector('input').checked = checkbox[{{ forloop.index }}]; }" class="label-filter text-lg leading-none hover:cursor-pointer"  >{{ filter_value.label }}</label>
                     
                   </li>
                 {%- endfor -%}

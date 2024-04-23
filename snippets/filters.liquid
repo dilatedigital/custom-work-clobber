@@ -52,23 +52,36 @@
       .finally(() => loading = false);
     } else {
   console.log(queryString);
-      fetch('/collections/{{ collection.handle }}?' + queryString)
-      .then(response => response.text())
-      .then(data => {
-        let html_div = document.createElement('div');
-        html_div.innerHTML = data;
-        let html_dom = html_div.querySelector('.products-grid').innerHTML;
-        document.querySelector('.products-grid').innerHTML = html_dom;
-  
-        // update url without refreshing the page 
-       if( queryString ){
-        history.replaceState(null, null, '/collections/{{ collection.handle }}/?' + queryString);
+      if( queryString ){
+        fetch('/collections/{{ collection.handle }}?' + queryString)
+        .then(response => response.text())
+        .then(data => {
+          let html_div = document.createElement('div');
+          html_div.innerHTML = data;
+          let html_dom = html_div.querySelector('.products-grid').innerHTML;
+          document.querySelector('.products-grid').innerHTML = html_dom;
+    
+          // update url without refreshing the page 
+          history.replaceState(null, null, '/collections/{{ collection.handle }}/?' + queryString);
+        })
+        .catch(error => console.error('Error:', error))
+        .finally(() => loading = false);
       }else {
-        history.replaceState(null, null, queryString);
+  fetch('/collections/{{ collection.handle }})
+        .then(response => response.text())
+        .then(data => {
+          let html_div = document.createElement('div');
+          html_div.innerHTML = data;
+          let html_dom = html_div.querySelector('.products-grid').innerHTML;
+          document.querySelector('.products-grid').innerHTML = html_dom;
+    
+          // update url without refreshing the page 
+          history.replaceState(null, null, '/collections/{{ collection.handle }}/');
+        })
+        .catch(error => console.error('Error:', error))
+        .finally(() => loading = false);
       }
-      })
-      .catch(error => console.error('Error:', error))
-      .finally(() => loading = false);
+  
     }
     
     

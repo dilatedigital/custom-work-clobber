@@ -206,7 +206,7 @@
                         {% if filter_value.count == 0 and filter_value.active == false -%}disabled{%- endif %}
                     {% endcomment %}
                     >
-                    <label x-on:click="() => { checkbox[{{ forloop.index }}] = ! checkbox[{{ forloop.index }}]; $el.parentNode.querySelector('input').checked = checkbox[{{ forloop.index }}]; }, $dispatch('filter-updated')" class="label-filter text-lg leading-none hover:cursor-pointer"  >{{ filter_value.label }}</label>
+                    <label for="Filter-{{ filter.param_name }}-{{ forloop.index }}-d" x-on:click="() => { checkbox[{{ forloop.index }}] = ! checkbox[{{ forloop.index }}]; $el.parentNode.querySelector('input').checked = checkbox[{{ forloop.index }}]; }, $dispatch('filter-updated')" class="label-filter text-lg leading-none hover:cursor-pointer"  >{{ filter_value.label }}</label>
                     
                   </li>
                 {%- endfor -%}

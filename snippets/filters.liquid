@@ -51,7 +51,6 @@
       .catch(error => console.error('Error:', error))
       .finally(() => loading = false);
     } else {
-      if( queryString ) {
         console.log(urlParamsF);
         fetch('/collections/{{ collection.handle }}?' + queryString)
         .then(response => response.text())
@@ -66,7 +65,6 @@
         })
         .catch(error => console.error('Error:', error))
         .finally(() => loading = false);
-      }
     }
     
     

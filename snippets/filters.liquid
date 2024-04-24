@@ -4,7 +4,19 @@
     checkbox: []
   }"
   @filter-pagination-updated.window="$nextTick(() => {
-    console.log();
+    fetch($event.detail.message)
+      .then(response => response.text())
+      .then(data => {
+        let html_div = document.createElement('div');
+        html_div.innerHTML = data;
+        let html_dom = html_div.querySelector('.products-grid').innerHTML;
+        document.querySelector('.products-grid').innerHTML = html_dom;
+  
+        // update url without refreshing the page 
+        history.replaceState(null, null, '/collections/{{ collection.handle }}/?' + queryString);
+      })
+      .catch(error => console.error('Error:', error))
+      .finally(() => loading = false);
   })"
   @filter-updated.window="$nextTick(() => {
     const queryString = new URLSearchParams(new FormData($refs.filter_form)).toString()

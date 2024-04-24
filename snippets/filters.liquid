@@ -5,7 +5,7 @@
   }"
   @filter-pagination-updated.window="$nextTick(() => {
     console.log();
-  })",
+  }),
   @filter-updated.window="$nextTick(() => {
     const queryString = new URLSearchParams(new FormData($refs.filter_form)).toString()
 

@@ -18,7 +18,7 @@
         {%- for part in pagination.parts -%}
           {%- if part.is_link -%}
             <li>
-              <a x-on:click.prevent="$dispatch('filter-pagination-updated', {page, '{{ part.url }}}')" href="{{ full_url }}{{ part.url }}">
+              <a x-on:click.prevent="$dispatch('filter-pagination-updated', {page, '{{ part.url }}'})" href="{{ full_url }}{{ part.url }}">
                 <span class="visuallyhidden">page</span> {{ part.title }}
               </a>
             </li>

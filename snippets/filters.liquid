@@ -205,7 +205,7 @@
                       id="Filter-{{ filter.param_name }}-{{ forloop.index }}-d"
                         {% if filter_value.active -%}
                           x-init="() => { checkbox[{{ main_index }}{{ forloop.index }}] = true }"
-                        checked
+                          checked
                         {%- endif %}
                         {% if filter_value.count == 0 and filter_value.active == false -%}disabled{%- endif %}
                     >

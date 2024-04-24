@@ -51,7 +51,7 @@
       .catch(error => console.error('Error:', error))
       .finally(() => loading = false);
     } else {
-        console.log(urlParamsF);
+        console.log(urlParamsF.has('page'));
           fetch('/collections/{{ collection.handle }}?' + queryString)
           .then(response => response.text())
           .then(data => {

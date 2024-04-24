@@ -4,6 +4,7 @@
     checkbox: []
   }"
   @filter-pagination-updated.window="$nextTick(() => {
+  console.log($event.detail.message);
     fetch($event.detail.message)
       .then(response => response.text())
       .then(data => {

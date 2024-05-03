@@ -5,7 +5,11 @@
   }
 </style>
 
-<a href="{{ product.url | within: collection }}" class="transition-all flex flex-col"  data-id="{{ product.vendor | downcase }}">
+<a style="position: relative;" href="{{ product.url | within: collection }}" class="transition-all flex flex-col"  data-id="{{ product.vendor | downcase }}">
+  {% assign vendor = product.vendor | downcase %}
+  {% if vendor == 'bisley'  %}
+    <span class="discount-badge">10% OFF!</span>
+  {%  endif %}
   <div class="product-image-container h-64 flex items-center p-4 justify-center">
     {% if product.featured_image %}
       <img src="{{ product.featured_image | img_url: 'master'}}" alt="{{ product.featured_image.alt }}" loading="lazy">

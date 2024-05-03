@@ -5,7 +5,7 @@
   }
 </style>
 
-<a href="{{ product.url | within: collection }}" class="transition-all flex flex-col"  data-id="{{ product | discount_application : "value" }}">
+<a href="{{ product.url | within: collection }}" class="transition-all flex flex-col"  data-id="{{ product | discount_application : value }}">
   <div class="product-image-container h-64 flex items-center p-4 justify-center">
     {% if product.featured_image %}
       <img src="{{ product.featured_image | img_url: 'master'}}" alt="{{ product.featured_image.alt }}" loading="lazy">

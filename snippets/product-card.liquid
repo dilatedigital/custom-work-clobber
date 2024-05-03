@@ -44,7 +44,7 @@
     {% endif %}
 
     <div class="flex" style="display: none;">
-      <p class="text-wc-orange font-euro font-bold text-xl">{{ discounted_price }}</p>
+      <p class="text-wc-orange font-euro font-bold text-xl">{{ discounted_price | money }}</p>
       <span class="font-euro font-bold line-through ml-4">{{ product.price | money }}</span>
     </div>
     

@@ -30,10 +30,10 @@
     
     {% if vendor == 'bisley'  %}
       <div class="product-compare-price flex items-center mt-auto">
-        <p class="text-wc-orange font-euro font-bold text-xl">{{ product.price | money }}</p>
-        {% if product.compare_at_price %}
-          <span class="font-euro font-bold line-through ml-4">{{ product.compare_at_price | money }}</span>
-        {% endif %}
+        <div class="flexflex-col">
+        <p class="text-wc-orange font-euro font-bold text-xl">{{ discounted_price }}</p>
+        <span class="font-euro font-bold line-through ml-4">{{ product.price | money }}</span>
+      </div>
       </div> 
     {% else %}
       <div class="product-compare-price flex items-center mt-auto">
@@ -43,11 +43,6 @@
         {% endif %}
       </div> 
     {% endif %}
-
-    <div class="flex" style="display: none;">
-      <p class="text-wc-orange font-euro font-bold text-xl">{{ discounted_price }}</p>
-      <span class="font-euro font-bold line-through ml-4">{{ product.price | money }}</span>
-    </div>
     
   </div>
 </a>  

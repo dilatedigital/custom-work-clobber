@@ -6,7 +6,7 @@
 </style>
 
 <a style="position: relative;" href="{{ product.url | within: collection }}" class="transition-all flex flex-col"  data-id="{{ product.vendor | downcase }}">
-  {% assign vendor = product.vendor | downcase %}
+  {% assign vendor = {{ product.vendor | downcase }} %}
   {% if vendor == 'bisley'  %}
     <span class="discount-badge">10% OFF!</span>
   {%  endif %}

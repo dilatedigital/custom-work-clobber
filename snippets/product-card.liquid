@@ -26,7 +26,7 @@
     {% endif %}
 
     {% assign price_discount =  product.price | times:0.1 | divided_by: 100 | round: 2 %}
-    {% assign discounted_price =  product.price | minus: price_discount %}
+    {% assign discounted_price =  product.price | minus: price_discount | divided_by: 100 | round: 2 %}
     {% if vendor == 'bisley'  %}
       <div class="flex">
       <p class="text-wc-orange font-euro font-bold text-xl">{{ discounted_price }}</p>

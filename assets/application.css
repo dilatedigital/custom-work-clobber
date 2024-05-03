@@ -2333,7 +2333,13 @@ h1, h2, h3, h4, h5, h6,
 .filter-form .filter-group {
     margin-bottom: 2em;
 }
-
+.discount-banner {
+    background: rgb(247 121 29 / 1);
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 3px;
+}
 span.discount-badge {
     position: absolute;
     background: rgb(247 121 29 / 1);

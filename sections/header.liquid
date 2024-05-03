@@ -173,6 +173,7 @@
   }
 </style>
 {{ 'login-signup.css' | asset_url | stylesheet_tag }}
+<div class="discount-banner">Online Only Offer! Get 10% Off Bisley Products When You Shop Online!</div>
 <div class="bg-white transition duration-500 ease-out header-navigation" x-data="{ mobileMenuOpen: false, searchBarOpen: false, modal: false, atTop: false }"
 :class="{ 'fixed shadow-lg top-0 left-0 w-full z-[60]': atTop, 'relative': !atTop }"
 @scroll.window="atTop = (window.pageYOffset > 300 ) ? true : false"

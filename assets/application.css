@@ -2363,3 +2363,6 @@ span.discount-badge {
   font-size: 18px;
   margin: 12px 0;
 }
+.privacy-policy table {
+  margin-top: 15px;
+}

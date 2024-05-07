@@ -2370,3 +2370,8 @@ span.discount-badge {
 .privacy-policy table {
   margin-top: 15px;
 }
+.privacy-policy a,
+.return-policy a,
+.terms-and-conditions a {
+  color: #f7791d !important;
+}

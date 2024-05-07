@@ -47,7 +47,7 @@
     {% endif %}
 
   </head>
-  <body x-data="{ atTop: false }" :class="{{ page_title | handle }} {{ template.name }} { 'sticky-nav': atTop, '': !atTop }"
+  <body x-data="{ atTop: false }" :class="{ 'sticky-nav': atTop, '': !atTop }"
     @scroll.window="atTop = (window.pageYOffset > 300 ) ? true : false"
   >
     <!-- Google Tag Manager (noscript) -->
@@ -59,7 +59,7 @@
      <h1 class="hidden">{{ page_title }}</h1>
     {% endif %}
     {% section 'header' %} 
-    <main role="main">
+    <main class="{{ page_title | handle }} {{ template.name }}" role="main">
       {{ content_for_layout }}
     </main>
     {% section 'footer' %}

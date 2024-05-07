@@ -3,22 +3,18 @@
     "template": {
       "type": "template-page",
       "settings": {
+        "faqs_title": "Frequently Asked Questions"
       }
     },
     "inner-banner": {
       "type": "inner-banner",
       "settings": {
-      }
-    },
-    "faq-title": {
-      "type": "faq-title",
-      "settings": {
+        "inner_banner_title": ""
       }
     }
   },
   "order": [
     "template",
-    "inner-banner",
-    "faq-title"
+    "inner-banner"
   ]
 }

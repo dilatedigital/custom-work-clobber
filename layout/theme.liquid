@@ -47,7 +47,7 @@
     {% endif %}
 
   </head>
-  <body x-data="{ atTop: false }" :class="{ 'sticky-nav': atTop, '': !atTop }"
+  <body class="{{ page_title | handle }} {{ template.name }}" x-data="{ atTop: false }" :class="{ 'sticky-nav': atTop, '': !atTop }"
     @scroll.window="atTop = (window.pageYOffset > 300 ) ? true : false"
   >
     <!-- Google Tag Manager (noscript) -->

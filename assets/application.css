@@ -2354,12 +2354,14 @@ span.discount-badge {
 }
 
 /* Privacy Policy Page */
-.privacy-policy ul {
+.privacy-policy ul,
+.return-policy ul{
   list-style: disc;
   padding-left: 18px;
   margin-top: 12px;
 }
-.privacy-policy h2 {
+.privacy-policy h2,
+.return-policy h2{
   font-size: 18px;
   margin: 12px 0;
 }

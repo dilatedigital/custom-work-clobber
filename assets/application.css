@@ -2355,13 +2355,15 @@ span.discount-badge {
 
 /* Privacy Policy Page */
 .privacy-policy ul,
-.return-policy ul{
+.return-policy ul,
+.terms-and-conditions ul {
   list-style: disc;
   padding-left: 18px;
   margin-top: 12px;
 }
 .privacy-policy h2,
-.return-policy h2{
+.return-policy h2,
+.terms-and-conditions h2 {
   font-size: 18px;
   margin: 12px 0;
 }

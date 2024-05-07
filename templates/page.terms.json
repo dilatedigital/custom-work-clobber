@@ -3,7 +3,7 @@
     "inner-banner": {
       "type": "inner-banner",
       "settings": {
-        "inner_banner_title": "Privacy Policy"
+        "inner_banner_title": "{{ page.title }}"
       }
     },
     "template": {

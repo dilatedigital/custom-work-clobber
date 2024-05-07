@@ -2352,3 +2352,8 @@ span.discount-badge {
     right: -6px;
     top: -12px;
 }
+
+/* Privacy Policy Page */
+.privacy-policy ul {
+  list-style: disc;
+}

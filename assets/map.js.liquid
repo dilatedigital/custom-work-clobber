@@ -229,6 +229,7 @@ function initMap() {
             var storeContainers = document.getElementsByClassName('map-store-container');
             console.log(activeBlock);
             [].forEach.call(storeContainers, function(el) {
+              console.log(el);
               if(el.classList.contains(activeBlock)) {
                 el.classList.remove("hidden");
                 el.classList.add("lg:block");

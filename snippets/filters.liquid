@@ -33,7 +33,6 @@ console.log('urlParams -> ',urlParams);
 
     if (urlParamsF.has('sort_by') && !urlParamsF.has('q')) {
       const sorted = urlParamsF.get('sort_by');
-      console.log('?sort_by=' + sorted + '&' + queryString.toString());
 
       fetch('/collections/{{ collection.handle }}?sort_by=' + sorted + '&' + queryString)
       .then(response => response.text())
@@ -51,7 +50,6 @@ console.log('urlParams -> ',urlParams);
       .finally(() => loading = false);
     } else if ( window.location.href.indexOf('types') > -1 && urlParamsF.has('q')) {
       const collectionType = urlParamsF.get('q')
-      console.log(collectionType)
 
       fetch('/collections/types?q=' + collectionType + '&' + queryString)
       .then(response => response.text())
@@ -68,7 +66,6 @@ console.log('urlParams -> ',urlParams);
       .catch(error => console.error('Error:', error))
       .finally(() => loading = false);
     } else {
-        console.log(urlParamsF.has('page'));
           fetch('/collections/{{ collection.handle }}?' + queryString)
           .then(response => response.text())
           .then(data => {

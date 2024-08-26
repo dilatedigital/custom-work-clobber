@@ -19,7 +19,7 @@
       .catch(error => console.error('Error:', error))
       .finally(() => loading = false);
   })"
-  @filter-updated.window="$nextTick(() => {
+  @filter-updated="$nextTick(() => {
     const queryString = new URLSearchParams(new FormData($refs.filter_form)).toString()
 
     const queryStringF = window.location.search; 

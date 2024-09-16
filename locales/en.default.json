@@ -1,15 +1,17 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin language editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "general": {
     "404": {
       "title": "Not found",
       "subtext_html": "The page you were looking for does not exist"
-    }
-  },
-  "shopify": {
-    "checkout": {
-      "shipping": {
-        "shipping_method_notice": "Work Clobber will be in contact with you to confirm the store for Local Pick-up, and when your order is ready for collection. *LOCAL PICK-UP IS NOT AVAILABLE AT THE MANDURAH, BUSSELTON, AND BUNBURY STORES."
-      }
     }
   }
 }

@@ -428,7 +428,7 @@
 {% assign myCounter = 0  %}
 
 {% capture related_items %}
-<div class="container test mx-auto">
+<div class="container mx-auto">
   <div class="products-grid pb-50px lg:pb-100px grid grid-cols-1 gap-y-10 place-content-center lg:grid-cols-2 xct:grid-cols-4 lg:gap-x-30px lg:gap-y-12">
     {% for collection in  product.collections %}
       {% for product1 in collection.products %}
@@ -450,7 +450,7 @@
 
 {% unless related_items == blank %}
 
-  <div class="container mx-auto">
+  <div class="container test mx-auto">
     <h2 class="uppercase text-3xl border-b-3 border-wc-black pb-5 mb-8">{{ section.settings.heading }}</h2>
   </div>
   {{ related_items }}

@@ -89,7 +89,7 @@
         <h5 class="uppercase text-wc-yellow mb-4 xct:mb-10">{{ section.settings.useful_links_title }}</h5>
         <div class="footer-menu-container flex flex-col">
           {% for link in section.settings.useful_links_menu.links %}
-            <a {% if link.title contains "Find a store" %}class="conversion-tracking text-white hover:text-wc-yellow"{% endif %} href="{{ link.url }}" class="text-white hover:text-wc-yellow">{{ link.title }}</a>
+            <a {% if link.title contains "Find a store" %}class="findstore-tracking text-white hover:text-wc-yellow"{% endif %} href="{{ link.url }}" class="text-white hover:text-wc-yellow">{{ link.title }}</a>
           {% endfor %}
         </div>
       </div>

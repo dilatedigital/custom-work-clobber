@@ -1,7 +1,7 @@
 .products-grid nav {
     grid-column: 1 / -1;
 }
-.single_color {
+.single_variant {
     pointer-events: none;
     appearance: none;
 }

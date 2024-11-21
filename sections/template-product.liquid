@@ -228,10 +228,13 @@
                         <label for="Option-{{ section.id }}-{{ forloop.index0 }}" class="mr-2">{{ option.name }}</label>
 
                         <div class="my-2">
+                            {% for value in option.values %}
+                                {% assign color_variants = forloop.length %}
+                            {% endfor %}
                             <select 
                                 name="options[{{ option.name | escape }}]" 
                                 id="Option-{{ section.id }}-{{ forloop.index0 }}" 
-                                class="w-full border py-3 px-3"
+                                class="w-full border py-3 px-3 {% if color_variants <= 1 %}single_color{% endif %}"
                             >
                                 {% for value in option.values %}
                                     <option 

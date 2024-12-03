@@ -1,6 +1,15 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
-    "checkout_logo_image": "shopify:\/\/shop_images\/Logo-Transparent.png",
+    "checkout_logo_image": "shopify://shop_images/Logo-Transparent.png",
     "sections": {
       "header": {
         "type": "header",
@@ -9,9 +18,9 @@
           "mobile_menu": "mobile-menu",
           "menu": "bottom-bar-menu",
           "top_bar_menu": "top-bar-menu",
-          "logo": "shopify:\/\/shop_images\/Logo-Transparent.png",
-          "privacy_policy_link": "shopify:\/\/pages\/privacy-policy",
-          "terms_link": "shopify:\/\/pages\/terms-conditions"
+          "logo": "shopify://shop_images/Logo-Transparent.png",
+          "privacy_policy_link": "shopify://pages/privacy-policy",
+          "terms_link": "shopify://pages/terms-conditions"
         }
       },
       "home-hero": {
@@ -20,31 +29,31 @@
           "441ad4fa-6a62-472b-83ed-32b63f516398": {
             "type": "hero_slider",
             "settings": {
-              "image": "shopify:\/\/shop_images\/banner-desktop-final.jpg",
-              "slide_title": "<div class=\"h1\">\n<span>For Tradies<\/span> <br><span>By Tradies<\/span>\n<\/div>\n<span class=\"small_text\">Standout performance<\/span>",
-              "slide_right_text": "<span class=\"sup\">Hi Vis Workwear<\/span>\n<h2>WA Exclusive<\/h2>\n<span class=\"sub\">Work Wear Supplier<\/span>",
+              "image": "shopify://shop_images/banner-desktop-final.jpg",
+              "slide_title": "<div class=\"h1\">\n<span>For Tradies</span> <br><span>By Tradies</span>\n</div>\n<span class=\"small_text\">Standout performance</span>",
+              "slide_right_text": "<span class=\"sup\">Hi Vis Workwear</span>\n<h2>WA Exclusive</h2>\n<span class=\"sub\">Work Wear Supplier</span>",
               "button_title": "Shop Now",
-              "slide_button_url": "shopify:\/\/collections\/hi-vis-workwear"
+              "slide_button_url": "shopify://collections/hi-vis-workwear"
             }
           },
           "6dffdcbe-16a7-46bf-beba-6ba59adb1fd0": {
             "type": "hero_slider",
             "settings": {
-              "image": "shopify:\/\/shop_images\/004_1.jpg",
-              "slide_title": "<div class=\"h1\">\n<span>Women's<\/span><br><span>Workwear<\/span>\n<\/div>\n<span class=\"small_text\">Standout performance<\/span>",
-              "slide_right_text": "<span class=\"sup\">Hi Vis Workwear<\/span>\n<h2>WA Exclusive<\/h2>\n<span class=\"sub\">Work Wear Supplier<\/span>",
+              "image": "shopify://shop_images/004_1.jpg",
+              "slide_title": "<div class=\"h1\">\n<span>Women's</span><br><span>Workwear</span>\n</div>\n<span class=\"small_text\">Standout performance</span>",
+              "slide_right_text": "<span class=\"sup\">Hi Vis Workwear</span>\n<h2>WA Exclusive</h2>\n<span class=\"sub\">Work Wear Supplier</span>",
               "button_title": "Shop Now",
-              "slide_button_url": "shopify:\/\/collections\/ladies"
+              "slide_button_url": "shopify://collections/ladies"
             }
           },
           "fd5b5181-0e92-4f38-8c2c-ca2a65f7da2e": {
             "type": "hero_slider",
             "settings": {
-              "image": "shopify:\/\/shop_images\/013.jpg",
-              "slide_title": "<div class=\"h1\"><span>Custom orders<\/span><\/div>\n<br>\n<span class=\"small_text\">Place a custom order<\/span>",
-              "slide_right_text": "<span class=\"sup\">Workwear for you<\/span>\n<h2>WA Exclusive<\/h2>\n<span class=\"sub\">Work Wear Supplier<\/span>",
-              "button_title": "Contact Us",
-              "slide_button_url": "shopify:\/\/pages\/contact"
+              "image": "shopify://shop_images/Web2-_C.jpg",
+              "slide_title": "",
+              "slide_right_text": "",
+              "button_title": "Shop Now",
+              "slide_button_url": "shopify://collections/giftcards"
             }
           }
         },
@@ -54,10 +63,10 @@
           "fd5b5181-0e92-4f38-8c2c-ca2a65f7da2e"
         ],
         "settings": {
-          "mobile_hero_title": "<div class=\"h1\">Hi-Vis Workwear<\/div>\n<span>Standout performance<\/span>",
+          "mobile_hero_title": "",
           "mobile_button_title": "Shop Now",
-          "mobile_button_link": "#",
-          "mobile_hero_image": "shopify:\/\/shop_images\/banner-mobile_1.jpg"
+          "mobile_button_link": "shopify://collections/giftcards",
+          "mobile_hero_image": "shopify://shop_images/Mobile2C.jpg"
         }
       },
       "home-logoslider": {
@@ -66,151 +75,151 @@
           "dff161bb-23bd-4d12-986c-b6229b4a8294": {
             "type": "logo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/3M-logo-079FB52BC8-seeklogo.com.png"
+              "image": "shopify://shop_images/3M-logo-079FB52BC8-seeklogo.com.png"
             }
           },
           "18491504-09ed-4ef5-b93e-db3b57354f99": {
             "type": "logo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/bisley.jpg"
+              "image": "shopify://shop_images/bisley.jpg"
             }
           },
           "8bd6e18c-921b-4ff7-baaf-a3257765102e": {
             "type": "logo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Biz-Collection-Logo-23-removebg-preview.png"
+              "image": "shopify://shop_images/Biz-Collection-Logo-23-removebg-preview.png"
             }
           },
           "686d47ac-2de3-4fd6-ac8d-42bf1a58c5ab": {
             "type": "logo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/blundstone.png"
+              "image": "shopify://shop_images/blundstone.png"
             }
           },
           "e4a7f327-dc35-4ed8-a144-eea7b7e043f4": {
             "type": "logo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/logo-alt.png"
+              "image": "shopify://shop_images/logo-alt.png"
             }
           },
           "c62201ac-d469-4d29-9f9e-c7cfe73934e7": {
             "type": "logo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/cat.png"
+              "image": "shopify://shop_images/cat.png"
             }
           },
           "1c3702a1-3155-43d0-8e2a-91eae8139cbb": {
             "type": "logo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Volley_Logo2_86f2cf13-8a12-40e5-8110-126c2f28d9d3.jpg"
+              "image": "shopify://shop_images/Volley_Logo2_86f2cf13-8a12-40e5-8110-126c2f28d9d3.jpg"
             }
           },
           "ddfd336c-722e-4529-b76f-74315d402139": {
             "type": "logo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/eyres-logo-300x183-removebg-preview.png"
+              "image": "shopify://shop_images/eyres-logo-300x183-removebg-preview.png"
             }
           },
           "8707d743-be9e-4eef-9b0f-03647967ef35": {
             "type": "logo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Gloweave-logo_54b6acfa-07de-4ee7-b0fd-7cc70d39fbe1.jpg"
+              "image": "shopify://shop_images/Gloweave-logo_54b6acfa-07de-4ee7-b0fd-7cc70d39fbe1.jpg"
             }
           },
           "20d3f4f7-1c7a-42a9-a263-197da1a792a8": {
             "type": "logo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/hard-yakka.png"
+              "image": "shopify://shop_images/hard-yakka.png"
             }
           },
           "2667f84a-5ded-486c-a9f0-55964bf1afef": {
             "type": "logo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/headwear_professionals_logo-removebg-preview.png"
+              "image": "shopify://shop_images/headwear_professionals_logo-removebg-preview.png"
             }
           },
           "91b6eafd-2779-42ac-9cb6-a8a2208844b2": {
             "type": "logo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/JB_s_wear_Logo_300dpi_30bd3d7f-e32a-4efc-97c9-f8b65862be49.jpg"
+              "image": "shopify://shop_images/JB_s_wear_Logo_300dpi_30bd3d7f-e32a-4efc-97c9-f8b65862be49.jpg"
             }
           },
           "73b9a6dd-d334-4665-ad5e-be54c49658dc": {
             "type": "logo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/king-gee.png"
+              "image": "shopify://shop_images/king-gee.png"
             }
           },
           "38021eea-bb47-42b7-8291-322b50ba8ed9": {
             "type": "logo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Mongrels-logo-removebg-preview.png"
+              "image": "shopify://shop_images/Mongrels-logo-removebg-preview.png"
             }
           },
           "44fbed7e-080e-4f14-ae59-d118f7c49308": {
             "type": "logo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/oliver.png"
+              "image": "shopify://shop_images/oliver.png"
             }
           },
           "28061c77-ea13-4b56-aa62-ce255ecd9d9c": {
             "type": "logo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/portwest-logo-oj-removebg-preview.png"
+              "image": "shopify://shop_images/portwest-logo-oj-removebg-preview.png"
             }
           },
           "9bab7297-90f0-4211-99b4-2992bbcbe2a2": {
             "type": "logo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/ProChoice-Website-Logo2-removebg-preview.png"
+              "image": "shopify://shop_images/ProChoice-Website-Logo2-removebg-preview.png"
             }
           },
           "e0eb046a-d380-4424-9884-f57b5a17355e": {
             "type": "logo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/riders-by-lee-185x185-logo-removebg-preview.png"
+              "image": "shopify://shop_images/riders-by-lee-185x185-logo-removebg-preview.png"
             }
           },
           "93c2c1b3-1f3e-41ff-b18a-f1b8b13fc2a1": {
             "type": "logo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Logo_c055bb45-220f-4e7a-9d41-63bf824dba6b.jpg"
+              "image": "shopify://shop_images/Logo_c055bb45-220f-4e7a-9d41-63bf824dba6b.jpg"
             }
           },
           "2050e530-6828-43e3-a7f3-d7175303b4fe": {
             "type": "logo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/steel-blue.png"
+              "image": "shopify://shop_images/steel-blue.png"
             }
           },
           "a40c4431-5c26-4cf5-9044-7a7783b9c0b9": {
             "type": "logo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Stubbies-Logo_7e3ffcf0-0317-4969-b887-9b781f455628.jpg"
+              "image": "shopify://shop_images/Stubbies-Logo_7e3ffcf0-0317-4969-b887-9b781f455628.jpg"
             }
           },
           "a495ff8d-1c75-4f32-83b7-55ecc2c85329": {
             "type": "logo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/TruBrands_Logo.png"
+              "image": "shopify://shop_images/TruBrands_Logo.png"
             }
           },
           "dc5a2240-4b73-40e3-ab16-be53963816c2": {
             "type": "logo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/VisionSafe_Logo-removebg-preview.png"
+              "image": "shopify://shop_images/VisionSafe_Logo-removebg-preview.png"
             }
           },
           "d4f32148-58a0-4734-a8d3-9d4e1705ed6c": {
             "type": "logo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Workit_Workwear_65aee7f6-3f30-46ca-92f8-f48e3a35fcda.png"
+              "image": "shopify://shop_images/Workit_Workwear_65aee7f6-3f30-46ca-92f8-f48e3a35fcda.png"
             }
           },
           "d80dbdde-0e6b-48ad-a50a-b42ef286604f": {
             "type": "logo",
             "settings": {
-              "image": "shopify:\/\/shop_images\/ysf-supply-nation-removebg-preview.png"
+              "image": "shopify://shop_images/ysf-supply-nation-removebg-preview.png"
             }
           }
         },
@@ -241,8 +250,7 @@
           "d4f32148-58a0-4734-a8d3-9d4e1705ed6c",
           "d80dbdde-0e6b-48ad-a50a-b42ef286604f"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "home-category": {
         "type": "home-category",
@@ -250,65 +258,65 @@
           "82e87138-3490-43e8-b80f-4abef74225dd": {
             "type": "category_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/shirts.png",
+              "image": "shopify://shop_images/shirts.png",
               "category_title": "Shirts",
-              "category_link": "shopify:\/\/collections\/shirts"
+              "category_link": "shopify://collections/shirts"
             }
           },
           "87fd2213-ae75-4ca5-a3d0-ef8425c916b6": {
             "type": "category_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/polos.png",
+              "image": "shopify://shop_images/polos.png",
               "category_title": "Polos",
-              "category_link": "shopify:\/\/collections\/polos"
+              "category_link": "shopify://collections/polos"
             }
           },
           "3c34c7ef-8c81-415b-9c83-5fd2d187bbfe": {
             "type": "category_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/jackets.png",
+              "image": "shopify://shop_images/jackets.png",
               "category_title": "Jackets",
-              "category_link": "shopify:\/\/collections\/jackets"
+              "category_link": "shopify://collections/jackets"
             }
           },
           "4811e18f-cdbd-40ab-a06a-9da735c701ef": {
             "type": "category_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/pants.png",
+              "image": "shopify://shop_images/pants.png",
               "category_title": "Pants",
-              "category_link": "shopify:\/\/collections\/pants"
+              "category_link": "shopify://collections/pants"
             }
           },
           "f313a3bd-aa42-4c1c-bead-a292133bd6bd": {
             "type": "category_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/shorts.png",
+              "image": "shopify://shop_images/shorts.png",
               "category_title": "Shorts",
-              "category_link": "shopify:\/\/collections\/shorts"
+              "category_link": "shopify://collections/shorts"
             }
           },
           "377e70eb-e5b3-4a4a-80f9-590a085a3559": {
             "type": "category_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/boots.png",
+              "image": "shopify://shop_images/boots.png",
               "category_title": "Footwear",
-              "category_link": "shopify:\/\/collections\/shoes-boots"
+              "category_link": "shopify://collections/shoes-boots"
             }
           },
           "b9935788-4f9d-4749-bf48-982c2b4e1920": {
             "type": "category_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/hat.png",
+              "image": "shopify://shop_images/hat.png",
               "category_title": "Safety",
-              "category_link": "shopify:\/\/collections\/safety"
+              "category_link": "shopify://collections/safety"
             }
           },
           "fed8b2e8-8002-4c5e-b330-255431da6f3a": {
             "type": "category_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/accessories.png",
+              "image": "shopify://shop_images/accessories.png",
               "category_title": "Accessories",
-              "category_link": "shopify:\/\/collections\/accessories"
+              "category_link": "shopify://collections/accessories"
             }
           }
         },
@@ -322,8 +330,7 @@
           "b9935788-4f9d-4749-bf48-982c2b4e1920",
           "fed8b2e8-8002-4c5e-b330-255431da6f3a"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "home-cta": {
         "type": "home-cta",
@@ -331,17 +338,17 @@
           "b8d1c4fe-3633-4012-8ffb-dbc83d89c8df": {
             "type": "cta_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/embroidery.jpg",
+              "image": "shopify://shop_images/embroidery.jpg",
               "button_text": "More Info",
-              "cta_link": "\/pages\/faqs-deliveries#Embroidery"
+              "cta_link": "/pages/faqs-deliveries#Embroidery"
             }
           },
           "50fa9b1b-67e1-4791-8300-7359f6496484": {
             "type": "cta_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/size_chart.jpg",
+              "image": "shopify://shop_images/size_chart.jpg",
               "button_text": "Learn More",
-              "cta_link": "shopify:\/\/pages\/size-guide"
+              "cta_link": "shopify://pages/size-guide"
             }
           }
         },
@@ -349,23 +356,22 @@
           "b8d1c4fe-3633-4012-8ffb-dbc83d89c8df",
           "50fa9b1b-67e1-4791-8300-7359f6496484"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "home-featured": {
         "type": "home-featured",
         "settings": {
           "featured_title": "Featured Workwear Products",
-          "collections_link": "shopify:\/\/collections\/all"
+          "collections_link": "shopify://collections/all"
         }
       },
       "home-click-collect": {
         "type": "home-click-collect",
         "settings": {
-          "click_title": "<h3>Click & Collect <span>Available<\/span>\n<\/h3>",
-          "image": "shopify:\/\/shop_images\/click-img.png",
+          "click_title": "<h3>Click & Collect <span>Available</span>\n</h3>",
+          "image": "shopify://shop_images/click-img.png",
           "button_text": "Shop Now",
-          "click_link": "\/collections\/all"
+          "click_link": "/collections/all"
         }
       },
       "footer": {
@@ -374,37 +380,37 @@
           "dcfb880f-b434-40eb-9acf-4ccaadb393f9": {
             "type": "payment_method_image",
             "settings": {
-              "payment_method": "shopify:\/\/shop_images\/visa.png"
+              "payment_method": "shopify://shop_images/visa.png"
             }
           },
           "b59902d9-43f2-40e3-bac1-054c11418e81": {
             "type": "payment_method_image",
             "settings": {
-              "payment_method": "shopify:\/\/shop_images\/paypal.png"
+              "payment_method": "shopify://shop_images/paypal.png"
             }
           },
           "39f15ebc-9d6e-4d3d-aaad-1f1b46f7a12a": {
             "type": "payment_method_image",
             "settings": {
-              "payment_method": "shopify:\/\/shop_images\/master-card.png"
+              "payment_method": "shopify://shop_images/master-card.png"
             }
           },
           "751632d6-f363-4e18-bbf0-5d508b083c7f": {
             "type": "payment_method_image",
             "settings": {
-              "payment_method": "shopify:\/\/shop_images\/american-express.png"
+              "payment_method": "shopify://shop_images/american-express.png"
             }
           },
           "f1cc7874-3baa-432f-8079-dea9e4204f39": {
             "type": "payment_method_image",
             "settings": {
-              "payment_method": "shopify:\/\/shop_images\/google-pay.png"
+              "payment_method": "shopify://shop_images/google-pay.png"
             }
           },
           "37d24c7b-a60c-4a39-a626-15b7d1a2c751": {
             "type": "payment_method_image",
             "settings": {
-              "payment_method": "shopify:\/\/shop_images\/apple-pay.png"
+              "payment_method": "shopify://shop_images/apple-pay.png"
             }
           }
         },
@@ -431,20 +437,16 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "14327677521557774844": {
-        "type": "shopify:\/\/apps\/simprosys-google-shopping-feed\/blocks\/core_settings_block\/1f0b859e-9fa6-4007-97e8-4513aff5ff3b",
+        "type": "shopify://apps/simprosys-google-shopping-feed/blocks/core_settings_block/1f0b859e-9fa6-4007-97e8-4513aff5ff3b",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       }
     }
   },
   "presets": {
-    "Default": {
-    }
+    "Default": {}
   }
 }

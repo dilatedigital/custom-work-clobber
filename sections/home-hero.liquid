@@ -47,6 +47,12 @@
 
   .mobile-hero-texts-btn {
     padding-left: 30px;
+    margin-top: auto;
+    margin-bottom: 2rem;
+  }
+  .mobile-hero img {
+    height: 100%;
+    object-fit: cover;
   }
 
   .hero-slider {
@@ -209,7 +215,10 @@
         {% assign counter = counter | plus: 1 %}
         {% if block.type == 'hero_slider' %}
           <div class="relative swiper-slide">
-            <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt }}" class="absolute top-0 left-0">
+            <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt }}" class="desktop absolute top-0 left-0">
+            {% if block.settings.image_mobile != blank %}
+              <img src="{{ block.settings.image_mobile | img_url: 'master' }}" alt="{{ block.settings.image.alt }}" class="mobile absolute top-0 left-0">
+            {% endif %}
             <div class="container container-height mx-auto relative">
               <p class="slide-number absolute right-0 transform -rotate-90">0{{ counter }} / 0{{ section.blocks.size }}</p>
               <div class="desktop-hero-texts-btn uppercase">

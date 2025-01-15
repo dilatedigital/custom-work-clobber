@@ -28,6 +28,7 @@
         "blocks": {
           "fd5b5181-0e92-4f38-8c2c-ca2a65f7da2e": {
             "type": "hero_slider",
+            "disabled": true,
             "settings": {
               "image": "shopify://shop_images/banner-revised.jpg",
               "slide_title": "",

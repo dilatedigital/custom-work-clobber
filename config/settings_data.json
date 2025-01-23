@@ -28,13 +28,12 @@
         "blocks": {
           "fd5b5181-0e92-4f38-8c2c-ca2a65f7da2e": {
             "type": "hero_slider",
-            "disabled": true,
             "settings": {
-              "image": "shopify://shop_images/banner-revised.jpg",
+              "image": "shopify://shop_images/C2.png",
               "slide_title": "",
               "slide_right_text": "",
               "button_title": "Shop Now",
-              "slide_button_url": "shopify://collections/giftcards"
+              "slide_button_url": "shopify://collections/workboots"
             }
           },
           "441ad4fa-6a62-472b-83ed-32b63f516398": {
@@ -49,6 +48,7 @@
           },
           "6dffdcbe-16a7-46bf-beba-6ba59adb1fd0": {
             "type": "hero_slider",
+            "disabled": true,
             "settings": {
               "image": "shopify://shop_images/004_1.jpg",
               "slide_title": "<div class=\"h1\">\n<span>Women's</span><br><span>Workwear</span>\n</div>\n<span class=\"small_text\">Standout performance</span>",

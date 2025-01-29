@@ -39,10 +39,10 @@
           "441ad4fa-6a62-472b-83ed-32b63f516398": {
             "type": "hero_slider",
             "settings": {
-              "image": "shopify://shop_images/Web_Banner_-_B.jpg",
+              "image": "shopify://shop_images/Web_Banner_-_B_3b22d92c-e63a-4ca7-9e5d-2838e7be1a1f.jpg",
               "slide_title": "",
               "slide_right_text": "",
-              "button_title": "",
+              "button_title": "Shop Now",
               "slide_button_url": "https://www.workclobber.com.au/collections/all?sort_by=best-selling"
             }
           },

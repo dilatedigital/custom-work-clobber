@@ -40,8 +40,8 @@
             "type": "hero_slider",
             "settings": {
               "image": "shopify://shop_images/Web_Banner_-_B.jpg",
-              "slide_title": "<div class=\"h1\">\n<span>For Tradies</span> <br><span>By Tradies</span>\n</div>\n<span class=\"small_text\">Standout performance</span>",
-              "slide_right_text": "<span class=\"sup\">Hi Vis Workwear</span>\n<h2>WA Exclusive</h2>\n<span class=\"sub\">Work Wear Supplier</span>",
+              "slide_title": "",
+              "slide_right_text": "",
               "button_title": "Shop Now",
               "slide_button_url": "https://www.workclobber.com.au/collections/all?sort_by=best-selling"
             }

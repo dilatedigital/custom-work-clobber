@@ -333,7 +333,7 @@
   <div class="mx-auto container">
     <nav class="flex justify-between items-center h-65">
       {% for link in section.settings.menu.links %} 
-      {% assign r = forloop.index0 | modulo: 3  %}
+      {% assign r = forloop.index0 | modulo: 4  %}
         {% if r == 0 %}
           <div class="bottom-bar-div h-65 items-center flex justify-between">
         {% endif %}

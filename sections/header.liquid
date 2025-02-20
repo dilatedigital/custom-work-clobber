@@ -333,7 +333,7 @@
   <div class="mx-auto container">
     <nav class="flex justify-between items-center h-65">
       {% for link in section.settings.menu.links %} 
-      {% assign r = forloop.index0 | modulo: 4  %}
+      {% assign r = forloop.index0 | modulo: 3  %}
         {% if r == 0 %}
           <div class="bottom-bar-div h-65 items-center flex justify-between">
         {% endif %}
@@ -404,7 +404,7 @@
         {% else %}
           <a class="text-sm text-wc-black leading-none font-bold hover:text-gray-700 uppercase" href="{{ link.url }}"> {{ link.title }} </a>
         {% endif %}
-        {% if r == 3 or forloop.last %}
+        {% if r == 2 or forloop.last %}
           </div>
         {% endif %}
       {% endfor %}

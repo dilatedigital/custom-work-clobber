@@ -217,7 +217,17 @@
         </div>
         <div class="product-variants-btn pt-4 lg:pt-5">
 
-          
+          <div class="line-item-property__field">
+  <label for="custom-message">Enter your embroidery number or company name: </label>
+  <input type="text" 
+         id="custom-message" 
+         name="properties[Custom Message]" 
+         class="line-item-property__field-input"
+         value=""
+         data-product-property
+         data-cart-add-property>
+</div>
+
           
           {% unless product.has_only_default_variant %}
             <div>

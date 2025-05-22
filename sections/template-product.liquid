@@ -220,18 +220,10 @@
         </div>
         <div class="product-variants-btn pt-4 lg:pt-5">
 
-          <div class="line-item-property__field">
-  <label for="custom-message">Enter your embroidery number or company name: </label>
-  <input type="text" 
-         id="custom-message" 
-         name="properties[Custom Message]" 
-         class="line-item-property__field-input"
-         value=""
-         data-product-property
-         data-cart-add-property
-    required
-    >
-</div>
+<p class="line-item-property__field">
+  <label for="enter-your-embroidery-number-or-company-name">Enter your embroidery number or company name</label>
+  <input required class="required" id="enter-your-embroidery-number-or-company-name" type="text" name="properties[Enter your embroidery number or company name]">
+</p>
 
           
           {% unless product.has_only_default_variant %}

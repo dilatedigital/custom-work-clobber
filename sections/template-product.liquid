@@ -220,18 +220,7 @@
         </div>
         <div class="product-variants-btn pt-4 lg:pt-5">
 
-          <div class="line-item-property__field">
-  <label for="custom-message">Enter your embroidery number or company name: </label>
-  <input type="text" 
-         id="custom-message" 
-         name="properties[Custom Message]" 
-         class="line-item-property__field-input"
-         value=""
-         data-product-property
-         data-cart-add-property
-    required
-    >
-</div>
+
 
           
           {% unless product.has_only_default_variant %}
@@ -351,7 +340,18 @@
 
             {% endunless %}
 
-
+          <div class="line-item-property__field">
+  <label for="custom-message">Enter your embroidery number or company name: </label>
+  <input type="text" 
+         id="custom-message" 
+         name="properties[Custom Message]" 
+         class="line-item-property__field-input"
+         value=""
+         data-product-property
+         data-cart-add-property
+    required
+    >
+</div>
             <div class="my-3">
               <label for="Quantity-{{ section.id }}">Quantity</label>
               <div 

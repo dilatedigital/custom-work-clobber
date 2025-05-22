@@ -219,13 +219,6 @@
           </div> 
         </div>
         <div class="product-variants-btn pt-4 lg:pt-5">
-
-<p class="line-item-property__field">
-  <label for="enter-your-embroidery-number-or-company-name">Enter your embroidery number or company name</label>
-  <input required class="required" id="enter-your-embroidery-number-or-company-name" type="text" name="properties[Enter your embroidery number or company name]">
-</p>
-
-          
           {% unless product.has_only_default_variant %}
             <div>
               <variant-selector data-url="{{ product.url}}" data-section="{{ section.id }}" class="md:flex md:items-center">
@@ -265,7 +258,11 @@
                       </script>
 
                   {% endfor %}
-                  
+            
+                  <p class="line-item-property__field">
+  <label for="enter-your-embroidery-number-or-company-name">Enter your embroidery number or company name</label>
+  <input required class="required" id="enter-your-embroidery-number-or-company-name" type="text" name="properties[Enter your embroidery number or company name]">
+</p>
                   {% if checksize == true %}
                     {% assign collection_tags = product.tags | join: '~~~' | downcase | split: '~~~' %}
                     {% if collection_tags contains 'hard yakka coverall/overall' %}

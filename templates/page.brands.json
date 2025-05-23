@@ -67,7 +67,7 @@
           "settings": {
             "logo": "shopify://shop_images/Rugger_Logo_9bdeff8c-83c8-4990-ad4b-b49339453c34.jpg",
             "button_text": "View Products",
-            "brand_collection_url": ""
+            "brand_collection_url": "shopify://collections/buckle"
           }
         },
         "dc6f706f-ebb9-4469-ad68-a86dc195ea5a": {

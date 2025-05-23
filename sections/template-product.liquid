@@ -220,7 +220,20 @@
         </div>
         <div class="product-variants-btn pt-4 lg:pt-5">
 
-
+{% if product.type == 'Needlecraft Canvas' %}
+          <div class="line-item-property__field">
+  <label for="custom-message">Enter your embroidery number or company name: </label>
+  <input type="text" 
+         id="custom-message" 
+         name="properties[Custom Message]" 
+         class="line-item-property__field-input"
+         value=""
+         data-product-property
+         data-cart-add-property
+    required
+    >
+</div>
+{% endif %}
 
           
           {% unless product.has_only_default_variant %}

@@ -1,16 +1,24 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "template": {
       "type": "template-brands",
-      "settings": {
-      }
+      "settings": {}
     },
     "inner-banner": {
       "type": "inner-banner",
       "disabled": true,
       "settings": {
         "inner_banner_title": "Brands",
-        "inner_banner_image": "shopify:\/\/shop_images\/3_work_clobber-brands-hero.jpg"
+        "inner_banner_image": "shopify://shop_images/3_work_clobber-brands-hero.jpg"
       }
     },
     "1648784093d6002717": {
@@ -25,193 +33,217 @@
         "969827b4-dc0f-4d72-80fe-3bf6575881fa": {
           "type": "brands_block",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/3M-logo-079FB52BC8-seeklogo.com.png",
+            "logo": "shopify://shop_images/3M-logo-079FB52BC8-seeklogo.com.png",
             "button_text": "View Products",
-            "brand_collection_url": "shopify:\/\/collections\/3m"
+            "brand_collection_url": "shopify://collections/3m"
           }
         },
         "812fb8f3-4f13-4def-bcf4-dab09b11c6bf": {
           "type": "brands_block",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/bisley.jpg",
+            "logo": "shopify://shop_images/bisley.jpg",
             "button_text": "View Products",
-            "brand_collection_url": "shopify:\/\/collections\/bisley"
+            "brand_collection_url": "shopify://collections/bisley"
           }
         },
         "ec2928c9-4e2e-4f15-bf5e-3e37c06ad0fb": {
           "type": "brands_block",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/blundstone.png",
+            "logo": "shopify://shop_images/blundstone.png",
             "button_text": "View Products",
-            "brand_collection_url": "shopify:\/\/collections\/blundstone"
+            "brand_collection_url": "shopify://collections/blundstone"
           }
         },
         "d3191e55-3ecd-4529-b1af-551a76369dcb": {
           "type": "brands_block",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/logo-alt.png",
+            "logo": "shopify://shop_images/logo-alt.png",
             "button_text": "View Products",
-            "brand_collection_url": "shopify:\/\/collections\/bolle"
+            "brand_collection_url": "shopify://collections/bolle"
+          }
+        },
+        "brands_block_jQFVfD": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify://shop_images/Rugger_Logo_9bdeff8c-83c8-4990-ad4b-b49339453c34.jpg",
+            "button_text": "View Products",
+            "brand_collection_url": ""
           }
         },
         "dc6f706f-ebb9-4469-ad68-a86dc195ea5a": {
           "type": "brands_block",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/cat.png",
+            "logo": "shopify://shop_images/cat.png",
             "button_text": "View Products",
-            "brand_collection_url": "shopify:\/\/collections\/cat"
-          }
-        },
-        "f0b66611-04fc-4fa3-8c3a-04fcdb480e7e": {
-          "type": "brands_block",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Volley_Logo2_86f2cf13-8a12-40e5-8110-126c2f28d9d3.jpg",
-            "button_text": "View Products",
-            "brand_collection_url": "shopify:\/\/collections\/dunlop-volleys"
+            "brand_collection_url": "shopify://collections/cat"
           }
         },
         "c0a295f7-50ea-404b-a232-af60dbd8fb70": {
           "type": "brands_block",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/eyres-logo-300x183-removebg-preview.png",
+            "logo": "shopify://shop_images/eyres-logo-300x183-removebg-preview.png",
             "button_text": "View Products",
-            "brand_collection_url": "shopify:\/\/collections\/eyres"
+            "brand_collection_url": "shopify://collections/eyres"
           }
         },
         "2cc246b0-a1c0-426f-9b8c-3ecf757e6dc0": {
           "type": "brands_block",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/Gloweave-logo_54b6acfa-07de-4ee7-b0fd-7cc70d39fbe1.jpg",
+            "logo": "shopify://shop_images/Gloweave-logo_54b6acfa-07de-4ee7-b0fd-7cc70d39fbe1.jpg",
             "button_text": "View Products",
-            "brand_collection_url": "shopify:\/\/collections\/gloweave"
+            "brand_collection_url": "shopify://collections/gloweave"
           }
         },
         "02980a0d-247c-42cc-85ce-655fbba46311": {
           "type": "brands_block",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/hard-yakka.png",
+            "logo": "shopify://shop_images/hard-yakka.png",
             "button_text": "View Products",
-            "brand_collection_url": "shopify:\/\/collections\/hard-yakka"
+            "brand_collection_url": "shopify://collections/hard-yakka"
           }
         },
         "3710c10a-dc7a-435e-8da6-e73ed5e62dc8": {
           "type": "brands_block",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/headwear_professionals_logo-removebg-preview.png",
+            "logo": "shopify://shop_images/headwear_professionals_logo-removebg-preview.png",
             "button_text": "View Products",
-            "brand_collection_url": "shopify:\/\/collections\/headwear-professionals"
+            "brand_collection_url": "shopify://collections/headwear-professionals"
           }
         },
         "c21fac1e-95c4-4aed-82ff-2c47f2182c41": {
           "type": "brands_block",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/JB_s_wear_Logo_300dpi_30bd3d7f-e32a-4efc-97c9-f8b65862be49.jpg",
+            "logo": "shopify://shop_images/JB_s_wear_Logo_300dpi_30bd3d7f-e32a-4efc-97c9-f8b65862be49.jpg",
             "button_text": "View Products",
-            "brand_collection_url": "shopify:\/\/collections\/jbs"
+            "brand_collection_url": "shopify://collections/jbs"
           }
         },
         "ac1edc6d-1fb8-437c-9b32-805955312252": {
           "type": "brands_block",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/king-gee-2.png",
+            "logo": "shopify://shop_images/king-gee-2.png",
             "button_text": "View Products",
-            "brand_collection_url": "shopify:\/\/collections\/king-gee"
+            "brand_collection_url": "shopify://collections/king-gee"
           }
         },
         "193364b9-efa1-42d2-8a96-24af14673b5e": {
           "type": "brands_block",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/Mongrels-logo-removebg-preview.png",
+            "logo": "shopify://shop_images/Mongrels-logo-removebg-preview.png",
             "button_text": "View Products",
-            "brand_collection_url": "shopify:\/\/collections\/mongrel"
+            "brand_collection_url": "shopify://collections/mongrel"
           }
         },
         "55d8afdd-a33a-43f7-aad3-19ec5ab07b5f": {
           "type": "brands_block",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/oliver.png",
+            "logo": "shopify://shop_images/oliver.png",
             "button_text": "View Products",
-            "brand_collection_url": "shopify:\/\/collections\/oliver"
+            "brand_collection_url": "shopify://collections/oliver"
           }
         },
         "aafb9ad9-4420-43d2-84e5-9de97f25e280": {
           "type": "brands_block",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/portwest-logo-oj-removebg-preview.png",
+            "logo": "shopify://shop_images/portwest-logo-oj-removebg-preview.png",
             "button_text": "View Products",
-            "brand_collection_url": "shopify:\/\/collections\/portwest"
+            "brand_collection_url": "shopify://collections/portwest"
           }
         },
         "282cde2b-617d-441d-a9bb-09c7055b2d76": {
           "type": "brands_block",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/ProChoice-Website-Logo2-removebg-preview.png",
+            "logo": "shopify://shop_images/ProChoice-Website-Logo2-removebg-preview.png",
             "button_text": "View Products",
-            "brand_collection_url": "shopify:\/\/collections\/pro-choice"
-          }
-        },
-        "0e456cdf-0951-4383-a51e-fe9f8c70417d": {
-          "type": "brands_block",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Logo_c055bb45-220f-4e7a-9d41-63bf824dba6b.jpg",
-            "button_text": "View Products",
-            "brand_collection_url": "shopify:\/\/collections\/rugged-xtremes"
+            "brand_collection_url": "shopify://collections/pro-choice"
           }
         },
         "c1f00762-e917-4e02-a0ee-ba63ffafaf81": {
           "type": "brands_block",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/riders-by-lee-185x185-logo-removebg-preview.png",
+            "logo": "shopify://shop_images/riders-by-lee-185x185-logo-removebg-preview.png",
             "button_text": "View Products",
-            "brand_collection_url": "shopify:\/\/collections\/riders-by-lee"
+            "brand_collection_url": "shopify://collections/riders-by-lee"
+          }
+        },
+        "0e456cdf-0951-4383-a51e-fe9f8c70417d": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify://shop_images/Logo_c055bb45-220f-4e7a-9d41-63bf824dba6b.jpg",
+            "button_text": "View Products",
+            "brand_collection_url": "shopify://collections/rugged-xtremes"
+          }
+        },
+        "brands_block_dH7ztC": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify://shop_images/Rugger_Logo.jpg",
+            "button_text": "View Products",
+            "brand_collection_url": ""
+          }
+        },
+        "brands_block_XVJaDP": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify://shop_images/Logo_eeeb51c0-8171-4edb-8971-744b08551d0b.jpg",
+            "button_text": "View Products",
+            "brand_collection_url": "shopify://collections/safestyle-1"
           }
         },
         "3e333056-8e84-4f32-92c9-fe57aac80820": {
           "type": "brands_block",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/steel-blue.png",
+            "logo": "shopify://shop_images/steel-blue.png",
             "button_text": "View Products",
-            "brand_collection_url": "shopify:\/\/collections\/steel-blue"
+            "brand_collection_url": "shopify://collections/steel-blue"
           }
         },
         "8903f3db-6263-4a2a-a894-51f0fac784ed": {
           "type": "brands_block",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/TruBrands_Logo.png",
+            "logo": "shopify://shop_images/TruBrands_Logo.png",
             "button_text": "View Products",
-            "brand_collection_url": "shopify:\/\/collections\/trubrands"
+            "brand_collection_url": "shopify://collections/trubrands"
           }
         },
         "ec0039fb-4bde-4857-b121-84b1bdaf86f6": {
           "type": "brands_block",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/Stubbies-Logo_7e3ffcf0-0317-4969-b887-9b781f455628.jpg",
+            "logo": "shopify://shop_images/Stubbies-Logo_7e3ffcf0-0317-4969-b887-9b781f455628.jpg",
             "button_text": "View Products",
-            "brand_collection_url": "shopify:\/\/collections\/stubbies"
+            "brand_collection_url": "shopify://collections/stubbies"
           }
         },
         "7fc35c59-e2d5-4103-85ef-02a2a5726022": {
           "type": "brands_block",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/VisionSafe_Logo-removebg-preview.png",
+            "logo": "shopify://shop_images/VisionSafe_Logo-removebg-preview.png",
             "button_text": "View Products",
-            "brand_collection_url": "shopify:\/\/collections\/vision-safe"
+            "brand_collection_url": "shopify://collections/vision-safe"
+          }
+        },
+        "f0b66611-04fc-4fa3-8c3a-04fcdb480e7e": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify://shop_images/Volley_Logo2_86f2cf13-8a12-40e5-8110-126c2f28d9d3.jpg",
+            "button_text": "View Products",
+            "brand_collection_url": "shopify://collections/dunlop-volleys"
           }
         },
         "869842f2-f414-428d-8533-dcd3b46220e4": {
           "type": "brands_block",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/Workit_Workwear_65aee7f6-3f30-46ca-92f8-f48e3a35fcda.png",
+            "logo": "shopify://shop_images/Workit_Workwear_65aee7f6-3f30-46ca-92f8-f48e3a35fcda.png",
             "button_text": "View Products",
-            "brand_collection_url": "shopify:\/\/collections\/workit"
+            "brand_collection_url": "shopify://collections/workit"
           }
         },
         "6767d424-a7f6-4181-aa69-4639264ed615": {
           "type": "brands_block",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/ysf-supply-nation-removebg-preview.png",
+            "logo": "shopify://shop_images/ysf-supply-nation-removebg-preview.png",
             "button_text": "View Products",
-            "brand_collection_url": "shopify:\/\/collections\/your-safety-factory"
+            "brand_collection_url": "shopify://collections/your-safety-factory"
           }
         }
       },
@@ -220,8 +252,8 @@
         "812fb8f3-4f13-4def-bcf4-dab09b11c6bf",
         "ec2928c9-4e2e-4f15-bf5e-3e37c06ad0fb",
         "d3191e55-3ecd-4529-b1af-551a76369dcb",
+        "brands_block_jQFVfD",
         "dc6f706f-ebb9-4469-ad68-a86dc195ea5a",
-        "f0b66611-04fc-4fa3-8c3a-04fcdb480e7e",
         "c0a295f7-50ea-404b-a232-af60dbd8fb70",
         "2cc246b0-a1c0-426f-9b8c-3ecf757e6dc0",
         "02980a0d-247c-42cc-85ce-655fbba46311",
@@ -232,17 +264,19 @@
         "55d8afdd-a33a-43f7-aad3-19ec5ab07b5f",
         "aafb9ad9-4420-43d2-84e5-9de97f25e280",
         "282cde2b-617d-441d-a9bb-09c7055b2d76",
-        "0e456cdf-0951-4383-a51e-fe9f8c70417d",
         "c1f00762-e917-4e02-a0ee-ba63ffafaf81",
+        "0e456cdf-0951-4383-a51e-fe9f8c70417d",
+        "brands_block_dH7ztC",
+        "brands_block_XVJaDP",
         "3e333056-8e84-4f32-92c9-fe57aac80820",
         "8903f3db-6263-4a2a-a894-51f0fac784ed",
         "ec0039fb-4bde-4857-b121-84b1bdaf86f6",
         "7fc35c59-e2d5-4103-85ef-02a2a5726022",
+        "f0b66611-04fc-4fa3-8c3a-04fcdb480e7e",
         "869842f2-f414-428d-8533-dcd3b46220e4",
         "6767d424-a7f6-4181-aa69-4639264ed615"
       ],
-      "settings": {
-      }
+      "settings": {}
     }
   },
   "order": [

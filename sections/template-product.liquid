@@ -371,15 +371,7 @@
                 }"
                 x-init="$watch('qty', value =>  $dispatch('quantity-changed', { quantity: value }))"
               >
-                <button type="button" class="btn-minus flex items-center justify-center cursor-pointer hover:bg-wc-black transition hover:fill-white" @click="minus(1)">
-                  <span class="sr-only">Minus</span>
-                  {% render 'icon-minus' %}
-                </button>
-                <input type="number" x-model="qty" name="quantity" id="Quantity-{{ section.id }}" value="1" min="1" class="text-center">
-                <button type="button" class="btn-plus flex items-center justify-center cursor-pointer hover:bg-wc-black transition hover:fill-white" @click="plus(1)">
-                  <span class="sr-only">Plus</span>
-                  {% render 'icon-plus' %}
-                </button>
+               
               </div>
             </div>
           </div>

@@ -1,0 +1,65 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "template": {
+      "type": "template-product",
+      "settings": {
+        "heading": "Related products"
+      }
+    },
+    "faq_title_NnVbNn": {
+      "type": "faq-title",
+      "blocks": {
+        "faq_block_z8w63U": {
+          "type": "faq_block",
+          "settings": {
+            "each_block_title": "How can I get contact with Work Clobber?",
+            "each_block_content": "<p>You can contact us through the <a href=\"https://www.workclobber.com.au/pages/contact\" title=\"Contact\"><span style=\"text-decoration:underline\">contact us</span></a> page or by calling your <a href=\"https://www.workclobber.com.au/pages/contact#store-locations\" title=\"/pages/contact#store-locations\"><span style=\"text-decoration:underline\">nearest store</span></a>.</p>"
+          }
+        },
+        "faq_block_fy8wH9": {
+          "type": "faq_block",
+          "settings": {
+            "each_block_title": "Are the website prices the same as the stores?",
+            "each_block_content": "<p>Yes! You get the same great price online and in-store.</p>"
+          }
+        },
+        "faq_block_BYhhY7": {
+          "type": "faq_block",
+          "settings": {
+            "each_block_title": "Is the colour I see on the website the actual colour of the product?",
+            "each_block_content": "<p>The images on the website are stock images from the supplier, the colour might be slightly instore due to you screen resolution and settings.</p>"
+          }
+        },
+        "faq_block_iBQQGe": {
+          "type": "faq_block",
+          "settings": {
+            "each_block_title": "Where can I find Work Clobber stores?",
+            "each_block_content": "<p>You can use our store locator to find your <a href=\"https://www.workclobber.com.au/pages/contact#store-locations\" title=\"/pages/contact#store-locations\"><span style=\"text-decoration:underline\">closest store</span></a>.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_block_z8w63U",
+        "faq_block_fy8wH9",
+        "faq_block_BYhhY7",
+        "faq_block_iBQQGe"
+      ],
+      "settings": {
+        "faq_title": "General"
+      }
+    }
+  },
+  "order": [
+    "template",
+    "faq_title_NnVbNn"
+  ]
+}

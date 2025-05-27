@@ -371,13 +371,21 @@
                 }"
                 x-init="$watch('qty', value =>  $dispatch('quantity-changed', { quantity: value }))"
               >
-               
+                <button type="button" class="btn-minus flex items-center justify-center cursor-pointer hover:bg-wc-black transition hover:fill-white" @click="minus(1)">
+                  <span class="sr-only">Minus</span>
+                  {% render 'icon-minus' %}
+                </button>
+                <input type="number" x-model="qty" name="quantity" id="Quantity-{{ section.id }}" value="1" min="1" class="text-center">
+                <button type="button" class="btn-plus flex items-center justify-center cursor-pointer hover:bg-wc-black transition hover:fill-white" @click="plus(1)">
+                  <span class="sr-only">Plus</span>
+                  {% render 'icon-plus' %}
+                </button>
               </div>
             </div>
           </div>
 
           <div class="my-3">
-       
+        <!-- {{ selected_variant.available }} | {{ variant.available }} | {{ product_variant.available }} | {{ product.available }} -->
             <button id="addtocart" type="submit" name="add" class="cart-btn uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center"
               {% if selected_variant.available == false %}
                 disabled

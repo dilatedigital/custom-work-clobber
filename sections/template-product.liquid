@@ -548,6 +548,25 @@
 }
 {% endschema %}
 
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  // Get the variant selector and button
+  const variantSelect = document.querySelector('.variant-selector');
+  const addToCartButton = document.querySelector('.add-to-cart-button');
+  
+  if (variantSelect && addToCartButton) {
+    variantSelect.addEventListener('change', function(e) {
+      const selectedVariant = this.value;
+      const variantAvailable = variantSelect.options[variantSelect.selectedIndex].dataset.available === 'true';
+      
+      // Update button state
+      addToCartButton.disabled = !variantAvailable;
+      addToCartButton.textContent = variantAvailable ? 'Add to Cart' : 'Sold Out';
+    });
+  }
+});
+</script>
 <script>
    const galleryThumbs = new Swiper('.gallery-bottom', {
       spaceBetween: 10,

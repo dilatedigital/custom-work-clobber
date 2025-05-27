@@ -401,22 +401,7 @@
           </div>
         </div>
 
-      {% if product.available %}
-    <button type="submit" 
-            name="add" 
-            class="add-to-cart-button" 
-            {% unless current_variant.available %}disabled="disabled"{% endunless %}>
-      {% if current_variant.available %}
-        Add to Cart
-      {% else %}
-        Sold Out
-      {% endif %}
-    </button>
-  {% else %}
-    <button type="button" class="add-to-cart-button" disabled>
-      Sold Out
-    </button>
-  {% endif %}
+ 
       {% endform %}
     </div>
   </div>

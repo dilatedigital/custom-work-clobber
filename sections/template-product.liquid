@@ -355,33 +355,23 @@
 
          
             <div class="my-3">
-              <label for="Quantity-{{ section.id }}">Quantity</label>
-              <div 
-                class="my-2 product-qty__wrapper flex"
-                x-data="{ 
-                  qty: 1,
-                  minus(value) {
-                    this.qty = parseInt(this.qty);
-                    (this.qty == 1) ? this.qty = 1 : this.qty -= value;
-                  },
-                  plus(value) {
-                    this.qty = parseInt(this.qty);
-                    this.qty += value;
-                  }
-                }"
-                x-init="$watch('qty', value =>  $dispatch('quantity-changed', { quantity: value }))"
-              >
-                <button type="button" class="btn-minus flex items-center justify-center cursor-pointer hover:bg-wc-black transition hover:fill-white" @click="minus(1)">
-                  <span class="sr-only">Minus</span>
-                  {% render 'icon-minus' %}
-                </button>
-                <input type="number" x-model="qty" name="quantity" id="Quantity-{{ section.id }}" value="1" min="1" class="text-center">
-                <button type="button" class="btn-plus flex items-center justify-center cursor-pointer hover:bg-wc-black transition hover:fill-white" @click="plus(1)">
-                  <span class="sr-only">Plus</span>
-                  {% render 'icon-plus' %}
-                </button>
-              </div>
-            </div>
+              {% if product.selected_or_first_available_variant %}
+  <div class="product-form__item">
+    <button type="submit" 
+            name="add" 
+            id="AddToCart"
+            class="btn product-form__cart-submit{% unless current_variant.available %} disabled{% endunless %}"
+            {% unless current_variant.available %}disabled="disabled"{% endunless %}>
+      <span id="AddToCartText">
+        {% if current_variant.available %}
+          {{ 'products.product.add_to_cart' | t }}
+        {% else %}
+          {{ 'products.product.sold_out' | t }}
+        {% endif %}
+      </span>
+    </button>
+  </div>
+{% endif %}
           </div>
 
           <div class="my-3">

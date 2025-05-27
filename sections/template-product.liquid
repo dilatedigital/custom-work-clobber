@@ -386,18 +386,22 @@
 
           <div class="my-3">
         <!-- {{ selected_variant.available }} | {{ variant.available }} | {{ product_variant.available }} | {{ product.available }} -->
-            <button id="addtocart" type="submit" name="add" class="cart-btn uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center"
-              {% if selected_variant.available == false %}
-                disabled
-              {% endif %} >
-              {% render 'icon-cart-btn' %} <span id="addtocarttext">
-              {% if selected_variant.available == false %}
-                  Sold out
-              {% else %}
-                  Add to cart
-              {% endif %}
-              </span>
-            </button>
+            <button 
+  id="addtocart" 
+  type="submit" 
+  name="add" 
+  class="cart-btn uppercase transition bg-wc-yellow font-euro font-extrabold hover:bg-wc-black hover:text-wc-yellow flex items-center justify-center"
+  {% if selected_variant.available == false %}disabled{% endif %}
+>
+  {% render 'icon-cart-btn' %}
+  <span id="addtocarttext">
+    {% if selected_variant.available == false %}
+      Sold out
+    {% else %}
+      Add to cart
+    {% endif %}
+  </span>
+</button>
           </div>
         </div>
 

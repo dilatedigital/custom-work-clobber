@@ -391,7 +391,7 @@
                 disabled
               {% endif %} >
               {% render 'icon-cart-btn' %} <span id="addtocarttext">
-              {% if product.available == false %}
+              {% if selected_variant.available == false %}
                   Sold out
               {% else %}
                   Add to cart

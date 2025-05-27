@@ -390,8 +390,8 @@
     <button type="submit" 
             name="add" 
             class="add-to-cart-button" 
-            {% unless current_variant.available %}disabled="disabled"{% endunless %}>
-      {% if current_variant.available %}
+            {% unless product_variant.available %}disabled="disabled"{% endunless %}>
+      {% if product_variant.available %}
         Add to Cart
       {% else %}
         Sold Out

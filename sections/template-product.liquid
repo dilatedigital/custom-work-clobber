@@ -618,15 +618,21 @@
               if(oldPrice && newPrice) oldPrice.innerHTML = newPrice.innerHTML;
           });
         
-        if(this.currentVariant.available == false) {
-          document.getElementById("addtocart").disabled = true;
-          document.getElementById("addtocarttext").textContent = "Sold Out";
-          document.getElementById("addtocart").classList.add('soldout');
-        } else {
-          document.getElementById("addtocart").disabled = false;
-          document.getElementById("addtocarttext").textContent = 'Add to cart';
-          document.getElementById("addtocart").classList.remove('soldout');
-        }
+        if (!this.currentVariant.available) {
+  const addToCartButton = document.getElementById("addtocart");
+  const addToCartText = document.getElementById("addtocarttext");
+  
+  addToCartButton.disabled = true;
+  addToCartText.textContent = "Sold Out";
+  addToCartButton.classList.add('soldout');
+} else {
+  const addToCartButton = document.getElementById("addtocart");
+  const addToCartText = document.getElementById("addtocarttext");
+  
+  addToCartButton.disabled = false;
+  addToCartText.textContent = 'Add to cart';
+  addToCartButton.classList.remove('soldout');
+}
       }
   }
   customElements.define("variant-selector", VariantSelector);

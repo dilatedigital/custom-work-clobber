@@ -555,79 +555,117 @@
 </script>
 <script>
   class VariantSelector extends HTMLElement {
-      constructor() {
-          super();
-          this.addEventListener("change", this.onVariantChange);
-          this.getSelectedOptions();
-          this.getSelectedVariant();
-          //console.log(this.currentVariant.featured_image.src);
-          this.updateImage();
+    constructor() {
+      super();
+      // bind
+      this.onVariantChange = this.onVariantChange.bind(this);
+
+      // read in the JSON once
+      this.variantData = JSON.parse(this.querySelector('[type="application/json"]').textContent);
+
+      // wire up
+      this.addEventListener("change", this.onVariantChange);
+
+      // initial state
+      this.getSelectedOptions();
+      this.getSelectedVariant();
+      this.updateURL();
+      this.updateFormID();
+      this.updatePrice();       // ← ensure stock / button state is correct on load
+      this.updateImage();
+      this.updateOptions();     // ← filter selects on load
+    }
+
+    getSelectedOptions() {
+      this.options = Array.from(this.querySelectorAll('select')).map(s => s.value);
+    }
+
+    getSelectedVariant() {
+      this.currentVariant = this.variantData.find(v =>
+        v.options.every((opt, i) => this.options[i] === opt)
+      );
+    }
+
+    onVariantChange() {
+      this.getSelectedOptions();
+      this.getSelectedVariant();
+      if (!this.currentVariant) return;   // no such combination
+      this.updateURL();
+      this.updateFormID();
+      this.updatePrice();
+      this.updateImage();
+      this.updateOptions();               // ← refilter after each change
+    }
+
+    updateURL() {
+      const url = `${this.dataset.url}?variant=${this.currentVariant.id}`;
+      window.history.replaceState({}, '', url);
+    }
+
+    updateFormID() {
+      this.closest('form').querySelector('input[name="id"]').value = this.currentVariant.id;
+    }
+
+    updatePrice() {
+      // swap out price block
+      fetch(`${this.dataset.url}?variant=${this.currentVariant.id}&section_id=${this.dataset.section}`)
+        .then(r => r.text())
+        .then(htmlText => {
+          const html = new DOMParser().parseFromString(htmlText, 'text/html');
+          const old = document.getElementById(`price-${this.dataset.section}`);
+          const neu = html.getElementById(`price-${this.dataset.section}`);
+          if (old && neu) old.innerHTML = neu.innerHTML;
+        });
+
+      // stock button toggle
+      const btn = document.getElementById("addtocart"),
+            txt = document.getElementById("addtocarttext");
+      if (!this.currentVariant.available) {
+        btn.disabled = true;
+        btn.classList.add('soldout');
+        txt.textContent = "Out of Stock";
+      } else {
+        btn.disabled = false;
+        btn.classList.remove('soldout');
+        txt.textContent = "Add to cart";
       }
-      onVariantChange() {
-          this.getSelectedOptions();
-          this.getSelectedVariant();
-          if(this.currentVariant) {
-              this.updateURL();
-              this.updateFormID();
-              this.updatePrice();
-              this.updateImage();
-          }
-      }
-      getSelectedOptions() {
-          this.options = Array.from(this.querySelectorAll('select'), (select) => select.value);
-          //console.log(this.options);
-      }
-      getVariantJSON() {
-          this.variantData = this.variantData || JSON.parse(this.querySelector('[type="application/json"]').textContent);
-          return this.variantData;
-      }
-      getSelectedVariant() {
-          this.currentVariant = this.getVariantJSON().find(
-              (variant) => {
-                  const findings = !variant.options.map(
-                      (option, index) => {
-                          return this.options[index] === option;
-                      }
-                  ).includes(false);
-                  if(findings) return variant;
-              }
+    }
+
+    updateImage() {
+      const active = document.querySelector('#main-featured .swiper-slide-active img');
+      if (active && this.currentVariant.featured_image)
+        active.src = this.currentVariant.featured_image.src;
+    }
+
+    updateOptions() {
+      // for each select: hide/disable values that don't appear on any available variant
+      const selects = Array.from(this.querySelectorAll('select'));
+      selects.forEach((select, idx) => {
+        // for this option index, collect all values that remain valid
+        const valid = new Set();
+        this.variantData.forEach(v => {
+          if (!v.available) return;  // only consider in-stock variants
+          // does v match all other selected options?
+          const matches = this.options.every((opt, i) =>
+            i === idx ? true : v.options[i] === opt
           );
-          
-      }
-      updateImage() {
-        //console.log(this.currentVariant.featured_image.src);
-        const mainImage = document.getElementById('main-featured').getElementsByClassName('swiper-slide-active')[0].getElementsByTagName('img')[0]
-        mainImage.src = this.currentVariant.featured_image.src
-      }
-      updateURL() {
-          if(!this.currentVariant) return;
-          window.history.replaceState({}, '', `${this.dataset.url}?variant=${this.currentVariant.id}`);
-      }
-      updateFormID() {
-          const form_input = document.querySelector("#product-form").querySelector('input[name="id"]');
-          form_input.value = this.currentVariant.id;
-      }
-      updatePrice() {
-          fetch(`${this.dataset.url}?variant=${this.currentVariant.id}&section_id=${this.dataset.section}`)
-          .then((response) => response.text())
-          .then((responseText) => {
-              const id = `price-${this.dataset.section}`;
-              const html = new DOMParser().parseFromString(responseText, 'text/html');
-              const oldPrice = document.getElementById(id);
-              const newPrice = html.getElementById(id);
-              if(oldPrice && newPrice) oldPrice.innerHTML = newPrice.innerHTML;
-          });
-        
-        if(this.currentVariant.available == false) {
-          document.getElementById("addtocart").disabled = true;
-          document.getElementById("addtocarttext").textContent = "Sold Out";
-          document.getElementById("addtocart").classList.add('soldout');
-        } else {
-          document.getElementById("addtocart").disabled = false;
-          document.getElementById("addtocarttext").textContent = 'Add to cart';
-          document.getElementById("addtocart").classList.remove('soldout');
-        }
-      }
+          if (matches) valid.add(v.options[idx]);
+        });
+
+        // now toggle each <option> in the <select>
+        Array.from(select.options).forEach(optEl => {
+          if (valid.has(optEl.value)) {
+            optEl.disabled = false;
+            optEl.hidden   = false;
+          } else {
+            optEl.disabled = true;
+            optEl.hidden   = true;
+          }
+        });
+      });
+    }
   }
+
   customElements.define("variant-selector", VariantSelector);
 </script>
+

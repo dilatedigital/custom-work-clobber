@@ -556,36 +556,41 @@
 <script>
   class VariantSelector extends HTMLElement {
     constructor() {
-  super();
-  this.onVariantChange = this.onVariantChange.bind(this);
-  this.variantData = JSON.parse(this.querySelector('[type="application/json"]').textContent);
-  this.addEventListener("change", this.onVariantChange);
+      super();
+      this.onVariantChange = this.onVariantChange.bind(this);
+      this.variantData    = JSON.parse(this.querySelector('[type="application/json"]').textContent);
+      this.addEventListener("change", this.onVariantChange);
+    }
 
-  // ── NEW: normalize initial selection to the first in-stock variant ───
-  const selects  = Array.from(this.querySelectorAll('select'));
-  const initOpts = selects.map(s => s.value);
-  // try to find a variant matching the HTML defaults
-  let cur = this.variantData.find(v =>
-    v.available &&
-    v.options.every((opt,i) => opt === initOpts[i])
-  );
-  if (!cur) {
-    // fallback: pick the very first available variant
-    cur = this.variantData.find(v => v.available);
-    selects.forEach((sel,i) => sel.value = cur.options[i]);
-  }
-  this.options = cur.options;
-  this.currentVariant = cur;
-  // ────────────────────────────────────────────────────────────
+    connectedCallback() {
+      // run on the next animation frame so all children (<select>) are in the DOM
+      requestAnimationFrame(() => {
+        const selects  = Array.from(this.querySelectorAll('select'));
+        const initOpts = selects.map(s => s.value);
 
-  // now you have a valid starting point—update everything
-  this.updateURL();
-  this.updateFormID();
-  this.updatePrice();
-  this.updateImage();
-  this.updateOptions();
-}
+        // try the HTML defaults first
+        let cur = this.variantData.find(v =>
+          v.available &&
+          v.options.every((opt,i) => opt === initOpts[i])
+        );
 
+        // fallback: pick your first in-stock variant
+        if (!cur) {
+          cur = this.variantData.find(v => v.available);
+          selects.forEach((sel,i) => sel.value = cur.options[i]);
+        }
+
+        this.options        = cur.options;
+        this.currentVariant = cur;
+
+        // now update everything into a known-good state
+        this.updateURL();
+        this.updateFormID();
+        this.updatePrice();
+        this.updateImage();
+        this.updateOptions();
+      });
+    }
 
     getSelectedOptions() {
       this.options = Array.from(this.querySelectorAll('select')).map(s => s.value);
@@ -600,12 +605,13 @@
     onVariantChange() {
       this.getSelectedOptions();
       this.getSelectedVariant();
-      if (!this.currentVariant) return;   // no such combination
+      if (!this.currentVariant) return;
+
       this.updateURL();
       this.updateFormID();
       this.updatePrice();
       this.updateImage();
-      this.updateOptions();               // ← refilter after each change
+      this.updateOptions();
     }
 
     updateURL() {
@@ -618,17 +624,17 @@
     }
 
     updatePrice() {
-      // swap out price block
+      // swap in your new price HTML
       fetch(`${this.dataset.url}?variant=${this.currentVariant.id}&section_id=${this.dataset.section}`)
         .then(r => r.text())
         .then(htmlText => {
-          const html = new DOMParser().parseFromString(htmlText, 'text/html');
-          const old = document.getElementById(`price-${this.dataset.section}`);
-          const neu = html.getElementById(`price-${this.dataset.section}`);
-          if (old && neu) old.innerHTML = neu.innerHTML;
+          const doc    = new DOMParser().parseFromString(htmlText, 'text/html');
+          const oldEl  = document.getElementById(`price-${this.dataset.section}`);
+          const newEl  = doc.getElementById(`price-${this.dataset.section}`);
+          if (oldEl && newEl) oldEl.innerHTML = newEl.innerHTML;
         });
 
-      // stock button toggle
+      // toggle your Add-to-cart state
       const btn = document.getElementById("addtocart"),
             txt = document.getElementById("addtocarttext");
       if (!this.currentVariant.available) {
@@ -643,27 +649,26 @@
     }
 
     updateImage() {
-      const active = document.querySelector('#main-featured .swiper-slide-active img');
-      if (active && this.currentVariant.featured_image)
-        active.src = this.currentVariant.featured_image.src;
+      const img = document.querySelector('#main-featured .swiper-slide-active img');
+      if (img && this.currentVariant.featured_image) {
+        img.src = this.currentVariant.featured_image.src;
+      }
     }
 
     updateOptions() {
-      // for each select: hide/disable values that don't appear on any available variant
+      // hide/disable any <option> that doesn't lead to an in-stock variant
+      this.getSelectedOptions();
       const selects = Array.from(this.querySelectorAll('select'));
       selects.forEach((select, idx) => {
-        // for this option index, collect all values that remain valid
         const valid = new Set();
         this.variantData.forEach(v => {
-          if (!v.available) return;  // only consider in-stock variants
-          // does v match all other selected options?
+          if (!v.available) return;
           const matches = this.options.every((opt, i) =>
             i === idx ? true : v.options[i] === opt
           );
           if (matches) valid.add(v.options[idx]);
         });
 
-        // now toggle each <option> in the <select>
         Array.from(select.options).forEach(optEl => {
           if (valid.has(optEl.value)) {
             optEl.disabled = false;
@@ -679,4 +684,5 @@
 
   customElements.define("variant-selector", VariantSelector);
 </script>
+
 

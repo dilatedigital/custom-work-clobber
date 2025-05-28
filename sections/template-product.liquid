@@ -556,25 +556,36 @@
 <script>
   class VariantSelector extends HTMLElement {
     constructor() {
-      super();
-      // bind
-      this.onVariantChange = this.onVariantChange.bind(this);
+  super();
+  this.onVariantChange = this.onVariantChange.bind(this);
+  this.variantData = JSON.parse(this.querySelector('[type="application/json"]').textContent);
+  this.addEventListener("change", this.onVariantChange);
 
-      // read in the JSON once
-      this.variantData = JSON.parse(this.querySelector('[type="application/json"]').textContent);
+  // ── NEW: normalize initial selection to the first in-stock variant ───
+  const selects  = Array.from(this.querySelectorAll('select'));
+  const initOpts = selects.map(s => s.value);
+  // try to find a variant matching the HTML defaults
+  let cur = this.variantData.find(v =>
+    v.available &&
+    v.options.every((opt,i) => opt === initOpts[i])
+  );
+  if (!cur) {
+    // fallback: pick the very first available variant
+    cur = this.variantData.find(v => v.available);
+    selects.forEach((sel,i) => sel.value = cur.options[i]);
+  }
+  this.options = cur.options;
+  this.currentVariant = cur;
+  // ────────────────────────────────────────────────────────────
 
-      // wire up
-      this.addEventListener("change", this.onVariantChange);
+  // now you have a valid starting point—update everything
+  this.updateURL();
+  this.updateFormID();
+  this.updatePrice();
+  this.updateImage();
+  this.updateOptions();
+}
 
-      // initial state
-      this.getSelectedOptions();
-      this.getSelectedVariant();
-      this.updateURL();
-      this.updateFormID();
-      this.updatePrice();       // ← ensure stock / button state is correct on load
-      this.updateImage();
-      this.updateOptions();     // ← filter selects on load
-    }
 
     getSelectedOptions() {
       this.options = Array.from(this.querySelectorAll('select')).map(s => s.value);

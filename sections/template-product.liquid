@@ -634,20 +634,23 @@
           if (oldEl && newEl) oldEl.innerHTML = newEl.innerHTML;
         });
 
-      const btn = document.getElementById("addtocart"),
-        txt = document.getElementById("addtocarttext");
-  const onHand  = this.currentVariant.inventory_quantity ?? 0;
-  const inStock = this.currentVariant.available && onHand > 0;
-
-  if (!inStock) {
-    btn.disabled = true;
-    btn.classList.add('soldout');
-    txt.textContent = "Out of stock";
-  } else {
-    btn.disabled = false;
-    btn.classList.remove('soldout');
-    txt.textContent = "Add to cart";
-  }
+      const btn       = document.getElementById("addtocart");
+      const txt       = document.getElementById("addtocarttext");
+      const variant   = this.currentVariant;
+      const onHand    = variant.inventory_quantity  ?? 0;
+      const managing = Boolean(variant.inventory_management);
+      // if we're managing stock, require onHand>0; otherwise just use Shopify's available
+      const inStock = managing ? onHand > 0 : variant.available;
+    
+      if (!inStock) {
+        btn.disabled      = true;
+        btn.classList.add('soldout');
+        txt.textContent   = "Out of stock";
+      } else {
+        btn.disabled      = false;
+        btn.classList.remove('soldout');
+        txt.textContent   = "Add to cart";
+      }
     }
 
     updateImage() {

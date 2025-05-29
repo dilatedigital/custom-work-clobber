@@ -658,40 +658,33 @@
     }
 
     updateOptions() {
-  // 1) figure out which option-values exist at all, given the other selects
+  // always re-read the current selects
+  this.getSelectedOptions();
+
   const selects = Array.from(this.querySelectorAll('select'));
   selects.forEach((select, idx) => {
-    // collect all values of this option index that actually exist (regardless of stock)
+    // 1) collect all values that exist (regardless of stock)
     const exists = new Set();
     this.variantData.forEach(v => {
-      // does this variant match the other select values?
+      // does v match all the other selects?
       const matchesOthers = this.options.every((opt, i) =>
         i === idx ? true : v.options[i] === opt
       );
       if (matchesOthers) exists.add(v.options[idx]);
     });
 
-    // 2) show/hide options by existence, then disable by stock
+    // 2) hide non-existent; leave all existent (even OOS) enabled
     Array.from(select.options).forEach(optEl => {
-      const val = optEl.value;
-      if (!exists.has(val)) {
-        // never existed
-        optEl.hidden = true;
-        optEl.disabled = true;
+      if (!exists.has(optEl.value)) {
+        optEl.hidden   = true;   // remove it entirely
       } else {
-        // existed—keep it visible
-        optEl.hidden = false;
-        // find that variant to check stock
-        const variant = this.variantData.find(v =>
-          v.options.every((o, i) => (i === idx ? val === o : this.options[i] === o))
-        );
-        // disable only if truly out of stock
-        const inv = variant.inventory_quantity ?? 0;
-        optEl.disabled = inv <= 0;
+        optEl.hidden   = false;  // keep it visible
       }
+      // NOTE: we do NOT touch optEl.disabled here
     });
   });
 }
+
 
   }
 

@@ -634,18 +634,20 @@
           if (oldEl && newEl) oldEl.innerHTML = newEl.innerHTML;
         });
 
-      // toggle your Add-to-cart state
       const btn = document.getElementById("addtocart"),
-            txt = document.getElementById("addtocarttext");
-      if (!this.currentVariant.available) {
-        btn.disabled = true;
-        btn.classList.add('soldout');
-        txt.textContent = "Out of Stock";
-      } else {
-        btn.disabled = false;
-        btn.classList.remove('soldout');
-        txt.textContent = "Add to cart";
-      }
+        txt = document.getElementById("addtocarttext");
+  const onHand  = this.currentVariant.inventory_quantity ?? 0;
+  const inStock = this.currentVariant.available && onHand > 0;
+
+  if (!inStock) {
+    btn.disabled = true;
+    btn.classList.add('soldout');
+    txt.textContent = "Out of stock";
+  } else {
+    btn.disabled = false;
+    btn.classList.remove('soldout');
+    txt.textContent = "Add to cart";
+  }
     }
 
     updateImage() {
@@ -656,30 +658,41 @@
     }
 
     updateOptions() {
-      // hide/disable any <option> that doesn't lead to an in-stock variant
-      this.getSelectedOptions();
-      const selects = Array.from(this.querySelectorAll('select'));
-      selects.forEach((select, idx) => {
-        const valid = new Set();
-        this.variantData.forEach(v => {
-          if (!v.available) return;
-          const matches = this.options.every((opt, i) =>
-            i === idx ? true : v.options[i] === opt
-          );
-          if (matches) valid.add(v.options[idx]);
-        });
+  // 1) figure out which option-values exist at all, given the other selects
+  const selects = Array.from(this.querySelectorAll('select'));
+  selects.forEach((select, idx) => {
+    // collect all values of this option index that actually exist (regardless of stock)
+    const exists = new Set();
+    this.variantData.forEach(v => {
+      // does this variant match the other select values?
+      const matchesOthers = this.options.every((opt, i) =>
+        i === idx ? true : v.options[i] === opt
+      );
+      if (matchesOthers) exists.add(v.options[idx]);
+    });
 
-        Array.from(select.options).forEach(optEl => {
-          if (valid.has(optEl.value)) {
-            optEl.disabled = false;
-            optEl.hidden   = false;
-          } else {
-            optEl.disabled = true;
-            optEl.hidden   = true;
-          }
-        });
-      });
-    }
+    // 2) show/hide options by existence, then disable by stock
+    Array.from(select.options).forEach(optEl => {
+      const val = optEl.value;
+      if (!exists.has(val)) {
+        // never existed
+        optEl.hidden = true;
+        optEl.disabled = true;
+      } else {
+        // existed—keep it visible
+        optEl.hidden = false;
+        // find that variant to check stock
+        const variant = this.variantData.find(v =>
+          v.options.every((o, i) => (i === idx ? val === o : this.options[i] === o))
+        );
+        // disable only if truly out of stock
+        const inv = variant.inventory_quantity ?? 0;
+        optEl.disabled = inv <= 0;
+      }
+    });
+  });
+}
+
   }
 
   customElements.define("variant-selector", VariantSelector);

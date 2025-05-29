@@ -624,6 +624,17 @@
     }
 
     updatePrice() {
+      const variant = this.currentVariant;
+      const onHand  = variant.inventory_quantity  ?? 0;
+      const managing= Boolean(variant.inventory_management);
+    
+      console.log(
+        "%c[VariantSelector]","color:purple;font-weight:bold;",
+        "variant.id=", variant.id,
+        "available=", variant.available,
+        "inventory_management=", variant.inventory_management,
+        "inventory_quantity=", variant.inventory_quantity
+      );
       // swap in your new price HTML
       fetch(`${this.dataset.url}?variant=${this.currentVariant.id}&section_id=${this.dataset.section}`)
         .then(r => r.text())

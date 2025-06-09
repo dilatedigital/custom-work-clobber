@@ -54,6 +54,13 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M74R5SKH"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
+    {% if settings.show_announcement_banner %}
+    <div style="background-color: #FFF3CD; color: #333; text-align: center; padding: 10px; position: relative;">
+      <span>{{ settings.announcement_notice_text }}</span>
+      <button onclick="this.parentElement.style.display='none'" style="position:absolute; right:10px; top:10px; background:none; border:none; font-size:16px;">&times;</button>
+    </div>
+  {% endif %}
     
     {% if template.name == "index" %} 
      <h1 class="hidden">{{ page_title }}</h1>

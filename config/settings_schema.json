@@ -18,8 +18,8 @@
       },
       {
         "type": "textarea",
-        "id": "cart_notice_text",
-        "label": "Cart Delay Message Text",
+        "id": "announcement_notice_text",
+        "label": "Announcement Banner Text",
         "default": "Due to limited staffing, order fulfilment may be delayed through June and July. We appreciate your patience."
       },
       {
@@ -27,6 +27,12 @@
         "id": "show_cart_notice",
         "label": "Show Cart Delay Message",
         "default": true
+      },
+      {
+        "type": "textarea",
+        "id": "cart_notice_text",
+        "label": "Cart Delay Message Text",
+        "default": "Due to limited staffing, order fulfilment may be delayed through June and July. We appreciate your patience."
       }
     ]
   }

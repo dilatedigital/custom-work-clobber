@@ -19,8 +19,7 @@
       {
         "type": "textarea",
         "id": "announcement_notice_text",
-        "label": "Announcement Banner Text",
-        "default": "Due to limited staffing, order fulfilment may be delayed through June and July. We appreciate your patience."
+        "label": "Announcement Banner Text"
       },
       {
         "type": "checkbox",
@@ -31,8 +30,7 @@
       {
         "type": "textarea",
         "id": "cart_notice_text",
-        "label": "Cart Delay Message Text",
-        "default": "Due to limited staffing, order fulfilment may be delayed through June and July. We appreciate your patience."
+        "label": "Cart Delay Message Text"
       }
     ]
   }

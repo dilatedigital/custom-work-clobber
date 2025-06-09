@@ -9,6 +9,8 @@
  */
 {
   "current": {
+    "announcement_notice_text": "Order Dispatch Delays: Please allow extra time for shipping in June and July while we support a key staff member on leave.",
+    "cart_notice_text": "Due to limited staffing, order fulfilment may be delayed through June and July. We appreciate your patience.",
     "checkout_logo_image": "shopify://shop_images/Logo-Transparent.png",
     "sections": {
       "header": {

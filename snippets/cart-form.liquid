@@ -2,6 +2,16 @@
   <!-- LINE ITEMS -->
   <div class="cart-title-table overflow-auto xct:overflow-hidden xct:w-full">
     <h1 class="text-3xl uppercase mb-10">Items in my cart</h1>
+    {% if settings.show_cart_notice %}
+      <div style="background-color: #F8F9FA; border-left: 4px solid #FFC107; padding: 10px 15px; margin-bottom: 15px;">
+        <span style="display:flex; align-items:center;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FFC107" viewBox="0 0 16 16" style="margin-right:8px;">
+            <path d="M8.982 1.566a1.5 1.5 0 0 0-1.964 0L.165 7.233c-.58.49-.19 1.45.632 1.45H1.5V14a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1V8.683h.703c.823 0 1.213-.96.632-1.45L8.982 1.566z"/>
+          </svg>
+          Due to limited staffing, order fulfilment may be delayed through June and July. We appreciate your patience.
+        </span>
+      </div>
+    {% endif %}
     <table class="table-auto my-4 w-full">
         <thead class="font-euro uppercase font-extrabold border-b-3 border-wc-black">
           <th class="py-3 text-left">Product</th>

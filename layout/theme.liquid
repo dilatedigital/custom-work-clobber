@@ -56,10 +56,15 @@
     <!-- End Google Tag Manager (noscript) -->
 
     {% if settings.show_announcement_banner %}
-    <div style="background-color: #FFF3CD; color: #333; text-align: center; padding: 10px; position: relative; z-index: 9999;">
+    <div class="announcement-banner" style="background-color: #FFF3CD; color: #333; text-align: center; padding: 10px; position: relative; z-index: 9999;">
       <span>{{ settings.announcement_notice_text }}</span>
       <button onclick="this.parentElement.style.display='none'" style="position:absolute; right:10px; top:10px; background:none; border:none; font-size:16px;">&times;</button>
     </div>
+    <style>
+      .announcement-banner a {
+        color: #edcc2c;
+      }
+    </style>
   {% endif %}
     
     {% if template.name == "index" %} 

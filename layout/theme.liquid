@@ -85,12 +85,12 @@
       box-shadow: 0 5px 15px rgba(0,0,0,0.3);
       border-radius: 10px;
       display: none;
-      max-width: 400px;
+      max-width: 640px;
       text-align: center;
       font-family: Arial, sans-serif;
     ">
       <div style="position: absolute; top: 10px; right: 15px; cursor: pointer; font-size: 20px; color: #000;" id="popup-close">&times;</div>
-      <p style="font-size: 16px;">
+      <p>
         Due to high order volumes we are only accepting click and collect orders at this time. 
         To find your nearest store 
         <a href="https://www.workclobber.com.au/pages/contact#store-locations" style="color: #edcc2c; text-decoration: underline;">
@@ -98,7 +98,13 @@
         </a>.
       </p>
     </div>
-    
+    <style>
+      #order-popup p {
+        color: #fff;
+        font-size: 18px !important;
+        font-family: 'CamptonBook';
+    }
+    </style>
     <script>
     // Helper functions for cookies
     function setCookie(name, value, days) {

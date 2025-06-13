@@ -10,9 +10,9 @@
 {
   "current": {
     "show_announcement_banner": true,
-    "announcement_notice_text": "Due to high order volumes we are only accepting click and collect orders at this time. To find your nearest store <a href=\"https://www.workclobber.com.au/pages/contact#store-locations\">here</a>.",
+    "announcement_notice_text": "We are only accepting click and collect orders at this time. To find your nearest store <a href=\"https://www.workclobber.com.au/pages/contact#store-locations\">here</a>.",
     "show_cart_notice": true,
-    "cart_notice_text": "Due to high order volumes we are only accepting click and collect orders at this time. To find your nearest store <a href=\"https://www.workclobber.com.au/pages/contact#store-locations\">here</a>.",
+    "cart_notice_text": "We are only accepting click and collect orders at this time. To find your nearest store <a href=\"https://www.workclobber.com.au/pages/contact#store-locations\">here</a>.",
     "checkout_logo_image": "shopify://shop_images/Logo-Transparent.png",
     "sections": {
       "header": {

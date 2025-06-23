@@ -1,7 +1,7 @@
 .cart-notice{background-color: rgb(247, 121, 29);
     color: rgb(0, 0, 0);
     border: 3px solid rgb(237, 204, 44);
-            border-left:none !important;}
+            border-left:3px solid rgb(237, 204, 44) !important;}
 
 @media screen and (max-width: 767px) {
   .cart-title-table table {

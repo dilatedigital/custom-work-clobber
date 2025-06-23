@@ -6,7 +6,11 @@
     border-radius: 10px;}
 .cart-notice svg{display:none;}
 .cart-notice .notice-info{
-   color:#fff;
+       color: #fff;
+    margin: auto;
+    font-weight: 500;
+    font-size: 17px;
+    text-align: center;
 }
 
 @media screen and (max-width: 767px) {

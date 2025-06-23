@@ -4,7 +4,7 @@
             border-left:3px solid rgb(237, 204, 44) !important;
              
     border-radius: 10px;}
-
+.cart-notice svg{display:none;}
 .cart-notice .notice-info{
    color:#fff;
 }

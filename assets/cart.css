@@ -5,6 +5,10 @@
              
     border-radius: 10px;}
 
+.cart-notice .notice-info{
+   color:#fff;
+}
+
 @media screen and (max-width: 767px) {
   .cart-title-table table {
     border: 0;

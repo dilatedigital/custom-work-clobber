@@ -1,6 +1,15 @@
 let map;
 let markers = [];
 
+// Initialize the Google Maps API with key
+function loadGoogleMapsAPI() {
+  const script = document.createElement('script');
+  script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyDaf244aE-7QUfKB4iB5zIooTTE6s4ZsRM&callback=initMap`;
+  script.async = true;
+  script.defer = true;
+  document.head.appendChild(script);
+}
+
 function initMap() {
   var locations = [
     ['Morley', -31.90165757759303, 115.90121411112631],
@@ -241,14 +250,11 @@ function initMap() {
     markers.push(marker)
   }
 
-
-
   google.maps.event.addListener( map,'click', function () {
-      
-    //Change the marker icon
-
-    //console.log(icon)
+      //Change the marker icon
+      //console.log(icon)
   });
 }
 
-initMap();
+// Load the Google Maps API with the key
+loadGoogleMapsAPI();

@@ -30,6 +30,17 @@
       "home-hero": {
         "type": "home-hero",
         "blocks": {
+          "hero_slider_yfFqK7": {
+            "type": "hero_slider",
+            "settings": {
+              "image": "shopify://shop_images/D2.png",
+              "image_mobile": "shopify://shop_images/D1.png",
+              "slide_title": "",
+              "slide_right_text": "",
+              "button_title": "",
+              "slide_button_url": "https://instanttoilets.com.au/product/five-star-streamline-pro/"
+            }
+          },
           "fd5b5181-0e92-4f38-8c2c-ca2a65f7da2e": {
             "type": "hero_slider",
             "settings": {
@@ -52,17 +63,6 @@
               "slide_button_url": "https://www.workclobber.com.au/collections/all?sort_by=best-selling"
             }
           },
-          "hero_slider_yfFqK7": {
-            "type": "hero_slider",
-            "settings": {
-              "image": "shopify://shop_images/D2.png",
-              "image_mobile": "shopify://shop_images/D1.png",
-              "slide_title": "",
-              "slide_right_text": "",
-              "button_title": "",
-              "slide_button_url": "https://instanttoilets.com.au/product/five-star-streamline-pro/"
-            }
-          },
           "6dffdcbe-16a7-46bf-beba-6ba59adb1fd0": {
             "type": "hero_slider",
             "disabled": true,
@@ -76,9 +76,9 @@
           }
         },
         "block_order": [
+          "hero_slider_yfFqK7",
           "fd5b5181-0e92-4f38-8c2c-ca2a65f7da2e",
           "hero_slider_efnCRX",
-          "hero_slider_yfFqK7",
           "6dffdcbe-16a7-46bf-beba-6ba59adb1fd0"
         ],
         "settings": {

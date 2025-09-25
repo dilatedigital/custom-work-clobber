@@ -1,10 +1,16 @@
 <style>
-  .mobile-hero {
+  /* Mobile Hero Slider Styles */
+  .mobile-hero-slider {
     min-height: 535px;
+    background-color: var(--yellow);
+    overflow: hidden;
   }
+
   .mobile-hero-texts-btn .wc-btn {
     width: 181px;
     height: 64px;
+    margin-top: 20px;
+    margin-left: -8px;
   }
 
   .mobile-hero-texts-btn .wc-btn svg,
@@ -40,21 +46,24 @@
     box-shadow: -10px 0 0 #101010;
   }
 
-  .mobile-hero-texts-btn .wc-btn {
-    margin-top: 20px;
-    margin-left: -8px;
-  }
-
   .mobile-hero-texts-btn {
     padding-left: 30px;
     margin-top: auto;
     margin-bottom: 2rem;
-  }
-  .mobile-hero img {
-    height: 100%;
-    object-fit: cover;
+    position: relative;
+    z-index: 10;
   }
 
+  .mobile-hero-slider img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  /* Desktop Hero Slider Styles */
   .hero-slider {
     background-color: var(--yellow);
     min-height: 625px;
@@ -64,51 +73,33 @@
   .hero-slider .swiper-wrapper img {
     width: 100%;
     object-fit: cover;
+    height: 625px;
   }
 
-  .container-height,
-  .hero-slider .swiper-wrapper img {
+  .container-height {
     height: 625px;
   }
 
   .desktop-hero-texts-btn .h1 {
-    font-size: 82px;
-    line-height: 80px;
-    padding-right: 20px;
-    /* box-shadow: -20px 0 0 #101010; */
-  }
-
-  .desktop-hero-texts-btn span.small_text {
-    font-size: 22px;
-    letter-spacing: 2px;
-    /* box-shadow: -20px 0 0 #101010; */
-  }
-
-  .desktop-hero-texts-btn .h1 {
     font-size: 50px;
-    color: #fff;
     line-height: 52px;
     display: inline;
     white-space: pre-wrap;
-}
+    color: #fff;
+  }
 
-.desktop-hero-texts-btn .h1 span {
+  .desktop-hero-texts-btn .h1 span {
     background-color: #101010;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px 10px 0;
     box-shadow: -10px 0 0 #101010;
-    padding-top: 10px;
-}
+  }
 
   .desktop-hero-texts-btn {
     padding-top: 100px;
     padding-left: 20px;
   }
 
-  .hero-slider .wc-btn:hover {
-    opacity: 0.99;
-  }
-
+  /* Navigation Styles */
   .hero-nav-inner {
     max-width: 160px;
   }
@@ -120,35 +111,37 @@
   }
 
   .next-hero svg,
-  .prev-hero svg{ 
+  .prev-hero svg { 
     width: 28px;
   }
 
+  .mobile-hero-nav,
+  .hero-nav {
+    transform: translateY(-135px);
+    z-index: 3;
+  }
+
+  /* Other Elements */
   .hero-slider .wc-btn {
     width: 200px;
     height: 64px;
+    right: 65px;
+    bottom: 65px;
+  }
+
+  .hero-slider .wc-btn:hover {
+    opacity: 0.99;
   }
 
   .slide-number {
     font-weight: 700;
     top: 115px;
-  }
-  
-  .desktop-right-text .sub,
-  .slide-number {
     font-family: 'Eurostile';
   }
 
-  .desktop-right-text .sub {
-    font-weight: 800;
-  }
-
-  .desktop-right-text .sup {
-    font-size: 14px;
-  }
-
-  .desktop-right-text h2 {
-    font-size: 37px;
+  .desktop-right-text {
+    bottom: 160px;
+    right: 0;
   }
 
   .desktop-right-text:before {
@@ -161,22 +154,6 @@
     top: -23px;
   }
 
-  .desktop-right-text {
-    bottom: 160px;
-    right: 0;
-  }
-
-  .hero-slider .wc-btn {
-    right: 65px;
-    bottom: 65px;
-  }
-
-  .hero-nav {
-    transform: translateY(-135px);
-    z-index: 3;
-  }
-
-
   @media screen and (min-width: 390px) {
     .mobile-hero-text .h1 {
       font-size: 58px;
@@ -184,64 +161,82 @@
   }
 
   @media screen and (min-width: 500px) {
-    .mobile-hero > img {
-      object-fit: cover;
-      width: 100%;
+    .mobile-hero-slider img {
       height: 616px;
     }
   }
 </style>
+
 <!-- MOBILE HERO -->
-<div class="mobile-hero relative flex items-center xct:hidden">
-  <img src="{{ section.settings.mobile_hero_image | img_url: 'master'  }}" class="absolute top-0 left-0" alt="{{ section.settings.mobile_hero_image.alt }}">
-  <div class="mobile-hero-texts-btn relative z-10">
-    {% if section.settings.mobile_hero_title %}
-    <div class="mobile-hero-text uppercase">
-      {{ section.settings.mobile_hero_title }}
-    </div> 
-    {% endif %}
-    {% if section.settings.mobile_button_title %}
-      <a href="{{ section.settings.mobile_button_link }}" class="bg-wc-black text-white transition flex items-center justify-center wc-btn uppercase lg:text-xl">
-        {{ section.settings.mobile_button_title }} {% render 'icon-chevron-right' %}
-      </a>
-    {% endif %}
+<div class="mobile-hero-slider relative flex items-center xct:hidden">
+  <div class="swiper-wrapper">
+    {% assign counter = 0 %}
+    {% for block in section.blocks %}
+      {% assign counter = counter | plus: 1 %}
+      {% if block.type == 'hero_slider' %}
+        <div class="swiper-slide relative">
+          <img src="{{ block.settings.image_mobile | default: block.settings.image | img_url: 'master' }}" 
+               alt="{{ block.settings.image.alt }}" class="mobile-slide-image">
+          <div class="mobile-hero-texts-btn">
+            {% if block.settings.slide_title %}
+              <div class="mobile-hero-text uppercase">
+                {{ block.settings.slide_title }}
+              </div>
+            {% endif %}
+            {% if block.settings.button_title %}
+              <a href="{{ block.settings.slide_button_url }}" class="bg-wc-black text-white transition flex items-center justify-center wc-btn uppercase lg:text-xl">
+                {{ block.settings.button_title }} {% render 'icon-chevron-right' %}
+              </a>
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <div class="mobile-hero-nav container mx-auto relative">
+    <div class="hero-nav-inner z-20 flex justify-between absolute w-full">
+      <div class="prev-hero-mobile w-6 border border-wc-black flex items-center justify-center">
+        {% render 'icon-chevron-left' %}
+      </div>
+      <div class="next-hero-mobile w-6 border border-wc-black flex items-center justify-center">
+        {% render 'icon-chevron-right' %}
+      </div>
+    </div>
   </div>
 </div>
+
 <!-- DESKTOP HERO -->
 <div class="hidden xct:block hero-slider mx-auto overflow-hidden relative">
   <div class="swiper-wrapper">
     {% assign counter = 0 %}
-      {% for block in section.blocks %}
-        {% assign counter = counter | plus: 1 %}
-        {% if block.type == 'hero_slider' %}
-          <div class="relative swiper-slide">
-            <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt }}" class="desktop absolute top-0 left-0">
-            {% if block.settings.image_mobile != blank %}
-              <img src="{{ block.settings.image_mobile | img_url: 'master' }}" alt="{{ block.settings.image.alt }}" class="mobile absolute top-0 left-0">
-            {% endif %}
-            <div class="container container-height mx-auto relative">
-              <p class="slide-number absolute right-0 transform -rotate-90">0{{ counter }} / 0{{ section.blocks.size }}</p>
-              <div class="desktop-hero-texts-btn uppercase">
-                {% if block.settings.slide_title != blank %}
-                  <div class="desktop-hero-text">
-                    {{ block.settings.slide_title }}
-                  </div>
-                {% endif %}
-              </div>
-              {% if block.settings.slide_right_text != blank %}
-                <div class="desktop-right-text uppercase absolute right-0">
-                  {{ block.settings.slide_right_text }}
+    {% for block in section.blocks %}
+      {% assign counter = counter | plus: 1 %}
+      {% if block.type == 'hero_slider' %}
+        <div class="relative swiper-slide">
+          <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt }}" class="desktop absolute top-0 left-0">
+          <div class="container container-height mx-auto relative">
+            <p class="slide-number absolute right-0 transform -rotate-90">0{{ counter }} / 0{{ section.blocks.size }}</p>
+            <div class="desktop-hero-texts-btn uppercase">
+              {% if block.settings.slide_title != blank %}
+                <div class="desktop-hero-text">
+                  {{ block.settings.slide_title }}
                 </div>
               {% endif %}
-              {% if block.settings.button_title != blank %}
-                <a href="{{ block.settings.slide_button_url }}" class="bg-wc-black text-white transition flex items-center justify-center wc-btn uppercase lg:text-xl absolute">
-                  {{ block.settings.button_title }} {% render 'icon-chevron-right' %}
-                </a>
-              {% endif %}
             </div>
-          </div>   
-        {% endif %}
-      {% endfor %}
+            {% if block.settings.slide_right_text != blank %}
+              <div class="desktop-right-text uppercase absolute right-0">
+                {{ block.settings.slide_right_text }}
+              </div>
+            {% endif %}
+            {% if block.settings.button_title != blank %}
+              <a href="{{ block.settings.slide_button_url }}" class="bg-wc-black text-white transition flex items-center justify-center wc-btn uppercase lg:text-xl absolute">
+                {{ block.settings.button_title }} {% render 'icon-chevron-right' %}
+              </a>
+            {% endif %}
+          </div>
+        </div>   
+      {% endif %}
+    {% endfor %}
   </div>
   <div class="hero-nav container mx-auto relative">
     <div class="hero-nav-inner z-20 flex justify-between absolute w-full">
@@ -254,82 +249,100 @@
     </div>
   </div>
 </div>
+
 <script>
   const heroSlider = new Swiper('.hero-slider', {
-     slidesPerView: 1,
-     loop: true,
-     navigation: {
-       nextEl: '.next-hero',
-       prevEl: '.prev-hero',
-     },
-     autoplay: {
-       delay: 4000, 
-       disableOnInteraction: true, 
-     },
- 
-   });
+    slidesPerView: 1,
+    loop: true,
+    navigation: {
+      nextEl: '.next-hero',
+      prevEl: '.prev-hero',
+    },
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: true,
+    },
+  });
+
+  const mobileHeroSlider = new Swiper('.mobile-hero-slider', {
+    slidesPerView: 1,
+    loop: true,
+    navigation: {
+      nextEl: '.next-hero-mobile',
+      prevEl: '.prev-hero-mobile',
+    },
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: true,
+    },
+  });
 </script>
-{% schema %} 
+
+{% schema %}
 {
-  "name":"Home Hero",
-  "tag":"section",
-  "class":"home-hero",
-  "max_blocks":6,
-  "settings":[
-     {
-        "type":"html",
-        "id":"mobile_hero_title",
-        "label":"Mobile Hero Title"
-     },
-     {
-        "type":"text",
-        "id":"mobile_button_title",
-        "label":"Mobile Hero Button Title"
-     },
-     {
-        "type":"url",
-        "id":"mobile_button_link",
-        "label":"Mobile Hero Button Title"
-     },
-     {
-        "type":"image_picker",
-        "id":"mobile_hero_image",
-        "label":"Mobile Hero Image"
-     }
+  "name": "Home Hero v2",
+  "tag": "section",
+  "class": "home-hero",
+  "max_blocks": 6,
+  "settings": [
+    {
+      "type": "html",
+      "id": "mobile_hero_title",
+      "label": "Mobile Hero Title"
+    },
+    {
+      "type": "text",
+      "id": "mobile_button_title",
+      "label": "Mobile Hero Button Title"
+    },
+    {
+      "type": "url",
+      "id": "mobile_button_link",
+      "label": "Mobile Hero Button Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_hero_image",
+      "label": "Mobile Hero Image"
+    }
   ],
-  "blocks":[
-     {
-        "name":"Hero Slider",
-        "type":"hero_slider",
-        "settings":[
-           {
-              "type":"image_picker",
-              "id":"image",
-              "label":"Image"
-           },
-           
-           {
-              "type":"html",
-              "id":"slide_title",
-              "label":"Slide Title"
-           },
-           {
-              "type":"html",
-              "id":"slide_right_text",
-              "label":"Slide Right Texts"
-           },
-           {
-              "type":"text",
-              "id":"button_title",
-              "label":"Slide Button Title"
-           },
-           {
-              "type":"url",
-              "id":"slide_button_url",
-              "label":"Slide Button Link"
-           }
-        ]
-     }
+  "blocks": [
+    {
+      "name": "Hero Slider",
+      "type": "hero_slider",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Desktop Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_mobile",
+          "label": "Mobile Image"
+        },
+        {
+          "type": "html",
+          "id": "slide_title",
+          "label": "Slide Title"
+        },
+        {
+          "type": "html",
+          "id": "slide_right_text",
+          "label": "Slide Right Texts"
+        },
+        {
+          "type": "text",
+          "id": "button_title",
+          "label": "Slide Button Title"
+        },
+        {
+          "type": "url",
+          "id": "slide_button_url",
+          "label": "Slide Button Link"
+        }
+      ]
+    }
   ]
 }
 {% endschema %}

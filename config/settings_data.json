@@ -34,6 +34,7 @@
             "type": "hero_slider",
             "settings": {
               "image": "shopify://shop_images/C2.png",
+              "image_mobile": "shopify://shop_images/C1.png",
               "slide_title": "",
               "slide_right_text": "",
               "button_title": "Shop Now",
@@ -44,6 +45,7 @@
             "type": "hero_slider",
             "settings": {
               "image": "shopify://shop_images/Web_Banner_-_B_3b22d92c-e63a-4ca7-9e5d-2838e7be1a1f.jpg",
+              "image_mobile": "shopify://shop_images/Web_Banner_-_B_3b22d92c-e63a-4ca7-9e5d-2838e7be1a1f.jpg",
               "slide_title": "",
               "slide_right_text": "",
               "button_title": "Shop Now",
@@ -54,6 +56,7 @@
             "type": "hero_slider",
             "settings": {
               "image": "shopify://shop_images/1080x566_2.png",
+              "image_mobile": "shopify://shop_images/1080x1350_2.png",
               "slide_title": "",
               "slide_right_text": "",
               "button_title": "",
@@ -64,6 +67,7 @@
             "type": "hero_slider",
             "settings": {
               "image": "shopify://shop_images/D2.png",
+              "image_mobile": "shopify://shop_images/D1.png",
               "slide_title": "",
               "slide_right_text": "",
               "button_title": "",

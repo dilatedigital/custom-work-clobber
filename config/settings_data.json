@@ -55,8 +55,8 @@
           "hero_slider_efnCRX": {
             "type": "hero_slider",
             "settings": {
-              "image": "shopify://shop_images/1080x566_2.png",
-              "image_mobile": "shopify://shop_images/1080x1350_2.png",
+              "image": "shopify://shop_images/Web_-_Desktop.png",
+              "image_mobile": "shopify://shop_images/Web_-_Mobile.png",
               "slide_title": "",
               "slide_right_text": "",
               "button_title": "",

@@ -21,7 +21,7 @@
           "mobile_menu_title": "Menu",
           "mobile_menu": "mobile-menu",
           "menu": "bottom-bar-menu",
-          "top_bar_menu": "find-a-store",
+          "top_bar_menu": "",
           "logo": "shopify://shop_images/Logo-Transparent.png",
           "privacy_policy_link": "shopify://pages/privacy-policy",
           "terms_link": "shopify://pages/terms-conditions"

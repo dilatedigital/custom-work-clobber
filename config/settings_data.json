@@ -33,8 +33,8 @@
           "hero_slider_yfFqK7": {
             "type": "hero_slider",
             "settings": {
-              "image": "shopify://shop_images/D2.png",
-              "image_mobile": "shopify://shop_images/D1.png",
+              "image": "shopify://shop_images/C_-_desktop.png",
+              "image_mobile": "shopify://shop_images/C_-_mobile.png",
               "slide_title": "",
               "slide_right_text": "",
               "button_title": "",

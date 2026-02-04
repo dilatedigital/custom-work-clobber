@@ -73,13 +73,25 @@
               "button_title": "Shop Now",
               "slide_button_url": "shopify://collections/ladies"
             }
+          },
+          "hero_slider_dP64e8": {
+            "type": "hero_slider",
+            "settings": {
+              "image": "shopify://shop_images/Desktop.png",
+              "image_mobile": "shopify://shop_images/Mobile.png",
+              "slide_title": "",
+              "slide_right_text": "",
+              "button_title": "SHOP NOW",
+              "slide_button_url": "https://www.workclobber.com.au/collections/workboots/?filter.p.vendor=Blundstone"
+            }
           }
         },
         "block_order": [
           "hero_slider_yfFqK7",
           "fd5b5181-0e92-4f38-8c2c-ca2a65f7da2e",
           "hero_slider_efnCRX",
-          "6dffdcbe-16a7-46bf-beba-6ba59adb1fd0"
+          "6dffdcbe-16a7-46bf-beba-6ba59adb1fd0",
+          "hero_slider_dP64e8"
         ],
         "settings": {
           "mobile_hero_title": "",

@@ -139,7 +139,7 @@
           "settings": {
             "logo": "shopify://shop_images/Logo_Main.jpg",
             "button_text": "View Products",
-            "brand_collection_url": ""
+            "brand_collection_url": "shopify://collections/m8-footwear"
           }
         },
         "55d8afdd-a33a-43f7-aad3-19ec5ab07b5f": {

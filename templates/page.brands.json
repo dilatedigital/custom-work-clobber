@@ -134,6 +134,14 @@
             "brand_collection_url": "shopify://collections/mongrel"
           }
         },
+        "brands_block_H4fLaX": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify://shop_images/Logo_Main.jpg",
+            "button_text": "View Products",
+            "brand_collection_url": ""
+          }
+        },
         "55d8afdd-a33a-43f7-aad3-19ec5ab07b5f": {
           "type": "brands_block",
           "settings": {
@@ -158,18 +166,10 @@
             "brand_collection_url": "shopify://collections/pro-choice"
           }
         },
-        "c1f00762-e917-4e02-a0ee-ba63ffafaf81": {
-          "type": "brands_block",
-          "settings": {
-            "logo": "shopify://shop_images/riders-by-lee-185x185-logo-removebg-preview.png",
-            "button_text": "View Products",
-            "brand_collection_url": "shopify://collections/riders-by-lee"
-          }
-        },
         "0e456cdf-0951-4383-a51e-fe9f8c70417d": {
           "type": "brands_block",
           "settings": {
-            "logo": "shopify://shop_images/Logo_c055bb45-220f-4e7a-9d41-63bf824dba6b.jpg",
+            "logo": "shopify://shop_images/New_logo_bfc72b4f-a77e-4f0b-ba63-8a14ad57c119.jpg",
             "button_text": "View Products",
             "brand_collection_url": "shopify://collections/rugged-xtremes"
           }
@@ -261,10 +261,10 @@
         "c21fac1e-95c4-4aed-82ff-2c47f2182c41",
         "ac1edc6d-1fb8-437c-9b32-805955312252",
         "193364b9-efa1-42d2-8a96-24af14673b5e",
+        "brands_block_H4fLaX",
         "55d8afdd-a33a-43f7-aad3-19ec5ab07b5f",
         "aafb9ad9-4420-43d2-84e5-9de97f25e280",
         "282cde2b-617d-441d-a9bb-09c7055b2d76",
-        "c1f00762-e917-4e02-a0ee-ba63ffafaf81",
         "0e456cdf-0951-4383-a51e-fe9f8c70417d",
         "brands_block_dH7ztC",
         "brands_block_XVJaDP",

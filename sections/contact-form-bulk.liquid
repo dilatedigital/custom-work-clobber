@@ -1,7 +1,7 @@
 <div class="flex flex-col items-center my-8">
   {% if section.settings.title != blank %}
       <h1 class="text-3xl font-medium my-8 md:my-16">{{ section.settings.title }}</h1>
-      <p></p>
+      <p>{{ section.settings.paragraph }}</p>
   {% endif %}
   
   {% form 'contact' %}
@@ -75,6 +75,11 @@
           "type": "text",
           "id": "title",
           "label": "Title"
+      },
+      {
+          "type": "textarea",
+          "id": "paragraph",
+          "label": "Textarea"
       }
   ],
   "presets": [

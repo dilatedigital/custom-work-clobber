@@ -11,6 +11,7 @@
   "sections": {
     "1649039603465f5f6d": {
       "type": "inner-banner",
+      "disabled": true,
       "settings": {
         "inner_banner_title": "Contact us",
         "inner_banner_image": "shopify://shop_images/2_work_clobber-contact-hero.jpg"
@@ -20,8 +21,17 @@
       "type": "template-contact",
       "settings": {}
     },
+    "contact_form_bulk_YmhimP": {
+      "type": "contact-form-bulk",
+      "name": "Contact Form Bulk",
+      "settings": {
+        "title": "Bulk and trade orders",
+        "paragraph": "from a small team to a full construction site, we make bulk workwear easy. Tell us what you need and we handle the rest."
+      }
+    },
     "contact-first-section": {
       "type": "contact-first-section",
+      "disabled": true,
       "settings": {
         "left_content_title": "<h2>\n<span>Have a question?</span> Send Your Query To Our Knowledgeable And Friendly Staff.</h2>",
         "left_content_paragraph": "<p>If you have any questions, or would like to talk to us about setting up a Business Account, get in touch. </p>",
@@ -196,15 +206,26 @@
         "8c772e70-a6a4-4d20-be0f-5b51235d9697",
         "284d52de-35e5-4b45-8799-444a069de5c9"
       ],
+      "disabled": true,
       "settings": {
         "store_locations_title": "See all our store locations"
+      }
+    },
+    "short_summary_iM979e": {
+      "type": "short-summary",
+      "disabled": true,
+      "name": "About Short Summary",
+      "settings": {
+        "short_summary": ""
       }
     }
   },
   "order": [
     "1649039603465f5f6d",
     "template",
+    "contact_form_bulk_YmhimP",
     "contact-first-section",
-    "contact-locations"
+    "contact-locations",
+    "short_summary_iM979e"
   ]
 }

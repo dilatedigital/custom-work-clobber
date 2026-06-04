@@ -1,0 +1,210 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1649039603465f5f6d": {
+      "type": "inner-banner",
+      "settings": {
+        "inner_banner_title": "Contact us",
+        "inner_banner_image": "shopify://shop_images/2_work_clobber-contact-hero.jpg"
+      }
+    },
+    "template": {
+      "type": "template-contact",
+      "settings": {}
+    },
+    "contact-first-section": {
+      "type": "contact-first-section",
+      "settings": {
+        "left_content_title": "<h2>\n<span>Have a question?</span> Send Your Query To Our Knowledgeable And Friendly Staff.</h2>",
+        "left_content_paragraph": "<p>If you have any questions, or would like to talk to us about setting up a Business Account, get in touch. </p>",
+        "left_bottom_content": "<p>You can also check our FAQ page by clicking <a href=\"/pages/faqs-deliveries\" title=\"FAQs & Deliveries\">here</a></p>",
+        "form_title": "Enquiry Form",
+        "btn_text": "Send Message"
+      }
+    },
+    "contact-locations": {
+      "type": "contact-locations",
+      "blocks": {
+        "693a2dc8-dabe-43aa-acf4-fcfe2d556950": {
+          "type": "store_detail",
+          "settings": {
+            "location_name": "Morley",
+            "address_line_1": "150 Russell Street",
+            "address_line_2": "Morley WA 6062",
+            "country": "Australia",
+            "email": "morley@workclobber.com.au",
+            "phone": "(08) 9370 3780",
+            "directions_link": "https://goo.gl/maps/wyNPVab3b46tdQMy5",
+            "oh_monday": "8:30am - 5:15pm",
+            "oh_tuesday": "8:30am - 5:15pm",
+            "oh_wed": "8:30am - 5:15pm",
+            "oh_thurs": "8:30am - 5:15pm",
+            "oh_friday": "8:30am - 5:15pm",
+            "oh_sat": "9:00am - 2:00pm",
+            "oh_sun": "Closed"
+          }
+        },
+        "a0f84251-56d4-4fc0-aae4-a21c40f5233e": {
+          "type": "store_detail",
+          "settings": {
+            "location_name": "Balcatta",
+            "address_line_1": "Cnr Wanneroo & Balcatta Rd",
+            "address_line_2": "Balcatta WA 6021",
+            "country": "Australia",
+            "email": "balcatta@workclobber.com.au",
+            "phone": "(08) 9345 2004",
+            "directions_link": "https://goo.gl/maps/z6VuUvppueoznNJ7A",
+            "oh_monday": "8:30am - 5:15pm",
+            "oh_tuesday": "8:30am - 5:15pm",
+            "oh_wed": "8:30am - 5:15pm",
+            "oh_thurs": "8:30am - 5:15pm",
+            "oh_friday": "8:30am - 5:15pm",
+            "oh_sat": "9:00am - 2:00pm",
+            "oh_sun": "Closed"
+          }
+        },
+        "57dc4160-46d8-4084-8110-f1a9cf91b35f": {
+          "type": "store_detail",
+          "settings": {
+            "location_name": "Cannington",
+            "address_line_1": "3/1399 Albany Highway",
+            "address_line_2": "Cannington WA 6107",
+            "country": "Australia",
+            "email": "cannington@workclobber.com.au",
+            "phone": "(08) 9351 8213",
+            "directions_link": "https://goo.gl/maps/pkVnQHqFZdQ79rrU7",
+            "oh_monday": "8:30am - 5:15pm",
+            "oh_tuesday": "8:30am - 5:15pm",
+            "oh_wed": "8:30am - 5:15pm",
+            "oh_thurs": "8:30am - 5:15pm",
+            "oh_friday": "8:30am - 5:15pm",
+            "oh_sat": "9:00am - 2:00pm",
+            "oh_sun": "Closed"
+          }
+        },
+        "ab20ed57-c820-4168-a794-d21fb5d25d01": {
+          "type": "store_detail",
+          "settings": {
+            "location_name": "O'Connor",
+            "address_line_1": "Cnr Stock & Peel Roads",
+            "address_line_2": "O'Connor WA 6163",
+            "country": "Australia",
+            "email": "oconnor@workclobber.com.au",
+            "phone": "(08) 9314 6430",
+            "directions_link": "https://goo.gl/maps/iTjU9uBecexbXFqE7",
+            "oh_monday": "8:30am - 5:15pm",
+            "oh_tuesday": "8:30am - 5:15pm",
+            "oh_wed": "8:30am - 5:15pm",
+            "oh_thurs": "8:30am - 5:15pm",
+            "oh_friday": "8:30am - 5:15pm",
+            "oh_sat": "9:00am - 2:00pm",
+            "oh_sun": "Closed"
+          }
+        },
+        "6087dc15-610c-4aba-b9ed-3982e1fd7fe7": {
+          "type": "store_detail",
+          "settings": {
+            "location_name": "Canningvale",
+            "address_line_1": "Cnr South St & Bannister Rd",
+            "address_line_2": "Canningvale WA 6155",
+            "country": "Australia",
+            "email": "canningvale@workclobber.com.au",
+            "phone": "(08) 9256 3077",
+            "directions_link": "https://goo.gl/maps/kEAWtq7BEUHeLgUNA",
+            "oh_monday": "8:30am - 5:15pm",
+            "oh_tuesday": "8:30am - 5:15pm",
+            "oh_wed": "8:30am - 5:15pm",
+            "oh_thurs": "8:30am - 5:15pm",
+            "oh_friday": "8:30am - 5:15pm",
+            "oh_sat": "9:00am - 2:00pm",
+            "oh_sun": "Closed"
+          }
+        },
+        "eb6020bf-ae0e-45dd-b8a6-0c5c5214785c": {
+          "type": "store_detail",
+          "settings": {
+            "location_name": "Midland",
+            "address_line_1": "4/156 Great Eastern Highway",
+            "address_line_2": "Midland WA 6056",
+            "country": "Australia",
+            "email": "midland@workclobber.com.au",
+            "phone": "(08) 9250 2733",
+            "directions_link": "https://goo.gl/maps/cMUiqW3yAJA388Sb7",
+            "oh_monday": "8:30am - 5:15pm",
+            "oh_tuesday": "8:30am - 5:15pm",
+            "oh_wed": "8:30am - 5:15pm",
+            "oh_thurs": "8:30am - 5:15pm",
+            "oh_friday": "8:30am - 5:15pm",
+            "oh_sat": "9:00am - 2:00pm",
+            "oh_sun": "Closed"
+          }
+        },
+        "8c772e70-a6a4-4d20-be0f-5b51235d9697": {
+          "type": "store_detail",
+          "settings": {
+            "location_name": "Kelmscott",
+            "address_line_1": "2/2874 Albany Highway",
+            "address_line_2": "Kelmscott 6111",
+            "country": "Australia",
+            "email": "kelmscott@workclobber.com.au",
+            "phone": "(08) 9495 4777",
+            "directions_link": "https://goo.gl/maps/cGsjHnnK9DU6Suj87",
+            "oh_monday": "8:30am - 5:15pm",
+            "oh_tuesday": "8:30am - 5:15pm",
+            "oh_wed": "8:30am - 5:15pm",
+            "oh_thurs": "8:30am - 5:15pm",
+            "oh_friday": "8:30am - 5:15pm",
+            "oh_sat": "9:00am - 2:00pm",
+            "oh_sun": "Closed"
+          }
+        },
+        "284d52de-35e5-4b45-8799-444a069de5c9": {
+          "type": "store_detail",
+          "settings": {
+            "location_name": "Joondalup",
+            "address_line_1": "9/162 Winton Drive",
+            "address_line_2": "Joondalup WA 6027",
+            "country": "Australia",
+            "email": "joondalup@workclobber.com.au",
+            "phone": "(08) 9300 9900",
+            "directions_link": "https://goo.gl/maps/5gMZXpEkg61R11kV7",
+            "oh_monday": "8:30am - 5:15pm",
+            "oh_tuesday": "8:30am - 5:15pm",
+            "oh_wed": "8:30am - 5:15pm",
+            "oh_thurs": "8:30am - 5:15pm",
+            "oh_friday": "8:30am - 5:15pm",
+            "oh_sat": "9:00am - 2:00pm",
+            "oh_sun": "Closed"
+          }
+        }
+      },
+      "block_order": [
+        "693a2dc8-dabe-43aa-acf4-fcfe2d556950",
+        "a0f84251-56d4-4fc0-aae4-a21c40f5233e",
+        "57dc4160-46d8-4084-8110-f1a9cf91b35f",
+        "ab20ed57-c820-4168-a794-d21fb5d25d01",
+        "6087dc15-610c-4aba-b9ed-3982e1fd7fe7",
+        "eb6020bf-ae0e-45dd-b8a6-0c5c5214785c",
+        "8c772e70-a6a4-4d20-be0f-5b51235d9697",
+        "284d52de-35e5-4b45-8799-444a069de5c9"
+      ],
+      "settings": {
+        "store_locations_title": "See all our store locations"
+      }
+    }
+  },
+  "order": [
+    "1649039603465f5f6d",
+    "template",
+    "contact-first-section",
+    "contact-locations"
+  ]
+}

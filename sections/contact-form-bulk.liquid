@@ -3,52 +3,6 @@
       <h1 class="text-5xl uppercase">{{ section.settings.title }}</h1>
       <div class="left-content--p text-lg"><p>{{ section.settings.paragraph }}</p></div>
   {% endif %}
-  <style>
-    .form-control label {
-        font-weight: 700;
-    }
-
-    .form-control input,
-    .form-control textarea {
-        border: 2px solid #dadada;
-        padding: 11px 20px;
-        width: 100%;
-    }
-
-    .form-control div {
-        margin-top: 10px;
-    }
-
-    .form-control textarea {
-        height: 215px;
-    }
-
-    .form-control button svg {
-        max-width: 12px;
-        margin-left: 10px;
-    }
-
-    .form-control button {
-        height: 55px;
-    }
-
-    .form-control button:hover svg .st0 {
-        fill: #fff;
-    }
-    .left-content--p p{
-            max-width: 500px;
-    text-align: center;
-    }
-    @media (min-width: 1024px) {
-    .lg\:mt-0 {
-        min-width: 500px !important;
-    }
-    h1{    background: #eecc2d;
-    padding: 10px;
-    margin-bottom: 20px;}
-}
-  </style>
-
       <div class="contact-page-form-container mt-12 lg:mt-0 w-full">
 
     <div class="mt-5">
@@ -114,6 +68,53 @@
             </div>      
         {% endform %}
 </div>
+
+ <style>
+    .form-control label {
+        font-weight: 700;
+    }
+
+    .form-control input,
+    .form-control textarea {
+        border: 2px solid #dadada;
+        padding: 11px 20px;
+        width: 100%;
+    }
+
+    .form-control div {
+        margin-top: 10px;
+    }
+
+    .form-control textarea {
+        height: 215px;
+    }
+
+    .form-control button svg {
+        max-width: 12px;
+        margin-left: 10px;
+    }
+
+    .form-control button {
+        height: 55px;
+    }
+
+    .form-control button:hover svg .st0 {
+        fill: #fff;
+    }
+    .left-content--p p{
+            max-width: 500px;
+    text-align: center;
+    }
+    @media (min-width: 1024px) {
+    .lg\:mt-0 {
+        min-width: 500px !important;
+    }
+    h1{    background: #eecc2d;
+    padding: 10px;
+    margin-bottom: 20px;}
+}
+  </style>
+
 
 {% schema %}
 {

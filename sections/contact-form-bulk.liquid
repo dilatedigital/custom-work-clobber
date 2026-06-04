@@ -45,40 +45,6 @@
     }
 }
   </style>
-  {% form 'contact' %}
-
-      {% if form.errors %}
-          <div class="border p-5">
-              <div class="flex flex-row items-center w-full my-3">
-                  <div class="text-red-500">
-                      {% render 'icon-failed' %}
-                  </div>
-                  <div class="text-sm font-medium ml-3">
-                      Oh no! Your message is not sent
-                  </div>
-              </div>
-              <ul class="px-4 mb-3 ml-7 list-decimal">
-                  {% for error in form.errors %}
-                      <li>
-                          <span>{{ form.errors.messages[error] }}</span>
-                      </li>
-                  {% endfor %}
-              </ul>
-          </div>
-      {% elsif form.posted_successfully? %}
-          <div class="success-message flex flex-row items-center w-full my-3 p-5">
-              <div class="text-green-500">
-                  {% render 'icon-success' %}
-              </div>
-              <div class="text-sm font-medium ml-3">Your message is sent successfully</div>
-          </div> 
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          window.dataLayer.push({
-             'event': 'Contact_Form_Submit'
-           });
-        </script>
-      {% endif %}
 
       <div class="contact-page-form-container mt-12 lg:mt-0 w-full">
     <h3 class="text-3xl uppercase pb-6 border-b-3 border-wc-black">{{ section.settings.form_title }}</h3>
@@ -143,9 +109,6 @@
                 </div>
             </div>      
         {% endform %}
-      </div>
-  </div>      
-  {% endform %}
 </div>
 
 {% schema %}

@@ -1,7 +1,10 @@
 <div class="flex flex-col items-center my-8">
   {% if section.settings.title != blank %}
       <h1 class="text-3xl uppercase pb-6 border-b-3">{{ section.settings.title }}</h1>
-      <p>{{ section.settings.paragraph }}</p>
+      <div class="left-content--p text-lg border-b border-gray-300">
+              <p>{{ section.settings.paragraph }}</p>
+    </div>
+
   {% endif %}
   
   {% form 'contact' %}

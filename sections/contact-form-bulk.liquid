@@ -6,7 +6,39 @@
     </div>
 
   {% endif %}
-  
+  <style>
+    .form-control label {
+        font-weight: 700;
+    }
+
+    .form-control input,
+    .form-control textarea {
+        border: 2px solid #dadada;
+        padding: 11px 20px;
+        width: 100%;
+    }
+
+    .form-control div {
+        margin-top: 10px;
+    }
+
+    .form-control textarea {
+        height: 215px;
+    }
+
+    .form-control button svg {
+        max-width: 12px;
+        margin-left: 10px;
+    }
+
+    .form-control button {
+        height: 55px;
+    }
+
+    .form-control button:hover svg .st0 {
+        fill: #fff;
+    }
+  </style>
   {% form 'contact' %}
 
       {% if form.errors %}

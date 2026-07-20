@@ -366,7 +366,7 @@
       "home-cta": {
         "type": "home-cta",
         "blocks": {
-          "b8d1c4fe-3633-4012-8ffb-dbc83d89c8df": {
+          "cta_image_LgKhWY": {
             "type": "cta_image",
             "settings": {
               "image": "shopify://shop_images/embroidery.jpg",
@@ -384,7 +384,7 @@
           }
         },
         "block_order": [
-          "b8d1c4fe-3633-4012-8ffb-dbc83d89c8df",
+          "cta_image_LgKhWY",
           "50fa9b1b-67e1-4791-8300-7359f6496484"
         ],
         "settings": {}

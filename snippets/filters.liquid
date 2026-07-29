@@ -82,7 +82,7 @@
   })"
   >
   {% render 'loader' %}
-  <form class="filter-form" method="get" x-ref="filter_form">
+  <form class="filter-form" x-ref="filter_form">
     {%- for filter in collection.filters -%}
       {% assign main_index = forloop.index %}
       <details class="filter-group xct:hidden">

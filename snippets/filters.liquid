@@ -1,116 +1,63 @@
-<div class="filters" 
-  x-data="{
-    loading: false,
-    checkbox: []
-  }"
-  @filter-pagination-updated.window="$nextTick(() => {
-  console.log($event.detail.page);
-    fetch($event.detail.page)
-      .then(response => response.text())
-      .then(data => {
-        let html_div = document.createElement('div');
-        html_div.innerHTML = data;
-        let html_dom = html_div.querySelector('.products-grid').innerHTML;
-        document.querySelector('.products-grid').innerHTML = html_dom;
-  
-        // update url without refreshing the page 
-        history.replaceState(null, null, $event.detail.page);
-      })
-      .catch(error => console.error('Error:', error))
-      .finally(() => loading = false);
-  })"
-  @filter-updated="$nextTick(() => {
-    const queryString = new URLSearchParams(new FormData($refs.filter_form)).toString()
+{%- comment -%}
+  ============================================================================
+  filters.liquid  —  CORRECTED
+  ----------------------------------------------------------------------------
+  Key changes vs original:
+  1. Single native GET <form action="{{ collection.url }}"> so filtering works
+     even if JS fails, and so applied filters, active-value counts, "Reset"
+     links and pagination all stay correct (server rendered every time).
+  2. Desktop <label> now has a real `for=` and the broken comma-expression
+     x-on:click handler has been removed. Native label -> checkbox -> submit.
+  3. Removed the hand-rolled fetch/replace AJAX (the source of dropped
+     sort/filter/page params and stale active states) and the unused
+     checkbox[] Alpine state.
+  4. Desktop = auto-submit on change (feels live). Mobile = tick several then
+     "Apply" (one reload). Both go through the same form.
 
-    const queryStringF = window.location.search; 
-    const urlParams = new URLSearchParams(queryString); 
+  NOTE for the `types?q=` collection: a plain GET form posts to
+  {{ collection.url }} and does not carry the `q` search param. The hidden
+  input below re-adds it. Verify `collection.current_type` is correct for your
+  smart-collection setup, or swap in however `q` is populated on that template.
+  ============================================================================
+{%- endcomment -%}
 
-    const urlParamsF = new URLSearchParams(queryStringF);
-    
-    loading = true;
-
-    if (urlParamsF.has('sort_by') && !urlParamsF.has('q')) {
-      const sorted = urlParamsF.get('sort_by');
-
-      fetch('/collections/{{ collection.handle }}?sort_by=' + sorted + '&' + queryString)
-      .then(response => response.text())
-      .then(data => {
-        let html_div = document.createElement('div');
-        html_div.innerHTML = data;
-        let html_dom = html_div.querySelector('.products-grid').innerHTML;
-        document.querySelector('.products-grid').innerHTML = html_dom;
-
-        // update url without refreshing the page 
-        history.replaceState(null, null, '?sort_by=' + sorted + '&' + queryString);
-        
-      })
-      .catch(error => console.error('Error:', error))
-      .finally(() => loading = false);
-    } else if ( window.location.href.indexOf('types') > -1 && urlParamsF.has('q')) {
-      const collectionType = urlParamsF.get('q')
-
-      fetch('/collections/types?q=' + collectionType + '&' + queryString)
-      .then(response => response.text())
-      .then(data => {
-        let html_div = document.createElement('div');
-        html_div.innerHTML = data;
-        let html_dom = html_div.querySelector('.products-grid').innerHTML;
-        document.querySelector('.products-grid').innerHTML = html_dom;
-
-        // update url without refreshing the page 
-        history.replaceState(null, null, 'types?q=' + collectionType + '&' + queryString);
-        
-      })
-      .catch(error => console.error('Error:', error))
-      .finally(() => loading = false);
-    } else {
-          fetch('/collections/{{ collection.handle }}?' + queryString)
-          .then(response => response.text())
-          .then(data => {
-            let html_div = document.createElement('div');
-            html_div.innerHTML = data;
-            let html_dom = html_div.querySelector('.products-grid').innerHTML;
-            document.querySelector('.products-grid').innerHTML = html_dom;
-      
-            // update url without refreshing the page 
-            history.replaceState(null, null, '/collections/{{ collection.handle }}/?' + queryString);
-          })
-          .catch(error => console.error('Error:', error))
-          .finally(() => loading = false);
-    }
-    
-  })"
-  >
+<div class="filters" x-data="{ loading: false }">
   {% render 'loader' %}
-  <form class="filter-form" x-ref="filter_form">
+
+  <form class="filter-form"
+        x-ref="filter_form"
+        method="get"
+        action="{{ collection.url }}">
+
+    {%- comment -%} Preserve the `types` search query on submit (see note above). {%- endcomment -%}
+    {%- if collection.handle == 'types' -%}
+      <input type="hidden" name="q" value="{{ collection.current_type | escape }}">
+    {%- endif -%}
+
     {%- for filter in collection.filters -%}
       {% assign main_index = forloop.index %}
+
+      {%- comment -%} ---------- MOBILE (collapsible, batch "Apply") ---------- {%- endcomment -%}
       <details class="filter-group xct:hidden">
         <summary class="filter-group-summary flex items-center justify-between">
           <div>
-            {% assign filter_name = '' %}
-            {% if filter.label == 'Brand' %}
-              {% assign filter_name = 'Filter by Brand' %}
-            {% else %}
-              {% assign filter_name = filter.label %}  
-            {% endif %}
+            {% assign filter_name = filter.label %}
+            {% if filter.label == 'Brand' %}{% assign filter_name = 'Filter by Brand' %}{% endif %}
             <span class="uppercase font-extrabold text-lg font-euro border-b pb-4 border-wc-black">{{ filter_name }}</span>
-  
             {%- if filter.active_values.size > 0 -%}
               <span>({{ filter.active_values.size }})</span>
             {%- endif -%}
           </div>
         </summary>
-  
+
         <div class="filter-group-display">
           <div class="filter-group-display__header">
             <span class="filter-group-display__header-selected hidden">{{ filter.active_values.size }} selected</span>
-  
             {%- if filter.active_values.size > 0 -%}
               <a href="{{ filter.url_to_remove }}" class="filter-group-display__header-reset">Reset</a>
             {%- endif -%}
           </div>
-  
+
           {%- case filter.type -%}
             {%- when 'boolean' or 'list' -%}
               <ul class="filter-group-display__list mt-7 xct:mt-12">
@@ -121,159 +68,114 @@
                       name="{{ filter_value.param_name }}"
                       value="{{ filter_value.value }}"
                       id="Filter-{{ filter.param_name }}-{{ forloop.index }}"
-                      {% if filter_value.active -%}checked{%- endif %}
-                      {% if filter_value.count == 0 and filter_value.active == false -%}disabled{%- endif %}
+                      {% if filter_value.active %}checked{% endif %}
+                      {% if filter_value.count == 0 and filter_value.active == false %}disabled{% endif %}
                     >
                     <label class="text-lg" for="Filter-{{ filter.param_name }}-{{ forloop.index }}">{{ filter_value.label }}</label>
-                    
                   </li>
                 {%- endfor -%}
               </ul>
-  
               <div class="filter-group-display__submit">
-                <input type="submit" value="Apply">
+                <input type="submit" value="Apply" class="bg-wc-yellow uppercase font-euro wc-btn hover:cursor-pointer mt-4">
               </div>
+
             {%- when 'price_range' -%}
               <div class="filter-group-display__price-range">
                 <div class="filter-group-display__price-range-from">
                   <span>{{ cart.currency.symbol }}</span>
-  
                   <input name="{{ filter.min_value.param_name }}"
                     id="Filter-{{ filter.min_value.param_name }}"
-                    {% if filter.min_value.value -%}
-                      value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"
-                    {%- endif %}
-                    type="number"
-                    placeholder="0"
-                    min="0"
-                    max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
-                  >
-  
+                    {% if filter.min_value.value %}value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"{% endif %}
+                    type="number" placeholder="0" min="0"
+                    max="{{ filter.range_max | money_without_currency | replace: ',', '' }}">
                   <label for="Filter-{{ filter.min_value.param_name }}">From</label>
                 </div>
                 <div class="filter-group-display__price-range-to">
                   <span>{{ cart.currency.symbol }}</span>
-  
                   <input name="{{ filter.max_value.param_name }}"
                     id="Filter-{{ filter.max_value.param_name }}"
-                    {% if filter.max_value.value -%}
-                      value="{{ filter.max_value.value | money_without_currency | replace: ',', '' }}"
-                    {%- endif %}
+                    {% if filter.max_value.value %}value="{{ filter.max_value.value | money_without_currency | replace: ',', '' }}"{% endif %}
                     type="number"
                     placeholder="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
-                    min="0"
-                    max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
-                  >
-  
+                    min="0" max="{{ filter.range_max | money_without_currency | replace: ',', '' }}">
                   <label for="Filter-{{ filter.max_value.param_name }}">To</label>
                 </div>
               </div>
-  
               <div class="filter-group-display__submit">
                 <input type="submit" value="Apply">
               </div>
           {%- endcase -%}
         </div>
       </details>
-      
-      <!-- DESKTOP FILTER -->
+
+      {%- comment -%} ---------- DESKTOP (always open, auto-submit on change) ---------- {%- endcomment -%}
       <div class="hidden xct:block filter-group">
-        <summary class="filter-group-summary flex items-center justify-between">
+        <div class="filter-group-summary flex items-center justify-between">
           <div>
-            {% assign filter_name = '' %}
-            {% if filter.label == 'Brand' %}
-              {% assign filter_name = 'Filter by Brand' %}
-            {% else %}
-              {% assign filter_name = filter.label %}  
-            {% endif %}
+            {% assign filter_name = filter.label %}
+            {% if filter.label == 'Brand' %}{% assign filter_name = 'Filter by Brand' %}{% endif %}
             <h4 class="uppercase font-extrabold text-lg font-euro border-b pb-4 border-wc-black">{{ filter_name }}</h4>
-  
-            {%- if filter.active_values.size > 0 -%}
-              <span class="hidden">({{ filter.active_values.size }})</span>
-            {%- endif -%}
           </div>
-        </summary>
-  
+        </div>
+
         <div class="filter-group-display">
           <div class="filter-group-display__header">
-            <span class="filter-group-display__header-selected hidden">{{ filter.active_values.size }} selected</span>
-  
             {%- if filter.active_values.size > 0 -%}
-              <a href="{{ filter.url_to_remove }}" class="filter-group-display__header-reset hidden">Reset</a>
+              <a href="{{ filter.url_to_remove }}" class="filter-group-display__header-reset">Reset</a>
             {%- endif -%}
           </div>
-  
+
           {%- case filter.type -%}
             {%- when 'boolean' or 'list' -%}
-              <ul class="filter-group-display__list mt-7 {{ filter.type }}" >
+              <ul class="filter-group-display__list mt-7 {{ filter.type }}">
                 {%- for filter_value in filter.values -%}
-                  <li class="filter-group-display__list-item flex items-start mb-2 last:mb-0 {{ filter_value.active }}">
+                  <li class="filter-group-display__list-item flex items-start mb-2 last:mb-0">
                     <input type="checkbox"
                       class="border border-wc-black rounded-none mr-2"
-                      @change="$dispatch('filter-updated')"
                       name="{{ filter_value.param_name }}"
                       value="{{ filter_value.value }}"
-                      
                       id="Filter-{{ filter.param_name }}-{{ forloop.index }}-d"
-                        {% if filter_value.active -%}
-                          x-init="() => { checkbox[{{ main_index }}{{ forloop.index }}] = true }"
-                          checked
-                        {%- endif %}
-                        {% if filter_value.count == 0 and filter_value.active == false -%}disabled{%- endif %}
+                      @change="loading = true; $el.form.submit()"
+                      {% if filter_value.active %}checked{% endif %}
+                      {% if filter_value.count == 0 and filter_value.active == false %}disabled{% endif %}
                     >
-                    <label x-on:click="() => { checkbox[{{ main_index }}{{ forloop.index }}] = ! checkbox[{{ main_index }}{{ forloop.index }}]; $el.parentNode.querySelector('input').checked = checkbox[{{ main_index }}{{ forloop.index }}]; },$dispatch('filter-updated')" class="label-filter text-lg leading-none hover:cursor-pointer"  >{{ filter_value.label }}</label>
-                    
+                    {%- comment -%} Real `for=` so the label toggles the box natively; no JS toggle needed. {%- endcomment -%}
+                    <label class="label-filter text-lg leading-none hover:cursor-pointer"
+                           for="Filter-{{ filter.param_name }}-{{ forloop.index }}-d">{{ filter_value.label }}</label>
                   </li>
                 {%- endfor -%}
               </ul>
-  
-              <div class="filter-group-display__submit hidden">
-                <input type="submit" value="Apply" class="bg-wc-yellow uppercase font-euro wc-btn hover:cursor-pointer mt-4">
-              </div>
+
             {%- when 'price_range' -%}
               <div class="filter-group-display__price-range">
                 <div class="filter-group-display__price-range-from">
                   <span>{{ cart.currency.symbol }}</span>
-  
                   <input name="{{ filter.min_value.param_name }}"
-                    id="Filter-{{ filter.min_value.param_name }}"
-                    {% if filter.min_value.value -%}
-                      value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"
-                    {%- endif %}
-                    type="number"
-                    placeholder="0"
-                    min="0"
-                    max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
-                  >
-  
-                  <label for="Filter-{{ filter.min_value.param_name }}">From</label>
+                    id="Filter-{{ filter.min_value.param_name }}-d"
+                    {% if filter.min_value.value %}value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"{% endif %}
+                    type="number" placeholder="0" min="0"
+                    max="{{ filter.range_max | money_without_currency | replace: ',', '' }}">
+                  <label for="Filter-{{ filter.min_value.param_name }}-d">From</label>
                 </div>
                 <div class="filter-group-display__price-range-to">
                   <span>{{ cart.currency.symbol }}</span>
-  
                   <input name="{{ filter.max_value.param_name }}"
-                    id="Filter-{{ filter.max_value.param_name }}"
-                    {% if filter.max_value.value -%}
-                      value="{{ filter.max_value.value | money_without_currency | replace: ',', '' }}"
-                    {%- endif %}
+                    id="Filter-{{ filter.max_value.param_name }}-d"
+                    {% if filter.max_value.value %}value="{{ filter.max_value.value | money_without_currency | replace: ',', '' }}"{% endif %}
                     type="number"
                     placeholder="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
-                    min="0"
-                    max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
-                  >
-  
-                  <label for="Filter-{{ filter.max_value.param_name }}">To</label>
+                    min="0" max="{{ filter.range_max | money_without_currency | replace: ',', '' }}">
+                  <label for="Filter-{{ filter.max_value.param_name }}-d">To</label>
                 </div>
               </div>
-  
+              {%- comment -%} Price range keeps an explicit Apply (typing shouldn't submit each keystroke). {%- endcomment -%}
               <div class="filter-group-display__submit">
-                <input type="submit" value="Apply">
+                <input type="submit" value="Apply" class="bg-wc-yellow uppercase font-euro wc-btn hover:cursor-pointer mt-4">
               </div>
           {%- endcase -%}
         </div>
       </div>
+
     {%- endfor -%}
-  
-    
   </form>
 </div>

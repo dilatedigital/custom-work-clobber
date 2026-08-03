@@ -1,3 +1,23 @@
+{%- comment -%}
+  ============================================================================
+  template-collection  —  CORRECTED
+  ----------------------------------------------------------------------------
+  Key changes vs original:
+  1. REMOVED the jQuery `$(".sidebar-filter").clone().appendTo(".cat-popup")`.
+     That clone created duplicate element IDs and a second, desynced copy of
+     every filter control — the main cause of the filter misbehaving.
+     The mobile "popup" is now the *same* sidebar node, shown/hidden by CSS.
+  2. Sort no longer drops active filters / `q` / has malformed URLs. It now
+     preserves the current query string and just sets `sort_by`, then
+     navigates (server renders correct filtered + sorted results).
+  3. Filtering is handled entirely by the native GET form in filters.liquid,
+     so no fragile grid-swap AJAX remains here.
+  4. Vanilla toggle for the mobile panel (jQuery no longer required by this
+     template — the include is kept only in case other snippets rely on it;
+     remove it if nothing else does).
+  ============================================================================
+{%- endcomment -%}
+
 <style>
   .products-grid .product-image-container {
     outline-color: #bdbdbd;
@@ -10,305 +30,168 @@
     outline-color: transparent;
   }
 
-  .product-code {
-    color: #acacac;
-  }
-  .product-compare-price span {
-    color: #bdbdbd;
-  }
+  .product-code { color: #acacac; }
+  .product-compare-price span { color: #bdbdbd; }
+  #sort-by { border-color: #bdbdbd; }
 
-  #sort-by {
-    border-color: #bdbdbd;
-  }
+  .sidebar-filter { max-width: 225px; }
 
-  .sidebar-filter {
-    max-width: 225px;
-  }
-.cat-drop {
-  display: block;
-}
-  /* .main-cat, */
-  /* .cat-popup, */
-  .sidebar-filter,
-  .cat-popup .back-btn {
-    display: none;
-  }
-  .mobile-filter {
-    border: 1px solid #bdbdbd;
-    margin-top: 1em;
-}
-  .mobile-filter:hover {
-    background: var(--yellow);
-    border-color: var(--yellow);
-}
-  
-  .cat-popup .sidebar-filter {
-    display: block;
-  }
-.cat-popup {
-    position: fixed;
-    background: white;
-    width: 90%;
-    padding: 2em;
-    right: 0;
-    border: 1px solid;
-    bottom: 1em;
-    opacity: 0;
-    transform: translatey(100vh);
-    z-index: 1;
-    max-height: 70vh;
-    overflow: auto;
-    max-width: 300px;
-}
-  .cat-popup .close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: var(--yellow);
-    font-weight: 700;
-    padding: 0.5em 1em;
-    z-index: 10;
-    cursor: pointer;
-}
-  .cat-popup.active {
-    opacity: 1;
-    transform: translatey(0vh);
-}
-  @media screen and (min-width: 1025px) {
-    .cat-drop,
-    .mobile-filter {
-      display: none;
-    }
-  .main-cat,
-    .sidebar-filter{
-    display: block;
-  }
-  }
-  @media screen and (min-width: 1024px) {
+  /* --- MOBILE (<=1024px): the sidebar itself becomes the slide-up panel --- */
+  @media screen and (max-width: 1024px) {
     .sidebar-filter {
-      margin-right: 75px;
+      position: fixed;
+      background: #fff;
+      width: 90%;
+      max-width: 300px;
+      padding: 2em;
+      right: 0;
+      bottom: 1em;
+      border: 1px solid;
+      z-index: 20;
+      max-height: 70vh;
+      overflow: auto;
+      opacity: 0;
+      transform: translateY(100vh);
+      transition: transform .3s ease, opacity .3s ease;
+      pointer-events: none;
+    }
+    .sidebar-filter.active {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+    .sidebar-filter .filter-close {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: var(--yellow);
+      font-weight: 700;
+      padding: 0.5em 1em;
+      z-index: 21;
+      cursor: pointer;
+    }
+    .mobile-filter {
+      border: 1px solid #bdbdbd;
+      margin-top: 1em;
+    }
+    .mobile-filter:hover {
+      background: var(--yellow);
+      border-color: var(--yellow);
     }
   }
+
+  /* --- DESKTOP (>=1025px): normal static sidebar --- */
+  @media screen and (min-width: 1025px) {
+    .mobile-filter,
+    .sidebar-filter .filter-close { display: none; }
+    .sidebar-filter { display: block; margin-right: 75px; }
+  }
+
   @media screen and (min-width: 1170px) {
-    .products-grid {
-      width: 870px;
+    .products-grid { width: 870px; }
+    .products-grid .product-image-container { min-height: 280px; }
+  }
+</style>
+
+{%- comment -%}
+  jQuery retained only in case other snippets on this template depend on it.
+  This template no longer uses it. Safe to remove if unused elsewhere.
+{%- endcomment -%}
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var sidebar  = document.querySelector('.sidebar-filter');
+    var openBtn  = document.querySelector('.mobile-filter');
+
+    // Inject a close control for the mobile panel (no cloning of filter markup).
+    if (sidebar && !sidebar.querySelector('.filter-close')) {
+      var close = document.createElement('span');
+      close.className = 'filter-close';
+      close.textContent = 'X';
+      sidebar.prepend(close);
+      close.addEventListener('click', function () { sidebar.classList.remove('active'); });
+    }
+    if (openBtn && sidebar) {
+      openBtn.addEventListener('click', function () { sidebar.classList.toggle('active'); });
     }
 
-    .products-grid .product-image-container {
-      min-height: 280px;
+    // Legacy category <select> (currently commented out in markup) — harmless if absent.
+    var catDrop = document.querySelector('.cat-drop');
+    if (catDrop) {
+      catDrop.addEventListener('change', function () { if (this.value) { window.location.href = this.value; } });
     }
-  }
-  
-</style>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<script>
-  (function($) {
-    $(document).ready(function() {
-      $(".cat-drop").change(function(){
-        if ($(this).val()!='') {
-          window.location.href=$(this).val();
-        }
-      });
-      $(".sidebar-filter").clone().appendTo(".cat-popup");
-      $("<span class='close'>X</span>").appendTo(".cat-popup");
-      $(".mobile-filter").on("click", function() {
-        $(".cat-popup").toggleClass("active");
-      });
-      $(".cat-popup .close").on("click", function() {
-        $(".cat-popup").removeClass("active");
-      });
-    });
-  })(jQuery);
+  });
 </script>
+
 {% render 'stripe-pattern' %}
-<div class="cat-popup transition"></div>
+
 <div class="container mx-auto xct:flex xct:justify-between py-50px lg:py-100px">
   {% paginate collection.products by 12 %}
+
     <div class="sidebar-filter">
       <div class="category-filter pb-6 xct:pb-14">
         {% if collection.handle != 'all' %}
-        <a href="javascript: history.go(-1)" class="back-btn flex items-center mb-5"><svg xmlns="http://www.w3.org/2000/svg" class="mr-2 max-w-[20px] block" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
-        </svg>
-         Back</a>
+          <a href="javascript: history.go(-1)" class="back-btn flex items-center mb-5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 max-w-[20px] block" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+            </svg>
+            Back
+          </a>
         {% endif %}
+
         <h4 class="uppercase font-extrabold text-lg font-euro border-b pb-4 mb-7 border-wc-black">Shop by categories</h4>
-          <span class="main-cat">
+        <span class="main-cat">
           {% if collection.handle == 'all' %}
-          <a href="/collections/all" class="text-lg block">All</a>
+            <a href="/collections/all" class="text-lg block">All</a>
           {% endif %}
-        {% for product_type in collection.all_types %}
-          {% if product_type == blank %}
-            {% continue %}
-          {% endif %}
-          {{ product_type | link_to_type: class: 'text-lg block' }}
-        {% endfor %}
-          </span>
-        {% comment %} 
-          <select class="py-3 px-4 my-3 border border-black cat-drop">
-            {% for product_type in collection.all_types %}
-              {% if product_type == blank %}
-                {% continue %}
-              {% endif %}
-              <option value="{{ product_type | url_for_type }}">
-                {{ product_type }}
-              </option>
-            {% endfor %}
-          </select>
-        {% endcomment %}
-        <div>
-          
-         <!--{% assign currentCol = collection.handle %}
-     {% for collection in collections %}
-      {% if collection.handle contains currentCol %}
-         {{ collection.title }}
-         // further code 
-      {% endif %}
-    {% endfor %} -->
-        </div>
-        
+          {% for product_type in collection.all_types %}
+            {% if product_type == blank %}{% continue %}{% endif %}
+            {{ product_type | link_to_type: class: 'text-lg block' }}
+          {% endfor %}
+        </span>
       </div>
-      
+
       {% render 'filters', results: collection %}
     </div>
+
     <div>
       <div class="mt-11 lg:mt-0 flex flex-col md:flex-row justify-between items-center">
         <h1 class="uppercase text-3xl">{{ collection.title }}</h1>
+
         <div class="flex items-center">
           <p class="uppercase font-euro font-extrabold mr-4">Sort by</p>
           {% assign sort_by = collection.sort_by | default: collection.default_sort_by %}
-          <div class="collection__sort flex justify-end" 
+
+          <div class="collection__sort flex justify-end"
             x-data="{
               loading: false,
               sort: '{{ sort_by }}',
-              sortCollection(){
-
-                const queryStringF = window.location.search; 
-                const urlParams = new URLSearchParams(queryStringF);
-
-                let vendors;
-                let newFilterURL = '';
-                let replacedFilteredURL;
-
-                let sortz = this.sort
-
+              applySort() {
                 this.loading = true;
-
-                if (urlParams.has('filter.p.vendor')) {
-                  vendors = urlParams.getAll('filter.p.vendor');
-
-                  vendors.forEach(function(item, index, array) {
-                    if(index === array.length - 1) {
-                      newFilterURL += 'filter.p.vendor=' + item;
-                    } else {
-                      newFilterURL += 'filter.p.vendor=' + item + '&';
-                    }
-                    
-                  })
-  
-                  replacedFilteredURL = newFilterURL.replaceAll(' ', '+');
-
-                  fetch('/collections/{{ collection.handle }}?sort_by=' + sortz + '&' + replacedFilteredURL)
-                  .then(response => response.text())
-                  .then(data => {
-                    let html_div = document.createElement('div');
-                    html_div.innerHTML = data;
-      
-                    let html_dom = html_div.querySelector('.products-grid').innerHTML;
-                    document.querySelector('.products-grid').innerHTML = html_dom;
-                    // update url without refreshing the page 
-                    
-                    history.replaceState(null, null, '?sort_by=' + sortz + '&' + replacedFilteredURL);
-                    
-                  })
-                  .catch(error => console.error('Error:', error))
-                  .finally(() => this.loading = false);
-                } else if (window.location.href.indexOf('types') > -1 && urlParams.has('q')) {
-                  const collectionType = urlParams.get('q')
-                  fetch('/collections/types?q=' + collectionType + '&sort_by=' + sortz)
-                  .then(response => response.text())
-                  .then(data => {
-                    let html_div = document.createElement('div');
-                    html_div.innerHTML = data;
-      
-                    let html_dom = html_div.querySelector('.products-grid').innerHTML;
-                    document.querySelector('.products-grid').innerHTML = html_dom;
-                    // update url without refreshing the page 
-                    
-                    history.replaceState(null, null, 'types?q=' + collectionType + '&sort_by=' + sortz);
-                    
-                  })
-                  .catch(error => console.error('Error:', error))
-                  .finally(() => this.loading = false);
-                } else if (urlParams.has('filter.p.vendor') && window.location.href.indexOf('types') > -1 && urlParams.has('q')) {
-                  const collectionType = urlParams.get('q')
-
-                  vendors = urlParams.getAll('filter.p.vendor');
-
-                  vendors.forEach(function(item, index, array) {
-                    if(index === array.length - 1) {
-                      newFilterURL += 'filter.p.vendor=' + item;
-                    } else {
-                      newFilterURL += 'filter.p.vendor=' + item + '&';
-                    }
-                    
-                  })
-  
-                  replacedFilteredURL = newFilterURL.replaceAll(' ', '+');
-
-                  fetch('/collections/types?q=' + collectionType + '&' + replacedFilteredURL + '&sort_by=' + sortz)
-                  .then(response => response.text())
-                  .then(data => {
-                    let html_div = document.createElement('div');
-                    html_div.innerHTML = data;
-      
-                    let html_dom = html_div.querySelector('.products-grid').innerHTML;
-                    document.querySelector('.products-grid').innerHTML = html_dom;
-                    // update url without refreshing the page 
-                    
-                    history.replaceState(null, null, 'types?q=' + collectionType + '&' + replacedFilteredURL + '?sort_by=' + sortz);
-                    
-                  })
-                  .catch(error => console.error('Error:', error))
-                  .finally(() => this.loading = false);
-                } else {
-                  fetch('/collections/{{ collection.handle }}/?sort_by=' + sortz)
-                  .then(response => response.text())
-                  .then(data => {
-                    let html_div = document.createElement('div');
-                    html_div.innerHTML = data;
-      
-                    let html_dom = html_div.querySelector('.products-grid').innerHTML;
-                    document.querySelector('.products-grid').innerHTML = html_dom;
-                    // update url without refreshing the page 
-                    
-                    history.replaceState(null, null, '?sort_by=' + sortz);
-                    
-                  })
-                  .catch(error => console.error('Error:', error))
-                  .finally(() => this.loading = false);
-                }
-
-                
-              
+                // Preserve every current param (filters, q, etc.) and just set sort_by.
+                const params = new URLSearchParams(window.location.search);
+                params.set('sort_by', this.sort);
+                window.location.search = params.toString();
               }
             }">
-            
+
             {% render 'loader' %}
-      
-            <select id="sort-by" x-model="sort" @change="sortCollection()" class="py-3 px-4 my-3 border border-black">
+
+            <select id="sort-by" x-model="sort" @change="applySort()" class="py-3 px-4 my-3 border border-black">
               {% for option in collection.sort_options %}
                 <option value="{{ option.value }}" {% if option.value == sort_by %}selected="selected"{% endif %}>
                   {{ option.name }}
                 </option>
               {% endfor %}
             </select>
-            
           </div>
         </div>
-        <button class="mobile-filter wc-btn uppercase">Filters</button>
+
+        <button class="mobile-filter wc-btn uppercase" type="button">Filters</button>
       </div>
-      
+
       <div class="products-grid py-50px lg:pb-100px grid grid-cols-2 gap-y-10 place-content-center lg:grid-cols-2 xct:grid-cols-3 gap-x-30px lg:gap-y-12">
         {% for product in collection.products %}
           {% render 'product-card', product: product %}
@@ -317,9 +200,7 @@
         {% endfor %}
         {% render 'pagination-custom', pagination: paginate %}
       </div>
-      
     </div>
-    
+
   {% endpaginate %}
-  
 </div>

@@ -38,6 +38,14 @@
             "brand_collection_url": "shopify://collections/3m"
           }
         },
+        "brands_block_mWKEye": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify://shop_images/BISB_3_95892492-d56d-47ca-ae25-2a9bc8f08d08.jpg",
+            "button_text": "View Products",
+            "brand_collection_url": "shopify://collections/bata-industrials"
+          }
+        },
         "812fb8f3-4f13-4def-bcf4-dab09b11c6bf": {
           "type": "brands_block",
           "settings": {
@@ -265,6 +273,7 @@
       },
       "block_order": [
         "969827b4-dc0f-4d72-80fe-3bf6575881fa",
+        "brands_block_mWKEye",
         "812fb8f3-4f13-4def-bcf4-dab09b11c6bf",
         "ec2928c9-4e2e-4f15-bf5e-3e37c06ad0fb",
         "d3191e55-3ecd-4529-b1af-551a76369dcb",

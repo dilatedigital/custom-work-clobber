@@ -253,6 +253,14 @@
             "button_text": "View Products",
             "brand_collection_url": "shopify://collections/your-safety-factory"
           }
+        },
+        "brands_block_YpDaam": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify://shop_images/XDMG_LOGO_-_HEAVY_2025.png",
+            "button_text": "View Products",
+            "brand_collection_url": "shopify://collections/x-dmg"
+          }
         }
       },
       "block_order": [
@@ -283,7 +291,8 @@
         "7fc35c59-e2d5-4103-85ef-02a2a5726022",
         "f0b66611-04fc-4fa3-8c3a-04fcdb480e7e",
         "869842f2-f414-428d-8533-dcd3b46220e4",
-        "6767d424-a7f6-4181-aa69-4639264ed615"
+        "6767d424-a7f6-4181-aa69-4639264ed615",
+        "brands_block_YpDaam"
       ],
       "settings": {}
     }

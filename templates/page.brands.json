@@ -94,6 +94,14 @@
             "brand_collection_url": "shopify://collections/eyres"
           }
         },
+        "brands_block_Pke4qx": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify://shop_images/FXD-logo-421x480.jpg",
+            "button_text": "View Products",
+            "brand_collection_url": "shopify://collections/fxd"
+          }
+        },
         "2cc246b0-a1c0-426f-9b8c-3ecf757e6dc0": {
           "type": "brands_block",
           "settings": {
@@ -140,6 +148,14 @@
             "logo": "shopify://shop_images/Mongrels-logo-removebg-preview.png",
             "button_text": "View Products",
             "brand_collection_url": "shopify://collections/mongrel"
+          }
+        },
+        "brands_block_KfXxmB": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify://shop_images/MUNKA_67598828-498f-4b08-a116-d06348d2b845.jpg",
+            "button_text": "View Products",
+            "brand_collection_url": "shopify://collections/munka"
           }
         },
         "brands_block_rtqAHm": {
@@ -280,12 +296,14 @@
         "brands_block_jQFVfD",
         "dc6f706f-ebb9-4469-ad68-a86dc195ea5a",
         "c0a295f7-50ea-404b-a232-af60dbd8fb70",
+        "brands_block_Pke4qx",
         "2cc246b0-a1c0-426f-9b8c-3ecf757e6dc0",
         "02980a0d-247c-42cc-85ce-655fbba46311",
         "3710c10a-dc7a-435e-8da6-e73ed5e62dc8",
         "c21fac1e-95c4-4aed-82ff-2c47f2182c41",
         "ac1edc6d-1fb8-437c-9b32-805955312252",
         "193364b9-efa1-42d2-8a96-24af14673b5e",
+        "brands_block_KfXxmB",
         "brands_block_rtqAHm",
         "brands_block_H4fLaX",
         "55d8afdd-a33a-43f7-aad3-19ec5ab07b5f",

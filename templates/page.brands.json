@@ -30,14 +30,6 @@
     "164878875602084711": {
       "type": "brands-blocks",
       "blocks": {
-        "brands_block_rtqAHm": {
-          "type": "brands_block",
-          "settings": {
-            "logo": "shopify://shop_images/Logo_8d535910-1784-4373-8ba3-2718412672a6.jpg",
-            "button_text": "View Products",
-            "brand_collection_url": "shopify://collections/mustang-jeans"
-          }
-        },
         "969827b4-dc0f-4d72-80fe-3bf6575881fa": {
           "type": "brands_block",
           "settings": {
@@ -140,6 +132,14 @@
             "logo": "shopify://shop_images/Mongrels-logo-removebg-preview.png",
             "button_text": "View Products",
             "brand_collection_url": "shopify://collections/mongrel"
+          }
+        },
+        "brands_block_rtqAHm": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify://shop_images/Logo_8d535910-1784-4373-8ba3-2718412672a6.jpg",
+            "button_text": "View Products",
+            "brand_collection_url": "shopify://collections/mustang-jeans"
           }
         },
         "brands_block_H4fLaX": {
@@ -256,7 +256,6 @@
         }
       },
       "block_order": [
-        "brands_block_rtqAHm",
         "969827b4-dc0f-4d72-80fe-3bf6575881fa",
         "812fb8f3-4f13-4def-bcf4-dab09b11c6bf",
         "ec2928c9-4e2e-4f15-bf5e-3e37c06ad0fb",
@@ -270,6 +269,7 @@
         "c21fac1e-95c4-4aed-82ff-2c47f2182c41",
         "ac1edc6d-1fb8-437c-9b32-805955312252",
         "193364b9-efa1-42d2-8a96-24af14673b5e",
+        "brands_block_rtqAHm",
         "brands_block_H4fLaX",
         "55d8afdd-a33a-43f7-aad3-19ec5ab07b5f",
         "aafb9ad9-4420-43d2-84e5-9de97f25e280",

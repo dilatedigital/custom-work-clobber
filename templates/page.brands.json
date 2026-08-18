@@ -30,6 +30,14 @@
     "164878875602084711": {
       "type": "brands-blocks",
       "blocks": {
+        "brands_block_rtqAHm": {
+          "type": "brands_block",
+          "settings": {
+            "logo": "shopify://shop_images/Logo_8d535910-1784-4373-8ba3-2718412672a6.jpg",
+            "button_text": "View Products",
+            "brand_collection_url": "shopify://collections/mustang-jeans"
+          }
+        },
         "969827b4-dc0f-4d72-80fe-3bf6575881fa": {
           "type": "brands_block",
           "settings": {
@@ -248,6 +256,7 @@
         }
       },
       "block_order": [
+        "brands_block_rtqAHm",
         "969827b4-dc0f-4d72-80fe-3bf6575881fa",
         "812fb8f3-4f13-4def-bcf4-dab09b11c6bf",
         "ec2928c9-4e2e-4f15-bf5e-3e37c06ad0fb",
